@@ -15,7 +15,7 @@ Credits:
 
 Ed - Mod founder, former developer and former leader
 
-Current Developers: Palisight and UniversalRed
+Current Developers: Palisight, UniversalRed, and necronox
 
 Credits:
 Ed - Mod founder, former developer and former leader
