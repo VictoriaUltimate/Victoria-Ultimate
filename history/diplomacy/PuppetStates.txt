@@ -1,5 +1,23 @@
 ##1604 Puppets
-
+# Qazaq_khanate - khiva, bukhara, kokand
+vassal = {
+	first = KAZ
+	second = KHI
+	start_date = 1603.5.1
+	end_date = 1821.1.1
+		}
+vassal = {
+	first = KAZ
+	second = BUK
+	start_date = 1603.5.1
+	end_date = 1821.1.1
+		}
+vassal = {
+	first = KAZ
+	second = KOK
+	start_date = 1603.5.1
+	end_date = 1821.1.1
+		}
 #Crimea-Otto
 vassal = {
 	first = TUR
@@ -53,49 +71,6 @@ vassal = {
 	end_date = 1641.1.1
 		}
 		
-#Holy Roman Empire
-substate = {
-	first = HRE
-	second = SWI
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
-
-substate = {
-	first = HRE
-	second = SVY
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
-		
-substate = {
-	first = HRE
-	second = TUS
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
-		
-substate = {
-	first = HRE
-	second = PAR
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
-		
-substate = {
-	first = HRE
-	second = MOD
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
-		
-substate = {
-	first = HRE
-	second = LUC
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
-		
 #Ottoman Eyalets
 substate = {
 	first = TUR
@@ -115,7 +90,33 @@ substate = {
 	start_date = 1551.1.1
 	end_date = 1911.1.1
 		}
-
+#Ottoman Egypt
+vassal = {
+	first = TUR
+	second = EGY
+	start_date = 1600.1.1
+	end_date = 1840.7.1
+}
+#Sweden-Verden
+vassal = {
+	first = SWE
+	second = VER
+	start_date = 1648.10.24
+	end_date = 1719.11.9
+}
+#Prussia-Magdeburg
+vassal = {
+	first = BDB
+	second = MGG
+	start_date = 1680.6.4
+	end_date = 1701.1.17
+}
+vassal = {
+	first = PRU
+	second = MGG
+	start_date = 1701.1.18
+	end_date = 1807.7.9
+}
 
 ####Napoleonic Era####
 vassal = {
@@ -252,12 +253,12 @@ substate = {
 	end_date = 1868.1.1
 }
 
-# Denmark-Holstein
+# Denmark-Schleswig
 vassal = {
 	first = DEN
-	second = HOL
-	start_date = 1773.1.1
-	end_date = 1864.10.30
+	second = SCH
+	start_date = 1603.5.1
+	end_date = 1871.1.1
 }
 
 # NET-LUX
@@ -687,7 +688,7 @@ vassal = {
 
 vassal = {
 	first = USA
-	second = MAS
+	second = MSI
 	start_date = 1979.1.1
 	end_date = 9999.1.1
 		}
@@ -932,4 +933,10 @@ vassal = {
 	second = POL
 	start_date = 1815.1.1
 	end_date = 1863.1.1
+}
+vassal = {
+	first = FRA
+	second = DSO
+	start_date = 1898.1.1
+	end_date = 1958.12.18
 }

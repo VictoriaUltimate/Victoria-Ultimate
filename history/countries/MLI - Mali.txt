@@ -1,13 +1,20 @@
 capital = 1794
-primary_culture = bambara
-culture = fulbe
+primary_culture = fulbe
+culture = bambara
+culture = songhai
+culture = tuareg
+culture = wolof
+culture = mande
+culture = dyula
+culture = senufo
+culture = mossi
+culture = african_minor
 religion = sunni
-government = democracy
-plurality = 25.0
+government = absolute_monarchy
+plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.28
+literacy = 0.01
 civilized = no
-prestige = 10
 
 # Political reforms
 slavery = no_slavery
@@ -803,7 +810,7 @@ shift_work = 1
 electric_furnace = 1 #until this for 1913
 	}
 
-
+1905.1.1 = { government = democracy }
 
 1936.1.1 = {
 
@@ -2559,8 +2566,4 @@ robotics = 1
 high_speed_rail = 1
 synthetic_graphite = 1
 green_power = 1 #until this for 2023
-	}
-
-
-
-
+}

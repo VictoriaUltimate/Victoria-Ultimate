@@ -7,36 +7,36 @@ trade_goods = fish
 life_rating = 40
 
 1604.8.31 = { 
-	owner = EMD
-	controller = EMD
-	}
+owner = EMD
+controller = EMD
+}
 1744.5.25 = {
-	owner = PRU
-	controller = PRU
-	add_core = PRU
-        remove_core = EMD
-		}
+owner = PRU
+controller = PRU
+add_core = PRU
+remove_core = EMD
+}
 1806.6.5 = { 
-        owner = NET
-	controller = NET
-                }
+owner = NET
+controller = NET
+}
 1806.8.6 = { remove_core = HRE }
 1810.7.9 = {
-	owner = FRA
-	controller = FRA
-		}
+owner = FRA
+controller = FRA
+}
 1813.10.19 = {
-        owner = PRU
-	controller = PRU
-                }
-1815.7.9 = {
-	owner = HAN
-	controller = HAN
-	add_core = HAN
-	remove_core = PRU
-		}
+owner = PRU
+controller = PRU
+}
+1815.6.9 = {
+owner = HAN
+controller = HAN
+add_core = HAN
+remove_core = PRU
+}
 1861.1.1 = { railroad = 3 }
 1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
+owner = GER
+controller = GER
+}

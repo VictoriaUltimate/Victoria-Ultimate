@@ -1,17 +1,36 @@
+owner = TBK
+controller = TBK
 trade_goods = grain
-life_rating = 15
+life_rating = 32
 
-1903.1.1 = {
-		owner = FRA
-		controller = FRA
-		colonial = 2
-		}
-1910.1.1 = {
-	add_core = MLI
-		}
-
-1960.1.1 = {
-	owner = MLI
-	controller = MLI
-	colonial = 0
-		}
+1670.1.1  = {
+owner = SEG
+controller = SEG
+add_core = SEG
+}
+1818.1.1  = { 
+owner = MAS
+controller = MAS
+add_core = MAS
+}
+1861.1.1  = {
+owner = TOU
+controller = TOU
+add_core = TOU
+}
+1893.4.1 = {
+owner = FRA
+controller = FRA
+colonial = 2
+}
+1905.1.1 = {
+add_core = MLI
+remove_core = MAS
+remove_core = SEG
+remove_core = TOU
+}
+1959.4.4 = {
+owner = MLI
+controller = MLI
+colonial = 0
+}

@@ -1,16 +1,20 @@
+owner = DND
+controller = DND
+add_core = DND
 trade_goods = grain
-life_rating = 15
+life_rating = 35
 
 1903.1.1 = {
-		owner = FRA
-		controller = FRA
-		colonial = 2
-		}
-1845.1.1 = {
-	add_core = NIG
-		}
-1960.1.1 = {
-	owner = NIG
-	controller = NIG
-	colonial = 0
-		}
+owner = FRA
+controller = FRA
+colonial = 2
+}
+1905.1.1 = {
+add_core = NIG
+remove_core = DND
+}
+1958.12.18 = {
+owner = NIG
+controller = NIG
+colonial = 0
+}

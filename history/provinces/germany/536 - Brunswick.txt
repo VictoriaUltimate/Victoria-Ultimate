@@ -6,28 +6,28 @@ add_core = HRE
 trade_goods = fruit
 life_rating = 40
 
-1604.8.31 = { 
-	        owner = BRA
-	        controller = BRA
-	}
+1604.8.31 = {
+owner = BRA
+controller = BRA
+}
 1806.8.6 = { remove_core = HRE }
 1807.7.9 = {
-                owner = WES
-                controller = WES
-		}
-1815.7.9 = { 
-		controller = BRA
-		owner = BRA
-		}
+owner = WES
+controller = WES
+}
+1815.6.9 = {
+owner = BRA
+controller = BRA
+}
 1861.1.1 = { railroad = 3 }
 1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
-1910.1.1 = {
-	state_building = {
-	level = 2
-	building = barrel_factory
-	upgrade = yes
+owner = GER		
+controller = GER
 }
-		}
+1910.1.1 = {
+state_building = {
+level = 2
+building = barrel_factory
+upgrade = yes
+}
+}

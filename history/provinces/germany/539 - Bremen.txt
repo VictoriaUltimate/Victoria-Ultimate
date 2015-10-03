@@ -8,23 +8,21 @@ trade_goods = fish
 life_rating = 40
 
 1604.8.31 = { 
-	owner = BRE
-	controller = BRE
-	}
+owner = BRE
+controller = BRE
+}
 1806.8.6 = { remove_core = HRE }
 1811.1.1 = {
-		controller = FRA
-		owner = FRA
-		}
+owner = FRA		
+controller = FRA
+}
 1813.10.19 = {
-	owner = BRE
-	controller = BRE
-		}
+owner = BRE
+controller = BRE
+}
 1861.1.1 = { railroad = 3 }
 1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
-1936.1.1 = {
-		naval_base = 6
-		}
+owner = GER
+controller = GER
+}
+1936.1.1 = { naval_base = 6 }

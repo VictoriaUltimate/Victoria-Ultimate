@@ -2,9 +2,9 @@ capital = 202
 primary_culture = native_american_minor
 religion = animist
 government = democracy
-plurality = 5.0
+plurality = 0.0
 nationalvalue = nv_liberty
-literacy = 0.50
+literacy = 0.01
 civilized = no
 
 ruling_party = CRK_conservative

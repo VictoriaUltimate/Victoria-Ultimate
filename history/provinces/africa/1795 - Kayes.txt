@@ -1,16 +1,28 @@
+owner = TOO
+controller = TOO
+add_core = TOO
 trade_goods = wool
-life_rating = 15
+life_rating = 32
 
-1903.1.1 = {
-		owner = FRA
-		controller = FRA
-		colonial = 2
-		}
-1910.1.1 = {
-	add_core = MLI
-		}
-1960.1.1 = {
-	owner = MLI
-	controller = MLI
-	colonial = 0
-		}
+1753.1.1  = {
+owner = SEG
+controller = SEG
+add_core = SEG
+remove_core = TOO
+}
+1818.1.1  = { add_core = MAS }
+1881.1.1 = {
+owner = FRA
+controller = FRA
+colonial = 2
+}
+1905.1.1 = {
+add_core = MLI
+remove_core = MAS
+remove_core = SEG
+}
+1959.4.4 = {
+owner = MLI
+controller = MLI
+colonial = 0
+}

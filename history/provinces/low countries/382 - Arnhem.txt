@@ -1,23 +1,17 @@
 owner = NET
-
 controller = NET
-
-add_core = NET
-
 add_core = HRE
-
+add_core = NET
 trade_goods = cattle
-
 life_rating = 35
 
-
 1806.8.6 = { remove_core = HRE }
-1810.1.1 = {
+1810.7.9 = {
 owner = FRA
 controller = FRA
-		}
-1815.1.1 = {
+}
+1813.10.19 = {
 owner = NET
 controller = NET
-		}
+}
 1861.1.1 = { railroad = 3 }

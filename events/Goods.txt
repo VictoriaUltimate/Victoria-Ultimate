@@ -10,8 +10,6 @@ province_event = {
 	trigger = {
 		year = 1836
 		or = {
-			province_id = 1				# Sitka
-			province_id = 2				# Yakutat
 			province_id = 766			# Sassari
 			province_id = 769			# Postojna
 			province_id = 773			# Karlovac
@@ -1271,7 +1269,7 @@ province_event = {
 			province_id = 87		# Monterey
 			province_id = 2162		# Veracruz
 			province_id = 2163		# Tampico
-			province_id = 702		# Lvov
+			province_id = 951		# Stryi
 		}
 		not = { trade_goods = oil }
 		OR = {

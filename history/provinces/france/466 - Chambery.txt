@@ -1,29 +1,30 @@
 owner = SVY
 controller = SVY
-add_core = SVY
 add_core = HRE
 add_core = ITA
+add_core = SVY
 trade_goods = grain
 life_rating = 32
 
-1760.1.1 = {
-	owner = SAR
-        controller = SAR
-        add_core = SAR
-		}
-1800.1.1 = {
-	owner = FRA
-	controller = FRA
-		}
+1720.8.24 = {
+owner = SAR
+controller = SAR
+add_core = SAR
+remove_core = SVY
+}
+1792.11.27 = {
+owner = FRA
+controller = FRA
+}
 1806.8.6 = { remove_core = HRE }
-1820.1.1 = {
-	owner = SAR
-	controller = SAR
-		}
-1861.1.1 = {
-	remove_core = ITA
-	remove_core = SAR
-	owner = FRA
-	controller = FRA
-	add_core = FRA
+1815.6.9 = {
+owner = SAR
+controller = SAR
+}
+1860.3.24 = {
+owner = FRA
+controller = FRA
+add_core = FRA
+remove_core = ITA
+remove_core = SAR
 }

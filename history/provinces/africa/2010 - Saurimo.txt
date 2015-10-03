@@ -1,4 +1,6 @@
-
+add_core = LUN
+trade_goods = fruit
+life_rating = 10
 
 1903.1.1 = {
 		owner = POR
@@ -7,8 +9,7 @@
 		}
 
 
-trade_goods = cattle
-life_rating = 15
+
 
 1910.1.1 = {
 	add_core = ANG

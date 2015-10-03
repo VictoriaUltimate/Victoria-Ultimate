@@ -2,11 +2,10 @@ capital = 578
 primary_culture = north_german
 religion = catholic
 government = absolute_monarchy
-plurality = 25.0
+plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.8
+literacy = 0.08
 civilized = yes
-prestige = 5
 
 # Political reforms
 slavery = no_slavery
@@ -27,7 +26,7 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
-ruling_party = CLV_conservative
+ruling_party = GHB_conservative
 upper_house = {
 	fascist = 0
 	liberal = 32

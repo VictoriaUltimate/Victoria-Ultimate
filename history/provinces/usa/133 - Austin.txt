@@ -1,3 +1,9 @@
+owner = CMC
+controller = CMC
+add_core = CMC
+trade_goods = cattle
+life_rating = 40
+
 1764.1.1 = {
 owner = SPA
 controller = SPA
@@ -11,8 +17,6 @@ add_core = MEX
 colonial = 0
 		}
 
-trade_goods = cattle
-life_rating = 35
 1867.1.1 = {
 	owner = USA
 	controller = USA

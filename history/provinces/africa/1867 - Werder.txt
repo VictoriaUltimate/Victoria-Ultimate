@@ -1,5 +1,9 @@
+owner = AJU
+controller = AJU
+add_core = AJU
 trade_goods = grain
-life_rating = 30
+life_rating = 35
+
 1914.1.1 = {
 	owner = ETH
 	controller = ETH

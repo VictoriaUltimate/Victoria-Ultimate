@@ -1,5 +1,8 @@
+owner = MUT
+controller = MUT
+add_core = MUT
 trade_goods = grain
-life_rating = 35
+life_rating = 20
 
 1852.1.17 = {
 owner = TRN

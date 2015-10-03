@@ -699,9 +699,10 @@ trigger = {
 	NOT = { 994 = { controlled_by = RUS } }
 	1008 = { controlled_by = THIS }
 	NOT = { 1039 = { controlled_by = RUS } }
+	NOT = { has_global_flag = WW2_Russia_Surrendered }
 	RUS = { war_exhaustion = 25 }
 	has_global_flag = WW2inprogress
-		}
+}
 
 mean_time_to_happen = { days = 1 }
 
@@ -1226,17 +1227,13 @@ political_reform = underground_parties
 country_event = {
 	id = 1000016
 	title = "Italy Surrenders!"
-	desc = "My $MONARCHTITLE$, America has formally surrendered to us and is now at our mercy!"
+	desc = "My $MONARCHTITLE$, Italy has formally surrendered to us and is now at our mercy!"
 	picture = "italyliberation"
 
 trigger = {
 
-	749 = {
-	controlled_by = THIS
-		}
-	ITA = {
-	war_exhaustion = 15
-		}
+	749 = { controlled_by = THIS }
+	ITA = { war_exhaustion = 15 }
 	has_global_flag = WW2inprogress
 	NOT = {
 		has_country_flag = WW2_Axis
@@ -1244,23 +1241,22 @@ trigger = {
 		}
 		}
 
-mean_time_to_happen = {
-		days = 1 }
+mean_time_to_happen = { days = 1 }
 
 ##annex##
 option = {
 name = "Annex Italy!"
 
-	end_war = USA 
-	inherit = USA 
+	end_war = ITA
+	inherit = ITA
 	prestige = 100
 	set_global_flag = WW2_Italy_Surrendered
 	clr_global_flag = WW2_Italy_in_the_fight
 	any_pop = {
 	limit = {
 		OR = {
-		culture = yankee
-		culture = dixie
+		north_italian
+		south_italian
 			}
  		}
 	militancy = 6
@@ -1290,9 +1286,6 @@ political_reform = first_past_the_post
 political_reform = non_secret_ballots
 		}
 
-		ai_chance = {
-			factor = 25
-		}
+		ai_chance = { factor = 100 }
 	}
-
 }	

@@ -1,17 +1,10 @@
-
-
-#========================= H E A D E R =========================
-
 color = { 51  153  255 }
 graphical_culture = Generic
 
-
-#========================= P A R T I E S =========================
-
 party = {
-name = "MAS_conservative_92"
-start_date = 1700.1.1
-end_date = 2000.1.1
+name = "MSI_conservative_92"
+start_date = 1600.1.1
+end_date = 99999.1.1
 ideology = conservative
 economic_policy = interventionism
 trade_policy = protectionism
@@ -20,9 +13,9 @@ citizenship_policy = limited_citizenship
 war_policy = pro_military
 }
 party = {
-name = "MAS_liberal_79"
-start_date = 1750.1.1
-end_date = 2000.1.1
+name = "MSI_liberal_79"
+start_date = 1628.1.1
+end_date = 99999.1.1
 ideology = liberal
 economic_policy = laissez_faire
 trade_policy = free_trade
@@ -31,9 +24,9 @@ citizenship_policy = limited_citizenship
 war_policy = anti_military
 }
 party = {
-name = "MAS_liberal_87"
+name = "MSI_liberal_87"
 start_date = 1800.1.1
-end_date = 2000.1.1
+end_date = 99999.1.1
 ideology = liberal
 economic_policy = laissez_faire
 trade_policy = free_trade
@@ -42,9 +35,9 @@ citizenship_policy = limited_citizenship
 war_policy = pro_military
 }
 party = {
-name = "MAS_socialist_85"
-start_date = 1750.1.1
-end_date = 2000.1.1
+name = "MSI_socialist_85"
+start_date = 1848.1.1
+end_date = 99999.1.1
 ideology = socialist
 economic_policy = state_capitalism
 trade_policy = free_trade
@@ -53,9 +46,9 @@ citizenship_policy = full_citizenship
 war_policy = anti_military
 }
 party = {
-name = "MAS_socialist_99"
-start_date = 1800.1.1
-end_date = 2000.1.1
+name = "MSI_socialist_99"
+start_date = 1848.1.1
+end_date = 99999.1.1
 ideology = socialist
 economic_policy = state_capitalism
 trade_policy = protectionism
@@ -64,9 +57,9 @@ citizenship_policy = limited_citizenship
 war_policy = pro_military
 }
 party = {
-name = "MAS_reactionary_84"
-start_date = 1700.1.1
-end_date = 2000.1.1
+name = "MSI_reactionary_84"
+start_date = 1600.1.1
+end_date = 99999.1.1
 ideology = reactionary
 economic_policy = state_capitalism
 trade_policy = protectionism
@@ -75,9 +68,9 @@ citizenship_policy = residency
 war_policy = jingoism
 }
 party = {
-name = "MAS_anarcho_liberal_93"
-start_date = 1850.1.1
-end_date = 2000.1.1
+name = "MSI_anarcho_liberal_93"
+start_date = 1628.1.1
+end_date = 99999.1.1
 ideology = anarcho_liberal
 economic_policy = laissez_faire
 trade_policy = free_trade
@@ -86,9 +79,9 @@ citizenship_policy = full_citizenship
 war_policy = pro_military
 }
 party = {
-name = "MAS_communist_86"
-start_date = 1850.1.1
-end_date = 2000.1.1
+name = "MSI_communist_86"
+start_date = 1848.1.1
+end_date = 99999.1.1
 ideology = communist
 economic_policy = planned_economy
 trade_policy = protectionism
@@ -97,9 +90,9 @@ citizenship_policy = full_citizenship
 war_policy = pro_military
 }
 party = {
-name = "MAS_fascist_72"
-start_date = 1850.1.1
-end_date = 2000.1.1
+name = "MSI_fascist_72"
+start_date = 1905.1.1
+end_date = 99999.1.1
 ideology = fascist
 economic_policy = state_capitalism
 trade_policy = protectionism
@@ -119,7 +112,3 @@ clipper_transport = {}
 steam_transport = {}
 commerce_raider = {}
 }
-
-
-#========================= Vic_Nation_Establisher by Diamond.David =========================
-

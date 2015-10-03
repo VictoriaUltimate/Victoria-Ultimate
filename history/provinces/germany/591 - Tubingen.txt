@@ -1,26 +1,19 @@
 owner = HRE
 controller = HRE
-add_core = WUR
-add_core = HRE
 add_core = GER
-
-1604.1.1 = { 
-	owner = WUR
-	controller = WUR
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1800.1.1 = { 
-		controller = WUR
-		owner = WUR
-		}
-1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
+add_core = HRE
+add_core = WUR
 trade_goods = grain
 life_rating = 40
+
+1604.8.31 = { 
+owner = WUR
+controller = WUR
+}
+1647.1.1 = { controller = FRA }
+1649.1.1 = { controller = WUR }
+1806.8.6 = { remove_core = HRE }
+1871.1.1 = { 
+owner = GER		
+controller = GER
+}

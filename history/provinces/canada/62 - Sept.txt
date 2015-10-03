@@ -1,3 +1,6 @@
+owner = WYA
+controller = WYA
+add_core = WYA
 trade_goods = fish
 life_rating = 30
 

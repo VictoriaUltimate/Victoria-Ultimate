@@ -1,16 +1,20 @@
 owner = SPA
 controller = SPA
-add_core = SAR
-add_core = SRD
 add_core = ITA
-1714.1.1 = {
-	owner = AUS
-	controller = AUS
-		}
-1724.1.1 = {
+add_core = SRD
+trade_goods = grain
+life_rating = 35
+
+1708.8.15 = { controller = AUS }
+1713.4.11 = { owner = AUS }
+1717.10.30 = { controller = SPA }
+1720.8.24 = {
 owner = SAR
 controller = SAR
-		}
+add_core = SAR
+}
+
+
 1800.1.1 = {
 owner = SRD
 controller = SRD
@@ -19,8 +23,6 @@ controller = SRD
 owner = SAR
 controller = SAR
 		}
-trade_goods = grain
-life_rating = 35
 1861.1.1 = {
 	controller = ITA
 	owner = ITA

@@ -1,3 +1,9 @@
+owner = IRO
+controller = IRO
+add_core = IRO
+trade_goods = grain
+life_rating = 35
+
 1700.1.1 = {
 owner = FRA
 controller = FRA
@@ -18,8 +24,6 @@ colonial = 2
 1820.1.1 = {
 	colonial = 0
 		}
-trade_goods = grain
-life_rating = 35
 1867.1.1 = {
 	owner = USA
 	controller = USA

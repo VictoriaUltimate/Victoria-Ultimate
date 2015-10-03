@@ -1,0 +1,140 @@
+##### Oriental Crisis
+
+## First Turko-Egypt war
+country_event = {
+	id = 1000100
+	title = "EVTNAME1000100" # First Turko-Egyptian War
+	desc = "EVTDESC1000100"
+
+	trigger = {
+		tag = EGY
+		year = 1830
+		vassal_of = TUR
+		NOT = { has_country_flag = first_turkoegypt_war }
+		896 = { NOT = { owned_by = THIS } }
+		894 = { NOT = { owned_by = THIS } }
+		897 = { NOT = { owned_by = THIS } }
+		war = no
+	}
+	mean_time_to_happen = { months = 22 }
+	option = {
+		name = "EVTOPTA1000100"
+		leave_alliance = TUR
+		TUR = {
+			diplomatic_influence = {
+				who = EGY
+				value = -1000
+			}
+			relation = {
+				who = EGY
+				value = -1000
+			}
+			release_vassal = EGY
+		}
+
+		war = { 
+			target = TUR
+			attacker_goal = { casus_belli = acquire_all_cores }
+			defender_goal = { casus_belli = conquest }
+			call_ally = yes
+		}
+		EGY = {
+			define_general = {
+				name = "Ibrahim Pasha"
+				personality = intuitive 
+				background = school_of_firepower
+				experience = 5
+			}
+		set_country_flag = first_turkoegypt_war
+		ai_chance = { factor = 100 }
+		}
+	}
+	options = { name = "EVTOPTB1000100" }
+}
+
+country_event = {
+	id = 1000101
+	title = "EVTNAME1000101" # Peace Agreement of Kütahya
+	desc = "EVTDESC1000101"
+
+	trigger = {
+		tag = EGY
+		year = 1831
+		has_country_flag = first_turkoegypt_war
+		NOT = { has_country_flag = kutahya }
+		war_with = TUR
+		OR = {
+		AND = {
+		894 = { NOT = { controlled_by = TUR } }
+		873 = { NOT = { controlled_by = TUR } }
+		}
+		AND = {
+		926 = { NOT = { controlled_by = TUR } }
+		902 = { NOT = { controlled_by = TUR } }
+		}
+		}
+	}
+	mean_time_to_happen = { months = 4 }
+	option = {
+		name = "EVTOPTA1000101"
+		prestige = 20
+		end_war = TUR
+		896 = { secede_province = EGY }
+		898 = { secede_province = EGY }
+		894 = { secede_province = EGY }
+		897 = { secede_province = EGY }
+		905 = { secede_province = EGY }
+		904 = { secede_province = EGY }
+		903 = { secede_province = EGY }
+		907 = { secede_province = EGY }
+		906 = { secede_province = EGY }
+		902 = { secede_province = EGY }
+		TUR = { create_vassal = EGY }
+		set_country_flag = kutahya
+		ai_chance = { factor = 100 }
+	}
+	options = { name = "EVTOPTB1000101" }
+}
+
+#country_event ={
+#	id = 1000102
+#	title = "Convention of London"
+#	desc = "The european great powers, fearing an unstable balkan, has pressed of for peace and send demands. Do we want to surrender claims in the levant?"
+#
+#	trigger = {
+#	    tag = EGY
+#		year = 1840
+#		NOT = { war_with = TUR }
+#	}
+#	
+#	mean_time_to_happen = { months = 1
+#
+#	option = {
+#		name = "I can't deal with a war with the turks"
+#		prestige = -20
+#		money = -150000
+#		any_owned = {
+#			limit = { owned_by = EGY is_core = TUR }
+#			secede_province = TUR
+#			remove_core = EGY
+#		}
+#	}
+#	option = {
+#		name = "Never!"
+#		prestige = 25
+#		money = 500000
+#		neutrality = yes
+#		neutrality = no
+#		war = {
+#			target = TUR
+#			defender_goals = { casus_belli = conquest }
+#		}
+#		any_pop = { militancy 2 }
+#		FRA = {
+#			diplomatic_influence = {
+#				who = EGY
+#				value = 1000
+#			}
+#		}
+#	}
+#}

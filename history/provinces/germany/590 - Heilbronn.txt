@@ -1,46 +1,26 @@
 owner = HRE
 controller = HRE
-add_core = WUR
-
-add_core = HRE
-
 add_core = GER
-
-1604.1.1 = { 
-	owner = WUR
-	controller = WUR
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1800.1.1 = { 
-	controller = WUR
-		
-		owner = WUR
-		
-		}
-
-
-1836.1.1 = { 
-	controller = WUR
-		
-		owner = WUR
-		
-		}
-
-
-1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
-
-
+add_core = HBR
+add_core = HRE
 trade_goods = fruit
-
 life_rating = 40
 
-
+1604.8.31 = { 
+owner = HBR
+controller = HBR
+}
+1647.1.1 = { controller = FRA }
+1652.1.1 = { controller = HBR }
+1803.2.25 = { 
+owner = WUR
+controller = WUR
+add_core = WUR
+remove_core = HBR
+}
+1806.8.6 = { remove_core = HRE }
 1861.1.1 = { railroad = 3 }
+1871.1.1 = { 
+owner = GER		
+controller = GER
+}

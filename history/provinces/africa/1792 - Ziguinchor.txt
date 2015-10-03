@@ -1,13 +1,26 @@
+add_core = GBU
 trade_goods = grain
-life_rating = 15
-1861.1.1 = {
-	owner = FRA
-	controller = FRA
-	colonial = 2
+life_rating = 35
+
+1645.1.1 = {
+owner = POR
+controller = POR
+colonial = 2
 }
+1888.4.22 = {
+owner = FRA
+controller = FRA
+}
+1905.1.1 = {
 add_core = SNG
-1960.1.1 = {
-	owner = SNG
-	controller = SNG
-	colonial = 0
-		}
+remove_core = GBU
+}
+1959.4.4 = {
+owner = MLI
+controller = MLI
+colonial = 0
+}
+1960.8.40 = {
+owner = SNG
+controller = SNG
+}

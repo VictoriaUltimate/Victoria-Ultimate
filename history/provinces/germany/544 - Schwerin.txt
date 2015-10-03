@@ -6,29 +6,29 @@ add_core = MEC
 trade_goods = grain
 life_rating = 40
 
-1604.8.31 = { 
-	        owner = MEC
-	        controller = MEC
-	        }
+1604.8.31 = {
+owner = MEC
+controller = MEC
+}
 1806.8.6 = { remove_core = HRE }
 1861.1.1 = { railroad = 3 }
 1871.1.1 = { 
-                owner = GER
-	        controller = GER
-		}
+owner = GER
+controller = GER
+}
 #End of WW2
 1945.7.1 = {
-	        owner = RUS
-	        controller = RUS
-		}
+owner = RUS
+controller = RUS
+}
 1949.10.7 = {
-	        owner = DDR
-	        controller = DDR
-	        add_core = DDR
-		}
+owner = DDR
+controller = DDR
+add_core = DDR
+}
 #Fall of Berlin Wall - Reunification
 1990.10.3 = {
-		owner = GER
-	        controller = GER
-	        remove_core = DDR
-		}
+owner = GER
+controller = GER
+remove_core = DDR
+}

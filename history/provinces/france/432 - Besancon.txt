@@ -1,13 +1,13 @@
 owner = SPA
 controller = SPA
-add_core = FRA
 add_core = HRE
 trade_goods = coal
 life_rating = 30
 
-1700.1.1 = {
-	owner = FRA
-        controller = FRA
-		}
-1806.8.6 = { remove_core = HRE }
+1648.10.24 = { remove_core = HRE }
+1679.1.26 = {
+owner = FRA
+controller = FRA
+add_core = FRA
+}
 1861.1.1 = { railroad = 3 }

@@ -1,31 +1,23 @@
-	owner = MUG
-	controller = MUG
-	add_core = BGL
-
-1700.1.1 = {
-	owner = ENG #hello
-	controller = ENG #hello
-	colonial = 2
-}
-
-
-#Decolonisation
-1947.1.1 = {
-	owner = HND
-	controller = HND
-	colonial = 0
-		}
-
-
-
-
-
+owner = MUG
+controller = MUG
+add_core = BNG
 add_core = HND
-1880.1.1 = {
-owner = ENG #hello
-controller = ENG #hello
-colonial = 2
-		}
 trade_goods = silk
 life_rating = 32
-1861.1.1 = { railroad = 3 }
+
+1717.1.1 = {
+owner = BNG
+controller = BNG
+}
+1760.10.20 = {
+owner = ENG
+controller = ENG
+colonial = 2
+}
+1855.2.1 = { railroad = 3 }
+#Decolonisation
+1947.8.15 = {
+owner = HND
+controller = HND
+colonial = 0
+}

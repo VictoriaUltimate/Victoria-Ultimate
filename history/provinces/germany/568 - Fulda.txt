@@ -1,31 +1,35 @@
 owner = HRE
 controller = HRE
-add_core = HEK
-add_core = HRE
+add_core = FDA
 add_core = GER
-
-1604.1.1 = { 
-	owner = HEK
-	controller = HEK
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1812.1.1 = {
-owner = FRM
-controller = FRM
-		}
-1815.1.1 = {
-		controller = HEK
-		owner = HEK
-		}
-
-1871.1.1 = {
-		controller = GER
-		owner = GER
-		}
+add_core = HRE
 trade_goods = grain
 life_rating = 40
+
+1604.8.31 = { 
+owner = FDA
+controller = FDA
+}
+1803.2.25 = { 
+owner = NET
+controller = NET
+}
+1806.3.15 = { 
+owner = GHB
+controller = GHB
+}
+1806.8.6 = { remove_core = HRE }
+1809.10.14 = {
+owner = FRM
+controller = FRM
+}
+1815.6.9 = {
+owner = HEK
+controller = HEK
+add_core = HEK
+remove_core = FDA
+}
+1871.1.1 = {
+owner = GER
+controller = GER
+}

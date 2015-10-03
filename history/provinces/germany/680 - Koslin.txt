@@ -1,18 +1,15 @@
 owner = HRE
 controller = HRE
-add_core = PMR
 add_core = GER
 add_core = HRE
+add_core = PMR
+trade_goods = grain
+life_rating = 40
 
-1604.1.1 = { 
-	owner = PMR
-	controller = PMR
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
+1604.8.31 = { 
+owner = PMR
+controller = PMR
+}
 
 1700.1.1 = {
 	controller = PRU
@@ -24,8 +21,6 @@ add_core = HRE
 		owner = GER
 		}
 
-trade_goods = grain
-life_rating = 40
 1861.1.1 = { railroad = 3 }
 
 #End of WW2

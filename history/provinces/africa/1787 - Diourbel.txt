@@ -1,15 +1,24 @@
+owner = WOL
+controller = WOL
+add_core = WOL
 trade_goods = grain
-life_rating = 15
+life_rating = 35
 
 1903.1.1 = {
-		owner = FRA
-		controller = FRA
-		colonial = 2
-		}
-
+owner = FRA
+controller = FRA
+colonial = 2
+}
+1905.1.1 = {
 add_core = SNG
-1960.1.1 = {
-	owner = SNG
-	controller = SNG
-	colonial = 0
-		}
+remove_core = WOL
+}
+1959.4.4 = {
+owner = MLI
+controller = MLI
+colonial = 0
+}
+1960.8.40 = {
+owner = SNG
+controller = SNG
+}

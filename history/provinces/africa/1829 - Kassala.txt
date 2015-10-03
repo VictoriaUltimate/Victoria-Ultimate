@@ -1,9 +1,9 @@
-owner = TUR
-controller = TUR
-1810.1.1 = {
 owner = EGY
 controller = EGY
-		}
+add_core = EGY
+trade_goods = tropical_wood
+life_rating = 32
+
 #Rubber discovered!
 1880.1.1 = {
 	trade_goods = rubber
@@ -20,7 +20,3 @@ controller = EGY
 	colonial = 0
 		}
 
-
-add_core = EGY
-trade_goods = tropical_wood
-life_rating = 30

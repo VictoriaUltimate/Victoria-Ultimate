@@ -7,34 +7,34 @@ trade_goods = fish
 life_rating = 40
 
 1604.8.31 = { 
-	owner = PMR
-	controller = PMR
-	}
+owner = PMR
+controller = PMR
+}
 1637.3.10 = { add_core = BDB }
 1701.1.18 = {
-        add_core = PRU
-        remove_core = BDB
-                }
+add_core = PRU
+remove_core = BDB
+}
 1806.8.6 = { remove_core = HRE }
-1815.7.9 = { 
-	owner = PRU
-	controller = PRU
-		}
+1815.6.9 = { 
+owner = PRU
+controller = PRU
+}
 1871.1.1 = { 
-	owner = GER
-        controller = GER
-		}
+owner = GER
+controller = GER
+}
 #End of WW2
 1945.4.25 = { controller = RUS }
 1945.5.8 = { owner = RUS }
 1949.10.7 = {
-	owner = DDR
-	controller = DDR
-	add_core = DDR
-		}
+owner = DDR
+controller = DDR
+add_core = DDR
+}
 #Fall of Berlin Wall - Reunification
 1990.10.3 = {
-        owner = GER
-	controller = GER
-	remove_core = DDR
-		}
+owner = GER
+controller = GER
+remove_core = DDR
+}

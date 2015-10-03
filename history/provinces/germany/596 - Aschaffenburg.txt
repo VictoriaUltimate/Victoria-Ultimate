@@ -1,33 +1,29 @@
 owner = HRE
 controller = HRE
-add_core = WUZ
+add_core = GER
 add_core = HRE
+add_core = MNZ
 
-1604.1.1 = { 
-	owner = WUZ
-	controller = WUZ
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1812.1.1 = {
+1604.8.31 = { 
+owner = MNZ
+controller = MNZ
+}
+#1803.2.25 = Principality of Aschaffenburg
+1806.8.6 = { remove_core = HRE }
+1810.1.1 = {
 owner = FRM
 controller = FRM
-		}
-1815.1.1 = {
+add_core = FRM
+remove_core = MNZ
+}
+1815.6.9 = {
 owner = BAV
 controller = BAV
 add_core = BAV
-		}
-
-add_core = GER
-1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
-trade_goods = grain
-life_rating = 40
+remove_core = FRM
+}
 1861.1.1 = { railroad = 3 }
+1871.1.1 = { 
+owner = GER		
+controller = GER
+}

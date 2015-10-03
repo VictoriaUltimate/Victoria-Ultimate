@@ -1,3 +1,6 @@
+owner = WYA
+controller = WYA
+add_core = WYA
 trade_goods = cattle
 life_rating = 30
 

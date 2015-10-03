@@ -5,9 +5,9 @@ life_rating = 35
 colonial = 2
 
 
-add_core = GUB
+add_core = GBU
 1960.1.1 = {
-	owner = GUB
-	controller = GUB
+	owner = GBU
+	controller = GBU
 	colonial = 0
 		}

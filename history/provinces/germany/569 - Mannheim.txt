@@ -1,37 +1,24 @@
 owner = HRE
 controller = HRE
-add_core = BAD
-
-add_core = HRE
-
 add_core = GER
-
-1604.1.1 = { 
-	owner = BAD
-	controller = BAD
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1812.1.1 = { 
-	controller = BAD
-		
-		owner = BAD
-		
-		}
-
-
-1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
-
+add_core = HRE
+add_core = PLT
 trade_goods = grain
-
 life_rating = 40
 
-
+1604.8.31 = { 
+owner = PLT
+controller = PLT
+}
+1803.2.25 = {
+owner = BAD
+controller = BAD
+add_core = BAD
+remove_core = PLT
+}
+1806.8.6 = { remove_core = HRE }
 1861.1.1 = { railroad = 3 }
+1871.1.1 = {
+owner = GER
+controller = GER
+}

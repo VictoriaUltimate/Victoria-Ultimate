@@ -7,33 +7,34 @@ trade_goods = cattle
 life_rating = 40
 
 1604.8.31 = { 
-	        owner = BRE
-	        controller = BRE
-	}
+owner = BRE
+controller = BRE
+}
 1648.10.24 = { 
-	        owner = VER
-	        controller = VER
-	}
+owner = VER
+controller = VER
+}
 1712.9.7 = { controller = DEN }
 1719.11.9 = {
-                owner = HAN
-                controller = HAN
-                add_core = HAN
-		}
+owner = HAN
+controller = HAN
+add_core = HAN
+remove_core = BRE
+}
 1806.8.6 = { remove_core = HRE }
 1807.7.9 = {
-        owner = WES
-        controller = WES
-		}
+owner = WES
+controller = WES
+}
 1811.1.1 = {
-        owner = FRA
-        controller = FRA
-		}
-1815.7.9 = {
-        owner = HAN
-        controller = HAN
-		}
+owner = FRA
+controller = FRA
+}
+1815.6.9 = {
+owner = HAN
+controller = HAN
+}
 1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
+owner = GER		
+controller = GER
+}

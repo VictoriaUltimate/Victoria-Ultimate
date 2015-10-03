@@ -1,41 +1,25 @@
 owner = GWD
 controller = GWD
 add_core = GWD
+add_core = HND
 trade_goods = dye
 life_rating = 32
 
-1700.1.1 = {
-	owner = MUG
-	controller = MUG
-	add_core = MUG
-		}
-1763.1.1 = {
-	owner = MRT
-	controller = MRT
-	add_core = MRT
-	remove_core = MUG
-		}
-1818.1.1 = {
+1743.1.1 = {
 owner = NAG
 controller = NAG
 add_core = NAG
 remove_core = GWD
-remove_core = MRT
-		}
-#Decolonisation
-1947.1.1 = {
-	owner = HND
-	controller = HND
-	add_core = HND
-	colonial = 0
-		}
-1880.1.1 = {
-owner = ENG #hello
-controller = ENG #hello
+}
+1853.12.11 = {
+owner = ENG
+controller = ENG
+remove_core = NAG
 colonial = 2
-		}
-1861.1.1 = {
-	owner = ENG #hello
-	controller = ENG #hello
-	colonial = 2
+}
+#Decolonisation
+1947.8.15 = {
+owner = HND
+controller = HND
+colonial = 0
 }

@@ -1,4 +1,7 @@
-trade_goods = timber
+owner = WYA
+controller = WYA
+add_core = WYA
+trade_goods = cattle
 life_rating = 25
 
 1700.1.1 = {

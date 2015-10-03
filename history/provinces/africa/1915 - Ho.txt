@@ -1,4 +1,5 @@
-
+trade_goods = cattle
+life_rating = 15
 
 1903.1.1 = {
 		owner = ENG
@@ -17,8 +18,7 @@
 		}
 
 
-trade_goods = cattle
-life_rating = 15
+
 add_core = GHA
 1960.1.1 = {
 	owner = GHA

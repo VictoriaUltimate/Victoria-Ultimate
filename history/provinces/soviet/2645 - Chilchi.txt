@@ -1,7 +1,8 @@
+trade_goods = coal
+life_rating = 20
+
 1700.1.1 = {
 owner = RUS
 controller = RUS
 add_core = RUS
 		}
-trade_goods = coal
-life_rating = 35

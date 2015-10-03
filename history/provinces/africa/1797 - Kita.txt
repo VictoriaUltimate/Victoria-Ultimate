@@ -1,16 +1,26 @@
+owner = MLI
+controller = MLI
 trade_goods = fruit
-life_rating = 15
+life_rating = 32
 
+1660.1.1  = {
+owner = SEG
+controller = SEG
+add_core = SEG
+}
+1818.1.1  = { add_core = MAS }
 1903.1.1 = {
-		owner = FRA
-		controller = FRA
-		colonial = 2
-		}
-1910.1.1 = {
-	add_core = MLI
-		}
-1960.1.1 = {
-	owner = MLI
-	controller = MLI
-	colonial = 0
-		}
+owner = FRA
+controller = FRA
+colonial = 2
+}
+1905.1.1 = {
+add_core = MLI
+remove_core = MAS
+remove_core = SEG
+}
+1959.4.4 = {
+owner = MLI
+controller = MLI
+colonial = 0
+}

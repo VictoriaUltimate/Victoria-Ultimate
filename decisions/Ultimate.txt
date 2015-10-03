@@ -7,18 +7,14 @@ political_decisions = {
 	genocide = {
 	picture = holocaust_pic
 		potential = {
-				government = fascist_dictatorship
-				
-			NOT = {
-				has_country_modifier = commited_genocide
-			}
+			government = fascist_dictatorship	
+			NOT = { has_country_modifier = commited_genocide }
 				}
 			effect = {
 				random = {
 					chance = 40
 					badboy = 20
 					prestige = -25
-
 						}
 			any_pop = {
 				limit = {
@@ -30,9 +26,7 @@ political_decisions = {
 				militancy = 8.0		
 					}
 			any_pop = {
-				limit = {
-				religion = jewish
-						}
+				limit = { religion = jewish }
 				reduce_pop = 0.36
 				consciousness = 8.0
 				militancy = 8.0		
@@ -42,9 +36,8 @@ political_decisions = {
 				is_primary_culture = yes
 				is_accepted_culture = yes
 				pop_majority_ideology = conservative
-				NOT = {
-				religion = jewish }
-						}
+				NOT = { religion = jewish }
+				}
 				consciousness = -2.0
 				militancy = -1.0	
 					}
@@ -53,8 +46,7 @@ political_decisions = {
 				is_primary_culture = yes
 				is_accepted_culture = yes
 				pop_majority_ideology = reactionary
-				NOT = {
-				religion = jewish }
+				NOT = { religion = jewish }
 						}
 				consciousness = -4.0
 				militancy = -3.0	
@@ -64,8 +56,7 @@ political_decisions = {
 				is_primary_culture = yes
 				is_accepted_culture = yes
 				pop_majority_ideology = fascist
-				NOT = {
-				pop_majority_religion = jewish }
+				NOT = { pop_majority_religion = jewish }
 						}
 				consciousness = -5.0
 				militancy = -4.0	
@@ -118,43 +109,32 @@ political_decisions = {
 	picture = commie_purge_pic
 		potential = {
 				government = proletarian_dictatorship
-				NOT = {
-				has_country_modifier = commie_purged
-					}
+				NOT = { has_country_modifier = commie_purged }
 				}
 			effect = {
 				random = {
 					chance = 40
 					badboy = 20
 					prestige = -25
-
 						}
 			any_pop = {
-				limit = {
-				strata = rich
-						}
+				limit = { strata = rich }
 				reduce_pop = 0.1
 				consciousness = 8.0
 				militancy = 8.0			
 					}
 			any_pop = {
-				limit = {
-				pop_majority_ideology = communist
-						}
+				limit = { pop_majority_ideology = communist }
 				consciousness = -4.0
 				militancy = -3.0
 					}
 			any_pop = {
-				limit = {
-				pop_majority_ideology = socialist
-						}
+				limit = { pop_majority_ideology = socialist }
 				consciousness = -4.0
 				militancy = -3.0
 					}
 			any_pop = {
-				limit = {
-				pop_majority_ideology = anarcho_liberal
-						}
+				limit = { pop_majority_ideology = anarcho_liberal }
 				consciousness = -4.0
 				militancy = -3.0
 					}
@@ -186,7 +166,6 @@ political_decisions = {
 					name = does_uhe
 					duration = 3650
 							}
-						
 			}
 	}
 ####CAPITAL MONUMENTS####
@@ -200,16 +179,12 @@ political_decisions = {
 		
 		potential = {
 			year = 1834
-			NOT = {
-		has_global_flag = the_eiffel_tower_was_built
-			}
+			NOT = { has_global_flag = the_eiffel_tower_was_built }
 			owns = 425
 			has_country_flag = world_fair_planner
 				}
 
-		allow = {
-		advanced_metallurgy = 1
-				}
+		allow = { advanced_metallurgy = 1 }
 
 		effect = {
 			425 = { set_province_flag = eiffeltower }
@@ -232,9 +207,7 @@ political_decisions = {
 		
 		potential = {
 			year = 1834
-			NOT = {
-		has_global_flag = bigben_has_been_built
-			}
+			NOT = { has_global_flag = bigben_has_been_built }
 			owns = 300
 		}
 		allow = {
@@ -267,41 +240,34 @@ political_decisions = {
 			prestige = 5
 			clr_country_flag = gandhi_imprisoned
 					}
-
 			}
 
 	form_british_commonwealth = {
 	picture = britcommonwealth
 		potential = {
 			has_global_flag = ImpossibleFlag
-			NOT = {
-			has_global_flag = formedgreaterbritishempire }
+			NOT = { has_global_flag = formedgreaterbritishempire }
 			OR = {
 			government = democracy
 			government = hms_government }
 			tag = ENG
 				}
 
-		allow = {
-		globalisation = 1
-				}
+		allow = { globalisation = 1 }
 
 		effect = {
 			set_global_flag = formedgreaterbritishempire
-			change_tag	 = BRC					
-			BRC = {
-			inherit = ENG }
+			change_tag = BRC					
+			BRC = { inherit = ENG }
 			nationalvalue = nv_equality
 			prestige = 50
 					}
-
 			}
 
 	form_british_federation = {
 	picture = britfed
 		potential = {
-			NOT = {
-			has_global_flag = formedgreaterbritishempire }
+			NOT = { has_global_flag = formedgreaterbritishempire }
 			tag = ENG
 				}
 
@@ -319,28 +285,17 @@ political_decisions = {
 		effect = {
 			set_global_flag = formedgreaterbritishempire
 			change_tag	= BRI	
-			AST = {
-			all_core = {
-			add_core = BRI }
-				}
-			CAN = {
-			all_core = {
-			add_core = BRI }
-				}
-			NZL = {
-			all_core = {
-			add_core = BRI }
-				}
-			SAF = {
-			all_core = {
-			add_core = BRI }	
-				}		
+			AST = { all_core = { add_core = BRI } }
+			CAN = { all_core = { add_core = BRI } }
+			NZL = { all_core = { add_core = BRI } }
+			SAF = { all_core = { add_core = BRI } }		
 			BRI = {
 			inherit = ENG
 			inherit = SAF
 			inherit = CAN
 			inherit = AST
-			inherit = NZL	}
+			inherit = NZL
+			}
 			add_accepted_culture = boer
 			prestige = 50
 
@@ -417,14 +372,8 @@ political_decisions = {
 
 	leave_british_commonwealth = {
 	picture = commonwealth
-		potential = {
-		has_country_modifier = british_commonwealthmember
-				}
-	allow = {
-		not = {
-		relation = { who = ENG value = 0 }
-			}
-		}
+		potential = { has_country_modifier = british_commonwealthmember }
+	allow = { NOT = { relation = { who = ENG value = 0 } } }
 
 		effect = {
 			add_country_modifier = {
@@ -437,9 +386,7 @@ political_decisions = {
 				who = ENG
 				value = -50
 					}
-		ENG = {
-			prestige = -5
-			}
+		ENG = { prestige = -5 }
 			}
 }
 
@@ -449,9 +396,8 @@ political_decisions = {
 			year = 1946
 			capital_scope = { continent = europe }
 			is_greater_power = yes
+			NOT = { exists = EUR}
 				}
-
-	
 	allow = {
 		owns = 425
 		owns = 549
@@ -461,7 +407,6 @@ political_decisions = {
 		owns = 625
 		owns = 619
 			}
-	
 	effect = {
 		change_tag = EUR
 		any_country = {
@@ -487,10 +432,7 @@ political_decisions = {
 					}
 						}
 					}
-				country_event = 200073
-			
 						}
-			
 			}
 	}
 

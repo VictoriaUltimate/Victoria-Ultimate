@@ -6,7 +6,6 @@ bookmark =
 	cameraX = 2950 
 	cameraY = 1550
 }
-
 bookmark =
 {
 	name = "GCHRE_NAME"
@@ -15,7 +14,6 @@ bookmark =
 	cameraX = 2950 
 	cameraY = 1550
 }
-
 bookmark =
 {
 	name = "GC_NAME"
@@ -24,16 +22,14 @@ bookmark =
 	cameraX = 2950 
 	cameraY = 1550
 }
-
 bookmark =
 {
 	name = "BM_EMPNAME"
 	desc = "BM_EMPDESC"
-	date = 1714.1.1
+	date = 1714.9.8
 	cameraX = 2950 
 	cameraY = 1550
 }
-
 bookmark =
 {
 	name = "AMWI_NAME"
@@ -42,7 +38,6 @@ bookmark =
 	cameraX = 1400 
 	cameraY = 1600
 }
-
 bookmark =
 {
 	name = "BM_NAPONAME"
@@ -51,7 +46,6 @@ bookmark =
 	cameraX = 2950 
 	cameraY = 1550
 }
-
 bookmark =
 {
 	name = "NAPEUR_NAME"
@@ -60,7 +54,6 @@ bookmark =
 	cameraX = 2950 
 	cameraY = 1550
 }
-
 bookmark =
 {
 	name = "VICERA_NAME"
@@ -69,7 +62,6 @@ bookmark =
 	cameraX = 2950 
 	cameraY = 1550
 }
-
 bookmark =
 {
 	name = "ACW_NAME"
@@ -78,7 +70,6 @@ bookmark =
 	cameraX = 1270 
 	cameraY = 1450
 }
-
 bookmark =
 {
 	name = "WW1_NAME"
@@ -87,7 +78,6 @@ bookmark =
 	cameraX = 2950 
 	cameraY = 1550
 }
-
 bookmark =
 {
 	name = "WW2_NAME"
@@ -96,7 +86,6 @@ bookmark =
 	cameraX = 3000 
 	cameraY = 1600
 }
-
 bookmark =
 {
 	name = "CWB_NAME"
@@ -105,7 +94,6 @@ bookmark =
 	cameraX = 3000 
 	cameraY = 1600
 }
-
 bookmark =
 {
 	name = "MOD_NAME"
@@ -114,7 +102,6 @@ bookmark =
 	cameraX = 1400 
 	cameraY = 1600
 }
-
 bookmark =
 {
 	name = "FUT_NAME"

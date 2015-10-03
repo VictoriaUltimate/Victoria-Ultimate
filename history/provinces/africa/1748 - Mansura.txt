@@ -1,9 +1,8 @@
-owner = TUR
-controller = TUR
-add_core = EGY
-1810.1.1 = {
 owner = EGY
 controller = EGY
-		}
+add_core = EGY
 trade_goods = fruit
-life_rating = 35
+life_rating = 40
+
+1798.7.25 = { controller = FRA }
+1801.6.18 = { controller = EGY }

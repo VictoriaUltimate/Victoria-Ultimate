@@ -1,36 +1,29 @@
 owner = HRE
 controller = HRE
-add_core = CLG
-add_core = MUN
+add_core = DRT
 add_core = GER
 add_core = HRE
-
-1604.1.1 = { 
-	owner = CLG
-	controller = CLG
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1812.1.1 = {
-owner = GHB
-controller = GHB
-add_core = GHB
-		}
-1815.1.1 = {
-	owner = PRU
-	controller = PRU
-	add_core = PRU
-	add_core = WES
-		}
-
-1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
 trade_goods = coal
 life_rating = 40
+
+1604.8.31 = { 
+owner = DRT
+controller = DRT
+}
+1806.8.6 = { remove_core = HRE }
+1806.3.15 = {
+owner = GHB
+controller = GHB
+}
+1813.10.19 = {
+owner = PRU
+controller = PRU
+add_core = PRU
+add_core = WES
+remove_core = DRT
+}
 1861.1.1 = { railroad = 3 }
+1871.1.1 = { 
+owner = GER		
+controller = GER
+}

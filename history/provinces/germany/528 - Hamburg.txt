@@ -1,40 +1,30 @@
 owner = HRE
 controller = HRE
-add_core = HAM
-
-add_core = DEN
-
-add_core = HRE
-
 add_core = GER
+add_core = HAM
+add_core = HRE
 naval_base = 1
 trade_goods = fruit
-
 life_rating = 40
 
-
 1604.8.31 = { 
-	owner = HAM
-	controller = HAM
-	}
+owner = HAM
+controller = HAM
+}
+1626.1.1 = { fort = 1 }
 1806.8.6 = { remove_core = HRE }
-1812.1.1 = {
-		controller = FRA
-		owner = FRA
-		}
-1815.1.1 = { 
-	controller = HAM
-		
-		owner = HAM
-		
-		}
+1811.1.1 = {
+owner = FRA	
+controller = FRA
+owner = FRA
+}
+1815.6.9 = { 
+owner = HAM	
+controller = HAM
+}
 1861.1.1 = { railroad = 3 }
-
 1871.1.1 = { 
-		controller = GER
-		owner = GER
-		add_core = GER
-		}
-1936.1.1 = {
-		naval_base = 6
-		}
+owner = GER	
+controller = GER
+}
+1936.1.1 = { naval_base = 6 }

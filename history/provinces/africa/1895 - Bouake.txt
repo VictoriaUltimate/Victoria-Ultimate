@@ -1,4 +1,8 @@
-
+owner = KNG
+controller = KNG
+add_core = KNG
+trade_goods = grain
+life_rating = 35
 
 1903.1.1 = {
 		owner = FRA
@@ -7,8 +11,6 @@
 		}
 
 
-trade_goods = grain
-life_rating = 15
 
 add_core = IVC
 1960.1.1 = {

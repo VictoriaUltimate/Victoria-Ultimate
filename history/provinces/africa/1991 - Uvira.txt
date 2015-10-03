@@ -1,4 +1,5 @@
-
+trade_goods = fruit
+life_rating = 10
 
 1903.1.1 = {
 		owner = BEL
@@ -15,5 +16,3 @@
 		colonial = 0
 		}
 
-trade_goods = fruit
-life_rating = 15

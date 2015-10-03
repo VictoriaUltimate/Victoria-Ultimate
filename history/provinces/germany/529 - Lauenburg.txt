@@ -1,29 +1,29 @@
 owner = HRE
 controller = HRE
-add_core = HRE
 add_core = GER
+add_core = HRE
+add_core = SXL
 trade_goods = grain
 life_rating = 40
 
 1604.8.31 = {
-	owner = SXL
-	controller = SXL
-	add_core = SXL
-		}
+owner = SXL
+controller = SXL
+}
 1806.8.6 = { remove_core = HRE }
 1811.1.1 = {
-		owner = FRA
-		controller = FRA
-		}
+owner = FRA
+controller = FRA
+}
 1813.10.19 = {
-                owner = SXL
-		controller = SXL
-                }
+owner = SXL
+controller = SXL
+}
 1851.10.16 = { railroad = 1 }
 1876.7.1 = { 
-		controller = GER
-		owner = GER
-		add_core = HOL
-		remove_core = SXL
-		}
+owner = GER
+controller = GER
+add_core = HOL
+remove_core = SXL
+}
 1899.4.1 = { railroad = 3 }

@@ -1,5 +1,8 @@
 owner = TUR
 controller = TUR
+trade_goods = fruit
+life_rating = 32
+
 1810.1.1 = {
 owner = EGY
 controller = EGY
@@ -26,7 +29,3 @@ controller = EGY
 	colonial = 0
 
 		}
-
-add_core = EGY
-trade_goods = fruit
-life_rating = 30

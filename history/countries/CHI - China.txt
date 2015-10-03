@@ -930,7 +930,10 @@ secret_of_atom = 1 #until this for 1945
 
 1979.1.1 = { decision = economic_reforms }
 
-1990.11.26 = { ruling_party = CHI_socialist }
+1990.11.26 = { 
+government = socialist_republic
+ruling_party = CHI_socialist
+}
 	
 1999.1.1 = {
 

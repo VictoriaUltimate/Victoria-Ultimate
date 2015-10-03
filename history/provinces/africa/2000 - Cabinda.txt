@@ -1,4 +1,8 @@
-
+owner = KON
+controller = KON
+add_core = KON
+trade_goods = fruit
+life_rating = 35
 
 1903.1.1 = {
 		owner = POR
@@ -7,8 +11,7 @@
 		}
 
 
-trade_goods = fruit
-life_rating = 15
+
 
 1910.1.1 = {
 	add_core = ANG

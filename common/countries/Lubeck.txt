@@ -3,7 +3,7 @@ graphical_culture = EuropeanGC
 
 party = {
 	name = "LUB_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = liberal
@@ -14,7 +14,6 @@ party = {
 	citizenship_policy = limited_citizenship
 	war_policy = anti_military
 }
-
 party = {
 	name = "LUB_conservative"
 	start_date = 1878.1.1
@@ -28,7 +27,6 @@ party = {
 	citizenship_policy = limited_citizenship
 	war_policy = anti_military
 }
-
 party = {
 	name = "LUB_liberal_2"
 	start_date = 1861.1.1
@@ -42,7 +40,6 @@ party = {
 	citizenship_policy = limited_citizenship
 	war_policy = jingoism
 }
-
 party = {
 	name = "LUB_liberal_3"
 	start_date = 1861.1.1
@@ -56,7 +53,6 @@ party = {
 	citizenship_policy = limited_citizenship
 	war_policy = pro_military
 }
-
 party = {
 	name = "LUB_socialist"
 	start_date = 1860.1.1
@@ -70,7 +66,6 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = anti_military
 }
-
 party = {
 	name = "LUB_socialist_2"
 	start_date = 1848.1.1
@@ -84,7 +79,6 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = anti_military
 }
-
 party = {
 	name = "LUB_socialist_3"
 	start_date = 1875.1.1
@@ -98,7 +92,6 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = anti_military
 }
-
 party = {
 	name = "LUB_reactionary"
 	start_date = 1600.1.1
@@ -112,7 +105,6 @@ party = {
 	citizenship_policy = residency
 	war_policy = jingoism
 }
-
 party = {
 	name = "LUB_conservative_2"
 	start_date = 1600.1.1
@@ -126,7 +118,6 @@ party = {
 	citizenship_policy = residency
 	war_policy = jingoism
 }
-
 party = {
 	name = "LUB_conservative_3"
 	start_date = 1878.1.1
@@ -140,10 +131,9 @@ party = {
 	citizenship_policy = residency
 	war_policy = pro_military
 }
-
 party = {
 	name = "LUB_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -154,7 +144,6 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = pro_military
 }
-
 party = {
 	name = "LUB_communist"
 	start_date = 1848.1.1
@@ -168,7 +157,6 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = pro_military
 }
-
 party = {
 	name = "LUB_fascist"
 	start_date = 1905.1.1
@@ -182,7 +170,6 @@ party = {
 	citizenship_policy = residency
 	war_policy = jingoism
 }
-
 unit_names = {
 	dreadnought = {
 		Lübeck Hansa Vulkan Großvogtei Schwartau Travemünde "Von Evers" Gaedertz Gütschow Overbeck Tesdorpf Wildtfanck "Johann Brokes" 
@@ -220,12 +207,8 @@ unit_names = {
 		"Adler von Lübeck" "Königin der Hanse" "Berend Bomhover" "Johann Brokes" "Friedrich Knebel" "Johann Lüneburg" "Hermann Messmann" "Hermann Plönnies" "Simon Swerting" 
 		"Bartholomeus Tinnappel" "Bruno von Warendorp"
 	}
-	clipper_transport = {
-		
-	}
-	steam_transport = {
-		
-	}
+	clipper_transport = {}
+	steam_transport = {}
 	commerce_raider = {
 		Lübeck Hansa Vulkan Großvogtei Schwartau Travemünde "Von Evers" Gaedertz Gütschow Overbeck Tesdorpf Wildtfanck "Johann Brokes" 
 		"Egmont von Chasôt" "Hermann Korner" Eschenburg Bornhöved Wittenborg "Hinrich Westhof" "Tidemann Steen"

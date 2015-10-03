@@ -7,26 +7,26 @@ trade_goods = grain
 life_rating = 40
 
 1604.8.31 = { 
-	owner = BRA
-	controller = BRA
-	}
+owner = BRA
+controller = BRA
+}
 1635.5.30 = {
-        owner = HAN
-	controller = HAN
-        add_core = HAN
-        remove_core = BRA
-                }
+owner = HAN
+controller = HAN
+add_core = HAN
+remove_core = BRA
+}
 1806.8.6 = { remove_core = HRE }
 1807.7.9 = {
-        owner = WES
-        controller = WES
-		}
-1815.7.9 = {
-        owner = HAN
-        controller = HAN
-		}
+owner = WES
+controller = WES
+}
+1815.6.9 = {
+owner = HAN
+controller = HAN
+}
 1861.1.1 = { railroad = 3 }
 1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
+owner = GER
+controller = GER
+}

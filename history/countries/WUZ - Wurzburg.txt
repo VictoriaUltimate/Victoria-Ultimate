@@ -1,12 +1,11 @@
 capital = 597
 primary_culture = south_german
 religion = catholic
-government = absolute_monarchy
-plurality = 25.0
+government = theocracy
+plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.8
+literacy = 0.08
 civilized = yes
-prestige = 5
 
 # Political reforms
 slavery = no_slavery
@@ -30,9 +29,9 @@ school_reforms = no_schools
 ruling_party = WUZ_conservative
 upper_house = {
 	fascist = 0
-	liberal = 32
-	conservative = 58
-	reactionary = 10
+	liberal = 0
+	conservative = 100
+	reactionary = 0
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
@@ -421,7 +420,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
                 }
-
+1805.12.26 = { absolute_monarchy }
 
 1830.1.1 = {
 # Technologies

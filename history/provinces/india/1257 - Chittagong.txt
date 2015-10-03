@@ -1,6 +1,6 @@
 	owner = MUG
 	controller = MUG
-	add_core = BGL
+	add_core = BNG
 
 1750.1.1 = {
 	owner = ENG #hello
@@ -17,9 +17,9 @@
 		}
 
 1971.1.1 = {
-	owner = BGL
-	controller = BGL
-	add_core = BGL
+	owner = BNG
+	controller = BNG
+	add_core = BNG
 	remove_core = PAK
 	colonial = 0
 		}

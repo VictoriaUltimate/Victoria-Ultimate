@@ -1,25 +1,32 @@
-owner = MDR
-controller = MDR
-add_core = MDR
+owner = VIJ
+controller = VIJ
+add_core = HND
+add_core = VIJ
+trade_goods = spices
+life_rating = 32
 
-1650.1.1 = {
+1638.1.1 = {
+owner = BIJ
+controller = BIJ
+remove_core = VIJ
+}
+1674.1.1 = {
 owner = FRA
 controller = FRA
 colonial = 2
-		}
-add_core = HYD
-
-
+}
+1693.9.7 = { controller = NET }
+1697.9.20 = { controller = FRA }
+1724.7.31 = { add_core = HYD }
+1761.1.16 = { controller = ENG }
+1763.2.10 = { controller = FRA }
+1793.8.23 = { controller = ENG }
+1802.3.25 = { controller = FRA }
+1803.8.1 = { controller = ENG }
+1814.5.30 = { controller = FRA }
 #Decolonisation
-1947.1.1 = {
-	owner = HND
-	controller = HND
-	colonial = 0
-		}
-
-
-
-add_core = HND
-
-trade_goods = spices
-life_rating = 32
+1954.11.1 = {
+owner = HND
+controller = HND
+colonial = 0
+}

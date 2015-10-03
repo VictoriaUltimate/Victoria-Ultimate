@@ -1,14 +1,24 @@
+owner = TBK
+controller = TBK
 trade_goods = wool
 life_rating = 25
 
+1818.1.1  = { add_core = MAS }
+1825.1.1  = { 
+owner = MAS
+controller = MAS
+}
 1903.1.1 = {
-		owner = FRA
-		controller = FRA
-		colonial = 2
-		}
-1910.1.1 = { add_core = MLI }
-1960.1.1 = {
-	owner = MLI
-	controller = MLI
-	colonial = 0
-		}
+owner = FRA
+controller = FRA
+colonial = 2
+}
+1905.1.1 = {
+add_core = MLI
+remove_core = MAS
+}
+1959.4.4 = {
+owner = MLI
+controller = MLI
+colonial = 0
+}

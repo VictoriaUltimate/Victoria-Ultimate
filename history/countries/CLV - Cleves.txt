@@ -1,4 +1,4 @@
-capital = 577
+capital = 578
 primary_culture = north_german
 religion = catholic
 government = absolute_monarchy

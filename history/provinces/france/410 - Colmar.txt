@@ -1,30 +1,30 @@
 owner = HRE
 controller = HRE
-add_core = LOR
-add_core = HRE
+add_core = CLR
 add_core = GER
+add_core = HRE
 trade_goods = sulphur
 life_rating = 30
 
 1604.8.31 = { 
-	owner = LOR
-	controller = LOR
-	}
-1770.1.1 = {
+owner = CLR
+controller = CLR
+}
+1673.8.30 = { controller = FRA }
+1679.1.26 = { 
 owner = FRA
-controller = FRA
+add_core = ALS
 add_core = FRA
-		}
+remove_core = CLR
+}
 1806.8.6 = { remove_core = HRE }
 1861.1.1 = { railroad = 3 }
-1870.1.1 = {
-	owner = GER
-	controller = GER
-		}
-1918.1.1 = {
-		owner = FRA
-	        controller = FRA
-		}
-1936.1.1 = {
-		fort = 6
-		}
+1871.5.10 = {
+owner = GER
+controller = GER
+}
+1918.6.28 = {
+owner = FRA
+controller = FRA
+}
+1936.1.1 = { fort = 6 }

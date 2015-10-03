@@ -1,5 +1,7 @@
+owner = GBU
+controller = GBU
 trade_goods = fruit
-life_rating = 15
+life_rating = 35
 
 1903.1.1 = {
 		owner = FRA

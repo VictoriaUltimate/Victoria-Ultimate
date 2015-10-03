@@ -1,11 +1,10 @@
-owner = TUR
-controller = TUR
-add_core = EGY
-1810.1.1 = {
 owner = EGY
 controller = EGY
-		}
+add_core = EGY
 trade_goods = cotton
-life_rating = 35
 naval_base = 1
-1861.1.1 = { railroad = 2 }
+life_rating = 40
+
+1798.7.2 = { controller = FRA }
+1801.9.2 = { controller = EGY }
+1856.1.1 = { railroad = 2 }

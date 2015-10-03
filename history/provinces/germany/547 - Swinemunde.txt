@@ -7,27 +7,28 @@ trade_goods = fruit
 life_rating = 40
 
 1604.8.31 = { 
-	owner = PMR
-	controller = PMR
-	}
+owner = PMR
+controller = PMR
+}
 1637.3.10 = { add_core = BDB }
 1701.1.18 = {
-        add_core = PRU
-        remove_core = BDB
-                }
+add_core = PRU
+remove_core = BDB
+}
 1720.1.21 = {
-	owner = PRU
-	controller = PRU
-		}
+owner = PRU
+controller = PRU
+}
 1806.8.6 = { remove_core = HRE }
 1871.1.1 = { 
-        owner = GER
-        controller = GER
-		}
+owner = GER
+controller = GER
+}
 #End of WW2
 1945.5.5 = { controller = RUS }
 1945.10.6 = {
-	owner = POL
-	controller = POL
-	add_core = POL
-		}
+owner = POL
+controller = POL
+add_core = POL
+remove_core = GER
+}

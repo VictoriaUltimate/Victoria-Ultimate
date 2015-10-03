@@ -420,6 +420,8 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 		}
+1809.10.14 = { government = absolute_monarchy }
+1815.6.9 = { government = democracy }		
 1830.1.1 = {
 # Technologies
 late_medieval_warfare = 1

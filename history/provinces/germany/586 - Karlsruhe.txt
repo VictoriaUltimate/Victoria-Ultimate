@@ -1,36 +1,23 @@
 owner = HRE
 controller = HRE
 add_core = BAD
-
-add_core = HRE
 add_core = GER
-
-1604.1.1 = { 
-	owner = BAD
-	controller = BAD
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1812.1.1 = {
-		controller = BAD
-		owner = BAD
-		}
-
-1871.1.1 = {
-		controller = GER
-		owner = GER
-		}
-
+add_core = HRE
 trade_goods = fruit
 life_rating = 40
+
+1604.8.31 = { 
+owner = BAD
+controller = BAD
+}
+1806.8.6 = { remove_core = HRE }
 #state_building = {
 #	level = 1
 #	building = lumber_mill
 #	upgrade = yes
 #}
-
 1861.1.1 = { railroad = 3 }
+1871.1.1 = { 
+owner = GER		
+controller = GER
+}

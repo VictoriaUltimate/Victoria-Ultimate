@@ -5,10 +5,6 @@ add_core = HRE
 trade_goods = grain
 life_rating = 32
 
-1714.1.1 = {
-		controller = FRA
-		owner = FRA
-		}
 1806.8.6 = { remove_core = HRE }
 1861.1.1 = { railroad = 3 }
 1936.1.1 = { fort = 6 }

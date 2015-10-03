@@ -7,25 +7,25 @@ trade_goods = coal
 life_rating = 40
 
 1604.8.31 = { 
-	owner = MUN
-	controller = MUN
-	}
+owner = MUN
+controller = MUN
+}
 1803.3.24 = {
-	owner = OLD
-	controller = OLD
-        add_core = OLD
-        remove_core = MUN
-                }
+owner = OLD
+controller = OLD
+add_core = OLD
+remove_core = MUN
+}
 1806.8.6 = { remove_core = HRE }
 1810.12.13 = {
-	owner = FRA
-	controller = FRA
-		}
-1815.7.9 = {
-	owner = OLD
-        controller = OLD
-		}
+owner = FRA
+controller = FRA
+}
+1815.6.9 = {
+owner = OLD
+controller = OLD
+}
 1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
+owner = GER
+controller = GER
+}

@@ -1,11 +1,13 @@
 owner = SPA
 controller = SPA
-add_core = FRA
 add_core = CAT
+add_core = SPA
 trade_goods = grain
 life_rating = 31
 
-1700.1.1 = {
-	owner = FRA
-controller = FRA
-		}
+1642.9.9 = { controller = FRA }
+1659.11.7 = { 
+owner = FRA
+add_core = FRA
+remove_core = SPA
+}

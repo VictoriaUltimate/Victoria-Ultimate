@@ -1,26 +1,24 @@
 owner = HRE
 controller = HRE
-add_core = BAV
-add_core = HRE
 add_core = GER
-
-1604.1.1 = { 
-	owner = BAV
-	controller = BAV
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1714.1.1 = { 
-		controller = BAV
-		owner = BAV
-		}
-1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
+add_core = HRE
+add_core = RGN
 trade_goods = coal
 life_rating = 40
+
+1604.8.31 = { 
+owner = RGN
+controller = RGN
+}
+#1803 Principality of Regensburg
+1806.8.6 = { remove_core = HRE }
+1810.5.22 = { 
+owner = BAV
+controller = BAV
+add_core = BAV
+remove_core = RGN
+}
+1871.1.1 = { 
+owner = GER		
+controller = GER
+}

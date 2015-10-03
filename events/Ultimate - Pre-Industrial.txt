@@ -3375,19 +3375,13 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		year = 1668
-		tag = BGL
-		NOT = {
-			year = 1670
-		}
+		tag = BNG
+		NOT = { year = 1670 }
 	}
-	mean_time_to_happen = {
-		months = 6
-	}
+	mean_time_to_happen = { months = 6 }
 	option = {
 		name = event_option_blast
-		any_pop = {
-			reduce_pop = 0.5
-		}
+		any_pop = { reduce_pop = 0.5 }
 	}
 }
 country_event = {
@@ -5805,19 +5799,13 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		year = 1736
-		tag = BGL
-		NOT = {
-			year = 1738
-		}
+		tag = BNG
+		NOT = { year = 1738 }
 	}
-	mean_time_to_happen = {
-		months = 6
-	}
+	mean_time_to_happen = { months = 6 }
 	option = {
 		name = event_option_blast
-		any_pop = {
-			reduce_pop = 0.85
-		}
+		any_pop = { reduce_pop = 0.85 }
 	}
 }
 country_event = {
