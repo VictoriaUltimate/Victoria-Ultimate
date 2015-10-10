@@ -544,6 +544,10 @@ province_event = {
  			government = democracy
  			government = prussian_constitutionalism
  		}
+ 		NOT = {
+ 			government = proletarian_dictatorship
+ 			year = 1991
+ 		}
  		poor_tax = 75
  		middle_tax = 75
  	}
@@ -568,11 +572,10 @@ province_event = {
  	}
  }
 
-
  country_event = {
  	id = 80005
  	title = "Bolshevik's In Power"
- 	desc = "The Bolsheviks have taken over and have become the center head of the government in Russia."
+ 	desc = "The Bolsheviks have taken over and have become the center head of the government in Russia. As well, many nations in Central Europe have claimed independence."
  	picture = "Police"
 
 	fire_only_once = yes
@@ -580,6 +583,9 @@ province_event = {
  	trigger = {
  		tag = RUS
  		year = 1917
+ 		NOT = {
+ 			year = 1991
+ 		}
  		government = proletarian_dictatorship
  		has_global_flag = bolshevism_uprising
  	}
@@ -597,5 +603,9 @@ province_event = {
 		release = LAT
 		release = EST
 		release = POL
+		release = ROM
+		remove_core = 676
+		remove_core = 677
+		remove_core = 678
  	}
  }
