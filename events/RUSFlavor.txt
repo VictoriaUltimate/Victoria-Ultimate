@@ -527,3 +527,75 @@ province_event = {
 		}
 	}
  }
+
+ country_event = {
+ 	id = 80004
+ 	title = "Bolshevik Revolutions"
+ 	desc = "The Bolsheviks tell the people of Russia of a fair and just society, where all are equal in class and society. They have stirred many of the citizens attention."
+ 	picture = "Police"
+
+	fire_only_once = yes
+
+ 	trigger = {
+ 		tag = RUS
+ 		year = 1916
+ 		OR = {
+ 			government = hms_government
+ 			government = democracy
+ 			government = prussian_constitutionalism
+ 		}
+ 		poor_tax = 75
+ 		middle_tax = 75
+ 	}
+
+ 	mean_time_to_happen =  {
+    	months = 4
+
+    	modifier = {
+    		factor = 0.75 #increase likelihood to happen
+    		year = 1917
+    	}
+    }
+
+ 	option = {
+ 		name = "Well..."
+		set_global_flag = bolshevism_uprising
+
+		add_country_modifier = {
+			name = bolshevism_modifier
+			duration = 1095
+		}
+ 	}
+ }
+
+
+ country_event = {
+ 	id = 80005
+ 	title = "Bolshevik's In Power"
+ 	desc = "The Bolsheviks have taken over and have become the center head of the government in Russia."
+ 	picture = "Police"
+
+	fire_only_once = yes
+
+ 	trigger = {
+ 		tag = RUS
+ 		year = 1917
+ 		government = proletarian_dictatorship
+ 		has_global_flag = bolshevism_uprising
+ 	}
+
+ 	mean_time_to_happen =  {
+    	months = 6
+    }
+
+ 	option = {
+ 		name = "Oh Dear!"
+		clr_global_flag = bolshevism_uprising
+		set_global_flag = bolshevik_government
+
+		release = LIT
+		release = LAT
+		release = EST
+		release = POL
+ 	}
+ }
