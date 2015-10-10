@@ -548,8 +548,6 @@ province_event = {
  			government = proletarian_dictatorship
  			year = 1991
  		}
- 		poor_tax = 75
- 		middle_tax = 75
  	}
 
  	mean_time_to_happen =  {
