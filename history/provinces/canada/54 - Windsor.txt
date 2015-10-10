@@ -17,3 +17,18 @@ add_core = CAN
 		owner = CAN
 		colonial = 0
 		}
+1904.1.1 = {
+	state_building = {
+    	level = 1
+    	building = automobile_factory
+    	upgrade = yes
+    }
+}
+
+1934.1.1 = {
+    state_building = {
+       	level = 1
+       	building = machine_parts_factory
+       	upgrade = yes
+    }
+}
