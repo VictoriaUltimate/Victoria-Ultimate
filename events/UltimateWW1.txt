@@ -132,7 +132,7 @@ country_event = {
 		tag = MEX
 		has_country_flag = zimmermann_recieved
 		NOT = {
-			has_country_flag = zimmermandeliberated
+			has_country_flag = zimmermanndeliberated
 		}
 	}
 
