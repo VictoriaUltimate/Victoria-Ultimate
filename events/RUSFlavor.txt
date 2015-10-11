@@ -543,6 +543,7 @@ province_event = {
  			government = hms_government
  			government = democracy
  			government = prussian_constitutionalism
+ 			government = absolute_monarchy
  		}
  		NOT = {
  			government = proletarian_dictatorship
@@ -589,7 +590,7 @@ province_event = {
  	}
 
  	mean_time_to_happen =  {
-    	months = 6
+    	months = 1
     }
 
  	option = {
@@ -605,5 +606,7 @@ province_event = {
 		remove_core = 676
 		remove_core = 677
 		remove_core = 678
+
+		remove_country_modifier = bolshevism_modifier
  	}
  }

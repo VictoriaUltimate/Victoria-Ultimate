@@ -1689,7 +1689,7 @@ residential_school_system = {
 ### Russia ###
 
 bolshevism_modifier = {
-	global_pop_consciousness_modifier = 0.01
-	global_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.05
+	global_pop_militancy_modifier = 0.03
 	icon = 18
 }
