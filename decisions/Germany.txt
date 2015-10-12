@@ -414,4 +414,86 @@ political_decisions = {
 			set_global_flag = ruhr_boom_has_happened
 		}
 	}
+
+	switch_fascist_government = {
+		potential = {
+			OR = {
+				tag = PRU
+				tag = GER
+			}
+			NOT = {
+				has_global_flag = nazi_leadership
+				government = fascist_dictatorship
+				year = 1950
+			}
+			is_ideology_enabled = fascist
+			year = 1930
+		}
+
+		allow = {
+			prestige = 50
+			upper_house = {
+                ideology = fascist
+            	value = 0.33
+            }
+            ruling_party_ideology = fascist
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = man_of_the_people
+				duration = 3650
+			}
+			set_global_flag = nazi_leadership
+
+			government = fascist_dictatorship
+            political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+		}
+	}
+
+	anschluss = {
+    	potential = {
+    		OR = {
+    			tag = PRU
+    			tag = GER
+    		}
+    		exists = AUS
+    		NOT = {
+    			year = 1950
+    			has_global_flag = nazi_austrian_anschluss
+    		}
+    		has_global_flag = nazi_leadership
+    		year = 1930
+    	}
+
+    	allow = {
+    		prestige = 50
+    		upper_house = {
+       		    ideology = fascist
+            	value = 0.33
+            }
+            ruling_party_ideology = fascist
+            AUS = {
+                upper_house = {
+                ideology = fascist
+                value = 0.33
+                }
+                ruling_party_ideology = fascist
+            }
+    	}
+
+    	effect = {
+    		set_global_flag = nazi_austrian_anschluss
+
+			inherit = AUS
+			badboy = 15
+    	}
+    }
 }

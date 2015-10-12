@@ -365,7 +365,7 @@ closed_country_policy;Closed-Country Policy;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 closed_country_policy_desc;We are stopping anyone from leaving and entering the country.;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 closed_country_policyprovince;Closed-Country Policy;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 code_civil_title;Le Code Civil;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-code_civil_desc;The French civil code was established under NapolÅEEon I in 1804. The code forbade privileges based on birth, allowed freedom of religion, and specified that government jobs should go to the most qualified.;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+code_civil_desc;The French civil code was established under Napol?EEon I in 1804. The code forbade privileges based on birth, allowed freedom of religion, and specified that government jobs should go to the most qualified.;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 colonial_destiny_title;Colonial Destiny;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;
 colonial_destiny_desc;It is the destiny of the Belgian people to civilize the last remaining wilds of the world. To Africa!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;
 colonial_points_title;Colonial Points;;;;;;;;;;;;x,,,,,,,,,,,,;;;;;;;;;;;;;;;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -2167,7 +2167,7 @@ fallout;Fallout;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 fallout_desc;The devastation brought upon us by our enemy's nuclear strike threatens to spread should the wind turn in this foul miasma's favour.;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Five_Year_Plan_title;Five Year Plan;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Five_Year_Plan_desc;A Five Year Plan has been issued to help economic growth.;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-found_quebec_title;Habitation de QuÅebec;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+found_quebec_title;Habitation de Qu?ebec;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 found_quebec_desc;Samuel de Champlain has recently returned from an expedition to the land they call Quebec. He has since then asked the French government to support a new expedition with the goal of establishing a permanent settlement at the mouth of the St. Lawrence river.;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Franceset_Event;Is war a threat?;…tats-Unis;USA;;EE UU;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Franceset_DESC;War might be looming on the horizon, but will it be a global war?;…tats confÈdÈrÈs d'AmÈrique;CSA;;EE CC;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -3230,3 +3230,7 @@ claim_greater_yugoslavia_title;Claim Greater Yugoslavia;;;;;;x;
 claim_greater_yugoslavia_desc;The time has come for our brethren to join us in our endeavor to create a great East Slavic nation where all Slavs can live together in harmony.;;;;;;x;
 official_languages_act_title;Official Languages Act of Canada;;;;;;x;
 official_languages_act_desc;The Official languages Act of 1969 was a federal statute that declared French and English to be the official languages of Canada, and under which all federal institutions must provide their services in English or French.;;;;;;x;
+switch_fascist_government_title;Change Government To Fascist;;;;;;x;
+switch_fascist_government_desc;We, The People, have suffered too much by the hands of our enemies, we need our government to become more powerful in order for our enemies to suffer from our might!;;;;;;x;
+anschluss_title;Anschluss;;;;;;x;
+anschluss_desc;Nazi supporters in Austria want to join with us in order to form a Greater German Empire!;;;;;;x;
