@@ -1,0 +1,377 @@
+country_event = {
+	id = 95000
+	title = "Chinese Civil War"
+	desc = "The Communists led by Mao Zedong demand for a pure Communist State, led by the people, and it is supported by the Soviet Union."
+	picture = "Rebellion"
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = KMT
+		year = 1946
+		NOT = {
+			government = proletarian_dictatorship
+			OR = {
+				has_country_flag = chinese_civil_war
+				has_country_flag = kmt_surrenders
+				has_country_flag = prc_surrenders
+			}
+			exists = CHI
+		}
+		exists = KMT
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "Fight The Rebellion and Kill Off The Traitors!"
+        any_owned = {
+        	1002 = {
+        		secede_province = CHI
+        	}
+        	1553 = {
+        		secede_province = CHI
+        	}
+        	1552 = {
+        		secede_province = CHI
+        	}
+        	1533 = {
+        		secede_province = CHI
+        	}
+        	1480 = {
+        		secede_province = CHI
+        	}
+        	1479 = {
+        		secede_province = CHI
+        	}
+        	1555 = {
+        		secede_province = CHI
+        	}
+        	1554 = {
+        		secede_province = CHI
+        	}
+        	1481 = {
+        		secede_province = CHI
+        	}
+        	1534 = {
+        		secede_province = CHI
+        	}
+        	1613 = {
+        		secede_province = CHI
+        	}
+        	1576 = {
+        		secede_province = CHI
+        	}
+        	1574 = {
+        		secede_province = CHI
+        	}
+        	1612 = {
+        		secede_province = CHI
+        	}
+        	1618 = {
+        		secede_province = CHI
+        	}
+        	1617 = {
+        		secede_province = CHI
+        	}
+        	1615 = {
+        		secede_province = CHI
+        	}
+        	1572 = {
+        		secede_province = CHI
+        	}
+        	1573 = {
+        		secede_province = CHI
+        	}
+        	1575 = {
+        		secede_province = CHI
+        	}
+        	1515 = {
+        		secede_province = CHI
+        	}
+        	1614 = {
+        		secede_province = CHI
+        	}
+        	1570 = {
+        		secede_province = CHI
+        	}
+        	1563 = {
+        		secede_province = CHI
+        	}
+        	1564 = {
+        		secede_province = CHI
+        	}
+        	1616 = {
+        		secede_province = CHI
+        	}
+        }
+        CHI = {
+        	capital = 1612
+        	leadership = 100
+        	government = proletarian_dictatorship
+        	civilized = yes
+        	money = 300000
+        }
+
+        KMT = {
+        	war = {
+        		target = CHI
+        		attacker_goal = {
+        			casus_belli = conquest
+        		}
+        		defender_goal = {
+        			casus_belli = conquest
+        		}
+        	}
+
+        	call_ally = no
+        }
+		set_country_flag = chinese_civil_war
+	}
+}
+
+country_event = {
+	id = 95001
+	title = "Should We Assist the PRC?"
+    desc = "The PRC have begun taking over Mainland China, should we assist them?"
+    picture = "Rebellion"
+
+    	fire_only_once = yes
+
+    	trigger = {
+    		tag = RUS
+    		government = proletarian_dictatorship
+    		year = 1946
+    		KMT = { has_country_flag = chinese_civil_war }
+    		NOT = {
+    			OR = {
+    			has_country_flag = soviets_assisted_prc
+    			has_country_flag = soviets_rejected_prc
+    			}
+    		}
+    		money = 100000
+    	}
+
+    	mean_time_to_happen = {
+    		months = 4
+    	}
+
+    	option = {
+    		name = "Assist the peoples' republic of China!"
+    		set_country_flag = soviets_assisted_prc
+			RUS = {
+				money = -100000
+				diplomatic_influence = {
+                	who = CHI
+                	value = 150
+                }
+                relation = {
+                	who = CHI
+                	value = 200
+                }
+                create_alliance = CHI
+			}
+			CHI = {
+				money = 100000
+			}
+			ai_will_do = { factor = 1 }
+    	}
+
+    	option = {
+    		name = "Forget it, we need to cover our own expenses!"
+    		set_country_flag = soviets_rejected_prc
+				diplomatic_influence = {
+                	who = CHI
+                	value = -150
+                }
+                relation = {
+                	who = CHI
+                	value = -200
+                }
+    	}
+}
+
+country_event = {
+	id = 95002
+	title = "Communist Occupied Anqing!"
+    desc = "The Peoples' Republic of China has conquered the capital of Nationalist China! The Nationalist forces have surrendered to us!"
+    picture = "Rebellion"
+
+	fire_only_once = yes
+
+    	trigger = {
+    		tag = CHI
+    		government = proletarian_dictatorship
+    		year = 1946
+    		KMT = { has_country_flag = chinese_civil_war }
+    		1470 = {
+    			controller = CHI
+    		}
+    	}
+
+    	mean_time_to_happen = {
+    		months = 4
+    	}
+
+    	option = {
+    		name = "Send them terms for peace!"
+			KMT = {
+				country_event = {
+					id = 95003
+					days = 0
+				}
+			}
+			ai_will_do = { factor = 1 }
+    	}
+
+    	option = {
+    		name = "Conquer and eliminate all of Nationalist China!"
+
+    	}
+}
+
+country_event = {
+	id = 95003
+	title = "Peoples' Republic of China Sends Us a Peace Deal!"
+	desc = "Peoples' Republic of China sent us a peace deal demanding that we surrender to their forces! Should we accept this?"
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = KMT
+		NOT = {
+			government = proletarian_dictatorship
+		}
+		year = 1946
+		KMT = {
+			has_country_flag = chinese_civil_war
+		}
+	}
+
+	option = {
+		name = "Accept the peace deal..."
+		set_country_flag = kmt_surrenders
+
+		KMT = {
+			civilized = yes
+		}
+
+		CHI = {
+			inherit = KMT
+			end_war = KMT
+			prestige = 25
+			country_event = { id = 95004 days = 0 }
+		}
+
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				factor = 2
+				1470 = {
+					controller = CHI
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "We refuse to accept the peace deal!"
+		KMT = {
+			war_exhaustion = 10
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				1612 = {
+					controller = KMT
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 95004
+	title = "Republic of China Surrenders To Us!"
+	desc = "The Republic of China has accepted our peace deal in order to prevent any more civilians from dying."
+	picture = "Expansion"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHI
+		year = 1946
+		government = proletarian_dictatorship
+		KMT = { has_country_flag = kmt_surrenders }
+	}
+
+	option = {
+		name = "Allow us to lay our eyes upon Tibet!"
+
+		any_country = {
+			any_owned = {
+				limit = {
+					is_core = TIB
+				}
+				add_core = CHI
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 95005
+	title = "Peoples' Republic of China Surrenders To Us!"
+	desc = "The Peoples' Republic of China has accepted our peace deal in order to prevent any more civilians from dying."
+	picture = "Expansion"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KMT
+		year = 1946
+		NOT = {
+			government = proletarian_dictatorship
+			exists = CHI
+			has_country_flag = prc_surrenders
+		}
+	}
+
+	option = {
+		name = "Let us rebuild our nation"
+		set_country_tag = prc_surrenders
+		KMT = {
+			inherit = CHI
+			end_war = CHI
+			prestige = 25
+		}
+	}
+}
+country_event = {
+	id = 95010
+	title = "The Chinese Civil War!"
+	desc = "The Peoples' Republic of China are fighting against us for control over all of China! We must stop this before it is too late!"
+	picture = "Rebellion"
+
+	trigger = {
+		tag = KMT
+		year = 1946
+		NOT = {
+			government = proletarian_dictatorship
+			has_country_flag = chinese_civil_war
+		}
+	}
+
+	option = {
+		name = "Fight the Rebellion!"
+		set_country_flag = chinese_civil_war
+	}
+}
