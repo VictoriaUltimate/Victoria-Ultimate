@@ -80,6 +80,14 @@ bookmark =
 }
 bookmark =
 {
+	name = "ESP_NAME"
+	desc = "ESP_DESC"
+	date = 1936.7.22
+	cameraX = 2950 
+	cameraY = 1550
+}
+bookmark =
+{
 	name = "WW2_NAME"
 	desc = "WW2_DESC"
 	date = 1939.9.1
