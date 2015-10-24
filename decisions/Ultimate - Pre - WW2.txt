@@ -72,7 +72,7 @@ political_decisions = {
         	exists = POL
         	NOT = {
         		year = 1950
-        		has_global_flag = WW2inprogress
+        		has_global_flag = germany_invades_poland
         	}
         	has_global_flag = nazi_leadership
         	has_global_flag = occupation_of_czechoslovakia_done
@@ -85,6 +85,7 @@ political_decisions = {
         }
 
         effect = {
+        	set_global_flag = germany_invades_poland
         	set_global_flag = WW2inprogress
 			set_country_flag = WW2_Axis
 
