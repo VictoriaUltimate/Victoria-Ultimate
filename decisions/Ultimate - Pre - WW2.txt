@@ -146,5 +146,47 @@ political_decisions = {
 			}
         }
     }
+
+    tripartite_alliance = {
+        potential = {
+        	OR = {
+        		tag = PRU
+        		tag = GER
+        	}
+        	exists = ITA
+        	exists = JAP
+        	NOT = {
+        		year = 1950
+        		has_global_flag = tripartite_alliance_done
+        	}
+        	has_global_flag = nazi_leadership
+        	year = 1939
+        }
+
+        allow = {
+        	prestige = 50
+            ruling_party_ideology = fascist
+        }
+
+        effect = {
+        	set_global_flag = tripartite_alliance_done
+
+			create_alliance = JAP
+			relation = {
+				who = JAP
+				value = 400
+			}
+
+			create_alliance = ITA
+			relation = {
+				who = ITA
+				value = 400
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+        }
+    }
 }
 
