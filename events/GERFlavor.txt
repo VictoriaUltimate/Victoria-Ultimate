@@ -320,3 +320,223 @@ country_event = {
 	}
 
 }
+
+country_event = {
+
+	id = 33006
+
+	trigger = {
+		tag = GER
+		year = 1928
+		NOT = {
+			government = fascist_dictatorship
+		}
+		NOT = {
+			year = 1950
+		}
+	}
+
+	fire_only_once = yes
+
+	title = "Mein Kampf"
+	desc = "Adolf Hitler has created a book named 'Mein Kampf'. He intends on taking revenge on those who have laid their filthy hands on the Fatherland!"
+	picture = "Fascist"
+
+	option = {
+		name = "Support the book and it's contents."
+		set_country_flag = hitlerism
+        any_pop = {
+        	ideology = {
+        		value = fascist
+        		factor = 0.5
+        	}
+        	consciousness = 5
+        }
+    }
+
+	option = {
+		name = "Another war will lead Germany to disaster"
+		set_country_flag = semi_hitlerism
+		any_pop = {
+			ideology = {
+				value = fascist
+				factor = 0.1
+			}
+			scaled_militancy = {
+				ideology = fascist
+				factor = 2
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 33007
+
+	trigger = {
+		tag = GER
+		year = 1929
+		NOT = {
+			government = fascist_dictatorship
+			year = 1950
+		}
+		OR = {
+			has_country_tag = hitlerism
+			has_country_tag = semi_hitlerism
+		}
+	}
+
+
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			has_country_flag = hitlerism
+		}
+
+		modifier = {
+			factor = 0.25 #increase likelihood to happen
+			has_country_flag = semi_hitlerism
+		}
+	}
+
+	fire_only_once = yes
+
+	title = "Nazi Supporters"
+	desc = "Hitler has caused quite a commotion in our country, with many people aligning their beliefs with his!"
+	picture = "Parade"
+
+
+	option = {
+		name = "Oh Dear..."
+        any_pop = {
+        	ideology = {
+        		value = fascist
+        		factor = 0.5
+        	}
+        	consciousness = 2
+        }
+    }
+}
+
+country_event = {
+
+	id = 33008
+
+	trigger = {
+		tag = GER
+		year = 1937
+		government = fascist_dictatorship
+		exists = AUS
+		NOT = {
+			year = 1950
+			has_country_flag = nazi_supports_austrians
+		}
+		OR = {
+			has_country_tag = hitlerism
+			has_country_tag = semi_hitlerism
+		}
+	}
+
+
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			has_country_flag = hitlerism
+		}
+
+		modifier = {
+			factor = 0.25 #increase likelihood to happen
+			has_country_flag = semi_hitlerism
+		}
+	}
+
+	fire_only_once = yes
+
+	title = "Nazi Supporters in Austria"
+	desc = "Nazi Supporters call on the Austrian government to join Germany to form a Greater German Reich!"
+	picture = "Parade"
+
+
+	option = {
+		name = "Support the movement"
+		set_country_flag = nazi_supports_austrians
+		AUS = {
+        	any_pop = {
+        		ideology = {
+        			value = fascist
+        			factor = 1.0
+        		}
+        		consciousness = 5
+        		militancy = 3
+        	}
+        }
+    }
+}
+
+country_event = {
+
+	id = 33009
+
+	trigger = {
+		tag = GER
+		year = 1937
+		exists = AUS
+		government = fascist_dictatorship
+		NOT = {
+			year = 1950
+			has_country_flag = fascist_gov_installed
+		}
+		OR = {
+			has_country_tag = hitlerism
+			has_country_tag = semi_hitlerism
+		}
+		AUS = {
+			NOT = {
+				government = fascist_dictatorship
+			}
+		}
+	}
+
+
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			has_country_flag = hitlerism
+		}
+
+		modifier = {
+			factor = 0.25 #increase likelihood to happen
+			has_country_flag = semi_hitlerism
+		}
+	}
+
+	fire_only_once = yes
+
+	title = "Install Loyalist Fascist Government in Austria"
+	desc = "With enough support from Austrian nazis, we can install a Fascist Government in Austria!"
+	picture = "Parade"
+
+
+	option = {
+		name = "Support the movement"
+		set_country_flag = fascist_gov_installed
+		AUS = {
+			government = fascist_dictatorship
+            political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+        }
+    }
+}

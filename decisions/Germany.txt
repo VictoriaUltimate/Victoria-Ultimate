@@ -456,6 +456,10 @@ political_decisions = {
             political_reform = state_controlled
             political_reform = underground_only
 		}
+
+		ai_will_do = {
+			factor = 1
+		}
 	}
 
 	anschluss = {
@@ -493,7 +497,113 @@ political_decisions = {
     		set_global_flag = nazi_austrian_anschluss
 
 			inherit = AUS
-			badboy = 15
+			badboy = 5
     	}
+
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+	munich_conference = {
+    	potential = {
+    		OR = {
+    			tag = PRU
+    			tag = GER
+    		}
+    		exists = CZH
+    		NOT = {
+    			year = 1950
+    			has_global_flag = munich_conference_held
+    		}
+    		has_global_flag = nazi_austrian_anschluss
+    		has_global_flag = nazi_leadership
+    		year = 1938
+    	}
+
+    	allow = {
+    		prestige = 50
+            ruling_party_ideology = fascist
+
+    	}
+
+    	effect = {
+    		set_global_flag = munich_conference_held
+
+			CZH = {
+				630 = {
+					secede_province = GER
+				}
+				629 = {
+					secede_province = GER
+				}
+				627 = {
+					secede_province = GER
+				}
+				628 = {
+					secede_province = GER
+				}
+				632 = {
+					secede_province = GER
+				}
+				688 = {
+					secede_province = GER
+				}
+			}
+			badboy = 5
+    	}
+
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+    occupation_of_czechoslovakia = {
+        potential = {
+        	OR = {
+        		tag = PRU
+        		tag = GER
+        	}
+        	exists = CZH
+        	NOT = {
+        		year = 1950
+        		has_global_flag = occupation_of_czechoslovakia_done
+        	}
+        	has_global_flag = nazi_leadership
+        	has_global_flag = munich_conference_held
+        	year = 1939
+        }
+
+        allow = {
+        	prestige = 50
+            ruling_party_ideology = fascist
+        }
+
+        effect = {
+        	set_global_flag = occupation_of_czechoslovakia_done
+    		inherit = CZH
+			950 = {
+				secede_province = HUN
+			}
+			release = SLV
+    		diplomatic_influence = {
+                who = SLV
+                value = 200
+            }
+            relation = {
+                who = SLV
+                value = 200
+            }
+            create_alliance = SLV
+            create_vassal = SLV
+    		badboy = 15
+			SLV = {
+				prestige = -650
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+        }
     }
 }

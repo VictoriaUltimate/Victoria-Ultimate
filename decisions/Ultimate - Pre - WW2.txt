@@ -1,0 +1,150 @@
+political_decisions = {
+	#guarantee event for Britain
+	independence_of_poland = {
+    	potential = {
+			tag = ENG
+            NOT = {
+            	year = 1950
+            	has_global_flag = independence_of_poland_guaranteed
+            }
+            GER = {
+            	has_global_flag = occupation_of_czechoslovakia_done
+            }
+            year = 1939
+        }
+
+        allow = {
+			prestige = 10
+        }
+
+        effect = {
+        	set_global_flag = independence_of_poland_guaranteed
+            create_alliance = POL
+       		badboy = -10
+        	relation = {
+                who = POL
+                value = 200
+            }
+    		ai_will_do = {
+    			factor = 1
+    		}
+        }
+    }
+
+    #guarantee event for France
+    guarantee_poland = {
+        potential = {
+    		tag = FRA
+            NOT = {
+            	year = 1950
+            	has_global_flag = guarantee_poland_done
+            }
+            GER = {
+                has_global_flag = occupation_of_czechoslovakia_done
+            }
+            year = 1939
+        }
+
+        allow = {
+    		prestige = 10
+        }
+
+        effect = {
+            set_global_flag = guarantee_poland_done
+            create_alliance = POL
+           	badboy = -10
+            relation = {
+                who = POL
+                value = 200
+            }
+        	ai_will_do = {
+        		factor = 1
+        	}
+        }
+    }
+
+    danzig_or_war = {
+        potential = {
+        	OR = {
+        		tag = PRU
+        		tag = GER
+        	}
+        	exists = POL
+        	NOT = {
+        		year = 1950
+        		has_global_flag = WW2inprogress
+        	}
+        	has_global_flag = nazi_leadership
+        	has_global_flag = occupation_of_czechoslovakia_done
+        	year = 1939
+        }
+
+        allow = {
+        	prestige = 50
+            ruling_party_ideology = fascist
+        }
+
+        effect = {
+        	set_global_flag = WW2inprogress
+			set_country_flag = WW2_Axis
+
+       		 GER = {
+             	war = {
+        			target = POL
+        			attacker_goal = {
+        				casus_belli = lebensraum_cb
+        			}
+        			defender_goal = {
+        				casus_belli = ww2_allies_cb
+        			}
+        		}
+				war = {
+        			target = FRA
+        			attacker_goal = {
+        				casus_belli = lebensraum_cb
+        			}
+        			defender_goal = {
+        				casus_belli = ww2_allies_cb
+        			}
+        		}
+				war = {
+        			target = ENG
+        			attacker_goal = {
+        				casus_belli = lebensraum_cb
+        			}
+        			defender_goal = {
+        				casus_belli = ww2_allies_cb
+        			}
+        		}
+        		call_ally = yes
+        	}
+
+        	POL = {
+        		set_country_flag = WW2_Allies
+        	}
+        	ENG = {
+        		set_country_flag = WW2_Allies
+        	}
+        	FRA = {
+        		set_country_flag = WW2_Allies
+        	}
+        	JAP = {
+        		set_country_flag = WW2_Axis
+        	}
+        	ITA = {
+        		set_country_flag = WW2_Axis
+        	}
+        	SLV = {
+        		set_country_flag = WW2_Axis
+        	}
+        	HUN = {
+        		set_country_flag = WW2_Axis
+        	}
+
+			ai_will_do = {
+				factor = 1
+			}
+        }
+    }
+}
+
