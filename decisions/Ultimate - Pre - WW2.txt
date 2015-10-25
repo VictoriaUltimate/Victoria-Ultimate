@@ -184,6 +184,88 @@ political_decisions = {
 				value = 400
 			}
 
+			ITA = {
+				create_alliance = JAP
+            	relation = {
+            		who = JAP
+            		value = 400
+            	}
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+        }
+    }
+
+    italian_provocation_ethiopia = {
+        potential = {
+        	tag = ITA
+        	exists = ETH
+        	NOT = {
+        		year = 1950
+        		has_global_flag = italian_provocation_ethiopia_done
+        	}
+        	OR = {
+        		has_global_flag = blackshirts_leadership
+        		government = fascist_dictatorship
+        	}
+        	year = 1934
+        }
+
+        allow = {
+            ruling_party_ideology = fascist
+        }
+
+        effect = {
+        	set_global_flag = italian_provocation_ethiopia_done
+
+			relation = {
+				who = ETH
+				value = -100
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+        }
+    }
+
+    italian_ethiopian_war = {
+        potential = {
+        	tag = ITA
+        	exists = ETH
+        	NOT = {
+        		year = 1950
+        		has_global_flag = italian_ethiopian_war_done
+        	}
+        	has_global_flag = italian_provocation_ethiopia_done
+        	government = fascist_dictatorship
+        	year = 1935
+        }
+
+        allow = {
+            ruling_party_ideology = fascist
+        }
+
+        effect = {
+        	set_global_flag = italian_ethiopian_war_done
+
+			war = {
+        		target = ETH
+        		attacker_goal = {
+        			casus_belli = lebensraum_cb
+        		}
+        		defender_goal = {
+        			casus_belli = status_quo
+        		}
+        	}
+
+			relation = {
+				who = ETH
+				value = -100
+			}
+
 			ai_will_do = {
 				factor = 1
 			}
