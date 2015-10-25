@@ -473,7 +473,10 @@ political_decisions = {
     			year = 1950
     			has_global_flag = nazi_austrian_anschluss
     		}
-    		has_global_flag = nazi_leadership
+    		OR = {
+    			has_global_flag = nazi_leadership
+    			government = fascist_dictatorship
+    		}
     		year = 1930
     	}
 
@@ -517,7 +520,6 @@ political_decisions = {
     			has_global_flag = munich_conference_held
     		}
     		has_global_flag = nazi_austrian_anschluss
-    		has_global_flag = nazi_leadership
     		year = 1938
     	}
 
@@ -569,7 +571,6 @@ political_decisions = {
         		year = 1950
         		has_global_flag = occupation_of_czechoslovakia_done
         	}
-        	has_global_flag = nazi_leadership
         	has_global_flag = munich_conference_held
         	year = 1939
         }

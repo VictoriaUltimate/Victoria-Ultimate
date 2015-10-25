@@ -277,6 +277,7 @@ political_decisions = {
 	invasion_of_albania = {
 		potential = {
 			tag = ITA
+			exists = ALB
 			NOT = {
 				has_global_flag = italian_invasion_of_albania
 				year = 1950
@@ -286,7 +287,6 @@ political_decisions = {
 
 		allow = {
 			government = fascist_dictatorship
-
 		}
 
 		effect = {
