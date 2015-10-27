@@ -30,6 +30,7 @@ add_core = KUK
 		controller = YUG
 		owner = YUG
 		remove_core = KUK
+		remove_core = HUN
 		}
 trade_goods = fish
 life_rating = 35

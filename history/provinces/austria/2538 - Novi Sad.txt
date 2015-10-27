@@ -20,6 +20,7 @@ add_core = YUG
 1920.6.28 = { 
 		controller = YUG
 		owner = YUG
+		remove_core = HUN
 		}
 trade_goods = wool
 life_rating = 35
