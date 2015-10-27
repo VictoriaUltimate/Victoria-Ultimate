@@ -215,4 +215,31 @@ exists = YUG
    	 }
 
 }
+
+	for_the_motherland = {
+   	 	potential = {
+   			NOT = {
+   		 		has_global_flag = for_the_motherland_done
+   		 		year = 1950
+   		 	}
+   		 	war_with = GER
+   			tag = RUS
+   			year = 1940
+   			has_global_flag = operation_barbarossa_done
+   		}
+
+   	 	allow = {
+	 		has_global_flag = operation_barbarossa_done
+    	}
+
+   	 	effect = {
+    		set_global_flag = for_the_motherland_done
+			add_country_modifier = {
+                 name = the_motherland
+                 duration = 1095
+            }
+   	 	}
+
+	}
+
    	} # political_decisions
