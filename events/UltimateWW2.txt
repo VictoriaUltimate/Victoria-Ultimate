@@ -1451,13 +1451,17 @@ country_event = {
 
     trigger = {
     	has_country_flag = WW2_Allies
-    	year = 1950
+    	year = 1940
     	GER = {
     		NOT = {
     			government = fascist_dictatorship
     		}
     		has_global_flag = danzig_or_war
     	}
+
+    	549 = {
+        	controlled_by = THIS
+        }
     }
 
     option = {
@@ -1495,6 +1499,10 @@ country_event = {
 			political_reform = free_press
 			political_reform = all_trade_unions
 			political_reform = secret_ballots
+
+			end_war = RUS
+			end_war = THIS
+			badboy = -300
     	}
 
 		POL = {
