@@ -1703,3 +1703,15 @@ the_motherland = {
 	global_pop_militancy_modifier = -0.1
 	icon = 5
 }
+
+### Nazi Germany ###
+
+treaty_of_versailles = {
+	max_military_spending = -0.80
+	research_points_modifier = -0.50
+	org_regain = -0.5
+	land_organisation = -0.5
+	global_pop_consciousness_modifier = 0.03
+	global_pop_militancy_modifier = 0.02
+	icon = 18
+}

@@ -429,30 +429,16 @@ country_event = {
 		tag = GER
 		government = fascist_dictatorship
 		exists = AUS
+		year = 1937
 		NOT = {
 			year = 1950
 			has_country_flag = nazi_supports_austrians
-		}
-		OR = {
-			has_country_tag = hitlerism
-			has_country_tag = semi_hitlerism
-			year = 1937
 		}
 	}
 
 
 	mean_time_to_happen =  {
-		months = 12
-
-		modifier = {
-			factor = 0.75 #increase likelihood to happen
-			has_country_flag = hitlerism
-		}
-
-		modifier = {
-			factor = 0.25 #increase likelihood to happen
-			has_country_flag = semi_hitlerism
-		}
+		days = 1
 	}
 
 	fire_only_once = yes
@@ -501,17 +487,7 @@ country_event = {
 
 
 	mean_time_to_happen =  {
-		months = 12
-
-		modifier = {
-			factor = 0.75 #increase likelihood to happen
-			has_country_flag = hitlerism
-		}
-
-		modifier = {
-			factor = 0.25 #increase likelihood to happen
-			has_country_flag = semi_hitlerism
-		}
+		days = 1
 	}
 
 	fire_only_once = yes

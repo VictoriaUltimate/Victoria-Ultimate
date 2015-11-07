@@ -273,5 +273,40 @@ political_decisions = {
 			}
         }
     }
+
+    second_sino_japanese_war = {
+        potential = {
+        	tag = JAP
+        	exists = KMT
+        	NOT = {
+        		year = 1950
+        		has_global_flag = second_sino_japanese_war_done
+        	}
+        	government = fascist_dictatorship
+        	year = 1936
+        }
+
+        allow = {
+            ruling_party_ideology = fascist
+        }
+
+        effect = {
+        	set_global_flag = second_sino_japanese_war_done
+
+			war = {
+        		target = KMT
+        		attacker_goal = {
+        			casus_belli = conquest
+        		}
+        		defender_goal = {
+        			casus_belli = status_quo
+        		}
+        	}
+
+			ai_will_do = {
+				factor = 1
+			}
+        }
+    }
 }
 

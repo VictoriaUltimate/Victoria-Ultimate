@@ -173,3 +173,200 @@ country_event = {
 		name = "We'll see if they change their minds next year."
 	}
 }
+
+country_event = {
+
+	id = 36004
+	title = "Treaty of Versailles"
+	desc = "The Treaty was created in 1919 and blamed Germany for the war, and now we must abide by it..."
+	picture = "crisis"
+
+	trigger = {
+		tag = GER
+		year = 1919
+		NOT = {
+			year = 1939
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "We'll see if they change their minds next year."
+		add_country_modifier = {
+            name = treaty_of_versailles
+        	duration = 1095
+        }
+	}
+}
+
+#Imperial Japan
+country_event = {
+
+	id = 36005
+	title = "The Showa Era"
+	desc = "Emperor Showa ascended the throne in 1926 and would later become the military ruler ruling over the Japanese Empire."
+	picture = "crisis"
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	trigger = {
+		tag = JAP
+		year = 1926
+		NOT = {
+			year = 1947
+		}
+	}
+
+	option = {
+		name = "All Hail the Emperor!"
+		prestige = 25
+
+		government = fascist_dictatorship
+		political_reform = no_slavery
+        political_reform = party_appointed
+        political_reform = none_voting
+        political_reform = first_past_the_post
+        political_reform = no_meeting
+        political_reform = censored_press
+        political_reform = state_controlled
+        political_reform = underground_only
+	}
+}
+
+country_event = {
+
+	id = 36006
+	title = "The Mukden Incident"
+	desc = "It seems like Chinese dissidents have planted explosives on our rails in Korea, the must pay for this!"
+	picture = "crisis"
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	trigger = {
+		tag = JAP
+		exists = KMT
+		year = 1931
+		NOT = {
+			year = 1947
+		}
+	}
+
+	option = {
+		name = "To war for the Motherland!"
+		prestige = 15
+		set_country_flag = first_sino_japanese_war
+		JAP = {
+			war = {
+        		target = KMT
+        		attacker_goal = {
+        			casus_belli = humiliate
+        		}
+        		defender_goal = {
+        			casus_belli = status_quo
+        		}
+        	}
+		}
+	}
+}
+
+country_event = {
+
+	id = 36007
+	title = "The Terms for Peace"
+	desc = "It seems like Chinese dissidents have planted explosives on our rails in Korea, the must pay for this!"
+	picture = "crisis"
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	trigger = {
+		tag = JAP
+		exists = KMT
+		year = 1931
+		NOT = {
+			year = 1947
+		}
+		has_country_flag = first_sino_japanese_war
+		1612 = { controlled_by = JAP }
+	}
+
+	option = {
+		name = "Force them to comply with these terms!"
+		prestige = 15
+		KMT = {
+			release = MCK
+			end_war = JAP
+
+        	1613 = {
+        		secede_province = SXI
+        	}
+        	1576 = {
+        		secede_province = SXI
+        	}
+        	1574 = {
+        		secede_province = SXI
+        	}
+        	1612 = {
+        		secede_province = SXI
+        	}
+        	1618 = {
+        		secede_province = SXI
+        	}
+        	1617 = {
+        		secede_province = SXI
+        	}
+        	1615 = {
+        		secede_province = SXI
+        	}
+        	1572 = {
+        		secede_province = SXI
+        	}
+        	1573 = {
+        		secede_province = SXI
+        	}
+        	1575 = {
+        		secede_province = SXI
+        	}
+        	1515 = {
+        		secede_province = SXI
+        	}
+        	1614 = {
+        		secede_province = SXI
+        	}
+        	1570 = {
+        		secede_province = SXI
+        	}
+        	1563 = {
+        		secede_province = SXI
+        	}
+        	1564 = {
+        		secede_province = SXI
+        	}
+        	1616 = {
+        		secede_province = SXI
+        	}
+        }
+        create_vassal = MCK
+        influence = {
+        	who = MCK
+        	value = 200
+        }
+        create_vassal = SXI
+        influence = {
+        	who = SHI
+        	value = 200
+        }
+	}
+}

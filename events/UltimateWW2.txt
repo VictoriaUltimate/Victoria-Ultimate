@@ -1407,9 +1407,6 @@ country_event = {
     	has_country_flag = WW2_Allies
     	year = 1940
     	GER = {
-    		NOT = {
-    			government = fascist_dictatorship
-    		}
     		has_global_flag = danzig_or_war
     	}
 
@@ -1423,6 +1420,8 @@ country_event = {
 
 		any_country = {
 			end_war = GER
+			end_war = ITA
+			end_war = JAP
 		}
 
 		prestige = 100
@@ -1437,6 +1436,9 @@ country_event = {
     		release = FRA
     		release = AUS
 			release = POL
+			release = NET
+			release = BEL
+			release = LUX
 
     		release = CZH
 
@@ -1446,6 +1448,13 @@ country_event = {
     		release = DEN
     		release_vassal = DEN
     		release_vassal = NOR
+			release_vassal = FRA
+			release_vassal = LIT
+			release_vassal = EST
+			release_vassal = LAT
+			release_vassal = BEL
+			release_vassal = UKR
+			release_vassal = KAZ
 
     		prestige = -10000
     		government = democracy
@@ -1709,6 +1718,25 @@ country_event = {
 				}
 				remove_core = ITA
 			}
+    	}
+
+    	RUS = {
+    		government = proletarian_dictatorship
+    		political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+
+            inherit = LIT
+            inherit = LAT
+            inherit = EST
+            inherit = BEL
+            inherit = UKR
+            inherit = KAZ
     	}
     }
 }
