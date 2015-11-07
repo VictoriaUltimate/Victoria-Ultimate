@@ -53,6 +53,11 @@ building = synthetic_oil_factory
 upgrade = yes
 }
 }
+
+1936.1.1 = {
+add_core = POL
+}
+
 #End of WW2
 1945.4.26 = { controller = RUS }
 1945.7.5 = {

@@ -427,7 +427,6 @@ country_event = {
 
 	trigger = {
 		tag = GER
-		year = 1937
 		government = fascist_dictatorship
 		exists = AUS
 		NOT = {
@@ -437,6 +436,7 @@ country_event = {
 		OR = {
 			has_country_tag = hitlerism
 			has_country_tag = semi_hitlerism
+			year = 1937
 		}
 	}
 
@@ -491,10 +491,7 @@ country_event = {
 			year = 1950
 			has_country_flag = fascist_gov_installed
 		}
-		OR = {
-			has_country_tag = hitlerism
-			has_country_tag = semi_hitlerism
-		}
+		has_country_flag = nazi_supports_austrians
 		AUS = {
 			NOT = {
 				government = fascist_dictatorship

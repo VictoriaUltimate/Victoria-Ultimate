@@ -216,6 +216,87 @@ exists = YUG
 
 }
 
+	nazi_conquest_of_denmark = {
+   	 	potential = {
+   			NOT = {
+   		 		has_global_flag = nazi_conquest_of_denmark_done
+   		 		year = 1950
+   		 	}
+   		 	own = 425
+   			tag = GER
+   			exists = DEN
+   			year = 1939
+   			has_global_flag = WW2_France_Surrendered
+   		}
+
+   	 	allow = {
+	 		has_global_flag = WW2_France_Surrendered
+    	}
+
+   	 	effect = {
+    		set_global_flag = nazi_conquest_of_denmark_done
+			GER = {
+				war = {
+                	target = DEN
+                    attacker_goal = {
+                        casus_belli = lebensraum_cb
+                    }
+                    defender_goal = {
+                    	casus_belli = ww2_allies_cb
+                	}
+                }
+			}
+   	 	}
+	}
+
+	nazi_conquest_of_norway = {
+   	 	potential = {
+   			NOT = {
+   		 		has_global_flag = nazi_conquest_of_norway_done
+   		 		year = 1950
+   		 	}
+   		 	NOR = {
+   		 		OR = {
+   		 			is_vassal = no
+   		 			NOT = {
+   		 				exists = NOR
+   		 			}
+   		 		}
+   		 	}
+   		 	OR = {
+   		 		GER = {
+   		 			own = 372
+   		 		}
+   		 		DEN = {
+   		 			is_vassal = yes
+   		 		}
+   		 	}
+   			tag = GER
+   			exists = NOR
+   			year = 1939
+   			has_global_flag = WW2_Denmark_Surrendered
+   		}
+
+   	 	allow = {
+	 		has_global_flag = WW2_Denmark_Surrendered
+    	}
+
+   	 	effect = {
+    		set_global_flag = nazi_conquest_of_norway_done
+			GER = {
+				war = {
+                	target = NOR
+                    attacker_goal = {
+                        casus_belli = lebensraum_cb
+                    }
+                    defender_goal = {
+                    	casus_belli = ww2_allies_cb
+                	}
+                }
+			}
+   	 	}
+	}
+
 	for_the_motherland = {
    	 	potential = {
    			NOT = {

@@ -1289,3 +1289,461 @@ political_reform = non_secret_ballots
 		ai_chance = { factor = 100 }
 	}
 }	
+
+# German occupied Denmark
+country_event = {
+	id = 1000017
+	title = "German Occupied Denmark"
+	desc = "German forces have occupied the Danish land and and Danish government is willing to comply to our demands"
+	picture = "Military_reform"
+
+trigger = {
+	has_country_flag = WW2_Axis
+	AND = {
+	372 = {
+	controlled_by = THIS
+		}
+	DEN = {
+	war_exhaustion = 10
+		}
+			}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_global_flag = WW2_Denmark_Surrendered
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##annex##
+option = {
+name = "Annex them."
+
+	end_war = DEN
+	inherit = DEN
+	prestige = 25
+	DEN = {
+	prestige = -100 }
+	set_global_flag = WW2_Denmark_Surrendered
+	any_pop = {
+	limit = {
+		culture = danish }
+	militancy = 6
+	consciousness = 6
+			}
+		}
+
+##puppet Denmark##
+
+option = {
+name = "Form a loyal Fascist government"
+
+	set_global_flag = WW2_Denmark_Surrendered
+	end_war = DEN
+	create_vassal = DEN
+	prestige = 10
+	DEN = {
+	prestige = -5000
+political_reform = party_appointed
+political_reform = none_voting
+public_meetings = no_meeting
+political_reform = state_press
+political_reform = state_controlled
+political_reform = first_past_the_post
+political_reform = underground_parties
+government = fascist_dictatorship }
+
+	any_pop = {
+	limit = {
+		culture = danish }
+	militancy = 3
+	consciousness = 3
+			}
+		ai_chance = {
+			factor = 25
+		}
+		}
+}
+
+country_event = {
+	id = 1000018
+	title = "German Occupied Norway"
+	desc = "German forces have occupied the Norwegian land and and Norwegian government are willing to comply with our demands"
+	picture = "Military_reform"
+
+trigger = {
+	has_country_flag = WW2_Axis
+	AND = {
+	313 = {
+	controlled_by = THIS
+		}
+	NOR = {
+	war_exhaustion = 10
+		}
+			}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_global_flag = WW2_Norway_Surrendered
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##annex##
+option = {
+name = "Annex them."
+
+	end_war = NOR
+	inherit = NOR
+	prestige = 25
+	NOR = {
+	prestige = -100 }
+	set_global_flag = WW2_Norway_Surrendered
+	any_pop = {
+	limit = {
+		culture = norwegian }
+	militancy = 6
+	consciousness = 6
+			}
+		}
+
+##puppet Norway##
+
+option = {
+name = "Form a loyal Fascist government"
+
+	set_global_flag = WW2_Norway_Surrendered
+	end_war = NOR
+	create_vassal = NOR
+	prestige = 10
+	NOR = {
+	prestige = -5000
+political_reform = party_appointed
+political_reform = none_voting
+public_meetings = no_meeting
+political_reform = state_press
+political_reform = state_controlled
+political_reform = first_past_the_post
+political_reform = underground_parties
+government = fascist_dictatorship }
+
+	any_pop = {
+	limit = {
+		culture = norwegian }
+	militancy = 3
+	consciousness = 3
+			}
+		ai_chance = {
+			factor = 25
+		}
+		}
+}
+
+country_event = {
+	id = 1000019
+	title = "Victory in Europe Day"
+    desc = "With the defeat of the Nazis, we can shape the world to what it was like before the conflict arose!"
+    picture = "Military_reform"
+
+	fire_only_once = yes
+
+    trigger = {
+    	has_country_flag = WW2_Allies
+    	year = 1950
+    	GER = {
+    		NOT = {
+    			government = fascist_dictatorship
+    		}
+    		has_global_flag = danzig_or_war
+    	}
+    }
+
+    option = {
+    	name = "Reshape the borders of Europe"
+
+		prestige = 100
+		clr_global_flag = WW2_France_Surrendered
+		clr_global_flag = WW2_Denmark_Surrendered
+		clr_global_flag = WW2_Norway_Surrendered
+		clr_global_flag = operation_barbarossa_done
+		clr_global_flag = danzig_or_war
+
+    	GER = {
+    		release = YUG
+    		release = FRA
+    		release = AUS
+			release = POL
+
+    		release = CZH
+
+    		release = DDR
+
+    		release = NOR
+    		release = DEN
+    		release_vassal = DEN
+    		release_vassal = NOR
+
+    		prestige = -10000
+    		government = democracy
+			political_reform = no_slavery
+			political_reform = universal_voting
+			political_reform = population_equal_weight
+			political_reform = proportional_representation
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = secret_ballots
+    	}
+
+		POL = {
+			government = proletarian_dictatorship
+    		political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+
+			any_owned_province = {
+				limit = {
+					is_core = GER
+				}
+				remove_core = GER
+			}
+		}
+
+    	DEN = {
+    		government = hms_government
+			political_reform = no_slavery
+			political_reform = universal_voting
+			political_reform = population_equal_weight
+			political_reform = proportional_representation
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = secret_ballots
+
+			any_owned_province = {
+				limit = {
+					is_core = GER
+				}
+				remove_core = GER
+			}
+    	}
+
+    	NOR = {
+    		government = hms_government
+			political_reform = no_slavery
+			political_reform = universal_voting
+			political_reform = population_equal_weight
+			political_reform = proportional_representation
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = secret_ballots
+
+			GER = {
+				release_vassal = NOR
+			}
+			any_owned_province = {
+				limit = {
+					is_core = GER
+				}
+				remove_core = GER
+			}
+    	}
+
+    	FRA = {
+    		government = democracy
+			political_reform = no_slavery
+			political_reform = universal_voting
+			political_reform = population_equal_weight
+			political_reform = proportional_representation
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = secret_ballots
+			any_owned_province = {
+				limit = {
+					is_core = GER
+				}
+				remove_core = GER
+			}
+    	}
+
+    	AUS = {
+    		government = democracy
+			political_reform = no_slavery
+			political_reform = universal_voting
+			political_reform = population_equal_weight
+			political_reform = proportional_representation
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = secret_ballots
+			any_owned_province = {
+				limit = {
+					is_core = GER
+				}
+				remove_core = GER
+			}
+    	}
+
+    	BUL = {
+    		release = YUG
+
+			government = proletarian_dictatorship
+    		political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+    	}
+
+    	CZH = {
+    		inherit = SLV
+
+    		government = proletarian_dictatorship
+    		political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+			any_owned_province = {
+				limit = {
+					is_core = GER
+				}
+				remove_core = GER
+			}
+    	}
+
+		YUG = {
+    		inherit = CRO
+
+    		government = proletarian_dictatorship
+    		political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+			any_owned_province = {
+				limit = {
+					is_core = GER
+				}
+				remove_core = GER
+			}
+    	}
+
+    	HUN = {
+    		release = CZH
+
+    		government = proletarian_dictatorship
+    		political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+    	}
+
+    	ROM = {
+    		government = proletarian_dictatorship
+    		political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+    	}
+
+    	ITA = {
+    		release = YUG
+    		release = ETH
+    		release = GRE
+    		release = ALB
+
+    		government = democracy
+			political_reform = no_slavery
+			political_reform = universal_voting
+			political_reform = population_equal_weight
+			political_reform = proportional_representation
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = secret_ballots
+    	}
+
+    	GRE = {
+    		government = hms_government
+			political_reform = no_slavery
+			political_reform = universal_voting
+			political_reform = population_equal_weight
+			political_reform = proportional_representation
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = secret_ballots
+
+			any_owned_province = {
+				limit = {
+					is_core = ITA
+				}
+				remove_core = ITA
+			}
+    	}
+
+    	ALB = {
+    		government = proletarian_dictatorship
+    		political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+
+			any_owned_province = {
+				limit = {
+					is_core = ITA
+				}
+				remove_core = ITA
+			}
+    	}
+
+    	ETH = {
+			government = absolute_monarchy
+			political_reform = none_voting
+			political_reform = appointed
+			political_reform = first_past_the_post
+			political_reform = no_meeting
+			political_reform = censored_press
+			political_reform = state_controlled
+			political_reform = underground_parties
+
+			any_owned_province = {
+				limit = {
+					is_core = ITA
+				}
+				remove_core = ITA
+			}
+    	}
+    }
+}
