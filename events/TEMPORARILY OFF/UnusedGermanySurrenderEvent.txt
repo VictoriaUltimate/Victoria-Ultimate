@@ -1,0 +1,45 @@
+#Allied Troops Enter Berlin
+country_event = {
+	id = 1000006
+	title = "Germany Surrenders!"
+	desc = "Berlin is ours and Germany is now at our mercy!"
+	picture = "berlinfallsovpic"
+
+trigger = {
+	war_with = GER
+	549 = {
+	controlled_by = THIS
+		}
+	GER = {
+		war_exhaustion = 10
+		}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_country_flag = WW2_Axis
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##Punish Jerry##
+option = {
+name = "Let's make sure this doesn't happen again"
+
+	end_war = GER
+	any_country = {
+	end_war = GER
+			}
+	create_vassal = GER
+	prestige = 1000
+	GER = {
+	release = POL
+	release = AUS
+	release = FRA
+	release = NET
+	release = BEL
+	release = LUX
+	prestige = -5000 }
+	clr_global_flag = WW2inprogress
+		}
+}
