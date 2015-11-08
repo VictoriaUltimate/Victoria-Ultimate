@@ -1625,6 +1625,7 @@ country_event = {
 
     	HUN = {
     		release = CZH
+			release = YUG
 
     		government = proletarian_dictatorship
     		political_reform = no_slavery
