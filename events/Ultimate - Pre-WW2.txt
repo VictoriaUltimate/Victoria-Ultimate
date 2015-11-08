@@ -192,10 +192,10 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = "We'll see if they change their minds next year."
+		name = "We will rise again!"
 		add_country_modifier = {
             name = treaty_of_versailles
-        	duration = 1095
+        	duration = 7300
         }
 	}
 }

@@ -1439,6 +1439,8 @@ country_event = {
 			release = NET
 			release = BEL
 			release = LUX
+			release = HND
+			release = PAK
 
     		release = CZH
 
@@ -1949,6 +1951,12 @@ country_event = {
 		USA = {
 			country_event = { id=1000025 days=2 }
 		}
+	}
+
+	option = {
+		name = "Never!"
+		prestige = -15
+		badboy = 25
 	}
 }
 

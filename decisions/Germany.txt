@@ -599,9 +599,18 @@ political_decisions = {
             create_vassal = SLV
     		badboy = 15
 			SLV = {
-				prestige = -650
+				prestige = -10000
 			}
 
+			create_vassal = HUN
+			relation = {
+				who = HUN
+				value = 400
+			}
+    		diplomatic_influence = {
+                who = HUN
+                value = 200
+            }
 			ai_will_do = {
 				factor = 1
 			}

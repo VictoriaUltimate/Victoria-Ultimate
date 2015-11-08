@@ -116,6 +116,8 @@ political_decisions = {
         				casus_belli = ww2_allies_cb
         			}
         		}
+
+        		remove_country_modifier = treaty_of_versailles
         		call_ally = yes
         	}
 
