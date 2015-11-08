@@ -211,7 +211,7 @@ country_event = {
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 6
+		days = 1
 	}
 
 	trigger = {
@@ -219,6 +219,7 @@ country_event = {
 		year = 1926
 		NOT = {
 			year = 1947
+			government = fascist_dictatorship
 		}
 	}
 
@@ -256,7 +257,8 @@ country_event = {
 		exists = KMT
 		year = 1931
 		NOT = {
-			year = 1947
+			year = 1936
+			exists = MCK
 		}
 	}
 

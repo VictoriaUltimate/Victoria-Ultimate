@@ -1406,9 +1406,10 @@ country_event = {
     trigger = {
     	has_country_flag = WW2_Allies
     	year = 1940
-    	GER = {
-    		has_global_flag = danzig_or_war
-    	}
+
+		GER = {
+			war_exhaustion = 20
+		}
 
     	549 = {
         	controlled_by = THIS
@@ -1421,7 +1422,6 @@ country_event = {
 		any_country = {
 			end_war = GER
 			end_war = ITA
-			end_war = JAP
 		}
 
 		prestige = 100
@@ -1734,9 +1734,275 @@ country_event = {
             inherit = LIT
             inherit = LAT
             inherit = EST
-            inherit = BEL
             inherit = UKR
             inherit = KAZ
     	}
     }
+}
+
+country_event = {
+
+	id = 1000020
+	title = "Attack On Pearl Harbour"
+	desc = "We must strike the Americans and make them wary to prevent them from joining the war!"
+	picture = "pearlharborattackpic"
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 11
+	}
+
+	trigger = {
+		tag = JAP
+		exists = USA
+		year = 1941
+		NOT = {
+			year = 1950
+		}
+	}
+
+	option = {
+		name = "Let's see if they stay out of the war!"
+		prestige = 15
+		set_global_flag = attack_on_pearl_harbour
+		USA = {
+			country_event = {
+            	id = 1000021
+       			days = 7
+      	 	}
+		}
+	}
+}
+
+country_event = {
+
+	id = 1000021
+	title = "Attack On Pearl Harbour - USA Reply"
+	desc = "The Japanese have struck Pearl Harbor! Should we let them get away with this or let it slide?"
+	picture = "pearlharborattackpic"
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		exists = JAP
+		year = 1941
+		NOT = {
+			year = 1950
+		}
+	}
+
+	option = {
+		name = "To war against the Japanese!"
+		prestige = 15
+		set_global_flag = usa_vs_japan
+		set_country_flag = WW2_Allies
+		USA = {
+			war = {
+				target = JAP
+        		attacker_goal = {
+        			casus_belli = ww2_allies_cb
+        		}
+        		defender_goal = {
+        			casus_belli = ww2_axis_cb
+        		}
+			}
+		}
+
+		ITA = {
+			war = {
+				target = USA
+        		attacker_goal = {
+        			casus_belli = ww2_axis_cb
+        		}
+        		defender_goal = {
+        			casus_belli = ww2_allies_cb
+        		}
+			}
+		}
+
+		GER = {
+			war = {
+				target = USA
+        		attacker_goal = {
+        			casus_belli = ww2_axis_cb
+        		}
+        		defender_goal = {
+        			casus_belli = ww2_allies_cb
+        		}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	option = {
+    	name = "Let us be isolated even more..."
+    	prestige = -15
+
+    	ai_will_do = {
+    		factor = 1
+    	}
+    }
+}
+
+country_event = {
+
+	id = 1000022
+	title = "Nuclear Weapon Developed"
+	desc = "We, with the help of Canada, have created a nuclear weapon to use against the Japanese!"
+	picture = "nuked_news"
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 9
+	}
+
+	trigger = {
+		tag = USA
+		exists = JAP
+		year = 1945
+		NOT = {
+			year = 1950
+		}
+	}
+
+	option = {
+		name = "Set it up."
+		prestige = 25
+		CAN = {
+			prestige = 25
+		}
+		USA = {
+			country_event = {
+            	id = 1000023
+       			days = 7
+      	 	}
+		}
+		nuclear_weapons = 1
+	}
+}
+
+country_event = {
+
+	id = 1000023
+	title = "Strike the Japanese"
+	desc = "Let us strike the Japanese and make them surrender!"
+	picture = "nuked"
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		exists = JAP
+		year = 1945
+		NOT = {
+			year = 1950
+		}
+	}
+
+	option = {
+		name = "launch the nuke."
+		set_global_flag = nuke_to_japan
+		prestige = 10
+		CAN = {
+			prestige = 10
+		}
+		nuclear_weapons = -1
+		JAP = {
+			country_event = { id=666666 days=2 }
+		}
+		JAP = {
+			country_event = { id=1000024 days=7 }
+		}
+	}
+}
+
+country_event = {
+
+	id = 1000024
+	title = "Surrender?"
+	desc = "The Americans struck us with a bomb never seen before... Hiroshima is gone. Should we surrender?"
+	picture = "nuked"
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = JAP
+		exists = USA
+		year = 1945
+		has_global_flag = nuke_to_japan
+		NOT = {
+			year = 1950
+		}
+	}
+
+	option = {
+		name = "Yes"
+		USA = {
+			country_event = { id=1000025 days=2 }
+		}
+	}
+}
+
+country_event = {
+
+	id = 1000025
+	title = "Victory in Japan Day"
+	desc = "The Japanese have surrendered! The war is over!"
+	picture = "Nobel_Peace"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		exists = JAP
+		year = 1945
+		OR = {
+			has_global_flag = nuke_to_japan
+			1657 = { controlled_by = USA }
+		}
+		JAP = {
+			war_exhaustion = 20
+		}
+		NOT = {
+			year = 1950
+		}
+	}
+
+	option = {
+		name = "Life is returned to normal!"
+		prestige = 50
+		clr_global_flag = nuke_to_japan
+		any_country = {
+			end_war = JAP
+		}
+		JAP = {
+			prestige = -10000
+			release_vassal = MCK
+			release_vassal = SXI
+			release = KMT
+			release = KOR
+			release = RUS
+
+		}
+		KMT = {
+			inherit = MCK
+			inherit = SXI
+		}
+
+		create_vassal = JAP
+		create_alliance = JAP
+		relation = {
+			who = JAP
+			value = 400
+		}
+	}
 }

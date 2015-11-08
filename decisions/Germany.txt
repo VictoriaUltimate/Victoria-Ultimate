@@ -424,7 +424,7 @@ political_decisions = {
 			NOT = {
 				has_global_flag = nazi_leadership
 				government = fascist_dictatorship
-				year = 1950
+				year = 1945
 			}
 			is_ideology_enabled = fascist
 			year = 1930

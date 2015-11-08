@@ -26,10 +26,10 @@ add_core = MNG
 
 
 
-1937.1.1 = {
-	owner = MCK	
+1931.1.1 = {
+	owner = MCK
 	controller = MCK
-		}
+	}
 add_core = MGL
 add_core = MCK
 trade_goods = timber
