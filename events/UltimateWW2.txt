@@ -1761,7 +1761,10 @@ country_event = {
 		exists = USA
 		year = 1941
 		NOT = {
-			year = 1950
+			year = 1945
+		}
+		JAP = {
+			has_country_flag = WW2_Axis
 		}
 	}
 
@@ -1791,6 +1794,7 @@ country_event = {
 	trigger = {
 		tag = USA
 		exists = JAP
+		war_with = JAP
 		year = 1941
 		NOT = {
 			year = 1950
@@ -1863,12 +1867,14 @@ country_event = {
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 9
+		months = 3
 	}
 
 	trigger = {
 		tag = USA
 		exists = JAP
+		war_with = JAP
+		has_country_flag = WW2_Allies
 		year = 1945
 		NOT = {
 			year = 1950
