@@ -290,7 +290,7 @@ country_event = {
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 6
+		days = 1
 	}
 
 	trigger = {
@@ -312,52 +312,52 @@ country_event = {
 			end_war = JAP
 
         	1613 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1576 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1574 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1612 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1618 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1617 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1615 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1572 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1573 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1575 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1515 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1614 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1570 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1563 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1564 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         	1616 = {
-        		secede_province = SXI
+        		secede_province = JAP
         	}
         }
         create_vassal = MCK
