@@ -117,6 +117,8 @@ political_decisions = {
         			}
         		}
 
+				badboy = -120
+
         		remove_country_modifier = treaty_of_versailles
         		call_ally = yes
         	}
@@ -308,6 +310,64 @@ political_decisions = {
 			ai_will_do = {
 				factor = 1
 			}
+        }
+    }
+
+        molotov_ribbentrop_pact = {
+            potential = {
+            	tag = GER
+            	exists = RUS
+            	NOT = {
+            		year = 1941
+            		has_global_flag = molotov_ribbentrop_pact_done
+            	}
+            	government = fascist_dictatorship
+            	year = 1938
+            }
+
+            allow = {
+                ruling_party_ideology = fascist
+            }
+
+            effect = {
+            	set_global_flag = molotov_ribbentrop_pact_done
+			RUS = {
+				relation = {
+					who = GER
+					value = 400
+				}
+				relation = {
+					who = ENG
+					value = -400
+				}
+				relation = {
+					who = FRA
+					value = -400
+				}
+				break_alliance = ENG
+				break_alliance = FRA
+
+			}
+
+			GER = {
+				relation = {
+					who = RUS
+					value = 400
+				}
+				relation = {
+					who = ENG
+					value = -400
+				}
+				relation = {
+					who = FRA
+					value = -400
+				}
+				break_alliance = ENG
+				break_alliance = FRA
+			}
+    		ai_will_do = {
+    			factor = 1
+    		}
         }
     }
 }

@@ -1435,6 +1435,7 @@ country_event = {
     		release = YUG
     		release = FRA
     		release = AUS
+    		release = RUS
 			release = POL
 			release = NET
 			release = BEL
@@ -1739,6 +1740,13 @@ country_event = {
             inherit = EST
             inherit = UKR
             inherit = KAZ
+
+            create_vassal = POL
+            create_vassal = DDR
+            create_vassal = CZH
+            create_vassal = ROM
+            create_vassal = BUL
+            create_vassal = ALB
     	}
     }
 }
