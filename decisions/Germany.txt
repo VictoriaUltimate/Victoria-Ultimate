@@ -602,11 +602,11 @@ political_decisions = {
 				prestige = -10000
 			}
 
-			create_vassal = HUN
 			relation = {
 				who = HUN
 				value = 400
 			}
+
     		diplomatic_influence = {
                 who = HUN
                 value = 200

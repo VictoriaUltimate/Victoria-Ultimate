@@ -117,7 +117,7 @@ political_decisions = {
         			}
         		}
 
-				badboy = -120
+				badboy = -120 # this is so that no other country can contain germany.
 
         		remove_country_modifier = treaty_of_versailles
         		call_ally = yes
@@ -270,6 +270,26 @@ political_decisions = {
 			relation = {
 				who = ETH
 				value = -100
+			}
+
+			any_country = {
+			    limit = {
+			        is_greater_power = yes
+			    }
+			    relation = {
+			    	who = ITA
+			    	value = -200
+		    	}
+			}
+
+			any_country = {
+			    limit = {
+			        is_secondary_power = yes
+			    }
+			    relation = {
+			    	who = ITA
+			    	value = -100
+		    	}
 			}
 
 			ai_will_do = {

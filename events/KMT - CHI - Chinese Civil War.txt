@@ -62,6 +62,7 @@ country_event = {
         	1613 = {
         		secede_province = CHI
         	}
+
         	1576 = {
         		secede_province = CHI
         	}
