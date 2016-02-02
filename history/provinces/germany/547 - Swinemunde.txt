@@ -25,15 +25,10 @@ owner = GER
 controller = GER
 }
 
-1936.1.1 = {
-add_core = POL
-}
-
 #End of WW2
 1945.5.5 = { controller = RUS }
 1945.10.6 = {
-owner = POL
-controller = POL
-add_core = POL
-remove_core = GER
+owner = GER
+controller = GER
+add_core = GER
 }
