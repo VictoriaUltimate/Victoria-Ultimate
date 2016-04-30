@@ -19,6 +19,7 @@ add_core = KUK
 		owner = CZH
 		remove_core = AUS
 		remove_core = KUK
+		remove_core = HUN
 		}
 		
 1920.1.10 = { 

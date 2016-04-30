@@ -48,13 +48,21 @@ political_decisions = {
 	effect = {
 	695 = {
 		owner = {
+		remove_core = THIS
 		treasury = 600000
 			}
 		}
+	697 = {
+		owner = {
+		remove_core = THIS
+			}
+		}
 	695 = {
+    add_core = GER
 	secede_province = GER
 		}
 	697 = {
+    add_core = GER
 	secede_province = GER
 		}
 		GER = {

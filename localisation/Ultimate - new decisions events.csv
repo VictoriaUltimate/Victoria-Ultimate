@@ -365,7 +365,7 @@ closed_country_policy;Closed-Country Policy;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 closed_country_policy_desc;We are stopping anyone from leaving and entering the country.;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 closed_country_policyprovince;Closed-Country Policy;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 code_civil_title;Le Code Civil;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-code_civil_desc;The French civil code was established under NapolÅEEon I in 1804. The code forbade privileges based on birth, allowed freedom of religion, and specified that government jobs should go to the most qualified.;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+code_civil_desc;The French civil code was established under Napol?EEon I in 1804. The code forbade privileges based on birth, allowed freedom of religion, and specified that government jobs should go to the most qualified.;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 colonial_destiny_title;Colonial Destiny;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;
 colonial_destiny_desc;It is the destiny of the Belgian people to civilize the last remaining wilds of the world. To Africa!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;
 colonial_points_title;Colonial Points;;;;;;;;;;;;x,,,,,,,,,,,,;;;;;;;;;;;;;;;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -2167,7 +2167,7 @@ fallout;Fallout;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 fallout_desc;The devastation brought upon us by our enemy's nuclear strike threatens to spread should the wind turn in this foul miasma's favour.;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Five_Year_Plan_title;Five Year Plan;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Five_Year_Plan_desc;A Five Year Plan has been issued to help economic growth.;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-found_quebec_title;Habitation de QuÅebec;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+found_quebec_title;Habitation de Qu?ebec;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 found_quebec_desc;Samuel de Champlain has recently returned from an expedition to the land they call Quebec. He has since then asked the French government to support a new expedition with the goal of establishing a permanent settlement at the mouth of the St. Lawrence river.;;;;;;x;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Franceset_Event;Is war a threat?;…tats-Unis;USA;;EE UU;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Franceset_DESC;War might be looming on the horizon, but will it be a global war?;…tats confÈdÈrÈs d'AmÈrique;CSA;;EE CC;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -3226,3 +3226,39 @@ Zimmermanntelegram_DESC;Would it be a good idea to send a telegram to Mexico ask
 Zimmermanntelegram_1;We should send it.;…tats-Unis;USA;;EE UU;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Zimmermanntelegram_2;We dont need their help.;…tats-Unis;USA;;EE UU;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 zionism;Zionism;x;;;;;;;;;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+claim_greater_yugoslavia_title;Claim Greater Yugoslavia;;;;;;x;
+claim_greater_yugoslavia_desc;The time has come for our brethren to join us in our endeavor to create a great East Slavic nation where all Slavs can live together in harmony.;;;;;;x;
+official_languages_act_title;Official Languages Act of Canada;;;;;;x;
+official_languages_act_desc;The Official languages Act of 1969 was a federal statute that declared French and English to be the official languages of Canada, and under which all federal institutions must provide their services in English or French.;;;;;;x;
+switch_fascist_government_title;Change Government To Fascist;;;;;;x;
+switch_fascist_government_desc;We, The People, have suffered too much by the hands of our enemies, we need our government to become more powerful in order for our enemies to suffer from our might!;;;;;;x;
+anschluss_title;Anschluss;;;;;;x;
+anschluss_desc;Nazi supporters in Austria want to join with us in order to form a Greater German Empire!;;;;;;x;
+munich_conference_title;The Munich Agreement;;;;;;x;
+munich_conference_desc;The Munich Agreement was an agreement between Germany, France and Great Britain that allowed Germany to annex regions of Czechoslovakia that were mostly german populated. Though, Hitler would soon send armies to Czechoslovakia to annex all of it.;;;;;;x;
+occupation_of_czechoslovakia_title;Nazi Occupation of Czechoslovakia;;;;;;x;
+occupation_of_czechoslovakia_desc;We are not satisfied enough from the results of the Munich Agreement. We must go to the Czechoslovakia capital and proclaim the Protectorate of Bohemia and Moravia!;;;;;;x;
+independence_of_poland_title;Guarantee the independence of Poland!;;;;;;x;
+independence_of_poland_desc;As the threat of German Expansion rises, we must guarantee the independence of the next victim before it is too late!;;;;;;x;
+guarantee_poland_title;Guarantee the independence of Poland!;;;;;;x;
+guarantee_poland_desc;As the threat of German Expansion rises, we must guarantee the independence of the next victim before it is too late!;;;;;;x;
+danzig_or_war_title;Danzig Or War;;;;;;x;
+danzig_or_war_desc;We have asked the Polish government politely, but it seems they refuse to hand back Danzig to us, this means war!;;;;;;x;
+tripartite_alliance_title;Tripartite Alliance;;;;;;x;
+tripartite_alliance_desc;The Tripartite Alliance was an alliance between Nazi Germany, Fascist Italy and Imperial Japan that was meant to be an Anti-Comintern Pact but as WW2 became reality, it was redifined as being an alliance to defeat the Allies. It was the agreement that formed the Axis Powers;;;;;;x;
+invasion_of_albania_title;Italian Invasion of Albania;;;;;;x;
+invasion_of_albania_desc;We must extend our lands to gain more influence in the Balkans region!;;;;;;x;
+italian_provocation_ethiopia_title;Italian Provocation of Ethiopia;;;;;;x;
+italian_provocation_ethiopia_desc;We must provoke the Ethiopian government in order to get them into a war with us!;;;;;;x;
+italian_ethiopian_war_title;2nd Italo-Ethiopian War;;;;;;x;
+italian_ethiopian_war_desc;The events from last year have gotten the Ethiopian government to try to attack us! This is going well with our plans!;;;;;;x;
+for_the_motherland_title;For The Motherland;;;;;;x;
+for_the_motherland_desc;The Motherland is under attack by our enemies! The Great Soviet Union may not be able to live another day! We must rise with our hammers and sickles to stop the enemy from trampling over our beloved Motherland!;;;;;;x;
+nazi_conquest_of_denmark_title;Nazi Conquest of Denmark;;;;;;x;
+nazi_conquest_of_denmark_desc;We must extend our borders to the Danish coast in order to start our assault on Norway!;;;;;;x;
+nazi_conquest_of_norway_title;Nazi Conquest of Norway;;;;;;x;
+nazi_conquest_of_norway_desc;We must take advantage of the Norwegian coast so that we can use our submarines against the English navy!;;;;;;x;
+second_sino_japanese_war_title;Imperial Japanese Conquest of China;;;;;;x;
+second_sino_japanese_war_desc;We must expand our country in order to gain more living space and to feed our people!;;;;;;x;
+molotov_ribbentrop_pact_title;Molotov-Ribbentrop Pact;;;;;;x;
+nazi_conquest_of_norway_desc;The Molotov-Ribbentrop Pact was a non-aggression pact signed by Nazi Germany and the Soviet Union for for the purpose of not going to war with one another, it also cited that the Russians would get the baltic states and there would be a partition of poland between the two nations;;;;;;x;

@@ -23,6 +23,10 @@ controller = PMR
 
 1861.1.1 = { railroad = 3 }
 
+1936.1.1 = {
+add_core = POL
+}
+
 #End of WW2
 1945.5.1 = {
 	owner = POL

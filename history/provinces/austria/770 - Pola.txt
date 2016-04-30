@@ -33,6 +33,7 @@ add_core = KUK
 controller = ITA
 owner = ITA
 remove_core = KUK
+remove_core = AUS
 }
 ##WW2 End##
 1945.1.1 = {

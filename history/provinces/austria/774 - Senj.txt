@@ -29,6 +29,7 @@ add_core = KUK
 		controller = YUG
 		owner = YUG
 		remove_core = KUK
+		remove_core = HUN
 		}
 add_core = YUG
 

@@ -1,0 +1,493 @@
+country_event = {
+
+	id = 36000
+	title = "Italy - Ethiopian Crisis"
+	desc = "Due to recent reports of clashes on the borders between Italian Eritrea and Ethiopia, should we intimidate Ethiopia to face annexation?"
+	picture = "crisis"
+
+	trigger = {
+		tag = ITA
+		year = 1934
+		exists = ETH
+		NOT = {
+			year = 1950
+			has_country_flag = ethiopian_ultimatum
+		}
+        has_global_flag = italian_provocation_ethiopia_done
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1935
+		}
+	}
+
+	option = {
+		name = "Send the demands."
+		set_country_flag = ethiopian_ultimatum
+
+		relation = {
+			who = ETH
+			value = -100
+		}
+		ETH = {
+        	country_event = {
+        		id = 36001
+        		days = 0
+        	}
+        }
+	}
+
+	option = {
+		name = "let's see how this crisis."
+
+	}
+}
+
+country_event = {
+
+	id = 36001
+	title = "Ethiopia - Ethiopian Crisis"
+	desc = "Italy demands that we surrender to their imperialist ambitions... Should we?"
+	picture = "crisis"
+
+	trigger = {
+		tag = ETH
+		year = 1934
+		NOT = {
+			year = 1950
+			OR = {
+				has_country_flag = ethiopian_accept_reply
+				has_country_flag = ethiopian_reject_reply
+			}
+		}
+		ITA = {
+			has_country_flag = ethiopian_ultimatum
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Accept."
+		set_country_flag = ethiopian_accept_reply
+
+		relation = {
+			who = ITA
+			value = 400
+		}
+		ITA = {
+			country_event = {
+            	id = 36002
+       			days = 0
+      	 	}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				war_exhaustion = 10
+			}
+			modifier = {
+				factor = 2
+				militancy = 3
+			}
+		}
+	}
+
+	option = {
+		name = "Reject."
+		set_country_flag = ethiopian_reject_reply
+		relation = {
+        	who = ITA
+        	value = -200
+        }
+		ITA = {
+			country_event = {
+            	id = 36003
+       			days = 0
+      	 	}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+
+	id = 36002
+	title = "Italy - Ethiopian Reply"
+	desc = "Ethiopia brings us news that they have accepted our ultimatum!"
+	picture = "crisis"
+
+	trigger = {
+		tag = ITA
+		year = 1934
+		NOT = {
+			year = 1950
+		}
+		ETH = {
+			has_country_flag = ethiopian_accept_reply
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Good. They have avoided bloodshed."
+		inherit = ETH
+		badboy = 15
+	}
+}
+
+country_event = {
+
+	id = 36003
+	title = "Italy - Ethiopian Reply"
+	desc = "Ethiopia brings us news that they have rejected our ultimatum!"
+	picture = "crisis"
+
+	trigger = {
+		tag = ITA
+		year = 1934
+		NOT = {
+			year = 1950
+		}
+		ETH = {
+			has_country_flag = ethiopian_reject_reply
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "We'll see if they change their minds next year."
+	}
+}
+
+country_event = {
+
+	id = 36004
+	title = "Treaty of Versailles"
+	desc = "The Treaty was created in 1919 and blamed Germany for the war, and now we must abide by it..."
+	picture = "crisis"
+
+	trigger = {
+		tag = GER
+		year = 1919
+		NOT = {
+			year = 1939
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "We will rise again!"
+		add_country_modifier = {
+            name = treaty_of_versailles
+        	duration = 7300
+        }
+	}
+}
+
+#Imperial Japan
+country_event = {
+
+	id = 36005
+	title = "The Showa Era"
+	desc = "Emperor Showa ascended the throne in 1926 and would later become the military ruler ruling over the Japanese Empire."
+	picture = "crisis"
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = JAP
+		year = 1926
+		NOT = {
+			year = 1947
+			government = fascist_dictatorship
+		}
+	}
+
+	option = {
+		name = "All Hail the Emperor!"
+		prestige = 25
+
+		government = fascist_dictatorship
+		political_reform = no_slavery
+        political_reform = party_appointed
+        political_reform = none_voting
+        political_reform = first_past_the_post
+        political_reform = no_meeting
+        political_reform = censored_press
+        political_reform = state_controlled
+        political_reform = underground_only
+	}
+}
+
+country_event = {
+
+	id = 36006
+	title = "The Mukden Incident"
+	desc = "It seems like Chinese dissidents have planted explosives on our rails in Korea, the must pay for this!"
+	picture = "crisis"
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	trigger = {
+		tag = JAP
+		exists = KMT
+		year = 1931
+		NOT = {
+			year = 1936
+			exists = MCK
+		}
+	}
+
+	option = {
+		name = "To war for the Motherland!"
+		prestige = 15
+		set_country_flag = first_sino_japanese_war
+		JAP = {
+			war = {
+        		target = KMT
+        		attacker_goal = {
+        			casus_belli = humiliate
+        		}
+        		defender_goal = {
+        			casus_belli = status_quo
+        		}
+        	}
+		}
+	}
+}
+
+country_event = {
+
+	id = 36007
+	title = "The Terms for Peace"
+	desc = "It seems like Chinese have had enough!"
+	picture = "crisis"
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = JAP
+		exists = KMT
+		year = 1931
+		NOT = {
+			year = 1947
+		}
+		has_country_flag = first_sino_japanese_war
+		1612 = { controlled_by = JAP }
+	}
+
+	option = {
+		name = "Force them to comply with these terms!"
+		prestige = 15
+		KMT = {
+			release = MCK
+			end_war = JAP
+
+        	1613 = {
+        		secede_province = JAP
+        	}
+        	1576 = {
+        		secede_province = JAP
+        	}
+        	1574 = {
+        		secede_province = JAP
+        	}
+        	1612 = {
+        		secede_province = JAP
+        	}
+        	1618 = {
+        		secede_province = JAP
+        	}
+        	1617 = {
+        		secede_province = JAP
+        	}
+        	1615 = {
+        		secede_province = JAP
+        	}
+        	1572 = {
+        		secede_province = JAP
+        	}
+        	1573 = {
+        		secede_province = JAP
+        	}
+        	1575 = {
+        		secede_province = JAP
+        	}
+        	1515 = {
+        		secede_province = JAP
+        	}
+        	1614 = {
+        		secede_province = JAP
+        	}
+        	1570 = {
+        		secede_province = JAP
+        	}
+        	1563 = {
+        		secede_province = JAP
+        	}
+        	1564 = {
+        		secede_province = JAP
+        	}
+        	1616 = {
+        		secede_province = JAP
+        	}
+        }
+        create_vassal = MCK
+        influence = {
+        	who = MCK
+        	value = 200
+        }
+        create_vassal = SXI
+        influence = {
+        	who = SXI
+        	value = 200
+        }
+	}
+}
+
+country_event = {
+
+	id = 36008
+	title = "Nazi Ultimatum to Lithuania"
+	desc = "Should we demand Memel, out rightful land, back from the hands of the Lithuanians?"
+	picture = "crisis"
+
+	trigger = {
+		tag = GER
+		year = 1938
+		NOT = {
+			year = 1945
+			has_country_flag = memel_ultimatum
+		}
+		exists = LIT
+		LIT = {
+		    698 = {
+                controlled_by = LIT
+            }
+		}
+	    government = fascist_dictatorship
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "Send it."
+		set_country_flag = memel_ultimatum
+
+		relation = {
+			who = LIT
+			value = -200
+		}
+		LIT = {
+			country_event = {
+            	id = 36009
+       			days = 90
+      	 	}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = "We'll ask for it later."
+	    prestige = -15
+	}
+}
+
+
+country_event = {
+
+	id = 36009
+	title = "Nazi demands"
+	desc = "The Nazis are asking for their land, Memel, back from us... Should we give it back?"
+	picture = "crisis"
+
+	trigger = {
+		tag = LIT
+		year = 1938
+		NOT = {
+			year = 1945
+		}
+		GER = {
+            has_country_flag = memel_ultimatum
+        }
+		exists = GER
+		LIT = {
+		    698 = {
+                controlled_by = LIT
+            }
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Accept what they say..."
+
+		GER = {
+		    add_core = 698
+		}
+		relation = {
+			who = GER
+			value = -200
+		}
+
+		LIT = {
+            698 = {
+                secede_province = GER
+            }
+        }
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = "Screw them and their ultimatum."
+	    prestige = 15
+        GER = {
+			war = {
+        		target = LIT
+        		attacker_goal = {
+        			casus_belli = humiliate
+        		}
+        		defender_goal = {
+        			casus_belli = status_quo
+        		}
+        	}
+		}
+	}
+}

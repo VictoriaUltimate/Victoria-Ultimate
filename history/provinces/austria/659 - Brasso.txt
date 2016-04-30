@@ -16,6 +16,7 @@ add_core = ROM
 1919.6.28 = { 
 		controller = ROM
 		owner = ROM
+		remove_core = HUN
 		}
 trade_goods = wool
 life_rating = 35

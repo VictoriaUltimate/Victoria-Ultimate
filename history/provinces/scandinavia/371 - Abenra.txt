@@ -11,7 +11,8 @@ life_rating = 35
  	controller = GER
 	}
 
-1939.1.1 = {
+1936.1.1 = {
    	owner = DEN
  	controller = DEN
-	}
+ 	remove_core = GER
+}

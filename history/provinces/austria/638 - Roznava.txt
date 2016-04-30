@@ -19,6 +19,7 @@ add_core = KUK
 		owner = HUN
 		remove_core = AUS
 		remove_core = KUK
+		remove_core = HUN
 		}
 
 add_core = CZH

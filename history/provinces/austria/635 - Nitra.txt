@@ -21,6 +21,7 @@ add_core = CZH
 1919.6.28 = { 
 		controller = CZH
 		owner = CZH
+		remove_core = HUN
 		}
 trade_goods = grain
 life_rating = 35

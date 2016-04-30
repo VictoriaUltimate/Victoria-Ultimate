@@ -9,6 +9,7 @@ add_core = EST
 1800.1.1 = {
 	owner = RUS
 	controller = RUS
+	add_core = RUS
 		}
 
 
@@ -32,6 +33,7 @@ life_rating = 35
 1992.5.1 = {
 	owner = EST
 	controller = EST
+	remove_core = RUS
 		}
 
 

@@ -509,7 +509,11 @@ province_event = {
 		NOT = {
 			 year = 1954
 		}
-		average_militancy = 0.5
+		any_owned_province = {
+			limit = {
+				average_militancy = 1.5
+			}
+		}
 	}
 	
 	option = {
@@ -521,9 +525,179 @@ province_event = {
 			militancy = -3
 			consciousness = -3
 		}
-		add_province_modifier = {
-			name = secret_service_job
-			duration = 365
-		}
+		any_owned_province = {
+        	limit = {
+        		average_militancy = 1.5
+        	}
+
+        	add_province_modifier = {
+                 name = secret_service_job
+                 duration = 365
+            }
+        }
 	}
+ }
+
+ country_event = {
+ 	id = 80004
+ 	title = "Bolshevik Revolutions"
+ 	desc = "The Bolsheviks tell the people of Russia of a fair and just society, where all are equal in class and society. They have stirred many of the citizens attention."
+ 	picture = "Police"
+
+	fire_only_once = yes
+
+ 	trigger = {
+ 		tag = RUS
+ 		year = 1916
+ 		OR = {
+ 			government = hms_government
+ 			government = democracy
+ 			government = prussian_constitutionalism
+ 			government = absolute_monarchy
+ 		}
+ 		NOT = {
+ 			government = proletarian_dictatorship
+ 			year = 1991
+ 		}
+ 	}
+
+ 	mean_time_to_happen =  {
+    	months = 4
+
+    	modifier = {
+    		factor = 0.75 #increase likelihood to happen
+    		year = 1917
+    	}
+    }
+
+ 	option = {
+ 		name = "Well..."
+		set_global_flag = bolshevism_uprising
+
+		add_country_modifier = {
+			name = bolshevism_modifier
+			duration = 1095
+		}
+ 	}
+ }
+
+ country_event = {
+ 	id = 80005
+ 	title = "Bolshevik's In Power"
+ 	desc = "The Bolsheviks have taken over and have become the center head of the government in Russia. As well, many nations in Central Europe have claimed independence."
+ 	picture = "Police"
+
+	fire_only_once = yes
+
+ 	trigger = {
+ 		tag = RUS
+ 		year = 1917
+ 		NOT = {
+ 			year = 1991
+ 		}
+ 		government = proletarian_dictatorship
+ 		has_global_flag = bolshevism_uprising
+ 	}
+
+ 	mean_time_to_happen =  {
+    	months = 1
+    }
+
+ 	option = {
+ 		name = "Oh Dear!"
+		clr_global_flag = bolshevism_uprising
+		set_global_flag = bolshevik_government
+
+		release = LIT
+		release = LAT
+		release = EST
+		release = POL
+		release = ROM
+		remove_core = 676
+		remove_core = 677
+		remove_core = 678
+		release_vassal = FIN
+		leave_alliance = FIN
+		any_country = {
+        	any_owned = {
+             	limit = {
+                    controlled_by = FIN
+                }
+                remove_core = RUS
+            }
+        }
+
+		remove_country_modifier = bolshevism_modifier
+ 	}
+ }
+
+ country_event = {
+ 	id = 80006
+ 	title = "Bolshevik's Are gaining Momentum!"
+ 	desc = "The Bolsheviks are gaining supporters in rural regions in the Empire and are putting up a fight with the army!"
+ 	picture = "Rebellion"
+
+	fire_only_once = yes
+
+ 	trigger = {
+ 		tag = RUS
+ 		year = 1917
+ 		NOT = {
+ 			year = 1991
+ 			government = proletarian_dictatorship
+ 			has_country_flag = bolshevik_government
+ 		}
+ 		has_global_flag = bolshevism_uprising
+ 	}
+
+ 	mean_time_to_happen =  {
+    	months = 12
+    }
+
+ 	option = {
+ 		name = "Find Those Pests and Eliminate Them!"
+		any_pop = {
+        	limit = {
+        		ideology = {
+                	value = communist
+                	factor = 0.8
+                }
+                militancy = 7
+                consciousness = 7
+        	}
+        }
+        militancy = 5
+        consciousness = 5
+ 	}
+ }
+
+ country_event = {
+ 	id = 80007
+ 	title = "Bolshevik's Defeated!"
+ 	desc = "The Bolsheviks have been defeated and we still have control over our Central European regions."
+ 	picture = "Police"
+
+	fire_only_once = yes
+
+ 	trigger = {
+ 		tag = RUS
+ 		year = 1930
+ 		NOT = {
+ 			year = 1991
+ 			government = proletarian_dictatorship
+ 			has_country_flag = bolshevik_government
+ 		}
+ 		has_global_flag = bolshevism_uprising
+ 	}
+
+ 	mean_time_to_happen =  {
+    	months = 12
+    }
+
+ 	option = {
+ 		name = "Long Live the Russian Empire!"
+		clr_global_flag = bolshevism_uprising
+		consciousness = -5
+		militancy = -5
+ 	}
  }

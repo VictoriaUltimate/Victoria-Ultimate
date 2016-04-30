@@ -18,7 +18,7 @@ bookmark =
 {
 	name = "GC_NAME"
 	desc = "GC_DESC"
-	date = 1604.8.31
+	date = 1619.10.12
 	cameraX = 2950 
 	cameraY = 1550
 }
@@ -75,6 +75,14 @@ bookmark =
 	name = "WW1_NAME"
 	desc = "WW1_DESC"
 	date = 1914.7.28
+	cameraX = 2950 
+	cameraY = 1550
+}
+bookmark =
+{
+	name = "ESP_NAME"
+	desc = "ESP_DESC"
+	date = 1936.8.2
 	cameraX = 2950 
 	cameraY = 1550
 }

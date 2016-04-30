@@ -20,6 +20,7 @@ add_core = KUK
 1920.1.10 = { 
 		controller = CZH
 		owner = CZH
+		remove_core = HUN
 		}
 		
 1939.3.15 = { 
