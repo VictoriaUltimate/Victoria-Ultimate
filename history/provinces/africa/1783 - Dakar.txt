@@ -10,14 +10,12 @@ controller = FRA
 colonial = 2
 naval_base = 1
 }
-1905.1.1 = {
-add_core = SNG
-remove_core = WOL
-}
+1905.1.1 = { add_core = SNG }
 1959.4.4 = {
 owner = MLI
 controller = MLI
 colonial = 0
+remove_core = WOL
 }
 1960.8.40 = {
 owner = SNG

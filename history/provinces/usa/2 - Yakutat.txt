@@ -1,5 +1,6 @@
 owner = TLT
 controller = TLT
+add_core = LSK
 add_core = TLT
 trade_goods = fish
 life_rating = 20
@@ -7,9 +8,7 @@ life_rating = 20
 1867.10.18 = {
 owner = USA
 controller = USA
+add_core = USA
 colonial = 2
 }
-1959.1.3 = {
-add_core = USA
-colonial = 0
-}
+1959.1.3 = { colonial = 0 }

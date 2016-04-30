@@ -1,0 +1,15 @@
+name = "Bethlen Gabor Revolt"
+1619.8.1 = {
+	add_attacker = SIE
+	add_defender = AUS
+	war_goal = {
+		casus_belli = acquire_state
+		actor = SIE
+		receiver = AUS
+		state_province_id = 633
+	}
+}
+1626.12.30 = {
+	rem_attacker = SIE
+	rem_defender = AUS
+}

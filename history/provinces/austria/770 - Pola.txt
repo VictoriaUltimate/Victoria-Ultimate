@@ -1,51 +1,48 @@
 owner = VEN
 controller = VEN
-add_core = VEN
-add_core = AUS
-
-1800.1.1 = {
-	controller = AUS
-	owner = AUS
-	remove_core = VEN
-		}
-1812.1.1 = {
-		controller = FRA
-		owner = FRA
-		}
-1815.1.1 = {
-		controller = AUS
-		owner = AUS
-		}
-
-
 add_core = CRO
+add_core = VEN
 trade_goods = grain
 life_rating = 35
-1861.1.1 = { 
-#	naval_base = 2
+
+1797.10.18 = {
+owner = AUS
+controller = AUS
+add_core = AUS
+remove_core = VEN
 }
-1914.1.1 = {
+1805.12.26 = {
+owner = ITA
+controller = ITA
+}
+1809.10.14 = {
+owner = FRA
+controller = FRA
+}
+1815.6.9 = {
+owner = AUS
+controller = AUS
+}
+1867.3.1 = {
 owner = KUK
 controller = KUK
 add_core = KUK
-}	
+}
 1919.1.1 = {
-controller = ITA
 owner = ITA
-remove_core = KUK
+controller = ITA
+add_core = ITA
 remove_core = AUS
+remove_core = KUK
 }
 ##WW2 End##
-1945.1.1 = {
-		owner = YUG
-		controller = YUG
-		add_core = YUG
-		}
-
-
-#Soviet Collapse
-1992.5.1 = {
-	owner = CRO
-	controller = CRO
-		}
-
+1945.5.1 = {
+owner = YUG
+controller = YUG
+add_core = YUG
+remove_core = ITA
+}
+1991.6.25 = {
+owner = CRO
+controller = CRO
+}

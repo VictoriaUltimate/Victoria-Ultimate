@@ -368,6 +368,7 @@ death_of_mercantilism = {
 	influence = 0.1
 	farm_rgo_eff = 0.1
 	mine_rgo_eff = 0.1
+	activate_building = machine_parts_factory
 	
 	ai_chance = {
 		factor = 11

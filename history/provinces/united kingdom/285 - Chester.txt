@@ -9,17 +9,16 @@ life_rating = 35
 1707.1.1 = {
 owner = ENG
 controller = ENG
-add_core = MER
-	}
+}
 1861.1.1 = {
     railroad = 3
 	state_building = {
 		level = 1
 		building = winery
 		upgrade = yes
-	}
+}
 }
 2015.1.1 = {
 owner = ENL
 controller = ENL
-		}
+}

@@ -1,0 +1,29 @@
+name = "Manchu Revolt"
+
+1618.9.19 = {
+	add_attacker = MCK
+	add_defender = CHI
+	add_defender = KOR
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = acquire_all_cores
+		actor = MCK
+		receiver = CHI
+	}
+    war_goal = {
+		casus_belli = acquire_all_cores
+		actor = CHI
+		receiver = MCK
+	}
+}
+
+1623.8.6 = {
+    rem_attacker = MCK
+	rem_defender = CHI
+	rem_defender = KOR
+}

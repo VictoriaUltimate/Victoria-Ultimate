@@ -8,7 +8,6 @@ nationalvalue = nv_order
 literacy = 0.28
 civilized = yes
 
-
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
@@ -39,19 +38,14 @@ upper_house = {
 	communist = 0
 }
 
-govt_flag = 
-{
+govt_flag = {
         government = napoleonic_empire
-        flag = flag_placeholder
+        flag = theocracy
 }
 
-1800.1.1 = {
-government = revolutionary_republic
-}
+1800.1.1 = { government = revolutionary_republic }
 
-1805.3.17 = {
-government = napoleonic_empire
-}
+1805.3.17 = { government = napoleonic_empire }
 
 1861.1.1 = {
 	oob = "/1861/ITA_oob.txt"

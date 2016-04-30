@@ -1,41 +1,28 @@
 owner = TUR
 controller = TUR
-add_core = AUS
-1700.1.1 = {
-	controller = AUS
-	owner = AUS
-		}
-add_core = SER
 add_core = HUN
-1914.1.1 = {
+add_core = SER
+trade_goods = timber
+life_rating = 35
+
+1688.11.7 = { controller = AUS }
+1690.1.1 = { controller = TUR }
+1717.8.22 = { controller = AUS }
+1718.7.21 = { owner = AUS }
+1861.1.1 = { railroad = 3 }
+1867.3.1 = {
 owner = KUK
 controller = KUK
 add_core = KUK
-}	
-1919.6.28 = { 
-		controller = HUN
-		owner = HUN
-		remove_core = KUK
-		}
+}
+1918.12.1  = {
+owner = YUG
+controller = YUG
 add_core = YUG
-1920.6.28 = { 
-		controller = YUG
-		owner = YUG
-		remove_core = HUN
-		}
-trade_goods = timber
-life_rating = 35
-1861.1.1 = { railroad = 3 }
-
-
-#Soviet Collapse
-1992.5.1 = {
-	remove_core = AUS
-		}
-
+remove_core = HUN
+remove_core = KUK
+}
 2006.3.6 = {
-	owner = SER
-	controller = SER
-		}
-
-
+owner = SER
+controller = SER
+}

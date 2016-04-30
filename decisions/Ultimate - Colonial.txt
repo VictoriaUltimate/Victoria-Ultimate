@@ -129,8 +129,10 @@ new_sweden = {
 	 	NOT = { year = 1638 }
 	}
 }
-			}	
+			}
+################# THIRTEEN COLONIES AND USA #######################
 louisiana_purchasepart1 = {
+    alert = no
 	picture = louisianapurchasepic
 		potential = {
 		exists = USA

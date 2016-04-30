@@ -1,41 +1,35 @@
 owner = DEN
 controller = DEN
+add_core = DEN
 add_core = EST
-
-1700.1.1 = {
-	controller = SWE
-	owner = SWE
-		}
-1800.1.1 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
-		}
-
-
-
-1939.1.1 = {
-	owner = RUS
-	controller = RUS
-		}
-
-
-1919.6.28 = { 
-		controller = EST
-		owner = EST
-		}
 add_core = UBD
 trade_goods = grain
 life_rating = 35
 
-
+1645.8.13 = {
+owner = SWE
+controller = SWE
+add_core = SWE
+remove_core = DEN
+}
+1713.7.28 = { controller = RUS }
+1721.9.10 = {
+owner = RUS
+add_core = RUS
+remove_core = SWE
+}
+1917.10.21 = { controller = GER }
+1918.3.3 = { remove_core = RUS }
+1918.11.11 = { 
+owner = EST
+controller = EST
+}
+1940.6.17 = {
+owner = RUS
+controller = RUS
+}
 #Soviet Collapse
-1992.5.1 = {
-	owner = EST
-	controller = EST
-	remove_core = RUS
-		}
-
-
-
-
+1991.8.20 = {
+owner = EST
+controller = EST
+}

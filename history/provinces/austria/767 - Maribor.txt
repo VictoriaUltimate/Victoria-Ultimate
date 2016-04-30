@@ -2,24 +2,24 @@ owner = AUS
 controller = AUS
 add_core = AUS
 add_core = SLO
-add_core = YUG
-1914.1.1 = {
+trade_goods = timber
+life_rating = 35
+
+1861.1.1 = { railroad = 2 }
+1867.3.1 = {
 owner = KUK
 controller = KUK
 add_core = KUK
-}	
+}
 1919.6.28 = { 
-		controller = YUG
-		owner = YUG
-		remove_core = KUK
-		}
-trade_goods = timber
-life_rating = 35
-1861.1.1 = { railroad = 2 }
-
+owner = YUG
+controller = YUG
+add_core = YUG
+remove_core = AUS
+remove_core = KUK
+}
 #Soviet Collapse
-1992.5.1 = {
-	owner = SLO
-	controller = SLO
-		}
-
+1991.6.25 = {
+owner = SLO
+controller = SLO
+}

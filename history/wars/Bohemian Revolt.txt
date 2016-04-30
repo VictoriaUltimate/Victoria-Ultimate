@@ -1,0 +1,40 @@
+name = "Bohemian Revolt"
+
+1618.9.19 = {
+	add_attacker = AUS
+	add_attacker = BAV
+	add_attacker = SPA
+	add_defender = BOH
+	add_defender = PLT
+	add_defender = SLS
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = acquire_all_cores
+		actor = AUS
+		receiver = BOH
+	}
+    war_goal = {
+		casus_belli = conquest
+		actor = AUS
+		receiver = SLS
+	}
+	war_goal = {
+		casus_belli = conquest
+		actor = BOH
+		receiver = AUS
+	}
+}
+
+1623.8.6 = {
+    rem_attacker = AUS
+	rem_attacker = BAV
+	rem_attacker = SPA
+	rem_defender = BOH
+	rem_defender = PLT
+	rem_defender = SLS
+}

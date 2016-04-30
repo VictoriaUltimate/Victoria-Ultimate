@@ -16,17 +16,16 @@ controller = PRU
 add_core = PRU
 remove_core = BDB
 }
-1806.8.6 = { remove_core = HRE }
+1806.8.6 = { 
+controller = FRA
+remove_core = HRE
+}
+1814.1.1 = { controller = PRU }
 1861.1.1 = { railroad = 3 }
 1871.1.1 = { 
 owner = GER		
 controller = GER
 }
-
-1936.1.1 = {
-add_core = POL
-}
-
 #End of WW2
 1945.4.8 = {
 owner = POL

@@ -44,7 +44,7 @@ party = {
 party = {
 	name = "KDS_liberal_3"
 	start_date = 1920.1.1
-	end_date = 3000.1.1
+	end_date = 99999.1.1
 
 	ideology = liberal
 
@@ -70,7 +70,7 @@ party = {
 party = {
 	name = "KDS_conservative_2"
 	start_date = 1895.1.1
-	end_date = 3000.1.1
+	end_date = 99999.1.1
 
 	ideology = conservative
 
@@ -83,7 +83,7 @@ party = {
 party = {
 	name = "KDS_reactionary_2"
 	start_date = 1890.1.1
-	end_date = 3000.1.1
+	end_date = 99999.1.1
 
 	ideology = reactionary
 

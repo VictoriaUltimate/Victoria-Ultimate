@@ -25,12 +25,7 @@ trigger = {
 		any_owned_province = {
 			controlled_by = THIS
 			is_core = CHI	
-			NOT = {
-				OR = {
-				region = CHI_1612
-				region = CHI_1616
-				}
-			}
+			NOT = { region = CHI_1618 }
 			OR = {
 				has_province_modifier = western_presence
 				has_province_modifier = foreign_smugglers
@@ -105,10 +100,7 @@ trigger = {
 							is_accepted_culture = yes
 						}
 					}
-					NOT = {
-						region = CHI_1612
-						region = CHI_1616
-					}
+					NOT = { region = CHI_1618 }
 					OR = {
 						has_province_modifier = western_presence
 						has_province_modifier = foreign_smugglers
@@ -139,7 +131,7 @@ province_event = {
 		is_core = CHI
 		controlled_by = THIS
 		NOT = {
-			region = CHI_1616
+			region = CHI_1618
 			is_core = TIB
 			is_core = XBI
 			is_core = XIN
@@ -221,9 +213,7 @@ province_event = {
 			has_province_modifier = extraterritoriality_granted
 			has_province_modifier = legation_quarter
 		}
-		NOT = {
-			region = CHI_1616
-		}
+		NOT = { region = CHI_1618 }
 		owner = {
 			tag = QNG
 			civilized = no
@@ -356,7 +346,7 @@ country_event = {
 			has_province_modifier = legation_quarter 
 		}
 		any_owned_province = {
-			region = CHI_1616
+			region = CHI_1618
 			controlled_by = THIS
 			any_neighbor_province = {
 				OR = {
@@ -419,7 +409,7 @@ country_event = {
 			}
 			country_event = 99011
 		}
-		CHI_1616 = {
+		CHI_1618 = {
 			any_owned = {
 				add_province_modifier = {
 					name = boxer_presence
@@ -458,7 +448,7 @@ country_event = {
 		name = "EVT99010OPTB"
 		set_country_flag = boxers_attacked_capital
 		prestige = -10
-		CHI_1616 = {
+		CHI_1618 = {
 			any_owned = {
 				add_province_modifier = {
 					name = boxer_agitation

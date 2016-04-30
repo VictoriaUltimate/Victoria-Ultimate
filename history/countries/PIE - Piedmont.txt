@@ -40,7 +40,7 @@ upper_house = {
 
 govt_flag = {
 	government = revolutionary_republic
-	flag = flag_placeholder
+	flag = theocracy
 }
 
 1700.1.1 = {

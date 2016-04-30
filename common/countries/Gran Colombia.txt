@@ -3,7 +3,7 @@ graphical_culture = SouthAmericanGC
 
 party = {
 	name = "GCO_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -45,7 +45,7 @@ party = {
 
 party = {
 	name = "GCO_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 1870.1.1
 
 	ideology = liberal

@@ -1,6 +1,7 @@
 capital = 57
 primary_culture = anglo_canadian
 #culture = british
+culture = french_canadian
 religion = protestant
 government = hms_government
 plurality = 0.2
@@ -14,18 +15,18 @@ upper_house_composition = appointed
 vote_franschise = universal_weighted_voting
 public_meetings = yes_meeting
 press_rights = free_press
-trade_unions = all_trade_unions
+trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = gerrymandering
 
 # Social Reforms
-wage_reform = trinket_wage
-work_hours = twelve_hours
-safety_regulations = trinket_safety
-health_care = trinket_health_care
-unemployment_subsidies = trinket_subsidies
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
 pensions = no_pensions 
-school_reforms = no_schools
+school_reforms = low_schools
 
 ruling_party = CAN_conservative
 upper_house = {
@@ -38,25 +39,10 @@ upper_house = {
 	communist = 0
 }
 
-govt_flag = {
-	government = democracy
-	flag = presidential_dictatorship
-		}
-
-1861.1.1 = {
-	oob = "/1861/CAN_oob.txt"
-}
-1861.1.1 = {
-# Technologies
-
-#Inventions
-}
-
+1861.1.1 = { oob = "/1861/CAN_oob.txt" }
 
 1914.1.1 = {
-
 # Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -371,12 +357,9 @@ combustion_engine = 1
 advanced_steel_railroad = 1
 shift_work = 1
 electric_furnace = 1 #until this for 1913
-	}
-
-
+}
 
 1936.1.1 = {
-
 # Technologies
 
 standing_army = 1
@@ -752,23 +735,11 @@ electrochemical_cell = 1
 borosilicate_glass = 1
 advanced_limited_access_roads = 1
 natural_gas_power_station = 1 #until this for 1937
-	}
+}
 
-
-
-
-1971.1.1 = {
-	government = democracy #constitution repatriation newflag
-		}
-
-
-
-
-
-
+1971.1.1 = { government = democracy } #constitution repatriation newflag
 
 1945.1.1 = {
-
 #Technologies
 
 standing_army = 1
@@ -1164,14 +1135,9 @@ electronic_circuit = 1
 advanced_sub-surface_mining = 1
 street_road = 1
 secret_of_atom = 1 #until this for 1945
-	}
-
-
-
-
+}
 
 1999.1.1 = {
-
 #Technologies
 
 standing_army = 1
@@ -1646,14 +1612,9 @@ modern_mining_&_glassblowing = 1
 superhighways = 1
 renewable_energy = 1
 quantum_physics = 1 #until this for 2000
-	}
-
-
-
-
+}
 
 2022.1.1 = {
-
 #Technologies
 
 standing_army = 1
@@ -2137,8 +2098,4 @@ robotics = 1
 high_speed_rail = 1
 synthetic_graphite = 1
 green_power = 1 #until this for 2023
-	}
-
-
-
-
+}

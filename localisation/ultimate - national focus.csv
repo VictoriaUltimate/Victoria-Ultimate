@@ -1,5 +1,62 @@
+anarcho_liberal_focus;Party loyalty towards §Yanarcho-liberal§! ;Loyauté envers le parti §Ylibertaire§! ;Parteiloyalität gegenüber §Yanarcho-liberal§! ;;;;;;;;;;;x
+anarcho_liberal_focus_short;§YAnarcho-liberal§! loyalty;Loyauté §Yanarcho-libérale§!;§YAnarcho-liberale§! Loyalität;;;;;;;;;;;x
+armaments_focus;Encourage Armaments Industry ;Encourager l'industrie de l'armement ;Waffenindustrie fördern;;Potenciar industria de armamentos ;;;;;;;;;x;;;;
+armaments_focus_short;Armaments Industry;Industrie d'armement;Rüstungs Industrie;;;;;;;;;;;x
+automation_focus;Encourage Automotive Industry ;Encourager l'industrie automobile ;Automobilindustrie fördern;;Potenciar industria automotriz ;;;;;;;;;x;;;;
+automation_focus_short;Automotive Industry;Industrie automobile;Automobil Industrie;;;;;;;;;;;x
+basic_industry_focus;Encourage Basic Industry ;Encourager l'industrie de base ;Grundstoffindustrie fördern;;Potenciar industria básica ;;;;;;;;;x;;;;
+basic_industry_focus_short;Basic Industry;Industrie de base;Schwerindustrie;;;;;;;;;;;x
+chemical_focus;Encourage Chemical Industry ;Encourager l'industrie chimique ;Chemische Industrie fördern;;Potenciar industria química ;;;;;;;;;x;;;;
+chemical_focus_short;Chemical Industry;Industrie chimique;Chemische Industrie;;;;;;;;;;;x
+colonial_focus;Colonisation;Colonisation;Kolonisation;;Colonización;;;;;;;;;x;;;;
+colonize;Colonize ;Envoyer des colons ;Kolonisten entsenden;;Colonizar ;;;;;;;;;x;;;;
+colony_focus_desc;Increase colony level by about §Y$VAL$§W% each month.;Augmenter le niveau de la colonie d'environ §Y$VAL$%§W tous les mois.;Kolonialstufe monatlich um §Y$VAL$§W% erhöhen.;;Incrementa el nivel de colonia en torno a un §Y$VAL$§W% cada mes.;;;;;;;;;x;;;;
+communist_focus;Party loyalty towards §Ycommunist§! ;Loyauté envers le parti §Ycommuniste§! ;Parteiloyalität gegenüber §Ycommunist§! ;;;;;;;;;;;x
+communist_focus_short;§YCommunists§! loyalty;Loyauté §Ycommuniste§!;§YKommunistische§! Loyalität;;;;;;;;;;;x
+conservative_focus;Party loyalty towards §Yconservative§! ;Loyauté envers le parti §Yconservateur§! ;Parteiloyalität gegenüber §Yconservative§! ;;;;;;;;;;;x
+conservative_focus_short;§YConservative§! loyalty;Loyauté §Yconservatrice§!;§YKonservative§! Loyalität;;;;;;;;;;;x
+consumer_focus;Encourage Consumer Goods Industry ;Encourager l'industrie des biens de consommation ;Gebrauchsgüterindustrie fördern;;Potenciar industria de bienes de consumo ;;;;;;;;;x;;;;
+consumer_focus_short;Consumer Goods;Biens de consommation;Konsumgüter Industrie;;;;;;;;;;;x
+diplomatic_focus;Diplomacy;;Diplomatie;;;;;;;;x;;;;
+electrical_focus;Encourage Electrical Industry ;Encourager l'industrie électrique ;Elektroindustrie fördern;;Potenciar industria eléctrica ;;;;;;;;;x;;;;
+electrical_focus_short;Electrical Industry;Industrie électrique;Elektro Industrie;;;;;;;;;;;x
 encourage_emigration;Encourage Emigration ;x;;;;;;;;;
+encourage_rail;Build Railroads ;Construire des chemins de fer ;Eisenbahn bauen;;Construir ferrocarriles ;;;;;;;;;x;;;;
 entertainment_focus;Encourage Entertainment Industry ;x;;;;;;;;;
+fascist_focus;Party loyalty towards §Yfascist§! ;Loyauté envers le parti §Yfasciste§! ;Parteiloyalität gegenüber §Yfascist§! ;;;;;;;;;;;x
+fascist_focus_short;§YFascist§! loyalty;Loyauté §Yfasciste§!;§YFaschistische§! Loyalität;;;;;;;;;;;x
+immigration;Attract Immigrants ;Attirer des immigrants ;Einwanderer anlocken;;Atraer inmigrantes ;;;;;;;;;x;;;;
+immigration_focus;Immigration;Immigration;Immigration;;Inmigración;;;;;;;;;x;;;;
+immigration_focus_desc;Migrants §Y$VAL$§W% more likely to choose region.;§Y$VAL$%§W des immigrants ont plutôt tendance à choisir une région.;Einwanderer wählen diese Region mit um §Y$VAL$§W% größerer Wahrscheinlichkeit aus.;;Un §Y$VAL$§W% de inmigrantes prefieren elegir región.;;;;;;;;;x;;;;
+increase_tension;Increase tension ;;Spannung erhöhen;;;;;;;;x;;;;
+increase_tension_focus_desc;Increase flashpoint tension by about §Y$VAL$§W% each month.;;Erhöht die Unruhe-Spannungen um etwa §Y$VAL$§W% pro Monat.;;;;;;;;x;;;;
+liberal_focus;Party loyalty towards §Yliberal§! ;Loyauté envers le parti §Ylibéral§! ;Parteiloyalität gegenüber §Yliberal§! ;;;;;;;;;;;x
+liberal_focus_short;§YLiberal§! loyalty;Loyauté §Ylibérale§!;§YLiberale§! Loyalität;;;;;;;;;;;x
+party_loyalty_focus;Party Loyalty;Loyauté du parti;Parteiloyalität;;;;;;;;;;;x
+production_focus;Production ;Production ;Produktion;;Producción ;;;;;;;;;x;;;;
+promote_aristocrats;Encourage Aristocrats ;Encourager les aristocrates ;Aristokraten fördern;;Potenciar aristócratas ;;;;;;;;;x;;;;
+promote_artisans;Encourage Artisans ;Encourager les artisans ;Handwerker fördern;;Potenciar artesanos ;;;;;;;;;x;;;;
+promote_bureaucrats;Encourage Bureaucrats ;Encourager les bureaucrates ;Bürokraten fördern;;Potenciar burócratas ;;;;;;;;;x;;;;
+promote_capitalists;Encourage Capitalists ;Encourager les capitalistes ;Kapitalisten fördern;;Potenciar capitalistas ;;;;;;;;;x;;;;
+promote_clergymen;Encourage Clergymen ;Encourager les membres du clergé ;Geistliche fördern;;Potenciar clérigos ;;;;;;;;;x;;;;
+promote_clerks;Encourage Clerks ;Encourager les employés ;Angestellte fördern;;Potenciar oficinistas ;;;;;;;;;x;;;;
+promote_craftsmen;Encourage Craftsmen ;Encourager les ouvriers ;Facharbeiter fördern;;Potenciar obreros ;;;;;;;;;x;;;;
+promote_farmers;Encourage Farmers ;Encourager les fermiers ;Bauern fördern;;Potenciar campesinos ;;;;;;;;;x;;;;
+promote_labourers;Encourage Labourers ;Encourager les mineurs ;Arbeiter fördern;;Potenciar peones ;;;;;;;;;x;;;;
+promote_officers;Encourage Officers ;Encourager les officiers ;Offiziere fördern;;Potenciar oficiales ;;;;;;;;;x;;;;
+promote_soldiers;Encourage Soldiers ;Encourager les soldats ;Soldaten fördern;;Potenciar soldados ;;;;;;;;;x;;;;
 promote_spacecolonists;Encourage Space Pioneers ;x;;;;;;;;;
+promotion_focus;Promotion;Promotion;Beförderung;;Promoción;;;;;;;;;x;;;;
+rail_focus;Railroads;Chemins de fer;Eisenbahnen;;Ferrocarriles;;;;;;;;;x;;;;
+railroad_build_desc;Capitalists §Y$VAL$§W% more likely to build railroads.;§Y$VAL$%§W des capitalistes ont plutôt tendance à construire des chemins de fer.;Kapitalisten bauen §Y$VAL$§W% mit größerer Wahrscheinlichkeit Eisenbahnen.;;Un §Y$VAL$§W% de capitalistas prefieren construir ferrocarriles.;;;;;;;;;x;;;;
+reactionary_focus;Party loyalty towards §Yreactionary§! ;Loyauté envers le parti §Yréactionnaire§! ;Parteiloyalität gegenüber §Yreactionary§! ;;;;;;;;;;;x
+reactionary_focus_short;§YReactionary§! loyalty;Loyauté §Yréactionnaire§!;§YReaktionäre§! Loyalität;;;;;;;;;;;x
+shipping_focus;Encourage Shipping Industry ;Encourager l'industrie navale ;Schifffahrtsindustrie fördern;;Potenciar industria naval ;;;;;;;;;x;;;;
+shipping_focus_short;Shipping Industry;Industrie du transport maritime;Schiffsbau Industrie;;;;;;;;;;;x
+socialist_focus;Party loyalty towards §Ysocialist§! ;Loyauté envers le parti §Ysocialiste§! ;Parteiloyalität gegenüber §Ysocialist§! ;;;;;;;;;;;x
+socialist_focus_short;§YSocialist§! loyalty;Loyauté §Ysocialiste§!;§YSozialistische§! Loyalität;;;;;;;;;;;x
 space_focus;Encourage Space Enterprise ;x;;;;;;;;;
-;;;;x;;;;;;;
+textile_focus;Encourage Textile Industry ;Encourager l'industrie textile ;Textilindustrie fördern;;Potenciar industria textil ;;;;;;;;;x;;;;
+textile_focus_short;Textile Industry;Industrie textile;Textil Industrie;;;;;;;;;;;x
+wood_focus;Encourage Wood Industry ;Encourager l'industrie du bois ;Holzindustrie fördern;;Potenciar industria maderera ;;;;;;;;;x;;;;
+wood_focus_short;Wood Industry;Industrie du bois;Holzverarbeitungs Industrie;;;;;;;;;;;x

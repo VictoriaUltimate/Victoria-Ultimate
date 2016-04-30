@@ -34,7 +34,7 @@ political_decisions = {
 					remove_core = HND
 					remove_core = AZB
 					remove_core = IRQ
-					remove_core = LYB
+					remove_core = LBY
 					remove_core = PHL
 					remove_core = IVC
 					remove_core = GHA
@@ -46,7 +46,6 @@ political_decisions = {
 					remove_core = ZAN
 					remove_core = TNZ
 					remove_core = CRN
-					remove_core = WSX
 					remove_core = IRE
 					}}
 
@@ -76,7 +75,7 @@ political_decisions = {
 					remove_core = HND
 					remove_core = AZB
 					remove_core = IRQ
-					remove_core = LYB
+					remove_core = LBY
 					remove_core = PHL
 					remove_core = IVC
 					remove_core = GHA
@@ -88,7 +87,6 @@ political_decisions = {
 					remove_core = ZAN
 					remove_core = TNZ
 					remove_core = CRN
-					remove_core = WSX
 					remove_core = IRE 
 					}
 			set_country_flag = historical_countries

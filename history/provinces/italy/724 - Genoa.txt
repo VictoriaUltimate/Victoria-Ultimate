@@ -1,26 +1,26 @@
-owner = GEN
-controller = GEN
-add_core = GEN
+owner = GNA
+controller = GNA
+add_core = GNA
 add_core = HRE
+add_core = ITA
+naval_base = 1
+trade_goods = fruit
+life_rating = 40
+
+1797.10.18 = { remove_core = HRE }
 1812.1.1 = {
+        owner = FRA
 		controller = FRA
-		owner = FRA
 		}
-1815.1.1 = {
+1815.1.7 = {
 owner = SAR
 controller = SAR
 add_core = SAR
+remove_core = GNA
 		}
-add_core = ITA
-trade_goods = fruit
-life_rating = 35
-naval_base = 1
 1861.1.1 = {
+    owner = ITA
 	controller = ITA
-	owner = ITA
-	add_core = ITA
-}
-1861.1.1 = { 
 	railroad = 2 
 	naval_base = 2
 }

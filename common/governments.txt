@@ -1,7 +1,6 @@
 # Do not change tags in here without changing every other reference to them.
 # If adding new forms of governemnts, make sure they are uniquely named.
 
-
 napoleonic_empire = {
 	reactionary = yes
 	
@@ -9,7 +8,6 @@ napoleonic_empire = {
 	appoint_ruling_party = no
 	flagType = republic
 }
-
 french_second_empire = {
 	conservative = yes
 	
@@ -17,16 +15,7 @@ french_second_empire = {
 	appoint_ruling_party = no
 	flagType = republic
 }
-theocracy =
-{
-	conservative = yes
-	
-	election = no
-	appoint_ruling_party = yes
-	flagType = monarchy
-}
-theocratic_dictatorship =
-{
+theocratic_dictatorship = {
 	#which ideology of parties.
 	islamist = yes
 	
@@ -34,9 +23,7 @@ theocratic_dictatorship =
 	appoint_ruling_party = yes
 	flagType = republic
 }
-
-proletarian_dictatorship =
-{
+proletarian_dictatorship = {
 	#which ideology of parties.
 	communist = yes
 	
@@ -44,21 +31,16 @@ proletarian_dictatorship =
 	appoint_ruling_party = yes
 	flagType = communist
 }
-
-
-
-presidential_dictatorship =
-{
+presidential_dictatorship = {
 	#which ideology of parties.
 	reactionary = yes
+	conservative = yes
 	
 	election = no
 	appoint_ruling_party = yes
 	flagType = republic
 }
- 
-bourgeois_dictatorship =
-{
+bourgeois_dictatorship = {
 	#which ideology of parties.
 	anarcho_liberal = yes
 	
@@ -66,9 +48,7 @@ bourgeois_dictatorship =
 	appoint_ruling_party = yes
 	flagType = republic
 }
-
-fascist_dictatorship =
-{
+fascist_dictatorship = {
 	#which ideology of parties.
 	fascist = yes
 	
@@ -76,7 +56,6 @@ fascist_dictatorship =
 	appoint_ruling_party = yes
 	flagType = fascist
 }
- 
 absolute_monarchy = {
 	liberal = yes
 	conservative = yes
@@ -87,20 +66,17 @@ absolute_monarchy = {
 	appoint_ruling_party = yes
 	flagType = monarchy
 }
- 
 prussian_constitutionalism = {
 	liberal = yes
 	socialist = yes
 	conservative = yes
 	reactionary = yes
 	
-	
 	election = yes
 	duration = 48
 	appoint_ruling_party = yes
 	flagType = monarchy
 }
-
 hms_government = {
 	liberal = yes
 	socialist = yes
@@ -116,7 +92,6 @@ hms_government = {
 	appoint_ruling_party = yes
 	flagType = monarchy
 }
-
 democracy = {
 	liberal = yes
 	socialist = yes
@@ -132,37 +107,28 @@ democracy = {
 	appoint_ruling_party = no
 	flagType = republic
 }
- 
+theocracy = {
+	#which ideology of parties.
+	reactionary = yes
+	conservative = yes
+	
+	election = no
+	appoint_ruling_party = yes
+}
 socialist_republic = {
 	socialist = yes
-	
-	
+		
 	election = no
 	appoint_ruling_party = yes
 	flagType = communist
 }
-
 revolutionary_republic = {
 	liberal = yes
 	conservative = yes
 	reactionary = yes
 	anarcho_liberal = yes
-	
-	
+		
 	election = yes
 	appoint_ruling_party = no
 	flagType = republic
-}
-flag_placeholder = {
-	liberal = yes
-	socialist = yes
-	conservative = yes
-	reactionary = yes
-	communist = yes
-	anarcho_liberal = yes
-	fascist = yes
-	
-	
-	election = no
-	appoint_ruling_party = no
 }

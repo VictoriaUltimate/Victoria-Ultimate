@@ -1,7 +1,3 @@
-
-
-#========================= H E A D E R =========================
-
 capital = 1988
 primary_culture = lunda
 culture = african_minor
@@ -14,9 +10,6 @@ literacy = 0
 prestige = 1
 schools = traditional_academic
 oob = "LUN.txt"
-
-
-#========================= H O U S E - O F - L O R D S =========================
 
 ruling_party = LUN_reactionary_84
 upper_house = {

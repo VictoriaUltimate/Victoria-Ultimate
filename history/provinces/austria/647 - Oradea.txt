@@ -1,26 +1,36 @@
+owner = SIE
+controller = SIE
+add_core = HUN
+add_core = ROM
+add_core = SIE
+trade_goods = wool
+life_rating = 35
+
+1660.8.27 = {
 owner = TUR
 controller = TUR
-add_core = AUS
-1700.1.1 = {
-	controller = AUS
-	owner = AUS
-		}
-add_core = SIE
-add_core = HUN
-1914.1.1 = {
+}
+1692.6.5 = { controller = AUS }
+1699.1.26 = {
+owner = SIE
+controller = SIE
+}
+1711.4.29 = {
+owner = AUS
+controller = AUS
+}
+1867.3.1 = {
 owner = KUK
 controller = KUK
 add_core = KUK
-}	
-1919.6.28 = { 
-		controller = HUN
-		owner = HUN
-		}
-add_core = ROM
-1919.6.28 = { 
-		controller = ROM
-		owner = ROM
-		remove_core = HUN
-		}
-trade_goods = wool
-life_rating = 35
+}
+1918.10.31 = {
+owner = HUN
+controller = HUN
+}
+1920.6.4   = {
+owner = ROM
+controller = ROM
+remove_core = HUN
+remove_core = KUK
+}

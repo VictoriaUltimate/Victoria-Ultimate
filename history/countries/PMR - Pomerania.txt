@@ -9,9 +9,6 @@ literacy = 0.09
 non_state_culture_literacy = 0
 civilized = yes
 
-
-
-
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed

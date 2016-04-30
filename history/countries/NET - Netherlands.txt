@@ -28,12 +28,12 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
-ruling_party = HOL_conservative
+ruling_party = NET_conservative
 upper_house = {
         fascist = 0
-        liberal = 1
-        conservative = 90
-        reactionary = 1
+        liberal = 0
+        conservative = 100
+        reactionary = 0
         anarcho_liberal = 0
         socialist = 0
         communist = 0
@@ -639,7 +639,7 @@ clean_coal = 1 #until this for 1830
 
 1861.1.1 = {
 government = hms_government
-ruling_party = HOL_liberal
+ruling_party = NET_liberal
 plurality = 60
 literacy = 0.82
 oob = "/1861/NET_oob.txt"

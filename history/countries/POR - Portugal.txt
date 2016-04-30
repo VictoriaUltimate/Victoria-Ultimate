@@ -28,13 +28,13 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
-ruling_party = POR_liberal
+ruling_party = POR_conservative
 last_election = 1834.1.1
 upper_house = {
 	fascist = 0
-	liberal = 18
-	conservative = 69
-	reactionary = 13
+	liberal = 0
+	conservative = 84
+	reactionary = 16
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0

@@ -7,22 +7,13 @@ country_event = {
 
 trigger = {
 	has_country_flag = WW2_Axis
-	AND = {
-	425 = {
-	controlled_by = THIS
-		}
-	FRA = {
-	war_exhaustion = 10
-		}
-			}
+	425 = { controlled_by = THIS }
+	FRA = { war_exhaustion = 10 }
 	has_global_flag = WW2inprogress
-	NOT = {
-		has_global_flag = WW2_France_Surrendered
-		}
-		}
+	NOT = { has_global_flag = WW2_France_Surrendered }
+		  }
 
-mean_time_to_happen = {
-		days = 1 }
+mean_time_to_happen = { days = 1 }
 
 ##annex##
 option = {
@@ -31,13 +22,10 @@ name = "EVTOPTA1000000"
 	end_war = FRA
 	inherit = FRA
 	prestige = 25
-	FRA = {
-	prestige = -100 }
+	FRA = { prestige = -100 }
 	set_global_flag = WW2_France_Surrendered
 	clr_global_flag = WW2_France_in_the_fight
-	any_pop = {
-	limit = {
-		culture = french }
+	any_pop = { limit = { culture = french }
 	militancy = 6
 	consciousness = 6
 			}
@@ -50,29 +38,18 @@ name = "EVTOPTB1000000"
 
 	set_global_flag = WW2_France_Surrendered
 	end_war = FRA
-	FRA_420 = {
- 	secede_province = GER }
-	FRA_418 = {
-	secede_province = GER }
-	FRA_399 = {
-	secede_province = GER }
-	FRA_435 = {
-	secede_province = GER }
-	FRA_412 = {
-	secede_province = GER }
-	FRA_411 = {
-	secede_province = GER }
-	FRA_404 = {
-	secede_province = GER }
-	FRA_425 = {
-	secede_province = GER }
-	FRA_438 = {
-	secede_province = GER }
-	FRA_442 = {
-	secede_province = GER }
-	FRA_458 = {
-	secede_province = GER }
-        create_vassal = FRA
+	FRA_399 = { secede_province = GER }
+	FRA_404 = { secede_province = GER }
+	FRA_411 = { secede_province = GER }
+	FRA_412 = { secede_province = GER }
+	FRA_418 = { secede_province = GER }
+	FRA_420 = { secede_province = GER }
+	FRA_425 = { secede_province = GER }
+	FRA_435 = { secede_province = GER }
+	FRA_438 = { secede_province = GER }
+	FRA_442 = { secede_province = GER }
+	FRA_458 = { secede_province = GER }
+    create_vassal = FRA
 	prestige = 25
 	FRA = {
 	prestige = -5000
@@ -83,16 +60,13 @@ political_reform = state_press
 political_reform = state_controlled
 political_reform = first_past_the_post
 political_reform = underground_parties }
-
 	any_pop = {
 	limit = {
 		culture = french }
 	militancy = 3
 	consciousness = 3
 			}
-		ai_chance = {
-			factor = 25
-		}
+		ai_chance = { factor = 100 }
 		}
 			}
 
@@ -117,27 +91,6 @@ political_reform = underground_parties }
 #}	
 #
 #
-#Pearl Harbor receive
-country_event = {
-	id = 1000001
-	title = "pearl_harbor_title"
-	desc = "pearl_harbor_desc"
-	picture = "pearlharborattackpic"
-	is_triggered_only = yes
-
-
-option = {
-name = "A Date Which Will Live in Infamy"
-	create_alliance = ENG
-	any_pop = {
-	dominant_issue = {
-	value = jingoism
-	factor = 0.75
-}	}
-
-		}
-
-}	
 
 #Axis troops enter London
 country_event = {
@@ -148,20 +101,13 @@ country_event = {
 
 trigger = {
 	has_country_flag = WW2_Axis
-	300 = {
-	controlled_by = THIS
-		}
-	ENG = {
-	war_exhaustion = 10
-		}
+	300 = { controlled_by = THIS }
+	ENG = { war_exhaustion = 10 }
 	has_global_flag = WW2inprogress
-	NOT = {
-		has_global_flag = WW2_UK_Surrendered
-		}
-		}
+	NOT = { has_global_flag = WW2_UK_Surrendered }
+		   }
 
-mean_time_to_happen = {
-		days = 1 }
+mean_time_to_happen = { days = 1 }
 
 ##annex##
 option = {
@@ -187,15 +133,13 @@ name = "Annex the British Isles, let the British Empire dissolve"
 ##Put Edward VIII on Throne##
 option = {
 name = "Make Edward VIII the British King"
-
-
 	end_war = ENG
 	treasury = 200000
 	GER = {
 	create_vassal = ENG
 	end_war = ENG
 	military_access = ENG
-		}
+		   }
 	prestige = 1000
 	set_global_flag = WW2_UK_Surrendered
 	clr_global_flag = WW2_UK_in_the_fight
@@ -216,11 +160,8 @@ political_reform = underground_parties
 	consciousness = 3
 			}
 		}
-		ai_chance = {
-			factor = 25
-		}
+		ai_chance = { factor = 25 }
 }
-
 }	
 
 #Warsaw Occupied
@@ -234,11 +175,10 @@ country_event = {
 trigger = {
 	OR = {
 	tag = GER
-	tag = RUS }
+	tag = RUS
+	      }
 	has_global_flag = WW2inprogress
-	NOT = {
-		has_global_flag = WW2_Poland_Surrendered
-		}
+	NOT = { has_global_flag = WW2_Poland_Surrendered }
 	706 = {
 		OR = {
 	controlled_by = GER
@@ -247,8 +187,7 @@ trigger = {
 			}
 		}
 
-mean_time_to_happen = {
-		days = 1 }
+mean_time_to_happen = { days = 1 }
 
 option = {
 name = "Excellent!"
@@ -260,9 +199,7 @@ name = "Excellent!"
 	country_event = 1000005 }
 	set_global_flag = WW2_Poland_Surrendered
 	clr_global_flag = WW2_Poland_in_the_fight
-
 		}
-
 }	
 
 #Warsaw OccupiedMolotov Pact's Polish Takeover Soviet
@@ -275,21 +212,14 @@ country_event = {
 
 option = {
 name = "Excellent!"
-	RUS_947 = {
-	secede_province = RUS }
-	RUS_707 = {
-	secede_province = RUS }
-	RUS_955 = {
-	secede_province = RUS }
-	AUS_662 = {
-	secede_province = RUS }
-	360 = {
-	secede_province = RUS }
-	707 = {
-	secede_province = RUS }
+	AUS_662 = { secede_province = RUS }
+	RUS_707 = { secede_province = RUS }
+	RUS_947 = { secede_province = RUS }
+	RUS_955 = { secede_province = RUS }
+	360 = { secede_province = RUS }
+	707 = { secede_province = RUS }
 	end_war = POL
 		}
-
 }	
 
 #Molotov Pact's Polish Takeover Nazi
@@ -303,30 +233,20 @@ country_event = {
 
 option = {
 name = "Excellent!"
-	PRU_701 = {
-	secede_province = GER }
-	PRU_690 = {
-	secede_province = GER }
-	PRU_682 = {
-	secede_province = GER }
-	AUS_702 = {
-	secede_province = GER }
-	706 = {
-	secede_province = GER }
-	708 = {
-	secede_province = GER }
-	709 = {
-	secede_province = GER }
-	711 = {
-	secede_province = GER }
-	715 = {
-	secede_province = GER }
-	RUS_710 = {
-	secede_province = GER }
+	AUS_702 = { secede_province = GER }
+	PRU_682 = { secede_province = GER }
+	PRU_690 = { secede_province = GER }
+	PRU_701 = { secede_province = GER }
+	RUS_710 = { secede_province = GER }
+	689 = { secede_province = GER }
+	706 = { secede_province = GER }
+	708 = { secede_province = GER }
+	709 = { secede_province = GER }
+	711 = { secede_province = GER }
+	715 = { secede_province = GER }
 	end_war = POL
 		}
-
-}
+}	
 
 #Italo-Greek War
 country_event = {
@@ -371,18 +291,10 @@ country_event = {
 
 trigger = {
 	has_country_flag = WW2_Axis
-	AND = {
-	387 = {
-	controlled_by = THIS
-		}
-	BEL = {
-	war_exhaustion = 5
-		}
-			}
+	387 = { controlled_by = THIS }
+	BEL = { war_exhaustion = 5 }
 	has_global_flag = WW2inprogress
-	NOT = {
-		has_global_flag = WW2_Belgium_Surrendered
-		}
+	NOT = { has_global_flag = WW2_Belgium_Surrendered }
 		}
 
 mean_time_to_happen = {
@@ -436,18 +348,10 @@ country_event = {
 
 trigger = {
 	has_country_flag = WW2_Axis
-	AND = {
-	375 = {
-	controlled_by = THIS
-		}
-	NET = {
-	war_exhaustion = 5
-		}
-			}
+	375 = { controlled_by = THIS }
+	NET = { war_exhaustion = 5 }
 	has_global_flag = WW2inprogress
-	NOT = {
-		has_global_flag = WW2_Holland_Surrendered
-		}
+	NOT = { has_global_flag = WW2_Holland_Surrendered }
 		}
 
 mean_time_to_happen = {
@@ -817,7 +721,7 @@ political_reform = underground_parties
         release = KAZ
         release = UZB
         release = KYR
-        release = TRM
+        release = TKM
         release = TAJ
         release = GEO
         release = ARM
@@ -832,7 +736,7 @@ political_reform = underground_parties
         create_vassal = KAZ
         create_vassal = UZB
         create_vassal = KYR
-        create_vassal = TRM
+        create_vassal = TKM
         create_vassal = TAJ
         create_vassal = GEO
         create_vassal = ARM
@@ -910,14 +814,14 @@ political_reform = underground_parties
         political_reform = underground_parties }
         KYR = { government = fascist_dictatorship }
        
-        TRM = { political_reform = party_appointed
+        TKM = { political_reform = party_appointed
         political_reform = none_voting
         public_meetings = no_meeting
         political_reform = state_press
         political_reform = state_controlled
         political_reform = first_past_the_post
         political_reform = underground_parties }
-        TRM = { government = fascist_dictatorship }
+        TKM = { government = fascist_dictatorship }
        
         TAJ = { political_reform = party_appointed
         political_reform = none_voting
@@ -1023,11 +927,11 @@ political_reform = underground_parties
         value = 100
 }      
         relation = {
-        who = TRM
+        who = TKM
         value = 300
 }
         diplomatic_influence = {
-        who = TRM
+        who = TKM
         value = 100
 }      
         relation = {
@@ -1071,7 +975,7 @@ LAT = { prestige = -1000 }
 LIT = { prestige = -1000 }
 KAZ = { prestige = -1000 }
 KYR = { prestige = -1000 }
-TRM = { prestige = -1000 }
+TKM = { prestige = -1000 }
 TAJ = { prestige = -1000 }
 GEO = { prestige = -1000 }
 ARM = { prestige = -1000 }
@@ -1209,8 +1113,8 @@ name = "Annex Italy!"
 	any_pop = {
 	limit = {
 		OR = {
-		north_italian
-		south_italian
+		has_pop_culture = north_italian
+		has_pop_culture = south_italian
 			}
  		}
 	militancy = 6
@@ -1242,11 +1146,114 @@ political_reform = non_secret_ballots
 
 		ai_chance = { factor = 100 }
 	}
-}	
+}
+# Munich Agreement
+country_event = {
+	id = 1000017
+	title = "EVTNAME1000017"
+	desc = "EVTDESC1000017"
+	
+	is_triggered_only = yes
+	
+	trigger = { tag = ENG }
+	option = {
+	name = "EVTOPTA1000017"
+	FRA = { country_event = 1000018 }
+	ai_chance = { 
+	factor = 100
+	modifier = {
+    factor = 0
+	NOT = { RUS = { government = proletarian_dictatorship } }
+				}
+	}	
+			}
+	option = {
+	name = "EVTOPTB1000017"
+	create_alliance = CZH
+	GER = {
+    war = {
+        			target = CZH
+        			attacker_goal = { casus_belli = lebensraum_cb }
+        			defender_goal = { casus_belli = ww2_allies_cb }
+					call_ally = yes
+        		}
+				}
+	ai_chance = { 
+	factor = 100
+	modifier = {
+    factor = 0
+	RUS = { government = proletarian_dictatorship }
+				}
+	}	
+			}
+			}
+# Munich Agreement
+country_event = {
+	id = 1000018
+	title = "EVTNAME1000017"
+	desc = "EVTDESC1000018"
+	
+	is_triggered_only = yes
+	
+	trigger = { tag = FRA }
+	option = {
+	name = "EVTOPTA1000017"
+	CZH = { country_event = 1000019 }
+	
+	leave_alliance = CZH
+	RUS = { leave_alliance = CZH}
+	ai_chance = { factor = 100 }	
+			}
+	option = {
+	name = "EVTOPTB1000017"
+	GER = {
+    war = {
+        			target = CZH
+        			attacker_goal = { casus_belli = lebensraum_cb }
+        			defender_goal = { casus_belli = ww2_allies_cb }
+					call_ally = yes
+        		}
+				}
+	ai_chance = { factor = 0 }
+	}	
+			}
+	# Munich Agreement
+country_event = {
+	id = 1000019
+	title = "EVTNAME1000017"
+	desc = "EVTDESC1000019"
+	
+	is_triggered_only = yes
+	
+	trigger = { tag = CZH }
+	option = {
+	name = "EVTOPTA1000017"
+	            627 = { secede_province = GER }
+				628 = { secede_province = GER }
+				629 = { secede_province = GER }
+				630 = { secede_province = GER }
+				632 = { secede_province = GER }
+				688 = { secede_province = GER }
+				689 = { secede_province = POL }
+	ai_chance = { factor = 100 }	
+			}
+	option = {
+	name = "EVTOPTB1000017"
+	GER = {
+    war = {
+        			target = CZH
+        			attacker_goal = { casus_belli = lebensraum_cb }
+        			defender_goal = { casus_belli = ww2_allies_cb }
+			        call_ally = yes		
+        		}
+				}
+	ai_chance = { factor = 0 }
+	}	
+			}
 
 # German occupied Denmark
 country_event = {
-	id = 1000017
+	id = 1000020
 	title = "German Occupied Denmark"
 	desc = "German forces have occupied the Danish land and and Danish government is willing to comply to our demands"
 	picture = "Military_reform"
@@ -1254,35 +1261,26 @@ country_event = {
 trigger = {
 	has_country_flag = WW2_Axis
 	AND = {
-	372 = {
-	controlled_by = THIS
-		}
-	DEN = {
-	war_exhaustion = 10
-		}
+	372 = { controlled_by = THIS }
+	DEN = { war_exhaustion = 10 }
 			}
 	has_global_flag = WW2inprogress
-	NOT = {
-		has_global_flag = WW2_Denmark_Surrendered
-		}
+	NOT = { has_global_flag = WW2_Denmark_Surrendered }
 		}
 
-mean_time_to_happen = {
-		days = 1 }
+    mean_time_to_happen = { days = 1 }
 
 ##annex##
-option = {
-name = "Annex them."
-
-	end_war = DEN
+    option = {
+    name = "Annex them."
+    end_war = DEN
 	inherit = DEN
 	prestige = 25
 	DEN = {
 	prestige = -100 }
 	set_global_flag = WW2_Denmark_Surrendered
 	any_pop = {
-	limit = {
-		culture = danish }
+	limit = { culture = danish }
 	militancy = 6
 	consciousness = 6
 			}
@@ -1290,113 +1288,94 @@ name = "Annex them."
 
 ##puppet Denmark##
 
-option = {
-name = "Form a loyal Fascist government"
-
+    option = {
+    name = "Form a loyal Fascist government"
 	set_global_flag = WW2_Denmark_Surrendered
 	end_war = DEN
 	create_vassal = DEN
 	prestige = 10
 	DEN = {
 	prestige = -5000
-political_reform = party_appointed
-political_reform = none_voting
-public_meetings = no_meeting
-political_reform = state_press
-political_reform = state_controlled
-political_reform = first_past_the_post
-political_reform = underground_parties
-government = fascist_dictatorship }
-
+    political_reform = party_appointed
+    political_reform = none_voting
+    public_meetings = no_meeting
+    political_reform = state_press
+    political_reform = state_controlled
+    political_reform = first_past_the_post
+    political_reform = underground_parties
+    government = fascist_dictatorship
 	any_pop = {
-	limit = {
-		culture = danish }
+	limit = { culture = danish }
 	militancy = 3
 	consciousness = 3
-			}
-		ai_chance = {
-			factor = 25
-		}
-		}
+			  }
+            }
+		ai_chance = { factor = 25 }
+		    }
 }
 
 country_event = {
-	id = 1000018
+    id = 1000021
 	title = "German Occupied Norway"
 	desc = "German forces have occupied the Norwegian land and and Norwegian government are willing to comply with our demands"
 	picture = "Military_reform"
 
-trigger = {
+    trigger = {
 	has_country_flag = WW2_Axis
 	AND = {
-	313 = {
-	controlled_by = THIS
-		}
-	NOR = {
-	war_exhaustion = 10
-		}
+	313 = { controlled_by = THIS }
+	NOR = { war_exhaustion = 10 }
 			}
 	has_global_flag = WW2inprogress
-	NOT = {
-		has_global_flag = WW2_Norway_Surrendered
-		}
+	NOT = { has_global_flag = WW2_Norway_Surrendered }
 		}
 
-mean_time_to_happen = {
-		days = 1 }
+    mean_time_to_happen = { days = 1 }
 
 ##annex##
-option = {
-name = "Annex them."
-
+    option = {
+    name = "Annex them."
 	end_war = NOR
 	inherit = NOR
 	prestige = 25
-	NOR = {
-	prestige = -100 }
+	NOR = { prestige = -100 }
 	set_global_flag = WW2_Norway_Surrendered
 	any_pop = {
-	limit = {
-		culture = norwegian }
+	limit = { culture = norwegian }
 	militancy = 6
 	consciousness = 6
 			}
 		}
 
-##puppet Norway##
-
-option = {
-name = "Form a loyal Fascist government"
-
+##puppet Norway##¸
+    option = {
+    name = "Form a loyal Fascist government"
 	set_global_flag = WW2_Norway_Surrendered
 	end_war = NOR
 	create_vassal = NOR
 	prestige = 10
 	NOR = {
 	prestige = -5000
-political_reform = party_appointed
-political_reform = none_voting
-public_meetings = no_meeting
-political_reform = state_press
-political_reform = state_controlled
-political_reform = first_past_the_post
-political_reform = underground_parties
-government = fascist_dictatorship }
-
+    political_reform = party_appointed
+    political_reform = none_voting
+    public_meetings = no_meeting
+    political_reform = state_press
+    political_reform = state_controlled
+    political_reform = first_past_the_post
+    political_reform = underground_parties
+    government = fascist_dictatorship
 	any_pop = {
-	limit = {
-		culture = norwegian }
+	limit = { culture = norwegian }
 	militancy = 3
 	consciousness = 3
 			}
-		ai_chance = {
-			factor = 25
-		}
+            }
+		ai_chance = { factor = 25 }
 		}
 }
 
 country_event = {
-	id = 1000019
+	id = 1000022
 	title = "Victory in Europe Day"
     desc = "With the defeat of the Nazis, we can shape the world to what it was like before the conflict arose!"
     picture = "Military_reform"
@@ -1406,59 +1385,75 @@ country_event = {
     trigger = {
     	has_country_flag = WW2_Allies
     	year = 1940
-
-		GER = {
-			war_exhaustion = 20
-		}
-
-    	549 = {
-        	controlled_by = THIS
-        }
+    	GER = { war_exhaustion = 20 }
+		549 = { controlled_by = THIS }
     }
 
     option = {
-    	name = "Reshape the borders of Europe"
-
-		any_country = {
-			end_war = GER
-			end_war = ITA
-		}
-
+    name = "Reshape the borders of Europe"
 		prestige = 100
 		clr_global_flag = WW2_France_Surrendered
 		clr_global_flag = WW2_Denmark_Surrendered
 		clr_global_flag = WW2_Norway_Surrendered
 		clr_global_flag = operation_barbarossa_done
 		clr_global_flag = danzig_or_war
+		any_country = { end_war = GER }
 
     	GER = {
-    		release = YUG
-    		release = FRA
-    		release = AUS
-    		release = RUS
-			release = POL
-			release = NET
+		    release = AUS
 			release = BEL
+			release = BYE
+			release = CZH
+			release = DEN
+			release = EST
+			release = FRA
+			release = KAZ
+			release = LAT
+			release = LIT
 			release = LUX
-			release = HND
-			release = PAK
-
-    		release = CZH
-
-    		release = DDR
-
-    		release = NOR
-    		release = DEN
-    		release_vassal = DEN
-    		release_vassal = NOR
+			release = NET
+			release = NOR
+			release = POL
+			release = RUS
+			release = UKR
+    		release = YUG
+			release_vassal = AUS
+    		release_vassal = BEL
+			release_vassal = CZH
+			release_vassal = DEN
 			release_vassal = FRA
-			release_vassal = LIT
-			release_vassal = EST
-			release_vassal = LAT
-			release_vassal = BEL
-			release_vassal = UKR
-			release_vassal = KAZ
-
+			release_vassal = LUX
+			release_vassal = NET
+    		release_vassal = NOR
+			release_vassal = POL
+			release_vassal = RUS
+			release_vassal = YUG
+			546 = { 
+			add_core = POL
+			secede_province = POL
+			}
+			679 = {
+			add_core = POL
+			secede_province = POL
+			}
+			680 = {
+			add_core = POL
+			secede_province = POL
+			}
+			681 = {
+			add_core = POL
+			secede_province = POL
+			}
+			any_owned = {
+			limit = {
+			AND = {
+			controlled_by = RUS
+			is_core = GER
+			       }
+			         }
+			add_core = DDR
+			secede_province = RUS
+			             }
     		prestige = -10000
     		government = democracy
 			political_reform = no_slavery
@@ -1469,11 +1464,110 @@ country_event = {
 			political_reform = free_press
 			political_reform = all_trade_unions
 			political_reform = secret_ballots
-
-			end_war = THIS
 			badboy = -300
+    	        }
+		AUS = {
+    		government = democracy
+			political_reform = no_slavery
+			political_reform = universal_voting
+			political_reform = population_equal_weight
+			political_reform = proportional_representation
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = secret_ballots
+			any_owned_province = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
     	}
-
+		BUL = {
+    		release = YUG
+			government = proletarian_dictatorship
+    		political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+    	}
+		HUN = {
+    		release = CZH
+			release = YUG
+    		government = proletarian_dictatorship
+    		political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+    	}
+		CZH = {
+    		inherit = SLV
+    		government = proletarian_dictatorship
+    		political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+			any_owned_province = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+    	}
+        DEN = {
+    		government = hms_government
+			political_reform = no_slavery
+			political_reform = universal_voting
+			political_reform = population_equal_weight
+			political_reform = proportional_representation
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = secret_ballots
+			any_owned_province = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+    	}
+		FRA = {
+    		government = democracy
+			political_reform = no_slavery
+			political_reform = universal_voting
+			political_reform = population_equal_weight
+			political_reform = proportional_representation
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = secret_ballots
+			any_owned_province = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+    	}
+		NOR = {
+    		government = hms_government
+			political_reform = no_slavery
+			political_reform = universal_voting
+			political_reform = population_equal_weight
+			political_reform = proportional_representation
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = all_trade_unions
+			political_reform = secret_ballots
+			GER = { release_vassal = NOR }
+			any_owned_province = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+    	}
 		POL = {
 			government = proletarian_dictatorship
     		political_reform = no_slavery
@@ -1484,109 +1578,12 @@ country_event = {
             political_reform = censored_press
             political_reform = state_controlled
             political_reform = underground_only
-
 			any_owned_province = {
-				limit = {
-					is_core = GER
-				}
+				limit = { is_core = GER }
 				remove_core = GER
 			}
 		}
-
-    	DEN = {
-    		government = hms_government
-			political_reform = no_slavery
-			political_reform = universal_voting
-			political_reform = population_equal_weight
-			political_reform = proportional_representation
-			political_reform = yes_meeting
-			political_reform = free_press
-			political_reform = all_trade_unions
-			political_reform = secret_ballots
-
-			any_owned_province = {
-				limit = {
-					is_core = GER
-				}
-				remove_core = GER
-			}
-    	}
-
-    	NOR = {
-    		government = hms_government
-			political_reform = no_slavery
-			political_reform = universal_voting
-			political_reform = population_equal_weight
-			political_reform = proportional_representation
-			political_reform = yes_meeting
-			political_reform = free_press
-			political_reform = all_trade_unions
-			political_reform = secret_ballots
-
-			GER = {
-				release_vassal = NOR
-			}
-			any_owned_province = {
-				limit = {
-					is_core = GER
-				}
-				remove_core = GER
-			}
-    	}
-
-    	FRA = {
-    		government = democracy
-			political_reform = no_slavery
-			political_reform = universal_voting
-			political_reform = population_equal_weight
-			political_reform = proportional_representation
-			political_reform = yes_meeting
-			political_reform = free_press
-			political_reform = all_trade_unions
-			political_reform = secret_ballots
-			any_owned_province = {
-				limit = {
-					is_core = GER
-				}
-				remove_core = GER
-			}
-    	}
-
-    	AUS = {
-    		government = democracy
-			political_reform = no_slavery
-			political_reform = universal_voting
-			political_reform = population_equal_weight
-			political_reform = proportional_representation
-			political_reform = yes_meeting
-			political_reform = free_press
-			political_reform = all_trade_unions
-			political_reform = secret_ballots
-			any_owned_province = {
-				limit = {
-					is_core = GER
-				}
-				remove_core = GER
-			}
-    	}
-
-    	BUL = {
-    		release = YUG
-
-			government = proletarian_dictatorship
-    		political_reform = no_slavery
-            political_reform = party_appointed
-            political_reform = none_voting
-            political_reform = first_past_the_post
-            political_reform = no_meeting
-            political_reform = censored_press
-            political_reform = state_controlled
-            political_reform = underground_only
-    	}
-
-    	CZH = {
-    		inherit = SLV
-
+		ROM = {
     		government = proletarian_dictatorship
     		political_reform = no_slavery
             political_reform = party_appointed
@@ -1596,17 +1593,22 @@ country_event = {
             political_reform = censored_press
             political_reform = state_controlled
             political_reform = underground_only
-			any_owned_province = {
-				limit = {
-					is_core = GER
-				}
-				remove_core = GER
-			}
     	}
-
+		RUS = {
+		    inherit = BYE
+		    inherit = EST
+			inherit = KAZ
+		    inherit = LAT
+            inherit = LIT
+            inherit = UKR
+			create_vassal = ALB
+			create_vassal = BUL
+			create_vassal = CZH
+			create_vassal = POL
+			create_vassal = ROM
+    	}
 		YUG = {
     		inherit = CRO
-
     		government = proletarian_dictatorship
     		political_reform = no_slavery
             political_reform = party_appointed
@@ -1617,181 +1619,16 @@ country_event = {
             political_reform = state_controlled
             political_reform = underground_only
 			any_owned_province = {
-				limit = {
-					is_core = GER
-				}
+				limit = { is_core = GER }
 				remove_core = GER
 			}
-    	}
-
-    	HUN = {
-    		release = CZH
-			release = YUG
-
-    		government = proletarian_dictatorship
-    		political_reform = no_slavery
-            political_reform = party_appointed
-            political_reform = none_voting
-            political_reform = first_past_the_post
-            political_reform = no_meeting
-            political_reform = censored_press
-            political_reform = state_controlled
-            political_reform = underground_only
-    	}
-
-    	ROM = {
-    		government = proletarian_dictatorship
-    		political_reform = no_slavery
-            political_reform = party_appointed
-            political_reform = none_voting
-            political_reform = first_past_the_post
-            political_reform = no_meeting
-            political_reform = censored_press
-            political_reform = state_controlled
-            political_reform = underground_only
-    	}
-
-    	ITA = {
-    		release = YUG
-    		release = ETH
-    		release = GRE
-    		release = ALB
-
-    		government = democracy
-			political_reform = no_slavery
-			political_reform = universal_voting
-			political_reform = population_equal_weight
-			political_reform = proportional_representation
-			political_reform = yes_meeting
-			political_reform = free_press
-			political_reform = all_trade_unions
-			political_reform = secret_ballots
-    	}
-
-    	GRE = {
-    		government = hms_government
-			political_reform = no_slavery
-			political_reform = universal_voting
-			political_reform = population_equal_weight
-			political_reform = proportional_representation
-			political_reform = yes_meeting
-			political_reform = free_press
-			political_reform = all_trade_unions
-			political_reform = secret_ballots
-
-			any_owned_province = {
-				limit = {
-					is_core = ITA
-				}
-				remove_core = ITA
-			}
-    	}
-
-    	ALB = {
-    		government = proletarian_dictatorship
-    		political_reform = no_slavery
-            political_reform = party_appointed
-            political_reform = none_voting
-            political_reform = first_past_the_post
-            political_reform = no_meeting
-            political_reform = censored_press
-            political_reform = state_controlled
-            political_reform = underground_only
-
-			any_owned_province = {
-				limit = {
-					is_core = ITA
-				}
-				remove_core = ITA
-			}
-    	}
-
-    	ETH = {
-			government = absolute_monarchy
-			political_reform = none_voting
-			political_reform = appointed
-			political_reform = first_past_the_post
-			political_reform = no_meeting
-			political_reform = censored_press
-			political_reform = state_controlled
-			political_reform = underground_parties
-
-			any_owned_province = {
-				limit = {
-					is_core = ITA
-				}
-				remove_core = ITA
-			}
-    	}
-
-    	RUS = {
-    		government = proletarian_dictatorship
-    		political_reform = no_slavery
-            political_reform = party_appointed
-            political_reform = none_voting
-            political_reform = first_past_the_post
-            political_reform = no_meeting
-            political_reform = censored_press
-            political_reform = state_controlled
-            political_reform = underground_only
-
-            inherit = LIT
-            inherit = LAT
-            inherit = EST
-            inherit = UKR
-            inherit = KAZ
-
-            create_vassal = POL
-            create_vassal = DDR
-            create_vassal = CZH
-            create_vassal = ROM
-            create_vassal = BUL
-            create_vassal = ALB
     	}
     }
 }
 
 country_event = {
 
-	id = 1000020
-	title = "Attack On Pearl Harbour"
-	desc = "We must strike the Americans and make them wary to prevent them from joining the war!"
-	picture = "pearlharborattackpic"
-
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		months = 11
-	}
-
-	trigger = {
-		tag = JAP
-		exists = USA
-		year = 1941
-		NOT = {
-			year = 1945
-		}
-		JAP = {
-			has_country_flag = WW2_Axis
-		}
-	}
-
-	option = {
-		name = "Let's see if they stay out of the war!"
-		prestige = 15
-		set_global_flag = attack_on_pearl_harbour
-		USA = {
-			country_event = {
-            	id = 1000021
-       			days = 7
-      	 	}
-		}
-	}
-}
-
-country_event = {
-
-	id = 1000021
+	id = 1000023
 	title = "Attack On Pearl Harbour - USA Reply"
 	desc = "The Japanese have struck Pearl Harbor! Should we let them get away with this or let it slide?"
 	picture = "pearlharborattackpic"
@@ -1802,11 +1639,7 @@ country_event = {
 	trigger = {
 		tag = USA
 		exists = JAP
-		war_with = JAP
-		year = 1941
-		NOT = {
-			year = 1950
-		}
+		war = no
 	}
 
 	option = {
@@ -1814,165 +1647,76 @@ country_event = {
 		prestige = 15
 		set_global_flag = usa_vs_japan
 		set_country_flag = WW2_Allies
-		USA = {
 			war = {
 				target = JAP
-        		attacker_goal = {
-        			casus_belli = ww2_allies_cb
-        		}
-        		defender_goal = {
-        			casus_belli = ww2_axis_cb
-        		}
+        		attacker_goal = { casus_belli = ww2_allies_cb }
+        		defender_goal = { casus_belli = ww2_axis_cb }
+			}
+       GER = {
+			war = {
+				target = USA
+        		attacker_goal = { casus_belli = ww2_axis_cb }
+        		defender_goal = { casus_belli = ww2_allies_cb }
 			}
 		}
-
 		ITA = {
 			war = {
 				target = USA
-        		attacker_goal = {
-        			casus_belli = ww2_axis_cb
-        		}
-        		defender_goal = {
-        			casus_belli = ww2_allies_cb
-        		}
+        		attacker_goal = { casus_belli = ww2_axis_cb }
+        		defender_goal = { casus_belli = ww2_allies_cb }
 			}
 		}
-
-		GER = {
-			war = {
-				target = USA
-        		attacker_goal = {
-        			casus_belli = ww2_axis_cb
-        		}
-        		defender_goal = {
-        			casus_belli = ww2_allies_cb
-        		}
-			}
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
+		ai_will_do = { factor = 100 }
 	}
 
 	option = {
     	name = "Let us be isolated even more..."
     	prestige = -15
 
-    	ai_will_do = {
-    		factor = 1
-    	}
+    	ai_will_do = { factor = 0 }
     }
-}
-
-country_event = {
-
-	id = 1000022
-	title = "Nuclear Weapon Developed"
-	desc = "We, with the help of Canada, have created a nuclear weapon to use against the Japanese!"
-	picture = "nuked_news"
-
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		months = 3
-	}
-
-	trigger = {
-		tag = USA
-		exists = JAP
-		war_with = JAP
-		has_country_flag = WW2_Allies
-		year = 1945
-		NOT = {
-			year = 1950
-		}
-	}
-
-	option = {
-		name = "Set it up."
-		prestige = 25
-		CAN = {
-			prestige = 25
-		}
-		USA = {
-			country_event = {
-            	id = 1000023
-       			days = 7
-      	 	}
-		}
-		nuclear_weapons = 1
-	}
-}
-
-country_event = {
-
-	id = 1000023
-	title = "Strike the Japanese"
-	desc = "Let us strike the Japanese and make them surrender!"
-	picture = "nuked"
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	trigger = {
-		tag = USA
-		exists = JAP
-		year = 1945
-		NOT = {
-			year = 1950
-		}
-	}
-
-	option = {
-		name = "launch the nuke."
-		set_global_flag = nuke_to_japan
-		prestige = 10
-		CAN = {
-			prestige = 10
-		}
-		nuclear_weapons = -1
-		JAP = {
-			country_event = { id=666666 days=2 }
-		}
-		JAP = {
-			country_event = { id=1000024 days=7 }
-		}
-	}
 }
 
 country_event = {
 
 	id = 1000024
 	title = "Surrender?"
-	desc = "The Americans struck us with a bomb never seen before... Hiroshima is gone. Should we surrender?"
-	picture = "nuked"
-
-	fire_only_once = yes
-	is_triggered_only = yes
+	desc = "We are fighting a war we can`t win. Should we surrender?"
+	picture = "Nobel_Peace"
 
 	trigger = {
 		tag = JAP
-		exists = USA
-		year = 1945
-		has_global_flag = nuke_to_japan
-		NOT = {
-			year = 1950
-		}
-	}
+		war = USA
+        war_exhaustion = 20
+		year = 1940
+		NOT = { year = 1950 }
+		OR = {
+		NOT = { 1657 = { controlled_by = JAP } }
+		AND = {
+		war = RUS
+		OR = {
+		NOT = { 1087 = { controlled_by = JAP } }
+		any_owned_province = { OR = {
+		region = JAP_1088
+		region = JAP_1640
+		region = JAP_1649
+		region = JAP_1655
+		region = JAP_1660
+		region = JAP_1672
+		region = JAP_1675
+				                     }
+		NOT = { controlled_by = JAP }
+			                  }
+	         }
+	          }
+			}
+			  }
 
 	option = {
 		name = "Yes"
-		USA = {
-			country_event = { id=1000025 days=2 }
-		}
-	}
-
-	option = {
-		name = "Never!"
-		prestige = -15
-		badboy = 25
-	}
+		USA = { country_event = 1000025 }
+		      }
+	option = { name = "No" }
 }
 
 country_event = {
@@ -1983,49 +1727,32 @@ country_event = {
 	picture = "Nobel_Peace"
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
 		tag = USA
 		exists = JAP
-		year = 1945
-		OR = {
-			has_global_flag = nuke_to_japan
-			1657 = { controlled_by = USA }
-		}
-		JAP = {
-			war_exhaustion = 20
-		}
-		NOT = {
-			year = 1950
-		}
+		year = 1940
+		NOT = { year = 1950 }
 	}
 
 	option = {
 		name = "Life is returned to normal!"
 		prestige = 50
-		clr_global_flag = nuke_to_japan
-		any_country = {
-			end_war = JAP
-		}
+		any_country = { end_war = JAP }
 		JAP = {
 			prestige = -10000
 			release_vassal = MCK
-			release_vassal = SXI
 			release = KMT
 			release = KOR
 			release = RUS
-
 		}
-		KMT = {
-			inherit = MCK
-			inherit = SXI
-		}
-
+		KMT = { inherit = MCK }
 		create_vassal = JAP
 		create_alliance = JAP
 		relation = {
 			who = JAP
 			value = 400
 		}
-	}
+	         }
 }

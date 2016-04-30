@@ -3,7 +3,7 @@ graphical_culture = ChineseGC
 
 party = {
 	name = "MCU_conservative"
-	start_date = 1800.1.1
+	start_date = 1600.1.1
 	end_date = 1861.1.1
 
 	ideology = conservative
@@ -31,7 +31,7 @@ party = {
 
 party = {
 	name = "MCU_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 1921.1.1
 
 	ideology = liberal
@@ -59,7 +59,7 @@ party = {
 
 party = {
 	name = "MCU_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -102,7 +102,7 @@ party = {
 party = {
 	name = "MCU_liberal_3"
 	start_date = 1920.1.1
-	end_date = 1945.1.1
+	end_date = 99999.1.1
 
 	ideology = liberal
 
@@ -129,7 +129,7 @@ party = {
 
 party = {
 	name = "MCU_communist"
-	start_date = 1890.1.1
+	start_date = 1848.1.1
 	end_date = 99999.1.1
 
 	ideology = communist
@@ -172,7 +172,7 @@ party = {
 party = {
 	name = "MCU_reactionary_2"
 	start_date = 1912.1.1
-	end_date = 1925.1.1
+	end_date = 99999.1.1
 
 	ideology = reactionary
 

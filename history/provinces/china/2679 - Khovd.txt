@@ -1,22 +1,24 @@
-owner = MNG
-controller = MNG
-add_core = MNG
-
-1644.1.1 = {
-	owner = CHI
-	controller = CHI
-	add_core = CHI
-	remove_core = MNG
-		}
-
-1910.1.1 = {
-	owner = MGL
-	controller = MGL
-	remove_core = CHI
-		}
-
-
+owner = MGL
+controller = MGL
 add_core = MGL
+add_core = OIR
 trade_goods = cotton
 life_rating = 32
 
+1623.1.1 = {
+owner = OIR
+controller = OIR
+}
+1634.1.1 = {
+owner = DZU
+controller = DZU
+add_core = DZU
+remove_core = OIR
+}
+1697.1.1 = {
+owner = MGL
+controller = MGL
+add_core = CHI
+}
+1758.1.1 = { remove_core = DZU }
+1910.1.1 = { remove_core = CHI }

@@ -1,257 +1,363 @@
-####1604 Enlightenment####
-
+#Treaty of Hunkar Iskelesi - Russian-Ottoman Alliance
 alliance = {
-	first = "AUS"
-	second = "SPA"
-	start_date = "1604.1.1"
-	end_date = "1713.1.1"
-		}
+	first = TUR
+	second = RUS
+	start_date = 1833.8.8
+	end_date = 1840.1.1
+}
+# Neuchatel
 alliance = {
-	first = "ENL"
-	second = "NET"
-	start_date = "1604.1.1"
-	end_date = "1713.1.1"
-		}
+	first = PRU
+	second = NCT
+	start_date = 1707.6.16
+	end_date = 1807.7.8
+}
 alliance = {
-	first = "FRA"
-	second = "NET"
-	start_date = "1604.1.1"
-	end_date = "1713.1.1"
-		}
-####1714 Empire####
+	first = FRA
+	second = NCT
+	start_date = 1807.7.9
+	end_date = 1814.5.30
+}
 alliance = {
-	first = "ENG"
-	second = "IRO"
-	start_date = "1713.1.1"
-	end_date = "1799.1.1"
-		}
+	first = SWI
+	second = NCT
+	start_date = 1814.9.12
+	end_date = 1857.1.1
+}
+#Circassia and Caucasiam Imamate
 alliance = {
-	first = "FRA"
-	second = "WYA"
-	start_date = "1713.1.1"
-	end_date = "1799.1.1"
-		}
-####Boring Vanilla Stuff####
-alliance=
-	{
-		first="BOL"
-		second="PEU"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-	
-alliance=
-	{
-		first="CHI"
-		second="KOR"
-		end_date="1936.1.1"
-		start_date="1836.1.1"
-	}
-
+		first = CIR 
+		second = DAG 
+		start_date =  1835.1.1
+		end_date = 1838.1.1
+}	
+#Morrocan-Algerian
+alliance = {
+		first = MOR 
+		second = ALD 
+		start_date =  1835.1.1
+		end_date = 1838.1.1
+}
+#########UK and Puppets
+alliance = {
+		first = ENG 
+		second = ABU 
+		start_date =  1820.1.8
+		end_date = 1971.12.1
+}
+alliance = {
+		first = ENG 
+		second = BHP 
+		start_date =  1833.2.22
+		end_date = 1947.10.5
+}
+#########Prussia and their allies
+alliance = {
+		first = PRU 
+		second = SGM 
+		start_date = 1835.1.1
+		end_date = 1850.1.1
+}
+alliance = {
+		first = PRU 
+		second = MEC 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = HAM 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = LUB 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}	
+alliance = {
+		first = PRU 
+		second = ANH 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = BRE 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = BRA 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = COB 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = FRM 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = HEK 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = HES 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = LIP 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = MEI 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}	
+alliance = {
+		first = PRU 
+		second = NAS 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = OLD 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = PRU 
+		second = WEI 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+#Austria/Sphereling
+alliance = {
+		first = AUS 
+		second = MOD 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = AUS 
+		second = PAR 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+alliance = {
+		first = AUS 
+		second = TUS 
+		start_date =  1835.1.1
+		end_date = 1867.1.1
+}
+#Russia/Montenegro
+alliance = {
+	first = RUS
+	second = MON
+	start_date = 1696.1.1
+	end_date = 1910.8.28
+}
+#Russia/Transcaucasia
+alliance = {
+	first = RUS
+	second = TCA
+	start_date = 1835.1.1
+	end_date = 1881.1.1
+}
+#France/Papal States
+alliance = {
+	first = FRA
+	second = PAP
+	start_date = 1835.1.1
+	end_date = 1861.1.1
+}
+#China/Lanfang
+alliance = {
+	first = QNG
+	second = LAN
+	start_date = 1777.1.1
+	end_date = 1884.1.1
+}
+alliance = {
+		first = QNG 
+		second = KML 
+		start_date = 1696.1.1
+		end_date = 1911.1.1
+}
+alliance = {
+		first = KMT 
+		second = KML 
+		start_date = 1912.1.1
+		end_date = 1930.1.1
+}	
+alliance = {
+		first = QNG 
+		second = TNT 
+		start_date = 1726.1.1
+		end_date = 1911.1.1
+}
+#Siam/Champassak
+alliance = {
+	first = SIA
+	second = CHK
+	start_date = 1835.1.1
+	end_date = 1893.1.1
+}
+####1619 Grand Campaign####
+alliance = {
+	first = AUS
+	second = SPA
+	start_date = 1603.1.1
+	end_date = 1648.10.24
+}
+alliance = {
+	first = CHI
+	second = KOR
+	start_date = 1603.1.1
+	end_date = 1627.3.3
+}
+####ENG/FRA Native Alliances####
+alliance = {
+	first = ENG
+	second = IRO
+	start_date = 1677.1.1
+	end_date = 1701.8.4
+}
+alliance = {
+	first = ENG
+	second = IRO
+	start_date = 1722.1.1
+	end_date = 1763.2.15
+}
+alliance = {
+	first = FRA
+	second = WYA
+	start_date = 1688.1.1
+	end_date = 1713.4.11
+}
+alliance = {
+	first = FRA
+	second = WYA
+	start_date = 1740.1.1
+	end_date = 1763.2.15
+}
 ####WW1 Scenario####
 #Central Powers
-alliance=
-	{
-		first="GER"
-		second="TUR"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
-alliance=
-	{
-		first="GER"
-		second="KUK"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
-alliance=
-	{
-		first="TUR"
-		second="KUK"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
+alliance = {
+		first = GER
+		second = TUR
+		start_date = 1914.1.1
+		end_date = 1918.1.1
+}
+alliance = {
+		first = GER
+		second = KUK
+        start_date = 1914.1.1
+		end_date = 1918.1.1
+}
+alliance = {
+		first = TUR
+		second = KUK
+		start_date = 1914.1.1
+		end_date = 1918.1.1
+}
 #Entente
-alliance=
-	{
-		first="RUS"
-		second="SER"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
-alliance=
-	{
-		first="FRA"
-		second="RUS"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
-alliance=
-	{
-		first="FRA"
-		second="ENG"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
-alliance=
-	{
-		first="ENG"
-		second="RUS"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
+alliance = {
+		first = RUS
+		second = SER
+		start_date = 1914.1.1
+		end_date = 1918.1.1
+}
+alliance = {
+		first = FRA
+		second = RUS
+		start_date = 1914.1.1
+		end_date = 1918.1.1
+}
+alliance = {
+		first = FRA
+		second = ENG
+		start_date = 1914.1.1
+		end_date = 1918.1.1
+}
+alliance = {
+		first = ENG
+		second = RUS
+		start_date = 1914.1.1
+		end_date = 1918.1.1
+}
 #British Empire
-alliance=
-	{
-		first="ENG"
-		second="AST"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
-alliance=
-	{
-		first="ENG"
-		second="CAN"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
-alliance=
-	{
-		first="ENG"
-		second="YEM"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
-alliance=
-	{
-		first="ENG"
-		second="OMA"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
-alliance=
-	{
-		first="ENG"
-		second="NZL"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
-
-# USA
-
-alliance=
-	{
-		first="USA"
-		second="PNM"
-		end_date="1918.1.1"
-		start_date="1914.1.1"
-	}
-	
-####WW2 Scenario####
-
-##British Empire##
-
-alliance=
-	{
-		first="ENG"
-		second="CAN"
-		start_date="1936.1.1"
-end_date="2018.1.1"
-	}
-
-alliance=
-	{
-		first="ENL"
-		second="CAN"
-		start_date="2015.1.1"
-end_date="2100.1.1"
-	}
-
-alliance=
-	{
-		first="ENG"
-		second="AST"
-		start_date="1936.1.1"
-end_date="2018.1.1"
-	}
-
-alliance=
-	{
-		first="ENG"
-		second="NZL"
-		start_date="1936.1.1"
-end_date="2018.1.1"
-	}
-
-alliance=
-	{
-		first="ENG"
-		second="SAF"
-		start_date="1936.1.1"
-end_date="2018.1.1"
-	}
-
-##Allies##
-
-alliance=
-	{
-		first="ENG"
-		second="FRA"
-		start_date="1936.1.1"
-end_date="1945.1.1"
-	}
-
+alliance = {
+		first = ENG
+		second = AST
+		start_date = 1901.1.1
+		end_date = 2022.1.1
+}
+alliance = {
+		first = ENG
+		second = CAN
+		start_date = 1867.7.1
+		end_date = 2022.1.1
+}
+alliance = {
+		first = ENL
+		second = CAN 
+		start_date = 2023.1.1
+        end_date = 2100.1.1
+}
+alliance = {
+		first = ENG
+		second = NZL
+		start_date = 1907.9.26
+		end_date = 2022.1.1
+}
+alliance = {
+		first = ENG
+		second = SAF
+		start_date = 1910.5.31
+        end_date = 2022.1.1
+}
+##WW2 Allies##
+alliance = {
+		first = ENG
+		second = FRA
+		start_date = 1939.9.3
+        end_date = 1945.1.1
+}
 ##Axis##
-
-alliance= 
-{
-		first="ITA"
-		second="GER"
-		start_date="1936.1.1"
-end_date="1945.1.1"
-	}
-
-alliance= 
-{
-		first="GER"
-		second="SLV"
-		start_date="1936.1.1"
-end_date="1945.1.1"
-	}
-
-alliance=
-	{
-		first="GER"
-		second="JAP"
-		start_date="1936.1.1"
-end_date="1945.1.1"
-	}
-
-
-alliance=
-	{
-		first="ITA"
-		second="JAP"
-		start_date="1936.1.1"
-end_date="1945.1.1"
-	}
-
-####POST-WW2 AMERICAN ALLIANCES####
-
-alliance=
-	{
-		first="USA"
-		second="ENG"
-		start_date="1945.1.1"
-end_date="2018.1.1"
-	}
-
+alliance = {
+		first = GER
+		second = ITA
+		start_date = 1939.9.3
+		end_date = 1943.9.3
+}
+alliance = {
+		first = GER
+		second = SLV
+		start_date = 1939.3.23
+        end_date = 1944.8.29
+}
 ####2023 Alliances####
-
-alliance=
-	{
-		first="FRA"
-		second="QUE"
-		start_date="2015.1.1"
-end_date="2050.1.1"
-	}
+alliance = {
+		first = FRA
+		second = QUE
+		start_date = 2022.1.1
+        end_date = 2050.1.1
+}

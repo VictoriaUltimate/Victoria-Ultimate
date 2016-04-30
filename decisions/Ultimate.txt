@@ -1,5 +1,3 @@
-			
-
 political_decisions = {
 
 ####MASS ATCGOITIES####
@@ -245,12 +243,12 @@ political_decisions = {
 	form_british_commonwealth = {
 	picture = britcommonwealth
 		potential = {
-			has_global_flag = ImpossibleFlag
 			NOT = { has_global_flag = formedgreaterbritishempire }
 			OR = {
 			government = democracy
 			government = hms_government }
 			tag = ENG
+			war = no
 				}
 
 		allow = { globalisation = 1 }
@@ -591,10 +589,9 @@ political_decisions = {
 	create_space_agency = {
 	picture = spaceprogrampic
 		potential = {
-			rocket_science = 1
-			NOT = {
-				has_country_flag = space_agency_operational }
-				}
+			spaceflight_capability = 1
+			NOT = { has_country_flag = space_agency_operational }
+		             }	
 		effect = {
 			set_country_flag = space_agency_operational
 			prestige = 10
@@ -603,9 +600,7 @@ political_decisions = {
 
 	start_space_mission = {
 	picture = moonpic
-		potential = {
-			has_country_flag = space_agency_operational
-				}
+		potential = { has_country_flag = space_agency_operational }
 		allow = { money = 100000}
 		effect = {
 			treasury = -100000

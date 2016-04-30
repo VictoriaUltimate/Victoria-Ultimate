@@ -1,5 +1,4 @@
 country_event = {
-
 	id = 32500
 	news = yes
 	news_desc_long = "EVTDESC32500_NEWS_LONG"
@@ -10,9 +9,7 @@ country_event = {
 		tag = RUS
 		year = 1837
 		war = no
-		NOT = {
-			year = 1840
-		}
+		NOT = { year = 1840 }
 	}
 	
 	fire_only_once = yes
@@ -24,7 +21,6 @@ country_event = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1838
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1839
@@ -42,16 +38,13 @@ country_event = {
 }
 
 country_event = {
-
 	id = 32502
 
 	trigger = {
 		tag = RUS
 		year = 1849
 		war = no
-		NOT = {
-			year = 1852
-		}
+		NOT = { year = 1852 }
 	}
 	
 	fire_only_once = yes
@@ -76,28 +69,19 @@ country_event = {
 	option = {
 		name = "EVTOPTA32502"
 		plurality = -2 
-		capitalists = {
-			consciousness = -1
-		}	
-		aristocrats = {
-			consciousness = -1
-		}	
-		bureaucrats = {
-			consciousness = -1
-		}	
+		capitalists = { consciousness = -1 }	
+		aristocrats = { consciousness = -1 }	
+		bureaucrats = { consciousness = -1 }	
 	}
 }
 
 country_event = {
-
 	id = 32503
 
 	trigger = {
 		tag = RUS
 		year = 1852
-		NOT = {
-			year = 1855
-		}
+		NOT = { year = 1855 }
 	}
 	
 	fire_only_once = yes
@@ -127,15 +111,12 @@ country_event = {
 }
 
 country_event = {
-
 	id = 32504
 
 	trigger = {
 		tag = RUS
 		year = 1874
-		NOT = {
-			year = 1877
-			}
+		NOT = { year = 1877 }
 	}
 	
 	fire_only_once = yes
@@ -169,7 +150,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 32505
 	news = yes
 	news_desc_long = "EVTDESC32505_NEWS_LONG"
@@ -179,9 +159,7 @@ country_event = {
 	trigger = {
 		tag = RUS
 		year = 1880
-		NOT = {
-			year = 1883
-			}
+		NOT = { year = 1883 }
 	}
 	
 	fire_only_once = yes
@@ -215,19 +193,13 @@ country_event = {
 }
 
 country_event = {
-
 	id = 32506
 	trigger = {
 		tag = RUS
 		year = 1837
 		experimental_railroad = 1
-		994 = {
-			has_building = railroad
-		}
-		NOT = {
-			year = 1850
-		}
-		
+		994 = { has_building = railroad }
+		NOT = { year = 1850 }
 	}
 	
 	fire_only_once = yes
@@ -482,13 +454,12 @@ country_event = {
 		
 	trigger = {
 		tag = RUS
-		OR = {
-			government = hms_government
-			government = democracy
-			government = prussian_constitutionalism
-		}
+		NOT = { government = proletarian_dictatorship }
 		has_country_flag = kgb_operating
 	}
+	
+	mean_time_to_happen =  { months = 1 }
+	
 	option = {
 		name = "Burn the building down"
 		remove_country_modifier = secret_service
@@ -506,30 +477,21 @@ province_event = {
 		tag = RUS
 		government = proletarian_dictatorship
 		has_country_flag = kgb_operating
-		NOT = {
-			 year = 1954
-		}
-		any_owned_province = {
-			limit = {
-				average_militancy = 1.5
-			}
-		}
+		NOT = { year = 1954 }
+		any_owned_province = { limit = { average_militancy = 1.5 } }
 	}
+	
+	mean_time_to_happen =  { months = 1 }
 	
 	option = {
 		name = "They are doing their job."
-		limit = {
-			is_colonial = no
-		}
+		limit = { is_colonial = no }
 		any_pop = {
 			militancy = -3
 			consciousness = -3
 		}
 		any_owned_province = {
-        	limit = {
-        		average_militancy = 1.5
-        	}
-
+        	limit = { average_militancy = 1.5 }
         	add_province_modifier = {
                  name = secret_service_job
                  duration = 365
@@ -537,7 +499,6 @@ province_event = {
         }
 	}
  }
-
  country_event = {
  	id = 80004
  	title = "Bolshevik Revolutions"
@@ -548,25 +509,26 @@ province_event = {
 
  	trigger = {
  		tag = RUS
- 		year = 1916
+ 		year = 1880
+		war = yes
  		OR = {
  			government = hms_government
- 			government = democracy
- 			government = prussian_constitutionalism
- 			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = absolute_monarchy
  		}
- 		NOT = {
- 			government = proletarian_dictatorship
- 			year = 1991
- 		}
+		NOT = { year = 1991 }
  	}
 
  	mean_time_to_happen =  {
-    	months = 4
+    	months = 30
 
     	modifier = {
-    		factor = 0.75 #increase likelihood to happen
-    		year = 1917
+    		factor = 0.2
+    		war_exhaustion = 25
+    	}
+		modifier = {
+    		factor = 0.2
+    		national_provinces_occupied = 0.2
     	}
     }
 
@@ -578,8 +540,9 @@ province_event = {
 			name = bolshevism_modifier
 			duration = 1095
 		}
- 	}
- }
+}
+}
+
 
  country_event = {
  	id = 80005
@@ -591,17 +554,13 @@ province_event = {
 
  	trigger = {
  		tag = RUS
- 		year = 1917
- 		NOT = {
- 			year = 1991
- 		}
+ 		year = 1880
+		NOT = { year = 1991 }
  		government = proletarian_dictatorship
  		has_global_flag = bolshevism_uprising
- 	}
+}
 
- 	mean_time_to_happen =  {
-    	months = 1
-    }
+ 	mean_time_to_happen =  { months = 1 }
 
  	option = {
  		name = "Oh Dear!"
@@ -620,18 +579,14 @@ province_event = {
 		leave_alliance = FIN
 		any_country = {
         	any_owned = {
-             	limit = {
-                    controlled_by = FIN
-                }
+             	limit = { controlled_by = FIN }
                 remove_core = RUS
             }
         }
-
 		remove_country_modifier = bolshevism_modifier
- 	}
- }
-
- country_event = {
+}
+}
+country_event = {
  	id = 80006
  	title = "Bolshevik's Are gaining Momentum!"
  	desc = "The Bolsheviks are gaining supporters in rural regions in the Empire and are putting up a fight with the army!"
@@ -641,37 +596,54 @@ province_event = {
 
  	trigger = {
  		tag = RUS
- 		year = 1917
+ 		year = 1880
+		war = yes
+		OR= {
+				government = hms_government
+				government = prussian_constitutionalism
+				government = absolute_monarchy
+			}
  		NOT = {
  			year = 1991
- 			government = proletarian_dictatorship
  			has_country_flag = bolshevik_government
  		}
  		has_global_flag = bolshevism_uprising
  	}
 
- 	mean_time_to_happen =  {
-    	months = 12
-    }
+ 	mean_time_to_happen =  { months = 12 }
 
- 	option = {
+option = {
  		name = "Find Those Pests and Eliminate Them!"
 		any_pop = {
-        	limit = {
-        		ideology = {
-                	value = communist
-                	factor = 0.8
-                }
-                militancy = 7
-                consciousness = 7
-        	}
-        }
-        militancy = 5
-        consciousness = 5
+		 limit = { culture = russian }
+			scaled_militancy = {
+				ideology = liberal
+				factor = 7
+				}
+			scaled_militancy = {
+				ideology = socialist
+				factor = 7
+				}
+			scaled_militancy = {
+				ideology = anarcho_liberal
+				factor = 7
+				}
+			scaled_militancy = {
+				ideology = communist
+				factor = 7
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = -10
+				}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -10
+			}
+		}
  	}
  }
-
- country_event = {
+country_event = {
  	id = 80007
  	title = "Bolshevik's Defeated!"
  	desc = "The Bolsheviks have been defeated and we still have control over our Central European regions."
@@ -683,21 +655,18 @@ province_event = {
  		tag = RUS
  		year = 1930
  		NOT = {
- 			year = 1991
+			year = 1991
  			government = proletarian_dictatorship
  			has_country_flag = bolshevik_government
  		}
- 		has_global_flag = bolshevism_uprising
+		has_global_flag = bolshevism_uprising
  	}
 
- 	mean_time_to_happen =  {
-    	months = 12
-    }
+ 	mean_time_to_happen =  { months = 12 }
 
  	option = {
- 		name = "Long Live the Russian Empire!"
+		name = "Long Live the Russian Empire!"
 		clr_global_flag = bolshevism_uprising
-		consciousness = -5
-		militancy = -5
+        any_pop = { militancy = -5 }
  	}
- }
+}	

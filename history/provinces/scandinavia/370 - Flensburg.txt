@@ -1,15 +1,19 @@
-owner = DEN
-controller = DEN
+owner = SCH
+controller = SCH
 add_core = DEN
-add_core = SCH
 add_core = GER
 add_core = SCA
+add_core = SCH
 trade_goods = cattle
-life_rating = 35
 fort = 1
+life_rating = 35
+
 1861.1.1 = { railroad = 2 }
-1914.1.1 = {
-	owner = GER
-	controller = GER
-	remove_core = DEN
-		}
+1864.10.30 = {
+owner = PRU
+controller = PRU
+}
+1871.1.1 = { 
+owner = GER
+controller = GER
+}

@@ -40,6 +40,9 @@
 # Order that CBs are executed in a peace treaty
 peace_order = { 
 become_independent
+dismantle_cb
+dismantle_cb_add
+dismantle_cb_add_new
 colonial_competition
 acquire_all_cores
 acquire_core_state 
@@ -47,29 +50,39 @@ unification_casus_belli
 civil_war
 unification_annex_casus_belli
 annex_core_country
-add_to_sphere 
+add_to_sphere
+great_war_install_democracy
+great_war_install_fascism
+great_war_install_communism
 uninstall_communist_gov_cb
+install_democracy
+install_fascism
+install_communism
 install_democratic_gov_cb
 install_communist_gov_cb
 unification_humiliate_cb
 take_from_sphere
 liberate_country
 free_peoples
+free_allied_cores
 unification_release_puppet_cb
 release_puppet
 make_puppet
 gunboat
 cut_down_to_size
-#cut_down_to_size_boxer
+cut_down_to_size_boxer
 humiliate
 place_in_the_sun
 dismantle_forts
 acquire_state 
+acquire_any_state
 acquire_substate_region
 demand_concession_casus_belli
 rude_boy
 conquest
+conquest_any
 annex
+lebensraum_cb
 establish_protectorate_casus_belli
 moon_colony_dispute
 mars_colony_dispute
@@ -1225,52 +1238,52 @@ cut_down_to_size = {
 	#}
 }
 
-#cut_down_to_size_boxer = {
-#	sprite_index = 8
-#	is_triggered_only = yes
-#	months = 12
-#	constructing_cb = no
-#	crisis = no
-#	
-#	can_use = {
-#		tag = QNG
-#		civilized = no
-#		has_country_flag = boxers_appeared
-#		NOT = { has_country_flag = boxers_disbanded }
-#	}
-#	
-#	badboy_factor = 1.1
-#	prestige_factor = 5
-#	peace_cost_factor = 12.5
-#	penalty_factor = 1
-#
-#	break_truce_prestige_factor = 1
-#	break_truce_infamy_factor = 1
-#	break_truce_militancy_factor = 1
-#	truce_months = 48
-#	
-#	good_relation_prestige_factor = 1
-#	good_relation_infamy_factor = 1
-#	good_relation_militancy_factor = 1
-#
-#	po_disarmament = yes
-#	po_reparations = yes
-#
-#	war_name = WAR_BOXER_NAME
-#	
-#	on_add = {
-#	    set_country_flag = intervened_boxer_war
-#		move_issue_percentage = { 
-#			from = jingoism 
-#			to = pro_military
-#			value = 0.25
-#		}
-#	}
-#	on_po_accepted = {
-#		THIS = { clr_country_flag = intervened_boxer_war }
-#		country_event = 99015
-#	}
-#}
+cut_down_to_size_boxer = {
+	sprite_index = 8
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+	
+	can_use = {
+		tag = QNG
+		civilized = no
+		has_country_flag = boxers_appeared
+		NOT = { has_country_flag = boxers_disbanded }
+	}
+	
+	badboy_factor = 1.1
+	prestige_factor = 5
+	peace_cost_factor = 12.5
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	po_disarmament = yes
+	po_reparations = yes
+
+	war_name = WAR_BOXER_NAME
+	
+	on_add = {
+	    set_country_flag = intervened_boxer_war
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	on_po_accepted = {
+		THIS = { clr_country_flag = intervened_boxer_war }
+		country_event = 99015
+	}
+}
 
 # Free Peoples
 free_peoples = {
@@ -1811,6 +1824,107 @@ liberate_country = {
 	on_po_accepted = { country_event =	2651 }	# Territorial Loss event
 }
 
+free_allied_cores = {
+	sprite_index = 25
+	is_triggered_only = yes
+	months = 12
+	
+	construction_speed = 0.75
+
+	badboy_factor = 1.0
+	prestige_factor = 2
+	peace_cost_factor = 0.8
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		is_vassal = no
+		number_of_states = 2
+		THIS = {
+			NOT = { has_country_modifier = neutrality }
+		}
+		NOT = { has_country_modifier = neutrality }
+		OR = {
+			war_with = THIS
+			THIS = {
+				NOT = { has_country_modifier = no_more_war }
+			}
+		}
+		OR = {
+			THIS = { government = fascist_dictatorship }
+			THIS = { government = proletarian_dictatorship }
+			war_with = THIS
+			NOT = { relation = { who = THIS value = 0 } }
+			THIS = { ai = no }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+	}
+
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
+	allowed_countries = {
+		any_owned_province = { is_core = FROM }
+		NOT = {
+			tag = FROM
+			is_our_vassal = FROM
+		}
+		OR = {
+			NOT = { alliance_with = FROM }
+			war_with = THIS
+		}
+		OR = {
+			FROM = { alliance_with = THIS }
+			war_with = THIS
+		}
+		FROM = {
+			exists = yes
+			in_sphere = THIS
+			NOT = {
+				any_core = { owned_by = THIS }
+			}
+		}
+	}
+
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal's state
+	allowed_states = {
+		#NOT = { any_owned_province = { is_capital = yes } }
+		NOT = { any_owned_province = { is_core = THIS } }
+		any_owned_province = { is_core = FROM }
+	}
+
+	po_transfer_provinces = yes
+
+	war_name = WAR_FREE_ALLIED_CORE_NAME
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	
+	on_po_accepted = {
+		country_event =	2651	# Territorial Loss event
+	}
+}
+
 # Dismantle fortifications (forts + naval bases)
 dismantle_forts = {
 	sprite_index = 16
@@ -1888,6 +2002,138 @@ dismantle_forts = {
 			value = 0.25
 		}
 	}
+}
+
+#Placeholder for calling allies
+call_allies_cb = {
+	sprite_index = 11
+	is_triggered_only = yes
+	months = 1
+	constructing_cb = no
+	crisis = no
+	
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 0
+	
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+	
+	can_use = {
+		THIS = { ai = yes }
+		always = no
+	}
+
+	po_remove_prestige = yes
+	
+	war_name = WAR_NAME
+	
+	on_add = {}
+}
+
+#Placeholder for acquire state-by-event
+acquire_any_state = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {
+		is_vassal = no
+		NOT = { is_our_vassal = THIS }
+		always = no
+	}
+	
+	allowed_states = {}
+	
+	po_demand_state = yes
+	
+	war_name = WAR_TAKE_NAME
+	
+	on_add = {}
+	
+	on_po_accepted = {
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					is_culture_group = east_asian
+					OR = {
+						owns = 1481
+						owns = 1496
+						owns = 1498
+						owns = 1538
+						owns = 1566
+						owns = 1569
+						owns = 1606
+						owns = 2632
+					}
+				}
+				THIS = {
+					civilized = yes
+					NOT = { is_culture_group = east_asian }
+					num_of_ports = 1
+				}
+			}
+			owner = { country_event = 1316089 }
+		}
+	}
+}
+
+conquest_any = {
+	sprite_index = 22
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+	
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		is_vassal = no
+		always = no
+	}
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 1
+	penalty_factor = 1
+	
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+	
+	po_annex = yes
+	
+	war_name = WAR_CONQUEST_ANY_NAME
+	
+	on_add = {}
 }
 
 # Release Puppet
@@ -3263,11 +3509,11 @@ slavery_cb = {
 # Lebensraum
 lebensraum_cb = {
            sprite_index = 5
-           is_triggered_only = no
+           is_triggered_only = yes
            months = 2
            crisis = no
 
-           constructing_cb = yes
+           constructing_cb = no
 
            badboy_factor = 1.5
            prestige_factor = 3

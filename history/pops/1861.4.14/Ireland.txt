@@ -1,4 +1,4 @@
-﻿#Ulster Region - 1846000
+#Ulster Region - 1846000
 #under rule of Britain 1861
 #Belfast (402004/100501 POPs)
 254 = {

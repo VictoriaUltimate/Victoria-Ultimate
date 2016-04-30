@@ -1,29 +1,19 @@
-owner = MON
-controller = MON
+owner = TUR
+controller = TUR
 add_core = MON
-add_core = YUG
-
-1914.1.1 = {
-	remove_core = TUR
-	}
-
-1919.6.28 = { 
-		controller = YUG
-		owner = YUG
-		}
 trade_goods = fruit
 life_rating = 35
 
-
-#Breakup of Yugoslav
-1991.6.25 = {
-	owner = YUG
-	controller = YUG
-		}
-
+1696.1.1 = {
+owner = MON
+controller = MON
+}
+1919.6.28 = { 
+owner = YUG
+controller = YUG
+add_core = YUG
+}
 2006.6.3 = {
-	owner = MON
-	controller = MON
-		}
-
-
+owner = MON
+controller = MON
+}

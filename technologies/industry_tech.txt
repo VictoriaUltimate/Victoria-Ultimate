@@ -463,6 +463,7 @@ dawn_of_industrial_revolution_tech = {
 	cost = 14400
 	increase_research = 0.05
 	factory_throughput = 0.05
+	activate_building = regular_clothes_factory
 	ai_chance = {
 		factor = 1.01
 		modifier = {

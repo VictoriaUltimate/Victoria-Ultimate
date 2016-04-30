@@ -1,25 +1,31 @@
 owner = SPA
 controller = SPA
-add_core = SPA
 add_core = CAT
+add_core = SPA
 trade_goods = fruit
 life_rating = 35
-1812.1.1 = {
-		controller = FRA
-		owner = FRA
-		}
 
-
-1815.1.1 = {
-		controller = SPA
-		owner = SPA
-		}
-
-
+1812.1.26 = {
+owner = FRA
+controller = FRA
+}
+1815.6.9 = {
+owner = SPA
+controller = SPA
+}
 1861.1.1 = { railroad = 3 }
-
+1931.4.14 = {
+owner = SPR
+controller = SPR
+add_core = SPR
+}
+1939.2.4 = {
+owner = SPA
+controller = SPA
+}
+1977.7.1 = { remove_core = SPR }
 #The 2017 Inter-Independence Movement
 2018.1.1 = {
 owner = CAT
 controller = CAT
-		}
+}

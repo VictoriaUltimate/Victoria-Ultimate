@@ -1,7 +1,3 @@
-
-
-#========================= H E A D E R =========================
-
 capital = 1899
 primary_culture = dyula
 culture = akan
@@ -16,9 +12,6 @@ literacy = 0
 prestige = 1
 schools = traditional_academic
 oob = "FAN.txt"
-
-
-#========================= H O U S E - O F - L O R D S =========================
 
 ruling_party = FAN_reactionary_84
 upper_house = {

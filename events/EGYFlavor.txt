@@ -43,13 +43,12 @@ country_event = {
 				name = "Ibrahim Pasha"
 				personality = intuitive 
 				background = school_of_firepower
-				experience = 5
 			}
 		set_country_flag = first_turkoegypt_war
-		ai_chance = { factor = 100 }
 		}
+		ai_chance = { factor = 100 }
 	}
-	options = { name = "EVTOPTB1000100" }
+	option = { name = "EVTOPTB1000100" }
 }
 
 country_event = {
@@ -93,7 +92,7 @@ country_event = {
 		set_country_flag = kutahya
 		ai_chance = { factor = 100 }
 	}
-	options = { name = "EVTOPTB1000101" }
+	option = { name = "EVTOPTB1000101" }
 }
 
 #country_event ={

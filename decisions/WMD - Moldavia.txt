@@ -1,5 +1,3 @@
-
-
 political_decisions = {
 
 	nuke_MOL = {
@@ -7,20 +5,15 @@ political_decisions = {
 		potential = {	
 			war_with = MOL
 			nuclear_weapons = 1	
-
-
-
 				}
+				
 		effect = {
 			badboy = 25
 			prestige = -25
-nuclear_weapons = -1
-
-			MOL = {
-				country_event = { id=666666 days=2 }
+            nuclear_weapons = -1
+			MOL = { country_event = 666666 }
 				}
-
-				}
+				
 		ai_will_do = {
 			factor = -1
 			modifier = {
@@ -34,9 +27,7 @@ nuclear_weapons = -1
 				}
 			modifier = {
 				factor = 0.40
-				MOL = {
-				brigades_compare = 2
-					}
+				MOL = { brigades_compare = 2 }
 					}
 			modifier = {
 			factor = -0.20
@@ -48,6 +39,4 @@ nuclear_weapons = -1
 				}
 			}
 		}
-
-
 }

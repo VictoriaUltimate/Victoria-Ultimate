@@ -16,7 +16,7 @@ party = {
 
 party = {
 	name = "ARG_liberal_2"
-	start_date = 1835.1.1
+	start_date = 1628.1.1
 	end_date = 1856.1.1
 
 	ideology = liberal
@@ -30,7 +30,7 @@ party = {
 
 party = {
 	name = "ARG_conservative"
-	start_date = 1835.1.1
+	start_date = 1600.1.1
 	end_date = 1870.1.1
 
 	ideology = conservative
@@ -156,7 +156,7 @@ party = {
 
 party = {
 	name = "ARG_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal

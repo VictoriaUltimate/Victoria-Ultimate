@@ -9,18 +9,13 @@ fire_only_once = yes
 trigger = {
 		tag = GRE
 		year = 1945
-		NOT = {
-		year = 1947
-		}
+		NOT = { year = 1947 }
 	}
 
-	mean_time_to_happen = {
-		months = 3
-	}
+	mean_time_to_happen = { months = 3 }
 
 	option = {
 		name = "Those commies!"
-		
 		add_country_modifier = {
 			name = nationalist_agitation
 			duration = 365
@@ -49,23 +44,15 @@ fire_only_once = yes
 		tag = USA
 		year = 1946
 		
-		NOT = {
-			year = 1948
-			}
-
+		NOT = { year = 1948 }
 	}
 
-	mean_time_to_happen = {
-		months = 6
-	}
+	mean_time_to_happen = { months = 6 }
 
 	
 	option = {
-	
 	name = "We capture a flying saucer!"
-	
 	prestige = 50
-	
 	}
 }
 	
@@ -81,7 +68,17 @@ fire_only_once = yes
 		tag = FRA
 		year = 1945
 		war = no
-		or = {
+		OR = {
+			owns = 1356
+			owns = 1357
+			owns = 1360
+			owns = 1361
+			owns = 1362
+			owns = 1363
+			owns = 1364
+			owns = 1366
+			owns = 1367
+			owns = 1368
 			owns = 1369
 			owns = 1370
 			owns = 1372
@@ -96,34 +93,17 @@ fire_only_once = yes
 			owns = 1381
 			owns = 1382
 			owns = 1383
-			owns = 1364
-			owns = 1366
-			owns = 1367
-			owns = 1368
-			owns = 1361
-			owns = 1362
-			owns = 1363
-			owns = 1356
-			owns = 1357
-			owns = 1360
 		}
-		
-		NOT = {
-			year = 1947
-			}
-
+		NOT = { year = 1947 }
 	}
 
-	mean_time_to_happen = {
-		months = 6
-	}
+	mean_time_to_happen = { months = 6 }
 
 	option = {
 		name = "Indochina is our Colony!"
 		set_country_flag = indochina_war
-		
+        release = CAM
 		release = DAI
-		release = CAM
 		release = LAO
 		
 		random_country = {
@@ -133,12 +113,8 @@ fire_only_once = yes
 			}
 			war = {
 				target = FRA
-				attacker_goal = {
-					casus_belli = status_quo
-				}		
-				defender_goal = {
-					casus_belli = conquest
-				}
+				attacker_goal = { casus_belli = status_quo }		
+				defender_goal = { casus_belli = conquest }
 			}
 		}
 		random_country = {
@@ -148,12 +124,8 @@ fire_only_once = yes
 			}
 			war = {
 				target = FRA
-				attacker_goal = {
-					casus_belli = status_quo
-				}		
-				defender_goal = {
-					casus_belli = conquest
-				}
+				attacker_goal = { casus_belli = status_quo }		
+				defender_goal = { casus_belli = conquest }
 			}
 		}
 		random_country = {
@@ -163,18 +135,13 @@ fire_only_once = yes
 			}
 			war = {
 				target = FRA
-				attacker_goal = {
-					casus_belli = status_quo
-				}		
-				defender_goal = {
-					casus_belli = conquest
-				}
+				attacker_goal = { casus_belli = status_quo }		
+				defender_goal = { casus_belli = conquest }
 			}
 		}
+		ai_chance = { factor = 100 }
 	}
-			ai_chance = {
-			factor = 100
-		}
+
 		option = {
 		name = "Let them be."
 		set_global_flag = no_indochina_war
@@ -183,13 +150,11 @@ fire_only_once = yes
 			consciousness = 1
 			militancy = 1
 		}
-		release = DAI
 		release = CAM
+		release = DAI
 		release = LAO
 		
-		ai_chance = {
-			factor = 0
-		}
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -204,36 +169,20 @@ fire_only_once = yes
 	trigger = {
 		tag = ENG
 		year = 1947
-		war = no
-		
-		NOT = {
-			year = 1949
-			}
-
+		war = no	
+		NOT = { year = 1949 }
 	}
 
-	mean_time_to_happen = {
-		months = 6
-	}
+	mean_time_to_happen = { months = 6 }
 
 	option = {
 		name = "Let the jews return to their ancestral home!"
 		set_global_flag = creation_of_israel
-		
 		release = ISR
-		
-		917 = {
-		secede_province = JOR
+		917 = { secede_province = JOR }
+		918 = { secede_province = JOR }
+		ai_chance = { factor = 100 }
 		}
-		
-		918 = {
-		secede_province = JOR
-		}
-		
-		ai_chance = {
-			factor = 100
-		}
-		
 		option = {
 		name = "No."
 		set_global_flag = no_state_israel
@@ -243,11 +192,8 @@ fire_only_once = yes
 			consciousness = 5
 			militancy = 10
 			}
+		ai_chance = { factor = 0 }
 		}
-		ai_chance = {
-			factor = 0
-		}
-	}	
 	}
 
 country_event = {
@@ -1109,8 +1055,7 @@ trigger = {
 	}	
 
 country_event = {
-
-id = 26000003
+id = 26000023
 title = ev_26000023 #May 1968 in France
 desc = ev_26000023
 picture = ""
@@ -1120,25 +1065,17 @@ fire_only_once = yes
 trigger = {
 		tag = FRA
 		year = 1967
-		
-		NOT = {
-			year = 1970
-			}
-
+		NOT = { year = 1970 }
 	}
 
-	mean_time_to_happen = {
-		months = 6
-	}
+	mean_time_to_happen = { months = 6 }
 
 	option = {
-	
 	name = "May 68: the beginning of a prolonged struggle."
 	add_country_modifier = {
 			name = nationalist_agitation
 			duration = 365
 		}
-	
 	any_pop = {
 			scaled_militancy = {
 				issue = socialism
@@ -1154,12 +1091,10 @@ trigger = {
 			}
 	}
 	prestige = -25
-	
 	}
 }
 
 country_event = {
-
 id = 26000024
 title = ev_26000024 #Tlatelolco Massacre
 desc = ev_26000024

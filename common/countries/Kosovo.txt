@@ -3,8 +3,8 @@ graphical_culture = EuropeanGC
 
 party = {
 	name = "KOS_conservative"
-	start_date = 1835.1.1
-	end_date = 1912.1.1
+	start_date = 1600.1.1
+	end_date = 1913.1.1
 
 	ideology = conservative
 
@@ -46,7 +46,7 @@ party = {
 party = {
 	name = "KOS_conservative_2"
 	start_date = 1913.1.1
-	end_date = 1945.1.1
+	end_date = 99999.1.1
 
 	ideology = conservative
 
@@ -59,8 +59,8 @@ party = {
 
 party = {
 	name = "KOS_liberal_2"
-	start_date = 1600.1.1
-	end_date = 1911.1.1
+	start_date = 1628.1.1
+	end_date = 1912.1.1
 
 	ideology = liberal
 
@@ -87,7 +87,7 @@ party = {
 
 party = {
 	name = "KOS_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal

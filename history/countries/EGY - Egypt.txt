@@ -10,9 +10,9 @@ non_state_culture_literacy = 0.05
 ruling_party = EGY_conservative
 upper_house = {
 	fascist = 0
-	liberal = 10
-	conservative = 72
-	reactionary = 18
+	liberal = 0
+	conservative = 80
+	reactionary = 20
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
@@ -48,6 +48,9 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
+
+1831.10.29 = { set_country_flag = first_turkoegypt_war }
+1833.5.6 = { set_country_flag = kutahya }
 
 1861.1.1 = {
 	oob = "/1861/EGY_oob.txt"
@@ -87,14 +90,9 @@ enfilading_tactics = 1
 late_muskets = 1
 }
 
-1903.1.1 = {
-	decision = build_suez_canal
-		}
-
-
+1903.1.1 = { decision = build_suez_canal }
 
 1914.1.1 = {
-
 foreign_weapons = yes_foreign_weapons
 army_schools = yes_army_schools
 land_reform = yes_land_reform
@@ -1935,4 +1933,4 @@ robotics = 1
 high_speed_rail = 1
 synthetic_graphite = 1
 green_power = 1 #until this for 2023
-	}
+}

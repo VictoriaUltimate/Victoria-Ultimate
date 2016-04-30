@@ -11,11 +11,11 @@ civilized = yes
 ruling_party = MLT_conservative
 upper_house = {
 	fascist = 0
-	liberal = 12
-	conservative = 60
-	reactionary = 14
-	anarcho_liberal = 4
-	socialist = 10
+	liberal = 0
+	conservative = 81
+	reactionary = 19
+	anarcho_liberal = 0
+	socialist = 0
 	communist = 0
 }
 

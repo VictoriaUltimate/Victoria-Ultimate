@@ -1,8 +1,9 @@
+owner = GNA
+controller = GNA
 add_core = CRS
 trade_goods = fish
 life_rating = 35
-owner = GEN
-controller = GEN
+
 1755.1.1 = {
 owner = CRS
 controller = CRS

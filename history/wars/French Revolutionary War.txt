@@ -6,7 +6,6 @@ name = "French Revolutionary War"
 	add_attacker = RUS
 	add_attacker = BAV
 	add_attacker = POR
-	add_attacker = SWI
 	add_attacker = TUR
 	add_attacker = EGY
 	add_attacker = ALD
@@ -14,6 +13,7 @@ name = "French Revolutionary War"
 	add_defender = FRA
 	add_defender = SPA
 	add_defender = NET
+	add_defender = SWI
 	
 	# actor
 	# receiver
@@ -24,11 +24,6 @@ name = "French Revolutionary War"
 		casus_belli = napoleon_cb
 		actor = ENG
 		receiver = FRA
-	}
-	war_goal = {
-		casus_belli = make_puppet
-		actor = FRA
-		receiver = SWI
 	}
     war_goal = {
 		casus_belli = make_puppet
@@ -43,7 +38,6 @@ name = "French Revolutionary War"
 	rem_attacker = RUS
 	rem_attacker = BAV
 	rem_attacker = POR
-	rem_attacker = SWI
 	rem_attacker = TUR
 	rem_attacker = EGY
 	rem_attacker = ALD
@@ -51,4 +45,5 @@ name = "French Revolutionary War"
 	rem_defender = FRA
 	rem_defender = SPA
 	rem_defender = NET
+	rem_defender = SWI
 }

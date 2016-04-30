@@ -37,22 +37,21 @@ school_reforms = no_schools
 ruling_party = SPA_conservative
 upper_house = {
 	fascist = 0
-	liberal = 35
-	conservative = 60
-	reactionary = 5
+	liberal = 0
+	conservative = 92
+	reactionary = 8
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
 
-govt_flag = 
-{
+govt_flag = {
         government = democracy
-        flag = flag_placeholder
+        flag = theocracy
 }
 
 1700.1.1 = {
-	oob = "/1700/SPA_oob.txt"
+oob = "/1700/SPA_oob.txt"
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1

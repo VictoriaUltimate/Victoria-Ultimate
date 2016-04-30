@@ -1,7 +1,3 @@
-
-
-#========================= H E A D E R =========================
-
 capital = 1901
 primary_culture = mossi
 accepted_culture = african_minor
@@ -13,9 +9,6 @@ literacy = 0
 prestige = 1
 schools = traditional_academic
 oob = "MOS.txt"
-
-
-#========================= H O U S E - O F - L O R D S =========================
 
 ruling_party = MOS_reactionary_84
 upper_house = {

@@ -1,7 +1,5 @@
 capital = 1250
 primary_culture = bihari
-
-
 religion = hindu
 government = presidential_dictatorship
 plurality = 0.0
@@ -9,13 +7,12 @@ nationalvalue = nv_order
 literacy = 0.02
 civilized = no
 
-
 ruling_party = BIH_conservative
 upper_house = {
         fascist = 0
-        liberal = 11
-        conservative = 73
-        reactionary = 16
+        liberal = 0
+        conservative = 82
+        reactionary = 18
         anarcho_liberal = 0
         socialist = 0
         communist = 0

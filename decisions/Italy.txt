@@ -223,57 +223,24 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = italia_ulterior
-			729 = {
-				add_core = ITA
-			}
-			730 = {
-				add_core = ITA
-			}
-			731 = {
-				add_core = ITA
-			}
-			732 = {
-				add_core = ITA
-			}
-			733 = {
-				add_core = ITA
-			}
-			734 = {
-				add_core = ITA
-			}
-			735 = {
-				add_core = ITA
-			}
-			736 = {
-				add_core = ITA
-			}
-			737 = {
-				add_core = ITA
-			}
-			769 = {
-				add_core = ITA
-			}
-			770 = {
-				add_core = ITA
-			}
-			778 = {
-				add_core = ITA
-			}
-			780 = {
-				add_core = ITA
-			}
-			781 = {
-				add_core = ITA
-			}
-			782 = {
-				add_core = ITA
-			}
-			2582 = {
-				add_core = ITA
-			}
+			729 = { add_core = ITA }
+			730 = { add_core = ITA }
+			731 = { add_core = ITA }
+			732 = { add_core = ITA }
+			733 = { add_core = ITA }
+			734 = { add_core = ITA }
+			735 = { add_core = ITA }
+			736 = { add_core = ITA }
+			737 = { add_core = ITA }
+			769 = { add_core = ITA }
+			770 = { add_core = ITA }
+			778 = { add_core = ITA }
+			780 = { add_core = ITA }
+			781 = { add_core = ITA }
+			782 = { add_core = ITA }
+			2582 = { add_core = ITA }
 		}
 	}
-
 	invasion_of_albania = {
 		potential = {
 			tag = ITA
@@ -285,21 +252,15 @@ political_decisions = {
 			year = 1938
 		}
 
-		allow = {
-			government = fascist_dictatorship
-		}
+		allow = { government = fascist_dictatorship }
 
 		effect = {
 			set_global_flag = italian_invasion_of_albania
 			ITA = {
 				war = {
         			target = ALB
-        			attacker_goal = {
-        				casus_belli = lebensraum_cb
-        			}
-        			defender_goal = {
-        				casus_belli = status_quo
-        			}
+        			attacker_goal = { casus_belli = lebensraum_cb }
+        			defender_goal = { casus_belli = status_quo }
         		}
 			}
 		}

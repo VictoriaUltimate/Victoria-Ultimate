@@ -1,36 +1,4 @@
-			
-
 political_decisions = {
-
-##Italy##
-	ww2grecoitaly = {
-	picture = ww2grecoitaly
-		potential = {
-			tag = ITA
-			has_global_flag = WW2inprogress
-			NOT = { 
-			has_global_flag = italy_greece_war_done
-			war_with = GRE }
-				}
-
-
-allow = {
-
-		}
-
-
-		effect = {
-		set_global_flag = italy_greece_war_done
-		GRE = {
-		country_event = 1000007
-			}
-		}
-}
-
-
-####Japan####
-
-
 
 ####Germany####
 
@@ -42,61 +10,112 @@ allow = {
 			has_global_flag = operation_barbarossa_done }
 			tag = GER
 			has_global_flag = WW2inprogress
+                      }
 
-				}
-
-		allow = {
-		has_global_flag = WW2_France_Surrendered
-			}
+		allow = { has_global_flag = WW2_France_Surrendered }
 
 		effect = {
-	set_global_flag = operation_barbarossa_done
+	        set_global_flag = operation_barbarossa_done
 				war = {
-	target = RUS
-	attacker_goal = {
-		casus_belli = great_war_penalty_cb
-	}
-	attacker_goal = {
-		casus_belli = conquest
-	}
-	defender_goal = {
-		casus_belli = great_war_penalty_cb
-	}
-	call_ally = yes
+	            target = RUS
+	            attacker_goal = { casus_belli = great_war_penalty_cb }
+	            attacker_goal = { casus_belli = conquest }
+	            defender_goal = { casus_belli = great_war_penalty_cb }
+	            call_ally = yes
+                       }
+		          }
 }
-		}
 
+##Italy##
+	ww2grecoitaly = {
+	picture = ww2grecoitaly
+		potential = {
+			tag = ITA
+			has_global_flag = WW2inprogress
+			NOT = { 
+			has_global_flag = italy_greece_war_done
+			war_with = GRE
+			       }
+				    }
+
+        allow = {}
+
+		    effect = {
+		    set_global_flag = italy_greece_war_done
+		    GRE = { country_event = 1000007 }
+		              }
+}
+
+####Japan####
+    pearl_harbor = {
+	picture = pearlharbor
+		potential = {
+			tag = JAP
+            has_country_modifier = japan_usasuppliescutmod
+			       }
+		allow = {}
+
+		effect = {
+        prestige = 15
+		remove_country_modifier = japan_usasuppliescutmod
+		set_global_flag = attack_on_pearl_harbour
+		USA = {
+		country_event = 1000023
+		any_pop = {
+	    dominant_issue = {
+	    value = jingoism
+	    factor = 0.75
+                          }
+				  }
+		       }
+		          }
+	    ai_will_do = {
+				factor = 1
+				modifier = {
+	 	        factor = 0
+	 	        OR = {
+		        NOT = { month = 11 }
+		        is_our_vassal = USA
+		        alliance_with = USA
+	                 }
+	                       }
+			         }
 }
 
 ####USA####
 
-	#cut_japan_war_supplies = { #out for now
-	#picture = pearlharbor
-	#	potential = {
-	#		tag = USA
-	#		year = 1941
-	#		has_global_flag = WW2inprogress
-	#		NOT = {
-	#		OR = {
-	#		has_global_flag = PearlHarborDone
-	#		JAP = {
-	#		has_country_modifier = japan_usasuppliescutmod
-	#		} } }
-#
-#				}
-#
-#		effect = {
-#		relation = {
-#		with = JAP
-#		value = -100
-#		}
-#		JAP = {
-#		add_country_modifier = { name = #japan_usasuppliescutmod duration = -1 }
-#			}
-#		
-#		}
-#}
+	cut_japan_war_supplies = {
+	picture = pearlharbor
+		potential = {
+			tag = USA
+			war = no
+			has_global_flag = WW2inprogress
+			NOT = {
+			has_global_flag = PearlHarborDone
+			JAP = { has_country_modifier = japan_usasuppliescutmod }
+			       }
+			JAP = { war = yes }
+			GER = { war = ENG }
+				    }
+		allow = { GER = { war = RUS } }
 
-
-
+		effect = {
+		relation = {
+		with = JAP
+		value = -100
+		}
+		JAP = { add_country_modifier = { name = japan_usasuppliescutmod duration = -1 } }
+		          }
+	    ai_will_do = {
+				factor = 1
+				modifier = {
+	 	        factor = 0
+	 	        OR = {
+		        NOT = { month = 7 }
+		        is_our_vassal = JAP
+		        alliance_with = JAP
+	                 }
+	                       }
+			              }
+}
 }

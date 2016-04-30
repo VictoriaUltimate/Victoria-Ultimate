@@ -199,54 +199,13 @@ country_event = {
 	title = "EVTNAME97605" #Kurofune
 	desc = "EVTDESC97605"
 	picture = "commodore_perry"
-	fire_only_once = yes
 
-		trigger = {
-			exists = TKW
-			OR = {
-			tag = JAP
-			tag = TKW
-			}
-			civilized = no
-			year = 1852
-			
-			NOT = {
-			year = 1854
-			}
-	}
-
-	
-	mean_time_to_happen = {
-		months = 1
-	}
+	is_triggered_only = yes
 	
 	option = {
-		name = "We have little choice but to agree."
+		name = "EVT97605OPTA"
 		set_country_flag = caved_to_commodore_perry
 		prestige = -10
-		random_owned = {
-			limit = {
-				owner = { diplomatic_reform = isolationism }
-			}
-			owner = {
-				economic_reform = interactive
-				activate_technology = early_classical_theory_and_critique
-				any_pop = {
-					scaled_militancy = {
-						ideology = liberal
-						factor = -10
-					}
-					scaled_militancy = {
-						ideology = conservative
-						factor = 3
-					}
-					scaled_militancy = {
-						ideology = reactionary
-						factor = 6
-					}
-				}
-			}
-		}
 		remove_country_modifier = sakoku
 		remove_country_modifier = rangaku
 		remove_country_modifier = uncivilized_isolationism
@@ -258,7 +217,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Never! We will fight the Americans if we must."
+		name = "EVT97605OPTB"
 		set_country_flag = rejected_commodore_perry
 		leave_alliance = USA
 		relation = { who = USA value = -200 }
@@ -346,11 +305,11 @@ country_event = {
 	title = "EVTNAME97608" #Japanese Surrender
 	desc = "EVTDESC97608"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
 	
 	option = {
-		name = "It seems we have little choice."
+		name = "EVT97608OPTA"
 		clr_country_flag = rejected_commodore_perry
 		set_country_flag = surrendered_to_perry
 		prestige = -10
@@ -361,34 +320,11 @@ country_event = {
 			name = "western_influences"
 			duration = -1
 		}
-		random_owned = {
-			limit = {
-				owner = { diplomatic_reform = isolationism }
-			}
-			owner = {
-				economic_reform = interactive
-				activate_technology = early_classical_theory_and_critique
-				any_pop = {
-					scaled_militancy = {
-						ideology = liberal
-						factor = -10
-					}
-					scaled_militancy = {
-						ideology = conservative
-						factor = 3
-					}
-					scaled_militancy = {
-						ideology = reactionary
-						factor = 6
-					}
-				}
-			}
-		}
 		ai_chance = { factor = 100 }
 	}
 	
 	option = {
-		name = "We will hold out!"
+		name = "EVT97608OPTB"
 		war_exhaustion = 20
 		FROM = { country_event = 97610 }
 		ai_chance = { factor = 0 }
@@ -450,7 +386,6 @@ country_event = {
 
 	trigger = {
 		primary_culture = japanese
-		year = 1849
 		OR = {
 			tag = TKG
 			substate_of = TKG
@@ -458,7 +393,6 @@ country_event = {
 		}
 		TKG = {
 			OR = {
-				diplomatic_reform = interactive
 				has_country_modifier = western_influences
 				civilized = yes
 			}
@@ -468,12 +402,10 @@ country_event = {
 		NOT = { has_global_flag = boshin_war_has_happened }
 	}
 	
-	mean_time_to_happen = {
-		months = 1
-	}
+	mean_time_to_happen = { months = 1 }
 	
 	option = {
-		name = "Japan must not descend into anarchy."
+		name = "EVT97615OPTA"
 		set_country_flag = sonno_joi
 		remove_country_modifier = sakoku
 		remove_country_modifier = rangaku
@@ -484,9 +416,7 @@ country_event = {
 				factor = 0.2
 			}
 		}
-		any_pop = {
-			militancy = 2
-		}
+		any_pop = { militancy = 2 }
 	}
 }
 
@@ -1192,59 +1122,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "We shall support the Emperor!"
+		name = "EVT97640OPTA"
 		set_country_flag = supports_emperor
 		remove_country_modifier = sakoku
 		remove_country_modifier = rangaku
 		remove_country_modifier = ansei_purge
-		random_owned = {
-			limit = {
-				owner = { diplomatic_reform = isolationism }
-			}
-			owner = {
-				economic_reform = interactive
-				activate_technology = early_classical_theory_and_critique
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = {
-					foreign_training = no_foreign_training
-					civilized = no
-				}
-			}
-			owner = {
-				add_country_modifier = {
-					name = taiping_draft
-					duration = 365
-				}
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = {
-					foreign_training = yes_foreign_training
-					civilized = no
-				}
-			}
-			owner = {
-				add_country_modifier = {
-					name = usa_draft
-					duration = 365
-				}
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = { civilized = yes }
-			}
-			owner = {
-				add_country_modifier = {
-					name = begin_revolution
-					duration = 365
-				}
-			}
-		}
 		leave_alliance = TKG
 		random_country = {
 			limit = { has_country_flag = imperial_war_leader }
@@ -1306,7 +1188,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "We shall support the Shogun!"
+		name = "EVT97640OPTB"
 		set_country_flag = supports_shogun
 		remove_country_modifier = sakoku
 		remove_country_modifier = rangaku
@@ -1429,26 +1311,27 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Then fight we shall!"
+		name = "EVT97642OPTA"
 		set_country_flag = supports_emperor
 		remove_country_modifier = sakoku
 		remove_country_modifier = rangaku
 		remove_country_modifier = ansei_purge
 		random_owned = {
 			limit = {
-				owner = { diplomatic_reform = isolationism }
+				owner = { civilized = no }
+				TKG = { civilized = yes }
 			}
 			owner = {
-				economic_reform = interactive
-				activate_technology = early_classical_theory_and_critique
+				add_country_modifier = {
+					name = daimyo_draft
+					duration = 365
+				}
 			}
 		}
 		random_owned = {
 			limit = {
-				owner = {
-					foreign_training = no_foreign_training
-					civilized = no
-				}
+				owner = { civilized = no }
+				TKG = { civilized = no }
 			}
 			owner = {
 				add_country_modifier = {
@@ -1457,37 +1340,10 @@ country_event = {
 				}
 			}
 		}
-		random_owned = {
-			limit = {
-				owner = {
-					foreign_training = yes_foreign_training
-					civilized = no
-				}
-			}
-			owner = {
-				add_country_modifier = {
-					name = usa_draft
-					duration = 365
-				}
-			}
-		}
-		random_owned = {
-			limit = {
-				owner = { civilized = yes }
-			}
-			owner = {
-				add_country_modifier = {
-					name = begin_revolution
-					duration = 365
-				}
-			}
-		}
 		leave_alliance = TKG
 		relation = { who = FROM value = 100 }
 		random_owned = {
-			limit = {
-				owner = { has_country_flag = imperial_war_leader }
-			}
+			limit = { owner = { has_country_flag = imperial_war_leader } }
 			TKG = { release_vassal = THIS }
 			THIS = {
 				create_vassal = FROM
@@ -1510,9 +1366,7 @@ country_event = {
 			TKG = { country_event = 97641 }
 		}
 		random_owned = {
-			limit = {
-				owner = { NOT = { has_country_flag = imperial_war_leader } }
-			}
+			limit = { owner = { NOT = { has_country_flag = imperial_war_leader } } }
 			FROM = {
 				create_vassal = THIS
 				create_alliance = THIS
@@ -1970,7 +1824,6 @@ country_event = {
 		OR = {
 			liberal = 10
 			socialist = 10
-			social_liberal = 10
 		}
 		revolution_n_counterrevolution = 1
 		NOT = {
@@ -1979,12 +1832,10 @@ country_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
-		months = 24
-	}
+	mean_time_to_happen = { months = 24 }
 	
 	option = {
-		name = "Support the Taisho Democracy movement."
+		name = "EVT97660OPTA"
 		set_country_flag = taisho_democracy
 		prestige = -10
 		soldiers = {
@@ -2012,7 +1863,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "These demonstrations are disruptive and unwanted."
+		name = "EVT97660OPTB"
 		set_country_flag = taisho_democracy
 		prestige = 10
 		any_pop = {
@@ -2301,17 +2152,7 @@ country_event = {
 		}
 		war = no
 		has_country_modifier = line_of_advantage
-		NOT = {
-			nationalvalue = nv_might
-			nationalvalue = nv_supremacy
-			nationalvalue = nv_glory
-			nationalvalue = nv_dominion
-		}
 		OR = {
-			nationalvalue = nv_equality
-			nationalvalue = nv_unity
-			nationalvalue = nv_fraternity
-			nationalvalue = nv_prosperity
 			war_policy = pacifism
 			war_policy = anti_military
 		}
@@ -2326,7 +2167,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "So shall it be."
+		name = "EVT97673OPTA"
 		remove_country_modifier = line_of_advantage
 		add_country_modifier = {
 			name = no_line_of_advantage
@@ -2358,17 +2199,7 @@ country_event = {
 		}
 		war = no
 		has_country_modifier = no_line_of_advantage
-		NOT = {
-			nationalvalue = nv_equality
-			nationalvalue = nv_unity
-			nationalvalue = nv_fraternity
-			nationalvalue = nv_prosperity
-		}
 		OR = {
-			nationalvalue = nv_might
-			nationalvalue = nv_supremacy
-			nationalvalue = nv_glory
-			nationalvalue = nv_dominion
 			war_policy = jingoism
 			war_policy = pro_military
 		}
@@ -2383,7 +2214,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "So shall it be."
+		name = "EVT97674OPTA"
 		remove_country_modifier = no_line_of_advantage
 		add_country_modifier = {
 			name = line_of_advantage
@@ -2916,7 +2747,7 @@ country_event = {
 			owner = {
 				prestige = -10
 				any_owned = {
-					limit = { region = CHI_1485 }
+					limit = { region = CHI_2562 }
 					add_core = TAI
 					secede_province = JAP
 				}
@@ -3117,7 +2948,7 @@ country_event = {
 		name = "The islands aren't worth a war."
 		prestige_factor = -0.2
 		any_owned = {
-			limit = { region = JAP_1086 }
+			limit = { region = CHI_1086 }
 			secede_province = JAP
 		}
 		ai_chance = {
@@ -3165,7 +2996,7 @@ country_event = {
 				casus_belli = {
 					type = place_in_the_sun
 					target = THIS
-					months = 12
+					months = 30
 				}
 				war = {
 					target = THIS

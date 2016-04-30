@@ -2,17 +2,15 @@ add_core = MTC
 trade_goods = grain
 life_rating = 20
 
-1800.1.1 = {
-    add_core = CAN
-}
-
 1861.1.1 = {
-	owner = ENG
-	controller = ENG
-	colonial = 2
+owner = ENG
+controller = ENG
+colonial = 2
+add_core = RPL
 }
-1880.1.1 = { 
-		controller = CAN
-		owner = CAN
-		colonial = 0
+1880.1.1 = {
+owner = CAN
+controller = CAN
+add_core = CAN
+colonial = 0
 }

@@ -271,9 +271,7 @@ country_event = {
 				NOT = { truce_with = THIS }
 				continent = europe
 			}
-			NOT = {
-				any_owned_province = { continent = europe }
-			}
+			NOT = { any_owned_province = { continent = europe } }
 		}
 		modifier = {
 			factor = 2
@@ -286,9 +284,7 @@ country_event = {
 				NOT = { truce_with = THIS }
 				continent = africa
 			}
-			NOT = {
-				any_owned_province = { continent = africa }
-			}
+			NOT = { any_owned_province = { continent = africa } }
 		}
 		modifier = {
 			factor = 2
@@ -301,9 +297,7 @@ country_event = {
 				NOT = { truce_with = THIS }
 				continent = asia
 			}
-			NOT = {
-				any_owned_province = { continent = asia }
-			}
+			NOT = { any_owned_province = { continent = asia } }
 		}
 		modifier = {
 			factor = 2
@@ -316,9 +310,7 @@ country_event = {
 				NOT = { truce_with = THIS }
 				continent = north_america
 			}
-			NOT = {
-				any_owned_province = { continent = north_america }
-			}
+			NOT = { any_owned_province = { continent = north_america } }
 		}
 		modifier = {
 			factor = 2
@@ -331,9 +323,7 @@ country_event = {
 				NOT = { truce_with = THIS }
 				continent = south_america
 			}
-			NOT = {
-				any_owned_province = { continent = south_america }
-			}
+			NOT = { any_owned_province = { continent = south_america } }
 		}
 		modifier = {
 			factor = 2
@@ -387,9 +377,7 @@ country_event = {
 		FROM = {
 			war = {
 				target = THIS
-				attacker_goal = {
-					casus_belli = dismantle_cb
-				}
+				attacker_goal = { casus_belli = dismantle_cb }
 				call_ally = yes
 			}
 		}
@@ -422,9 +410,7 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 10
-	}
+	mean_time_to_happen = { days = 10 }
 
 	option = {
 		name = "It's about time."
@@ -456,9 +442,7 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		months = 12
-	}
+	mean_time_to_happen = { months = 12 }
 
 	option = {
 		name = "We're glad that's over!"
@@ -482,16 +466,15 @@ country_event = {
 		war = no
 	}
 
-	mean_time_to_happen = {
-		months = 12
-	}
+	mean_time_to_happen = { months = 12 }
+	
+	immediate = { badboy = -1000 }
 
 	option = {
 		name = "EVTOPTA96150" #Excellent
 		clr_global_flag = ultimatum_refused
 		remove_country_modifier = international_pariah
 		prestige = 25
-		badboy = -1000
 		badboy = 24.99
 	}
 }

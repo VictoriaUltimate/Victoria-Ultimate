@@ -2,7 +2,7 @@ color = { 218  215  56 }
 graphical_culture = Generic
 
 party = {
-	name = "GEN_reactionary"
+	name = "GNA_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -14,9 +14,8 @@ party = {
 	citizenship_policy = residency
 	war_policy = pro_military
 }
-
 party = {
-	name = "GEN_conservative"
+	name = "GNA_conservative"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -28,10 +27,9 @@ party = {
 	citizenship_policy = limited_citizenship
 	war_policy = pro_military
 }
-
 party = {
-	name = "GEN_liberal"
-	start_date = 1600.1.1
+	name = "GNA_liberal"
+	start_date = 1628.1.1
 	end_date = 1890.1.1
 
 	ideology = liberal
@@ -42,9 +40,8 @@ party = {
 	citizenship_policy = limited_citizenship
 	war_policy = anti_military
 }
-
 party = {
-	name = "GEN_liberal_2"
+	name = "GNA_liberal_2"
 	start_date = 1890.1.1
 	end_date = 99999.1.1
 
@@ -56,9 +53,8 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = anti_military
 }
-
 party = {
-	name = "GEN_socialist"
+	name = "GNA_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -70,11 +66,9 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = anti_military
 }
-
-
 party = {
-	name = "GEN_anarcho_liberal"
-	start_date = 1600.1.1
+	name = "GNA_anarcho_liberal"
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -85,9 +79,8 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = pro_military
 }
-
 party = {
-	name = "GEN_communist"
+	name = "GNA_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -99,9 +92,8 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = pro_military
 }
-
 party = {
-	name = "GEN_fascist"
+	name = "GNA_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 
@@ -113,51 +105,36 @@ party = {
 	citizenship_policy = residency
 	war_policy = jingoism
 }
-
 unit_names = {
 	dreadnought = { 
-		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte 		
-
-		Colombo Daino Eridano Euridice Falco Favorita Nereide  Patrona Serpente Tritone Veloce Vigilante Zeffiro 
+		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte
+        Colombo Daino Eridano Euridice Falco Favorita Nereide  Patrona Serpente Tritone Veloce Vigilante Zeffiro 
 		
 	}
 	ironclad = {
-		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte 		
-
+		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte
 		Colombo Daino Eridano Euridice Falco Favorita Nereide  Patrona Serpente Tritone Veloce Vigilante Zeffiro 
-		
 	}
 	manowar = {
-		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte 		
-
+		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte
 		Colombo Daino Eridano Euridice Falco Favorita Nereide  Patrona Serpente Tritone Veloce Vigilante Zeffiro 
 	}
 	cruiser = {
-		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte 		
-
+		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte
 		Colombo Daino Eridano Euridice Falco Favorita Nereide  Patrona Serpente Tritone Veloce Vigilante Zeffiro 
 	}
 	frigate = {
-		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte 		
-
+		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte
 		Colombo Daino Eridano Euridice Falco Favorita Nereide  Patrona Serpente Tritone Veloce Vigilante Zeffiro 
 	}
 	monitor = {
-		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte 		
-
-		Colombo Daino Eridano Euridice Falco Favorita Nereide  Patrona Serpente Tritone Veloce Vigilante Zeffiro 
-		
+		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte
+		Colombo Daino Eridano Euridice Falco Favorita Nereide  Patrona Serpente Tritone Veloce Vigilante Zeffiro
 	}
-	clipper_transport = {
-		
-	}
-	steam_transport = {
-		
-	}
+	clipper_transport = {}
+	steam_transport = {}
 	commerce_raider = {
-		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte 		
-
-		Colombo Daino Eridano Euridice Falco Favorita Nereide  Patrona Serpente Tritone Veloce Vigilante Zeffiro 
-		
+		"Alessandro Farnese" "Maria Luisa" "d'Asburgo" Parma Piacenza Borbone Aquila Aurora Azzardoso Beroldo Condottiero Carloforte
+		Colombo Daino Eridano Euridice Falco Favorita Nereide  Patrona Serpente Tritone Veloce Vigilante Zeffiro
 	}
 }

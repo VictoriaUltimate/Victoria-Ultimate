@@ -1,16 +1,10 @@
 owner = SPA
 controller = SPA
-add_core = SPA
 add_core = MOR
+add_core = SPA
+colonial = 2
 trade_goods = fish
 life_rating = 35
-colonial = 2
 
-
-1956.1.1 = {
-owner = MOR
-controller = MOR
-colonial = 0
-		}
-
-
+1931.4.14 = { add_core = SPR }
+1977.7.1 = { remove_core = SPR }

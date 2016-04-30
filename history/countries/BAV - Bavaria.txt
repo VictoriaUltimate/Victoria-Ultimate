@@ -37,6 +37,13 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+# Starting Consciousness
+consciousness = 0
+nonstate_consciousness = 0
+
+schools = industrial_tech_school
+
 1700.1.1 = {
 standing_army = 1
 late_medieval_warfare = 1
@@ -419,10 +426,11 @@ experimental_railroad = 1
 modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
-		}
+}
+		
 1830.1.1 = {
+oob = "BAV_oob.txt"
 literacy = 0.7
-
 # Technologies
 late_medieval_warfare = 1
 early_muskets = 1
@@ -620,25 +628,12 @@ mechanized_mining = 1
 practical_steam_engine = 1
 mechanical_production = 1
 clean_coal = 1 #until this for 1830
-		}
-#Inventions
-
-schools = industrial_tech_school
-
-# Starting Consciousness
-consciousness = 2
-nonstate_consciousness = 0
-
-oob = "BAV_oob.txt"
-1861.1.1 = {
-	oob = "/1861/BAV_oob.txt"
 }
+
 1861.1.1 = {
-
+oob = "/1861/BAV_oob.txt"
 plurality = 60
-
 # Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1

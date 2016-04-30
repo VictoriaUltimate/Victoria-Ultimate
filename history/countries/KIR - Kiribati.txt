@@ -1,7 +1,3 @@
-
-
-#========================= H E A D E R =========================
-
 capital = 2527
 primary_culture = micronesian
 religion = catholic
@@ -13,9 +9,6 @@ civilized = yes
 prestige = 1
 schools = traditional_academic
 oob = "KIR.txt"
-
-
-#========================= H O U S E - O F - L O R D S =========================
 
 ruling_party = KIR_liberal_79
 upper_house = {

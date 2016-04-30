@@ -1,33 +1,22 @@
-owner = MNG
-controller = MNG
-add_core = MNG
-
-1644.1.1 = {
-	owner = CHI
-	controller = CHI
-	add_core = CHI
-	remove_core = MNG
-		}
-
-1911.1.1 = {
-	owner = KMT	
-	controller = KMT
-	add_Core = KMT
-		}
-
-
-1950.1.1 = {
-	owner = CHI
-	controller = CHI
-		}
-
-#2016 Uigur Revolt
-2016.1.1 = {
-	owner = XIN
-	controller = XIN
-		}
-
-add_core = XIN
+owner = KML
+controller = KML
+add_core = KML
 trade_goods = grain
 life_rating = 32
 
+1647.1.1 = { add_core = CHI }
+1911.1.1 = { add_core = KMT }
+1930.1.1 = {
+owner = KMT
+controller = KMT
+add_core = XIN
+}
+1950.1.1 = {
+owner = CHI
+controller = CHI
+}
+#2016 Uigur Revolt
+2023.1.1 = {
+owner = XIN
+controller = XIN
+}

@@ -1,43 +1,29 @@
 owner = PLC
 controller = PLC
-add_core = PRU
-add_core = PLC
-add_core = GER
-
-1714.1.1 = {
-	add_core = PRU
-	owner = PRU
-	controller = PRU
-		}
-1812.1.1 = {
-	owner = DZG
-	controller = DZG
-		}
-1815.1.1 = {
-	owner = PRU
-	controller = PRU
-		}
-1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
 add_core = DZG
-add_core = POL
-1919.6.28 = { 
-		controller = POL
-		owner = POL
-		}
+add_core = GER
 add_core = PLC
+add_core = PML
+add_core = PRU
 trade_goods = fish
-life_rating = 40
 naval_base = 1
+life_rating = 40
 
-1936.1.1 = {
-		naval_base = 6
-		}
-
-
+1793.1.23 = {
+owner = PRU
+controller = PRU
+}
+1807.9.9 = {
+owner = DZG
+controller = DZG
+add_core = POL
+}
+1814.1.2 = {
+owner = PRU
+controller = PRU
+}
 1861.1.1 = {
+railroad = 3
 	state_building = {
 		level = 1
 		building = steamer_shipyard
@@ -49,4 +35,20 @@ naval_base = 1
 		upgrade = yes
 	}
 }
-1861.1.1 = { railroad = 3 }
+1871.1.1 = { 
+owner = GER
+controller = GER
+}
+1919.6.28 = { 
+owner = DZG
+controller = DZG
+}
+1936.1.1 = { naval_base = 6 }
+1939.9.1 = { 
+owner = GER
+controller = GER
+}
+1945.3.30 = { 
+owner = POL
+controller = POL
+}

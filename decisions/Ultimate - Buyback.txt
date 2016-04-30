@@ -3,24 +3,17 @@ political_decisions = {
 	picture = eastprussiapic
 		potential = {
 			tag = RUS
-			NOT = {
-				has_global_flag = russia_offer_eastprussia }
+			NOT = { has_global_flag = russia_offer_eastprussia }
 			AND = {
-				695 = {
-					owned_by = RUS
-					}
-				697 = {
-					owned_by = RUS
-					}
-				}
-					}
+				695 = { owned_by = RUS }
+				697 = { owned_by = RUS }
+				   }
+					 }
 
-		allow = {
-			relation = { who = GER value = 100 }
-				}
+		allow = { relation = { who = GER value = 100 } }
 
 		effect = {
-			set_global_flag = russia_offer_eastprussia
+		set_global_flag = russia_offer_eastprussia
 				}
 					}
 
@@ -34,62 +27,38 @@ political_decisions = {
 			owns = 695
 			owns = 697
 				}
-				}
+				    }
 	
 	allow = {
 	money = 600000
-	695 = {
-		owner = {
-		relation = { who = GER value = 100 }
-			}
-		}
+	695 = { owner = { relation = { who = GER value = 100 } } }
 			}
 
 	effect = {
+	treasury = -600000
 	695 = {
 		owner = {
 		remove_core = THIS
 		treasury = 600000
+		add_core = GER
+		secede_province = GER
 			}
 		}
 	697 = {
 		owner = {
 		remove_core = THIS
+		add_core = GER
+		secede_province = GER
 			}
 		}
-	695 = {
-    add_core = GER
-	secede_province = GER
-		}
-	697 = {
-    add_core = GER
-	secede_province = GER
-		}
-		GER = {
-		treasury = -600000
-			}
-	546 = {
-	add_core = GER
-		}
-	679 = {
-	add_core = GER
-		}
-	680 = {
-	add_core = GER
-		}
-	591 = {
-	add_core = GER
-		}
-	690 = {
-	add_core = GER
-		}
-	693 = {
-	add_core = GER
-		}
-	696 = {
-	add_core = GER
-		}
-		}
-			}
-		
+
+	546 = { add_core = GER }
+	591 = { add_core = GER }
+	679 = { add_core = GER }
+	680 = { add_core = GER }
+	690 = { add_core = GER }
+	693 = { add_core = GER }
+	696 = { add_core = GER }
+		       }
+}		
 }

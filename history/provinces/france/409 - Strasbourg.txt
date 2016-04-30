@@ -17,9 +17,9 @@ controller = FRA
 1697.9.20 = {
 add_core = ALS
 add_core = FRA
+remove_core = HRE
 remove_core = STG
 }
-1806.8.6 = { remove_core = HRE }
 1861.1.1 = { railroad = 3 }
 1871.5.10 = {
 owner = GER

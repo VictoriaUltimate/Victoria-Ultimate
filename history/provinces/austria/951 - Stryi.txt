@@ -1,7 +1,6 @@
 owner = PLC
 controller = PLC
 add_core = PLC
-add_core = POL
 add_core = RUT
 add_core = UKR
 trade_goods = coal
@@ -10,7 +9,9 @@ life_rating = 35
 1772.9.22 = {
 owner = AUS
 controller = AUS
+add_core = GLM
 }
+1809.6.9 = { add_core = POL }
 1867.5.29 = {
 owner = KUK
 controller = KUK

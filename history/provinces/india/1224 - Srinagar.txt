@@ -1,4 +1,4 @@
-﻿owner = MUG
+owner = MUG
 controller = MUG
 add_core = HND
 trade_goods = silk

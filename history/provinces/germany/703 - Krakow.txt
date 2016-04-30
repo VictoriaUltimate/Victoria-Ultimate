@@ -1,37 +1,34 @@
-
-add_core = KRA
 owner = PLC
 controller = PLC
-add_core = POL
-1800.1.1 = {
-owner = AUS
-controller = AUS
-add_core = AUS
-		}
-1812.1.1 = {
-owner = POL
-controller = POL
-		}
-1815.1.1 = {
-owner = KRA
-controller = KRA
-remove_core = AUS
-		}
-1914.1.1 = {
-owner = KUK
-controller = KUK
-add_core = KUK
-		}
-1919.6.28 = { 
-		controller = POL
-		owner = POL
-		remove_core = AUS
-		}
 add_core = PLC
 trade_goods = coal
 life_rating = 40
-1861.1.1 = {
-	owner = AUS
-	controller = AUS
+
+1772.8.5 = {
+owner = AUS
+controller = AUS
+add_core = GLM
+}
+1809.6.9 = {
+owner = POL
+controller = POL
+add_core = POL
+}
+1815.6.9 = {
+owner = KRA
+controller = KRA
+add_core = KRA
+}
+1846.11.16 = {
+owner = AUS
+controller = AUS
 }
 1861.1.1 = { railroad = 3 }
+1867.3.1 = {
+owner = KUK
+controller = KUK
+}
+1919.6.28 = {
+owner = POL
+controller = POL
+}

@@ -1,7 +1,6 @@
 owner = PLC
 controller = PLC
 add_core = PLC
-add_core = POL
 add_core = RUT
 add_core = UKR
 trade_goods = grain
@@ -10,10 +9,12 @@ life_rating = 35
 1772.9.22 = {
 owner = AUS
 controller = AUS
+add_core = GLM
 }
 1809.10.14 = {
 owner = RUS
 controller = RUS
+add_core = POL
 }
 1815.6.9 = {
 owner = AUS

@@ -1,0 +1,85 @@
+#Sphere of Influence
+FRA = { value = 100 }
+MEX = {
+	value = 150		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+RUS = { value = 150 }
+
+leader = {
+	name = "José Durruti Dumange"
+	date = 1936.1.1
+	type = land
+	personality = charismatic
+}
+
+#Army
+army = {
+	name = "Exèrcit de Catalunya"
+	location = 498
+	regiment = {
+		name= "Columna Ascaso"
+		type = irregular
+		home = 498
+	}
+	regiment = {
+		name= "Columna Durruti"
+		type = irregular
+		home = 498
+	}
+	regiment = {
+		name= "Columna Sur Ebro"
+		type = irregular
+		home = 498
+	}
+	regiment = {
+		name= "Columna Trueba-del Barrio"
+		type = irregular
+		home = 498
+	}
+	regiment = {
+		name= "1. Brigada de Artillería"
+		type = artillery
+		home = 498
+	}
+    regiment = {
+		name= "2. Brigada de Artillería"
+		type = artillery
+		home = 498
+	}
+}
+army = {
+	name = "Euzko Gudarostea"
+	location = 492
+	regiment = {
+		name= "Euzko Gudarostea"
+		type = irregular
+		home = 492
+	}
+}
+army = {
+	name = "Regimiento de Infanteria Sevilla 34"
+	location = 506
+	regiment = {
+		name= "Regimiento de Infanteria Sevilla 34"
+		type = infantry
+		home = 506
+	}
+}
+navy = {
+	name = "Cartagena Flotilla"
+	location = 506
+	ship = {
+		name = "Sánchez Barcáiztegui"
+		type = frigate
+	}
+	ship = {
+		name = "J.S. Elcano"
+		type = steam_transport
+	}
+	ship = {
+		name = "Magallanes"
+		type = steam_transport
+	}
+}

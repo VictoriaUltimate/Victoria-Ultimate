@@ -1,38 +1,24 @@
-owner = HRE
-controller = HRE
-add_core = HRE
-add_core = SLZ
+owner = AUS
+controller = AUS
+add_core = AUS
 trade_goods = grain
 life_rating = 35
 
-1604.8.31 = { 
-owner = SLZ
-controller = SLZ
-}
-#1803 Electorate of Salzburg
 1605.12.26 = { 
 owner = AUS
 controller = AUS
 add_core = AUS
-remove_core = SLZ
 }
-1806.8.6 = { remove_core = HRE }
+#1803 Electorate of Salzburg
 1809.7.6 = { 
 owner = BAV
 controller = BAV
-add_core = BAV
 }
 1815.6.9 = { 
 owner = AUS
 controller = AUS
-remove_core = BAV
 }
-#state_building = {
-#	level = 1
-#	building = ammunition_factory
-#	upgrade = yes
-#}
-1867.5.29 = {
+1867.3.1 = {
 owner = KUK
 controller = KUK
 add_core = KUK
@@ -42,7 +28,7 @@ owner = AUS
 controller = AUS
 remove_core = KUK
 }
-1938.3.12 = {
+1938.3.13 = {
 owner = GER
 controller = GER
 add_core = GER
@@ -53,5 +39,3 @@ owner = AUS
 controller = AUS
 remove_core = GER
 }
-
-

@@ -1,7 +1,3 @@
-
-
-#========================= H E A D E R =========================
-
 capital = 1934
 primary_culture = ibibio
 culture = african_minor
@@ -13,9 +9,6 @@ literacy = 0
 prestige = 1
 schools = traditional_academic
 oob = "ARO.txt"
-
-
-#========================= H O U S E - O F - L O R D S =========================
 
 ruling_party = ARO_reactionary_84
 upper_house = {

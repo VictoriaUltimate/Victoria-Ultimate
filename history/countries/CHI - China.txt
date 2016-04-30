@@ -1,19 +1,26 @@
 capital = 1612
-primary_culture = manchu
-culture = beifaren
+primary_culture = beifaren
+culture = nanfaren
+culture = manchu
+culture = hakka
+culture = miao
+culture = min
+culture = zhuang
+culture = yue
+culture = yi
 religion = mahayana
 government = absolute_monarchy
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_autocracy
 literacy = 0.04
 non_state_culture_literacy = 0.02
 
 ruling_party = CHI_conservative
 upper_house = {
 	fascist = 0
-	liberal = 10
-	conservative = 75
-	reactionary = 15
+	liberal = 0
+	conservative = 83
+	reactionary = 17
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
@@ -51,7 +58,6 @@ school_reforms = no_schools
 	foreign_training = yes_foreign_training
 	
 # Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_military_revolution = 1
@@ -59,10 +65,7 @@ early_military_revolution = 1
 military_revolution = 1
 }
 
-
-
 1914.1.1 = {
-
 foreign_weapons = yes_foreign_weapons
 army_schools = yes_army_schools
 land_reform = yes_land_reform
@@ -139,7 +142,7 @@ stock_exchange = 1
 no_standard = 1
 coin_minting = 1
 private_bank_coin_minting = 1
-	}
+}
 
 
 

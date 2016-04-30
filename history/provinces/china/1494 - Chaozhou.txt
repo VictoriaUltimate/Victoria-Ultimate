@@ -1,28 +1,38 @@
-owner = MNG
-controller = MNG
-add_core = MNG
-
-1644.1.1 = {
-	owner = CHI
-	controller = CHI
-	add_core = CHI
-	remove_core = MNG
-		}
-
-add_core = GXI
-
-1911.1.1 = { 
-		owner = KMT
-		controller = KMT
-		add_core = KMT
-		}
-
-
-1950.1.1 = {
-	owner = CHI
-	controller = CHI
-		}
-
-
+owner = CHI
+controller = CHI
+add_core = CHI
+add_core = GNG
 trade_goods = silk
 life_rating = 32
+
+1644.1.1 = {
+owner = QNG
+controller = QNG
+}
+1648.4.15 = {
+owner = CHI
+controller = CHI
+}
+1650.11.11 = {
+owner = QNG
+controller = QNG
+}
+1911.1.1 = { 
+owner = KMT
+controller = KMT
+add_core = KMT
+}
+1923.1.1 = {
+owner = GNG
+controller = GNG
+}
+1928.12.29 = {
+owner = KMT
+controller = KMT
+}
+1938.10.12 = { controller = JAP }
+1945.8.15  = { controller = KMT }
+1950.1.1 = {
+owner = CHI
+controller = CHI
+}

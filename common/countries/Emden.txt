@@ -2,8 +2,8 @@ color = { 48  164  51 }
 graphical_culture = EuropeanGC
 
 party = {
-	name = "LUB_liberal"
-	start_date = 1600.1.1
+	name = "EMD_liberal"
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = liberal
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "LUB_conservative"
+	name = "EMD_conservative"
 	start_date = 1878.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "LUB_liberal_2"
+	name = "EMD_liberal_2"
 	start_date = 1861.1.1
 	end_date = 99999.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "LUB_liberal_3"
+	name = "EMD_liberal_3"
 	start_date = 1861.1.1
 	end_date = 99999.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "LUB_socialist"
+	name = "EMD_socialist"
 	start_date = 1860.1.1
 	end_date = 1875.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "LUB_socialist_2"
+	name = "EMD_socialist_2"
 	start_date = 1848.1.1
 	end_date = 1875.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "LUB_socialist_3"
+	name = "EMD_socialist_3"
 	start_date = 1875.1.1
 	end_date = 99999.1.1
 
@@ -100,7 +100,7 @@ party = {
 }
 
 party = {
-	name = "LUB_reactionary"
+	name = "EMD_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -114,7 +114,7 @@ party = {
 }
 
 party = {
-	name = "LUB_conservative_2"
+	name = "EMD_conservative_2"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -128,7 +128,7 @@ party = {
 }
 
 party = {
-	name = "LUB_conservative_3"
+	name = "EMD_conservative_3"
 	start_date = 1878.1.1
 	end_date = 99999.1.1
 
@@ -142,8 +142,8 @@ party = {
 }
 
 party = {
-	name = "LUB_anarcho_liberal"
-	start_date = 1600.1.1
+	name = "EMD_anarcho_liberal"
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -156,7 +156,7 @@ party = {
 }
 
 party = {
-	name = "LUB_communist"
+	name = "EMD_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -170,7 +170,7 @@ party = {
 }
 
 party = {
-	name = "LUB_fascist"
+	name = "EMD_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 

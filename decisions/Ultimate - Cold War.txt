@@ -420,7 +420,11 @@ repartition_of_ireland = {
 	}
 	return_heligoland = {
 		potential = {
-			tag = ENG
+			OR = {
+			tag = BRC
+			tag = BRI
+            tag = ENG
+            }
 			owns = 300
 			exists = GER
 			has_country_modifier = occupies_heligoland

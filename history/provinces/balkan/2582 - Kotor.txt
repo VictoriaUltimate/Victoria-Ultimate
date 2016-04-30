@@ -1,30 +1,41 @@
-owner = MON
-controller = MON
-add_core = MON
-add_core = YUG
-1830.1.1 = {
-	owner = AUS
-controller = AUS
-add_core = AUS
-		}
-1914.1.1 = {
-	owner = KUK
-controller = KUK
-add_core = KUK
-		}
-1919.6.28 = { 
-		controller = YUG
-		owner = YUG
-		remove_core = KUK
-		}
+owner = VEN
+controller = VEN
 add_core = CRO
+add_core = MON
+add_core = VEN
 trade_goods = fish
 life_rating = 35
 
-
+1797.10.18 = {
+owner = AUS
+controller = AUS
+remove_core = VEN
+}
+1805.12.26 = {
+owner = ITA
+controller = ITA
+}
+1809.10.14 = {
+owner = FRA
+controller = FRA
+}
+1815.6.9 = {
+owner = AUS
+controller = AUS
+add_core = DLM
+}
+1867.3.1 = {
+owner = KUK
+controller = KUK
+add_core = KUK
+}
+1919.6.28 = { 
+owner = YUG
+controller = YUG
+add_core = YUG
+remove_core = KUK
+}
 2006.6.3 = {
-	owner = MON
-	controller = MON
-		}
-
-
+owner = MON
+controller = MON
+}

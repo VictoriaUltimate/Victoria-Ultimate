@@ -1,35 +1,36 @@
-owner = MNG
-controller = MNG
-add_core = MNG
-
-1644.1.1 = {
-	owner = CHI
-	controller = CHI
-	add_core = CHI
-	remove_core = MNG
-		}
-
-1911.1.1 = {
-	owner = KMT	
-	controller = KMT
-	add_Core = KMT
-		}
-
-
-
-
-1945.1.1 = {
-	owner = CHI
-	controller = CHI
-		}
-
-
-
-
-1931.1.1 = {
-	owner = MCK
-	controller = MCK
-	}
+owner = KRC
+controller = KRC
+add_core = CHI
+add_core = KRC
 add_core = MCK
 trade_goods = coal
 life_rating = 32
+
+1624.1.1 = {
+owner = MCK
+controller = MCK
+remove_core = KRC
+}
+1644.1.1 = {
+owner = QNG
+controller = QNG
+add_core = QNG
+}
+1911.1.1 = {
+owner = KMT	
+controller = KMT
+add_Core = KMT
+remove_core = QNG
+}
+1916.3.22  = {
+owner = MCK
+controller = MCK
+}
+1945.8.15  = {
+owner = KMT	
+controller = KMT
+}
+1950.1.1 = {
+owner = CHI
+controller = CHI
+}

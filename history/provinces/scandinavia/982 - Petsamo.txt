@@ -1,17 +1,19 @@
-owner = SWE
-controller = SWE
+owner = RUS
+controller = RUS
 add_core = FIN
+add_core = KRL
+add_core = RUS
 add_core = SWE
 trade_goods = iron
 life_rating = 10
 
-1809.1.1 = {
-	owner = FIN
-	controller = FIN
-	add_core = RUS
-		}
-1917.12.6 = { remove_core = SWE }
-1945.1.1 = {
-	controller = RUS
-	owner = RUS
-		}
+1920.10.14 = {
+owner = FIN
+controller = FIN
+remove_core = SWE
+}
+1944.9.19 = {
+owner = RUS
+controller = RUS
+remove_core = FIN
+}

@@ -1456,26 +1456,24 @@ country_event = {
 	}
 }
 country_event = {
-	id = 20000035 #Begining of the Qing dynasty
-	title = ev_20000035
-	desc = desc_ev_20000035
+	id = 20000081 #Begining of the Qing dynasty
+	title = ev_20000081
+	desc = desc_ev_20000081
 	picture = asian_ruler
 	fire_only_once = yes
 	trigger = {
-		year = 1644
-		tag = MNG
-		NOT = {
-			year = 1645
-		}
+		tag = MCK
+		war = no
+		year = 1636
+		NOT = { year = 1700 }
 	}
-	
+	mean_time_to_happen = { months = 5 }
 	
 	option = {
 		name = event_option_alright
-		change_tag = CHI
-		all_core  = { remove_core = MNG
-			      add_core = CHI
-				}
+		all_core  = { add_core = QNG }
+		change_tag = QNG
+		1612 = { add_core = QNG }
 	}
 }
 country_event = {
@@ -2251,20 +2249,18 @@ country_event = {
 	trigger = {
 		year = 1636
 		OR = {
-			tag = MNG
 			tag = CHI
+			tag = MCK
+			tag = QNG
 		}
-		NOT = {
-			year = 1638
-		}
+		NOT = { year = 1638 }
+		owns = 1547
+		controls = 1547
 	}
-	mean_time_to_happen = {
-		months = 6
-	}
+	mean_time_to_happen = { months = 6 }
 	option = {
 		name = event_option_great
 		research_points = 2000
-		prestige = 10
 	}
 }
 country_event = {
@@ -2391,22 +2387,23 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		year = 1640
-		OR = {
-			tag = MNG
-			tag = CHI
-		}
-		NOT = {
-			year = 1642
-		}
+	    tag = CHI
+		NOT = { year = 1642 }
 	}
-	mean_time_to_happen = {
-		months = 6
-	}
+	mean_time_to_happen = { months = 6 }
 	option = {
 		name = event_option_blast
-		any_pop = {
-			reduce_pop = 0.75
-		}
+		any_owned = {
+			limit = {
+			NOT= {
+			OR = {
+				region = CHI_1578
+                is_core = GNG
+				}
+				}
+			}
+			any_pop = { reduce_pop = 0.70 }
+			}
 	}
 }
 country_event = {
@@ -2428,29 +2425,6 @@ country_event = {
 	option = {
 		name = event_option_great
 		prestige = 5
-	}
-}
-country_event = {
-	id = 20000081 #first Qing emperor
-	title = ev_20000081
-	desc = desc_ev_20000081
-	picture = asian_ruler
-	fire_only_once = yes
-	trigger = {
-		year = 1644
-		OR = {
-			tag = MNG
-			tag = CHI
-		}
-		NOT = {
-			year = 1645
-		}
-	}
-	mean_time_to_happen = {
-		months = 6
-	}
-	option = {
-		name = event_option_alright
 	}
 }
 country_event = {
@@ -5727,22 +5701,14 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		year = 1731
-		tag = GEN
-		NOT = {
-			owns = 473
-		}
-		NOT = {
-			year = 1733
-		}
+		tag = GNA
+		NOT = { owns = 473 }
+		NOT = { year = 1733 }
 	}
-	mean_time_to_happen = {
-		months = 6
-	}
+	mean_time_to_happen = { months = 6 }
 	option = {
 		name = event_option_great
-		473 = {
-			secede_province = GEN
-		}
+		473 = { secede_province = GNA }
 	}
 }
 country_event = {
@@ -6634,23 +6600,15 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		year = 1767
-		tag = GEN
-		NOT = {
-			year = 1769
-		}
+		tag = GNA
+		NOT = { year = 1769 }
 	}
-	mean_time_to_happen = {
-		months = 6
-	}
+	mean_time_to_happen = { months = 6 }
 	option = {
 		name = event_option_alright
-		473 = {
-			secede_province = FRA
-		}
+		473 = { secede_province = FRA }
 		treasury = 250000
-		FRA = {
-			treasury = -250000
-		}
+		FRA = { treasury = -250000 }
 	}
 }
 country_event = {
@@ -11147,9 +11105,9 @@ fire_only_once = yes
 
 country_event = {
 
-id = 20000304
-title=ev_20000304 #British Invasions of Rio de la Plata
-desc=desc_ev_20000304
+id = 21000304
+title=ev_21000304 #British Invasions of Rio de la Plata
+desc=desc_ev_21000304
 picture = ""
 fire_only_once = yes
 

@@ -3,43 +3,33 @@ controller = AUS
 add_core = AUS
 trade_goods = timber
 life_rating = 35
-#state_building = {
-#	level = 1
-#	building = lumber_mill
-#	upgrade = yes
-#}
-1812.1.1 = {
-		controller = BAV
-		owner = BAV
-		}
 
-
-1815.1.1 = {
-		controller = AUS
-		owner = AUS
-		}
-
-
-1914.1.1 = {
+1805.12.26 = {
+owner = BAV
+controller = BAV
+}
+1815.6.9 = {
+owner = AUS
+controller = AUS
+}
+1867.3.1 = {
 owner = KUK
 controller = KUK
 add_core = KUK
 }
-
 1919.6.28 = {
 owner = AUS
 controller = AUS
 remove_core = KUK
 }
-
-1938.1.1 = {
+1938.3.13 = {
 owner = GER
-controller = GER }
-
+controller = GER
+add_core = GER
+}
 #End of WW2
 1945.5.1 = {
-	owner = AUS
-	controller = AUS
-		}
-
-
+owner = AUS
+controller = AUS
+remove_core = GER
+}

@@ -3,7 +3,7 @@ graphical_culture = AsianGC
 
 party = {
 	name = "NKA_reactionary"
-	start_date = 1835.1.1
+	start_date = 1600.1.1
 	end_date = 99999.1.1
 
 	ideology = reactionary
@@ -18,7 +18,7 @@ party = {
 party = {
 	name = "NKA_liberal"
 	start_date = 1864.1.1
-	end_date = 1873.1.1
+	end_date = 1876.1.1
 
 	ideology = liberal
 
@@ -59,7 +59,7 @@ party = {
 
 party = {
 	name = "NKA_liberal_3"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 1864.1.1
 
 	ideology = liberal
@@ -73,7 +73,7 @@ party = {
 
 party = {
 	name = "NKA_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -87,7 +87,7 @@ party = {
 
 party = {
 	name = "NKA_conservative_2"
-	start_date = 1800.1.1
+	start_date = 1600.1.1
 	end_date = 1880.1.1
 
 	ideology = conservative

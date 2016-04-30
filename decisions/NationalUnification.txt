@@ -354,12 +354,7 @@ political_decisions = {
 				is_culture_group = scandinavian
 				is_culture_group = bears
 			}
-			NOT = {
-				exists = SCA
-			}
-			NOT = {
-			tag = PSC
-				}
+			NOT = { exists = SCA }
 		}
 		
 		allow = {
@@ -370,9 +365,7 @@ political_decisions = {
 				all_core = {
 					OR = {
 						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
+						owner = { in_sphere = THIS }
 					}
 				}
 			}

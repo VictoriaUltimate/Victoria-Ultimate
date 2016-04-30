@@ -90,12 +90,4 @@ pagan = {
 		pagan = yes
 		
 	}
-		norse = {
-		icon = 15
-		color = { 0.0 0.2 0.3 }
-	}
-		roman = {
-		icon = 16
-		color = { 0.0 0.1 0.3 }
-	}
 }

@@ -2,7 +2,7 @@
 union = {
 	first = DEN
 	second = HOL
-	start_date = 1460.3.2
+	start_date = 1460.3.5
 	end_date = 1863.11.15
 }
 
@@ -26,6 +26,6 @@ union = {
 union = {
 	first = ENL
 	second = SCO
-	start_date = 1600.1.1
+	start_date = 1567.7.24
 	end_date = 1707.1.1
 }

@@ -1,236 +1,75 @@
-
-SLV = {
-	value = 150
-	level = 5
-	influence_value = 50
+AFG = { value = 37 }
+ARG = { value = 94 }
+AUS = { value = 150 }
+BHU = { value = -75 }
+BRZ = { value = 37 }
+BUL = { value = 75 }
+CHI = { value = -187 }
+CHL = { value = 75 }
+CZH = { value = -84 }
+ECU = { value = 37 }
+EGY = { value = 56 }
+ENG = { value = -49 }
+EST = { value = 56 }
+FIN = { value = 56 }
+HUN = { value = 94 }
+IRE = { value = 56 }
+IRQ = { value = 94 }
+ITA = { value = 112 }
+JAP = { value = 112 }
+KMT = { value = 56 }
+LAT = { value = 94 }
+LIT = { value = 94 }
+LUX = { value = 75 }
+MCK = { value = 56 }
+MEX = { value = 56 }
+NIC = { value = 56 }
+PER = { value = 75 }
+PEU = { value = 75 }
+POL = { 
+value = 75
+truce_until = 1944.1.26
 }
-
-
-ITA = {
-	value = 100
-}
-
-POR = {
-	value = -50
-}
+PRG = { value = 75 }
+ROM = { value = 75 }
+SAF = { value = 56 }
+SPA = { value = 112 }
+#SPR = { value = -112 }
+SWE = { value = 75 }
+SWI = { value = 56 }
+TUR = { value = 56 }
+URU = { value = 56 }
+VNZ = { value = 67 }
+YUG = { value = 56 }
 army = {
-	name = "Die Südost Armee"
+	name = "1.Infanterie-Division"
 	leader = {
-		name = "Rudolf Schmidt"
+		name = "Walther Schroth"
+		date = 1834.8.1
 		type = land
-		personality = aggressive
 		background = school_of_offense
-		date="1939.1.1"
 			}
-	location = 688
-	regiment = {
-		name= "Engineer Regiment"
-		type = engineer
+	location = 695
+    regiment = {
+		name= "Infanterie-Regiment Königsburg"
+		type = infantry
+		home = 695
+	}
+    regiment = {
+		name= "Infanterie-Regiment Gumbinnen"
+		type = infantry
+		home = 695
 	}
 	regiment = {
-		name= "Bombers Squadron"
-		type = bomber
-	}
-	regiment = {
-		name= "Bombers Squadron"
-		type = bomber
-	}
-	regiment = {
-		name= "Fighters Squadron"
-		type = plane
-	}
-	regiment = {
-		name= "Fighters Squadron"
-		type = plane
-	}
-	regiment = {
-		name= "Panzer Regiment"
-		type = tank
-	}
-	regiment = {
-		name= "Panzer Regiment"
-		type = tank
-	}
-	regiment = {
-		name= "Panzer Regiment"
-		type = tank
-	}
-	regiment = {
-		name= "Panzer Regiment"
-		type = tank
-	}
-	regiment = {
-		name= "Panzer Regiment"
-		type = tank
-	}
-	regiment = {
-		name= "Panzer Regiment"
-		type = tank
-	}
-	regiment = {
-		name= "Artillery Regiment"
+		name= "Artillerie-Regiment Königsburg"
 		type = artillery
+		home = 695
 	}
 	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
-	regiment = {
-		name = "Infantry Regiment"
-		type = guard
-			}
+		name= "Pionier-Bataillon Königsburg A"
+		type = engineer
+		home = 695
+	}
 }
 
 army = {

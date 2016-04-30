@@ -1,36 +1,26 @@
 owner = PLC
 controller = PLC
-
-1800.1.1 = {
-	add_core = RUS
-	owner = RUS
-	controller = RUS
-		}
-add_core = POL
-1919.6.28 = { 
-		controller = POL
-		owner = POL
-		}
-add_core = PLC
 add_core = BYE
 trade_goods = grain
 life_rating = 35
 
-
+1795.10.24 = {
+owner = RUS
+controller = RUS
+add_core = RUS
+}
+1919.6.28 = { 
+owner = POL
+controller = POL
+remove_core = RUS
+}
 #End of WW2
 1945.5.1 = {
-	owner = RUS
-	controller = RUS
-		}
-
-
-
-
+owner = RUS
+controller = RUS
+}
 #Soviet Collapse
 1992.5.1 = {
-	owner = BYE
-	controller = BYE
-		}
-
-
-
+owner = BYE
+controller = BYE
+}

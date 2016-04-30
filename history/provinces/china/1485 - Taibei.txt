@@ -1,29 +1,30 @@
-owner = MNG
-controller = MNG
-add_core = MNG
-
-1644.1.1 = {
-	owner = CHI
-	controller = CHI
-	add_core = CHI
-	remove_core = MNG
-		}
-
-1914.1.1 = {
-	owner = JAP	
-	controller = JAP
-	add_core = KMT
-		}
-
-
 trade_goods = tea
-life_rating = 32
-1930.1.1 = {
-owner = JAP
-controller = JAP
-		}
+life_rating = 35
 
-1945.1.1 = {
-	owner = KMT	
-	controller = KMT
-		}
+1642.1.1 = {
+owner = NET
+controller = NET
+colonial = 2
+}
+1662.2.1 = {
+owner = CHI
+controller = CHI
+add_core = CHI
+add_core = FJN
+colonial = 0
+}
+1683.1.1 = {
+owner = QNG
+controller = QNG
+}
+1895.4.17 = {
+owner = JAP	
+controller = JAP
+colonial = 2
+}
+1912.1.1 = { add_core = KMT }
+1945.8.15 = {
+owner = KMT	
+controller = KMT
+colonial = 0
+}

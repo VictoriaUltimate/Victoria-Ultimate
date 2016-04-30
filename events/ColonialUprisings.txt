@@ -921,115 +921,115 @@ country_event = {
 	}
 }
 
-	
 #Big Game Hunting
-province_event = {
+country_event = {
 	id = 14650
 	title = "EVTNAME14650"
 	desc = "EVTDESC14650"
+	picture = "scramble_for_africa"
 	
 	trigger = {
-		NOT = { has_country_modifier = recent_safari2 }
-		is_colonial = yes
-		continent = africa
+		civilized = yes
+		any_owned_province = {
+			NOT = { port = yes }
+			is_colonial = yes
+			continent = africa
+			NOT = { average_militancy = 2 }
+		}
 	}
 	
 	mean_time_to_happen = {
-		months = 1400
-		
-		modifier = {
-			factor = 0.8
-			is_coastal = no
-		}
-		modifier = {
-			factor = 0.9
-			NOT = {
-				average_militancy = 4
-			}
-		}
-		modifier = {
-			factor = 0.9
-			NOT = {
-				average_consciousness = 4
-			}
-		}
-		modifier = {
-			factor = 0.9
-			owner = {
-				machine_guns = 1 #This modifier is very funny
-			}
-		}
+		months = 300
 		modifier = {
 			factor = 1.5
-			life_rating = 20
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { average_militancy = 2 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { average_consciousness = 4 }
+		}
+		modifier = {
+			factor = 0.9
+			machine_guns = 1
 		}	
 	}
 	
 	option = {
 		name = "EVTOPTA14650"
-		state_scope = {
-			any_pop = {
-				militancy = -3
+		random_state = {
+			limit = {
+				is_colonial = yes
+				any_owned_province = {
+					port = no
+					continent = africa
+					NOT = { average_militancy = 2 }
+				}
 			}
-		}
-		add_country_modifier = {
-			name = recent_safari2
-			duration = 365
+			any_pop = { militancy = -2 }
 		}
 	}
 	
 	option = {
 		name = "EVTOPTB14650"
-		owner = {
-			prestige = 5
-		}
-		add_country_modifier = {
-			name = recent_safari2
-			duration = 365
-		}
-		state_scope = {
-			any_pop = {
-				militancy = 1
+		prestige = 5
+		random_state = {
+			limit = {
+				is_colonial = yes
+				any_owned_province = {
+					port = no
+					continent = africa
+					NOT = { average_militancy = 2 }
+				}
 			}
+			any_pop = { militancy = 2 }
 		}
 	}
 }
 
 #Heia Safari!
-province_event = {
+country_event = {
 	id = 14660
 	title = "EVTNAME14660"
 	desc = "EVTDESC14660"
+	picture = "scramble_for_africa"
 	
 	trigger = {
 		year = 1860
-		NOT = { has_country_modifier = recent_safari }
-		is_colonial = yes
-		continent = africa
-		owner = { civilized = yes }
+		civilized = yes
+		any_owned_province = {
+			NOT = { port = yes }
+			is_colonial = yes
+			continent = africa
+			NOT = { life_rating = 21 }
 		}
+	}
 	
 	mean_time_to_happen = {
-		months = 2400
+		months = 300
 		modifier = {
-			factor = 0.9
-			NOT = {
-				average_militancy = 5
-			}
+			factor = 0.8
+			NOT = { average_militancy = 3 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { average_militancy = 1 }
 		}
 		modifier = {
 			factor = 0.9
-			NOT = {
-				average_consciousness = 5
-			}
+			NOT = { average_consciousness = 5 }
 		}
 		modifier = {
-			factor = 0.9
-			NOT = {
-				life_rating = 15
-			}
+			factor = 1.5
+			average_militancy = 3
+		}		
+		modifier = {
+			factor = 1.5
+			average_militancy = 4
 		}
-		
 		modifier = {
 			factor = 1.5
 			average_militancy = 5
@@ -1038,13 +1038,7 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA14660"
-		owner = {
-			prestige = 3
-		}
-		add_country_modifier = {
-			name = recent_safari
-			duration = 365
-		}
+		prestige = 3
 	}
 	
 	option = {
@@ -1052,18 +1046,16 @@ province_event = {
 		random_country = {
 			limit = {
 				civilized = yes
-				NOT = {
-					tag = THIS
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+					neighbour = THIS
 				}
 			}
 			relation = {
 				who = THIS
 				value = 30
 			}
-		}
-		 add_country_modifier = {
-			name = recent_safari
-			duration = 365
 		}
 	}
 }
@@ -1162,13 +1154,11 @@ country_event = {
 	option = {
 		name = "EVTOPTA14680"
 		random_state = {
-			limit = {
-				is_colonial = yes
-			}
+			limit = { is_colonial = yes }
 			any_owned = {
 				add_province_modifier = {
 					name = colonial_recruitment
-					duration = 7300
+					duration = 1825
 				}
 			}
 		}

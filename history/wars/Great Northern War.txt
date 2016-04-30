@@ -2,10 +2,12 @@ name = "Great Northern War"
 
 1700.2.22 = {
 add_attacker = RUS
-add_attacker = SAX
-add_attacker = PLC
+add_attacker = COU
 add_attacker = DEN
+add_attacker = PLC
+add_attacker = SAX
 add_defender = SWE
+add_defender = PMR
 add_defender = VER
 	
 	# actor
@@ -28,9 +30,11 @@ add_defender = VER
 
 1721.8.30 = {
 rem_attacker = RUS
-rem_attacker = SAX
-rem_attacker = PLC
+rem_attacker = COU
 rem_attacker = DEN
+rem_attacker = PLC
+rem_attacker = SAX
 rem_defender = SWE
+rem_defender = PMR
 rem_defender = VER
 }

@@ -5,9 +5,8 @@ early_naval_professionalism = {
 	year = 99999
 	cost = 10000
 	unciv_military = yes
-	navy_base = {
-		default_organisation = 7.5
-	}
+	max_naval_base = 1
+	navy_base = { default_organisation = 7.5 }
 	ai_chance = {
 		factor = 1
 #		# Land-locked countries don't research this
@@ -953,7 +952,8 @@ colonial_doctrine = {
 	year = 1770
 	cost = 14800
 	unciv_military = yes
-	navy_base = { maximum_speed = 2 } 
+	navy_base = { maximum_speed = 2 }
+	activate_building = clipper_shipyard
 	
 	ai_chance = {
 		factor = 1

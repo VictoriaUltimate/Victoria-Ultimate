@@ -18,8 +18,8 @@ party = {
 
 party = {
 	name = "THC_liberal"
-	start_date = 1600.1.1
-	end_date = 1859.1.1
+	start_date = 1628.1.1
+	end_date = 99999.1.1
 
 	ideology = liberal
 
@@ -32,7 +32,7 @@ party = {
 
 party = {
 	name = "THC_socialist"
-	start_date = 1849.1.1
+	start_date = 1848.1.1
 	end_date = 99999.1.1
 
 	ideology = socialist
@@ -60,7 +60,7 @@ party = {
 
 party = {
 	name = "THC_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
