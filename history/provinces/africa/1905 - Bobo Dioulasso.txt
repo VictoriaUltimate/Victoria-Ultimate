@@ -1,20 +1,16 @@
-owner = FAN
-controller = FAN
-add_core = FAN
+owner = MOS
+controller = MOS
+add_core = MOS
 trade_goods = grain
 life_rating = 35
 
-1903.1.1 = {
-		owner = FRA
-		controller = FRA
-		colonial = 2
-		}
-
-
-
-add_core = FAT
-1960.1.1 = {
-	owner = FAT
-	controller = FAT
-	colonial = 0
-		}
+1896.1.1 = {
+owner = FRA
+controller = FRA
+colonial = 2
+}
+1960.8.5 = {
+owner = MOS
+controller = MOS
+colonial = 0
+}

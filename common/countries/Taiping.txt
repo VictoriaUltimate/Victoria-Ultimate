@@ -3,7 +3,7 @@ graphical_culture = ChineseGC
 
 party = {
 	name = "TPG_conservative"
-	start_date = 1800.1.1
+	start_date = 1600.1.1
 	end_date = 99999.1.1
 
 	ideology = conservative
@@ -17,8 +17,8 @@ party = {
 
 party = {
 	name = "TPG_liberal"
-	start_date = 1600.1.1
-	end_date = 1991.1.1
+	start_date = 1628.1.1
+	end_date = 99999.1.1
 
 	ideology = liberal
 
@@ -32,7 +32,7 @@ party = {
 party = {
 	name = "TPG_reactionary"
 	start_date = 1600.1.1
-	end_date = 1999.1.1
+	end_date = 99999.1.1
 
 	ideology = reactionary
 
@@ -45,7 +45,7 @@ party = {
 
 party = {
 	name = "TPG_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -74,7 +74,7 @@ party = {
 
 party = {
 	name = "TPG_communist"
-	start_date = 1890.1.1
+	start_date = 1848.1.1
 	end_date = 99999.1.1
 
 	ideology = communist

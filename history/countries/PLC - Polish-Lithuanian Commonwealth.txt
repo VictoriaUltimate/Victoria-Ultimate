@@ -32,10 +32,10 @@ school_reforms = low_schools
 ruling_party = PLC_conservative
 upper_house = {
 	fascist = 0
-	liberal = 30
-	conservative = 40
-	reactionary = 25
-	anarcho_liberal = 5
+	liberal = 0
+	conservative = 61
+	reactionary = 39
+	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }

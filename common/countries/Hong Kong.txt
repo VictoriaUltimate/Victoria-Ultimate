@@ -3,7 +3,7 @@ graphical_culture = ChineseGC
 
 party = {
 	name = "HNG_conservative"
-	start_date = 1800.1.1
+	start_date = 1619.1.1
 	end_date = 1861.1.1
 
 	ideology = conservative
@@ -31,7 +31,7 @@ party = {
 
 party = {
 	name = "HNG_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 1921.1.1
 
 	ideology = liberal
@@ -45,7 +45,7 @@ party = {
 
 party = {
 	name = "HNG_reactionary"
-	start_date = 1600.1.1
+	start_date = 1619.1.1
 	end_date = 1921.1.1
 
 	ideology = reactionary
@@ -59,7 +59,7 @@ party = {
 
 party = {
 	name = "HNG_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -74,7 +74,7 @@ party = {
 party = {
 	name = "HNG_conservative_3"
 	start_date = 1880.1.1
-	end_date = 1915.1.1
+	end_date = 1926.1.1
 
 	ideology = conservative
 
@@ -102,7 +102,7 @@ party = {
 party = {
 	name = "HNG_liberal_3"
 	start_date = 1920.1.1
-	end_date = 1945.1.1
+	end_date = 99999.1.1
 
 	ideology = liberal
 
@@ -172,7 +172,7 @@ party = {
 party = {
 	name = "HNG_reactionary_2"
 	start_date = 1912.1.1
-	end_date = 1925.1.1
+	end_date = 99999.1.1
 
 	ideology = reactionary
 

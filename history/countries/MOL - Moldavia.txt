@@ -3,13 +3,14 @@ primary_culture = romanian
 religion = orthodox
 government = absolute_monarchy
 plurality = 25.0
-nationalvalue = nv_order
-literacy = 0.1
+nationalvalue = nv_autocracy
+literacy = 0.04
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 5
 
 # Political reforms
-slavery = no_slavery
+slavery = yes_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
 public_meetings = yes_meeting
@@ -30,12 +31,30 @@ school_reforms = no_schools
 ruling_party = MOL_reactionary
 upper_house = {
 	fascist = 0
+	liberal = 0
+	conservative = 26
+	reactionary = 74
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
+
+#Starting Consciousness
+consciousness = 2
+nonstate_consciousness = 0
+
+oob = "MOL_oob.txt"
+
+1648.1.1 = {
+upper_house = {
+	fascist = 0
 	liberal = 20
 	conservative = 21
 	reactionary = 59
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
+}
 }
 
 1700.1.1 = {
@@ -123,7 +142,7 @@ early_steam_engines = 1
 early_water_pump = 1
 cementation_steel = 1
 wooden_mine_railways = 1 #until this for 1700
-		}
+}
 
 1750.1.1 = {
 standing_army = 1
@@ -253,7 +272,7 @@ advanced_wooden_mine_railways = 1
 conservation_of_mass = 1
 coke_pig_iron = 1
 textile_machinery = 1 #until this for 1750
-		}
+}
 
 1800.1.1 = {
 standing_army = 1
@@ -420,8 +439,7 @@ experimental_railroad = 1
 modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
-                }
-
+}
 
 1830.1.1 = {
 # Technologies
@@ -621,21 +639,10 @@ mechanized_mining = 1
 practical_steam_engine = 1
 mechanical_production = 1
 clean_coal = 1 #until this for 1830
-		}
-
-
-#Starting Consciousness
-consciousness = 2
-nonstate_consciousness = 0
-
-
-oob = "MOL_oob.txt"
-1861.1.1 = {
-	oob = "/1861/MOL_oob.txt"
 }
 
-
 1861.1.1 = {
+oob = "/1861/MOL_oob.txt"
 # Technologies
 standing_army = 1
 late_medieval_warfare = 1
@@ -863,15 +870,9 @@ late_high_pressure_engine = 1
 early_electricity = 1
 early_railroad = 1
 cheap_iron = 1 #until this for 1860
-
-#Inventions
-
 }
 
-
-
 1910.1.1 = {
-
 government = democracy
 # Political reforms
 slavery = no_slavery
@@ -893,7 +894,6 @@ pensions = good_pensions
 school_reforms = good_schools
 
 # Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -1208,14 +1208,10 @@ combustion_engine = 1
 advanced_steel_railroad = 1
 shift_work = 1
 electric_furnace = 1 #until this for 1913
-		}
-
-
+}
 
 1936.1.1 = {
-
 # Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -1589,16 +1585,10 @@ electrochemical_cell = 1
 borosilicate_glass = 1
 advanced_limited_access_roads = 1
 natural_gas_power_station = 1 #until this for 1937
-	}
-
-
-
-
+}
 
 1945.1.1 = {
-
 #Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -1992,16 +1982,10 @@ electronic_circuit = 1
 advanced_sub-surface_mining = 1
 street_road = 1
 secret_of_atom = 1 #until this for 1945
-	}
-
-
-
-
+}
 
 1999.1.1 = {
-
 #Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -2474,16 +2458,10 @@ modern_mining_&_glassblowing = 1
 superhighways = 1
 renewable_energy = 1
 quantum_physics = 1 #until this for 2000
-	}
-
-
-
-
+}
 
 2022.1.1 = {
-
 #Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -2965,8 +2943,4 @@ robotics = 1
 high_speed_rail = 1
 synthetic_graphite = 1
 green_power = 1 #until this for 2023
-	}
-
-
-
-
+}

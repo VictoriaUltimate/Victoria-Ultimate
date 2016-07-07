@@ -1,19 +1,13 @@
 owner = ENL
 controller = ENL
+trade_goods = iron
+life_rating = 35
+
 1707.1.1 = {
 owner = ENG
 controller = ENG
 add_core = ENG
-add_core = MER
-	}
-add_core = ENL
-add_core = ENG
-2015.1.1 = {
-owner = ENL
-controller = ENL
-		}
-trade_goods = iron
-life_rating = 35
+}
 1836.1.1 = {
 state_building = {
 	level = 1
@@ -25,7 +19,7 @@ state_building = {
 	building = canned_food_factory
 	upgrade = yes
 }
-			}
+}
 1861.1.1 = { railroad = 3 }
 1930.1.1 = {
 state_building = {
@@ -33,4 +27,8 @@ state_building = {
 	building = aeroplane_factory
 	upgrade = yes
 }
+}
+2015.1.1 = {
+owner = ENL
+controller = ENL
 }

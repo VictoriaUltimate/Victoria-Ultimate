@@ -1,7 +1,7 @@
 owner = TUR
 controller = TUR
 add_core = TUR
-add_core = LYB
+add_core = LBY
 1914.1.1 = {
 	owner = ITA
 	controller = ITA
@@ -15,8 +15,8 @@ add_core = LYB
 		}
 
 1950.1.1 = {
-	owner = LYB
-	controller = LYB
+	owner = LBY
+	controller = LBY
 	colonial = 0
 		}
 

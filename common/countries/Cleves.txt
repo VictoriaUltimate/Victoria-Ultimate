@@ -16,7 +16,7 @@ party = {
 }
 party = {
 	name = "CLV_conservative"
-	start_date = 1600.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = conservative
@@ -30,7 +30,7 @@ party = {
 party = {
 	name = "CLV_socialist"
 	start_date = 1848.1.1
-	end_date = 3000.1.1
+	end_date = 99999.1.1
 
 	ideology = socialist
 
@@ -42,7 +42,7 @@ party = {
 }
 party = {
 	name = "CLV_reactionary"
-	start_date = 1600.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = reactionary

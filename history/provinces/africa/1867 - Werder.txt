@@ -1,20 +1,50 @@
-owner = AJU
-controller = AJU
+owner = AWS
+controller = AWS
 add_core = AJU
+add_core = AWS
+add_core = ETH
+add_core = HAR
+add_core = MAJ
+add_core = WRL
 trade_goods = grain
 life_rating = 35
 
-1914.1.1 = {
-	owner = ETH
-	controller = ETH
-		}
-1936.1.1 = {
-	owner = ITA
-	controller = ITA
-		}
-1941.1.1 = {
-		owner = ETH
-		controller = ETH
-		add_core = ETH
-		colonial = 0
-		}
+1647.1.1 = {
+owner = HAR
+controller = HAR
+remove_core = AWS
+}
+1700.1.1 = { 
+add_core = GEL
+remove_core = AJU
+}
+1875.1.1 = {
+owner = EGY
+controller = EGY
+add_core = EGY
+}
+1884.1.1 = {
+owner = HAR
+controller = HAR
+remove_core = EGY
+}
+1887.1.6 = {
+owner = ETH
+controller = ETH
+remove_core = HAR
+}
+1920.2.9   = {
+remove_core = GEL
+remove_core = MAJ
+remove_core = WRL
+}
+1936.5.5 = {
+owner = ITA
+controller = ITA
+colonial = 2
+}
+1941.5.5 = {
+owner = ETH
+controller = ETH
+colonial = 0
+}

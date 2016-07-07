@@ -1,16 +1,22 @@
+colonial = 2
 trade_goods = wool
 life_rating = 10
-1903.1.1 = {
-	owner = SPA
-	controller = SPA
-		}
 
-
-1956.1.1 = {
+1884.12.26 = {
+owner = SPA
+controller = SPA
+colonial = 2
+}
+1900.1.1 = {
 add_core = MOR
-	owner = MOR
-	controller = MOR
-	colonial = 0
-		}
-
-
+add_core = TRZ
+}
+1975.11.14 = {
+owner = TRZ
+controller = TRZ
+colonial = 0
+}
+1979.8.11 = {
+owner = MOR
+controller = MOR
+}

@@ -3,4 +3,15 @@ controller = SPA
 add_core = SPA
 trade_goods = fruit
 life_rating = 35
+
 1861.1.1 = { railroad = 2 }
+1931.4.14 = {
+owner = SPR
+controller = SPR
+add_core = SPR
+}
+1939.3.29 = {
+owner = SPA
+controller = SPA
+}
+1977.7.1 = { remove_core = SPR }

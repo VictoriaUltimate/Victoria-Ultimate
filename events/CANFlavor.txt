@@ -115,7 +115,7 @@ country_event = {
 		name = "Pass the Act of Union."
 		set_country_flag = lord_durhams_report
 		prestige = -10
-		CAN_58 = {
+		ENG_58 = {
 			add_core = CAN
 			remove_core = RPL
 		}
@@ -574,7 +574,7 @@ country_event = {
 			limit = { location = { is_core = QUE } }
 			militancy = -10
 		}
-		CAN_60 = {
+		ENG_58 = {
 			add_core = QUE
 			remove_core = RPL
 		}
@@ -707,7 +707,7 @@ country_event = {
 			limit = { location = { is_core = QUE } }
 			militancy = -10
 		}
-		CAN_60 = {
+		ENG_58 = {
 			add_core = QUE
 			remove_core = RPL
 		}
@@ -1201,8 +1201,8 @@ country_event = {
 					region = ENG_22
 					region = ENG_30
 					region = ENG_36
-					region = CAN_50
-					region = CAN_60
+					region = ENG_46
+					region = ENG_58
 				}
 			}
 			RPL = {
@@ -1245,8 +1245,8 @@ country_event = {
 		ENG_22 = { remove_core = THIS }
 		ENG_30 = { remove_core = THIS }
 		ENG_36 = { remove_core = THIS }
-		CAN_50 = { remove_core = THIS }
-		CAN_60 = { remove_core = THIS }
+		ENG_46 = { remove_core = THIS }
+		ENG_58 = { remove_core = THIS }
 		random_owned = {
 			limit = { region = USA_1 }
 			USA_1 = {
@@ -1260,7 +1260,7 @@ country_event = {
 					NOT = { has_country_flag = british_columbia_organized }
 				}
 			}
-			CAN_19 = { remove_core = THIS }
+			ENG_13 = { remove_core = THIS }
 			COL = { all_core = { remove_core = THIS } }
 		}
 		CAN = { country_event = 44321 }
@@ -1285,8 +1285,8 @@ country_event = {
 		ENG_22 = { remove_core = THIS }
 		ENG_30 = { remove_core = THIS }
 		ENG_36 = { remove_core = THIS }
-		CAN_50 = { remove_core = THIS }
-		CAN_60 = { remove_core = THIS }
+		ENG_46 = { remove_core = THIS }
+		ENG_58 = { remove_core = THIS }
 		random_owned = {
 			limit = { region = USA_1 }
 			USA_1 = {
@@ -1300,7 +1300,7 @@ country_event = {
 					NOT = { has_country_flag = british_columbia_organized }
 				}
 			}
-			CAN_19 = { remove_core = THIS }
+			ENG_13 = { remove_core = THIS }
 			COL = { all_core = { remove_core = THIS } }
 		}
 		CAN = { country_event = 44322 }
@@ -1358,7 +1358,7 @@ country_event = {
 			remove_core = RPL
 			add_core = CAN
 		}
-		CAN_50 = {
+		ENG_46 = {
 			remove_core = RPL
 			add_core = CAN
 		}
@@ -1366,7 +1366,7 @@ country_event = {
 			limit = {
 				owner = { owns = 65 }
 			}
-			CAN_60 = {
+			ENG_58 = {
 				remove_core = RPL
 				add_core = CAN
 			}
@@ -1401,7 +1401,7 @@ country_event = {
 				limit = {
 					owner = { NOT = { has_country_flag = british_columbia_organized } }
 				}
-				CAN_19 = {
+				ENG_13 = {
 					add_core = CAN
 					remove_core = RPL
 				}
@@ -1436,12 +1436,12 @@ country_event = {
 		ENG_22 = { add_core = CAN }
 		ENG_30 = { add_core = CAN }
 		ENG_36 = { add_core = CAN }
-		CAN_50 = { add_core = CAN }
+		ENG_46 = { add_core = CAN }
 		random_owned = {
 			limit = {
 				owner = { owns = 65 }
 			}
-			CAN_60 = { add_core = CAN }
+			ENG_58 = { add_core = CAN }
 		}
 		FROM = {
 			random_owned = {
@@ -1452,7 +1452,7 @@ country_event = {
 				limit = {
 					owner = { NOT = { has_country_flag = british_columbia_organized } }
 				}
-				CAN_19 = { add_core = CAN }
+				ENG_13 = { add_core = CAN }
 				COL = { all_core = { add_core = CAN } }
 				owner = { set_country_flag = british_columbia_organized }
 			}
@@ -1489,13 +1489,11 @@ country_event = {
 		ENG_22 = { add_core = CAN }
 		ENG_30 = { add_core = CAN }
 		ENG_36 = { add_core = CAN }
-		CAN_50 = { add_core = CAN }
+		ENG_46 = { add_core = CAN }
 		relation = { who = FROM value = -100 }
 		random_owned = {
-			limit = {
-				owner = { owns = 65 }
-			}
-			CAN_60 = { add_core = CAN }
+			limit = { owner = { owns = 65 } }
+			ENG_58 = { add_core = CAN }
 		}
 		FROM = {
 			random_owned = {
@@ -1503,18 +1501,14 @@ country_event = {
 				USA_1 = { add_core = CAN }
 			}
 			random_owned = {
-				limit = {
-					owner = { NOT = { has_country_flag = british_columbia_organized } }
-				}
-				CAN_19 = { add_core = CAN }
+				limit = { owner = { NOT = { has_country_flag = british_columbia_organized } } }
+				ENG_13 = { add_core = CAN }
 				COL = { all_core = { add_core = CAN } }
 				owner = { set_country_flag = british_columbia_organized }
 			}
 		}
 		random_owned = {
-			limit = {
-				owner = { vassal_of = FROM }
-			}
+			limit = { owner = { vassal_of = FROM } }
 			owner = {
 				any_pop = {
 					limit = {
@@ -1538,34 +1532,28 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Of course they are welcome."
+		name = "EVT44325OPTA"
 		prestige = 5
-		FROM = {
-			all_core = { add_core = CAN }
-		}
+		FROM = { all_core = { add_core = CAN } }
 		random_country = {
 			limit = {
+			OR = {
 				tag = FROM
 				tag = RPL
+			}
 			}
 			all_core = { remove_core = RPL }
 		}
 		inherit = FROM
-		ai_chance = {
-			factor = 100
-		}
+		ai_chance = { factor = 100 }
 	}
 	
 	option = {
-		name = "We have no interest in this."
+		name = "EVT44325OPTB"
 		prestige = -10
 		relation = { who = FROM value = -50 }
-		any_pop = {
-			militancy = 1
-		}
-		ai_chance = {
-			factor = 0
-		}
+		any_pop = { militancy = 1 }
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -2146,26 +2134,30 @@ country_event = {
 		set_country_flag = indian_act_enacted
 		any_pop = {
 			limit = {
+			OR = {
 				has_pop_culture = cree
 				has_pop_culture = native_american_minor
 				has_pop_culture = metis
 			}
+			}
 			militancy = 5
 			consciousness = 5
+			}
 			add_country_modifier = {
 				name = indian_reserves
 				duration = -1
 			}
 		}
-	}
 	
 	option = {
 		name = "The natives have already suffered too much!"
 		any_pop = {
 			limit = {
+				OR = {
 				has_pop_culture = cree
 				has_pop_culture = native_american_minor
 				has_pop_culture = metis
+				}
 			}
 			militancy = -5
 			consciousness = -5
@@ -2175,7 +2167,7 @@ country_event = {
 
 #Residential Schools
 country_event = {
-	id = 44305
+	id = 44307
 	title = "The Residential School System"
 	desc = "The Residential School System was a system built for native children in which they were assimilated in. It was to rid the Indian out of the child. Many children died of depression and physical, sexual and phsychological abuse."
 	picture = "angry_natives"
@@ -2197,23 +2189,25 @@ country_event = {
 		set_country_flag = residential_school_allowed
 		any_pop = {
 			limit = {
+				OR= {
 				has_pop_culture = cree
 				has_pop_culture = native_american_minor
 				has_pop_culture = metis
+				}
 			}
 			militancy = 10
 			consciousness = 10
+			}
 			add_country_modifier = {
 				name = residential_school_system
 				duration = -1
 			}
 		}
 	}
-}
 
 #End of The Residential School System
 country_event = {
-	id = 44306
+	id = 44308
 	title = "The End of The Residential School System"
 	desc = "The public has become conscious of the irrational treatment of the Indians in our country. The last residential school was closed in 1996. It is now time for us to apoligize for our predecessors past and ammend the Indian Act."
 	picture = "Slaves"

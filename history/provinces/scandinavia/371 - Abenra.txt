@@ -1,17 +1,22 @@
-owner = DEN
-controller = DEN
+owner = SCH
+controller = SCH
 add_core = DEN
-add_core = SCH
 add_core = GER
 add_core = SCA
+add_core = SCH
 trade_goods = cattle
 life_rating = 35
-1914.1.1 = {
-   	owner = GER
- 	controller = GER
-	}
 
-1939.1.1 = {
-   	owner = DEN
- 	controller = DEN
-	}
+1864.10.30 = {
+owner = PRU
+controller = PRU
+}
+1871.1.1 = { 
+owner = GER
+controller = GER
+}
+1920.6.15 = {
+owner = DEN
+controller = DEN
+remove_core = GER
+}

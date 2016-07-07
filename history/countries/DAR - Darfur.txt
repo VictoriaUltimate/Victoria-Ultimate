@@ -1,7 +1,3 @@
-
-
-#========================= H E A D E R =========================
-
 capital = 1841
 primary_culture = fur
 culture = african_minor
@@ -14,9 +10,6 @@ literacy = 0
 prestige = 1
 schools = traditional_academic
 oob = "DAR.txt"
-
-
-#========================= H O U S E - O F - L O R D S =========================
 
 ruling_party = DAR_reactionary_84
 upper_house = {

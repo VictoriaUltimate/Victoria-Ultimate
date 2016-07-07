@@ -11,14 +11,12 @@ terrain = plains
 1790.1.1 = {
     owner = FRA
     controller = REB        #Seyshelles under Quincy
-	add_core = PIR
     colonial = 1
 }
      
 1811.4.1 = {
     owner = ENG
     controller = ENG
-	remove_core = PIR
     colonial = 1
 }
      

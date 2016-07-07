@@ -1,20 +1,20 @@
-owner = HRE
-controller = HRE
+owner = BOH
+controller = BOH
+add_core = AUS
 add_core = BOH
-add_core = HRE
+add_core = CZH
 add_core = GER
 trade_goods = coal
 life_rating = 40
 
-1604.8.31 = { 
-owner = BOH
-controller = BOH
-}
 1635.5.30  = { 
 owner = SAX
 controller = SAX
+add_core = HRE
 add_core = SAX
+remove_core = AUS
 remove_core = BOH
+remove_core = CZH
 }
 1806.8.6 = { remove_core = HRE }
 1815.6.9 = {
@@ -32,11 +32,11 @@ controller = GER
 1945.5.8 = {
 owner = RUS
 controller = RUS
+add_core = DDR
 }
 1949.10.7 = {
 owner = DDR
 controller = DDR
-add_core = DDR
 }
 #Fall of Berlin Wall - Reunification
 1990.10.3 = {

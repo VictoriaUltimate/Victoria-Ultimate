@@ -1,19 +1,22 @@
-owner = FAN
-controller = FAN
-add_core = FAN
+owner = BON
+controller = BON
+add_core = BON
 trade_goods = grain
 life_rating = 35
 
-1903.1.1 = {
-		owner = ENG
-		controller = ENG
-		colonial = 2
-		}
-
-
-add_core = GHA
-1960.1.1 = {
-	owner = GHA
-	controller = GHA
-	colonial = 0
-		}
+1735.1.1 = {
+owner = ASH
+controller = ASH
+add_core = ASH
+remove_core = BON
+}
+1900.9.1 = {
+owner = ENG
+controller = ENG
+colonial = 2
+}
+1957.3.6 = {
+owner = ASH
+controller = ASH
+colonial = 0
+}

@@ -1,10 +1,9 @@
 color = { 215  234  154 }
-#color = { 255  234  154 }
-graphical_culture = Generic
+graphical_culture = ChineseGC
 
 party = {
 	name = "GXI_reactionary"
-	start_date = 1600.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = reactionary
@@ -18,7 +17,7 @@ party = {
 
 party = {
 	name = "GXI_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = liberal
@@ -32,7 +31,7 @@ party = {
 
 party = {
 	name = "GXI_conservative"
-	start_date = 1600.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = conservative
@@ -46,7 +45,7 @@ party = {
 
 party = {
 	name = "GXI_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -88,7 +87,7 @@ party = {
 
 party = {
 	name = "GXI_fascist"
-	start_date = 1600.1.1
+	start_date = 1900.1.1
 	end_date = 99999.1.1
 
 	ideology = fascist

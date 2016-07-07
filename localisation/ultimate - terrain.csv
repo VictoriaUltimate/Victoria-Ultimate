@@ -1,8 +1,23 @@
-boreal;Boreal forest;Forêt boréale;Borealer nadelwald;;Bosque boreal;Foresta boreale;;;;;;;;x
-dryhills;Dry hills;Collines sèches;trockenen Hügel;;Colinas secas;Colline secca;;;;;;;;x
-forest;Coniferous forest;Forêt de conifères;Nadelwald;;Bosque de coníferas;Foresta di conifere;;;;;;;;x
-jungle;Tropical forest;Forêt tropicale;Tropischer Regenwald;;Bosque tropical;Foresta tropicale;;;;;;;;x
-plains;Grassland;Prairies;Grünland;;Praderas;Prateria;;;;;;;;x
-semidesert;Semidesert;semi-désert;Halbwüste;;Semidesierto;Semideserto;;;;;;;;x
-steppe;Dry grassland;prairies sèches;Trockenen grünland;;Prados secos;Prateria secche;;;;;;;;x
-woods;Deciduous Forest;forêt de feuillus;Laubwald;;Bosque caducifolio;Foresta decidua;;;;;;;;x
+arctic;Arctic;Arctique;Arktis;;Ártico;;;;;;;;;x;;;;,
+boreal;Boreal forest;Forêt boréale;Borealer nadelwald;;Bosque boreal;Foresta boreale;;;;;;;;x,
+coastal;Coastal;Côtière;Küste;Zamorska;Costero;Oltremare;Tengerentúl;Bez pozemního spojení s hlavním mìstem;;;;;;x;;;;,
+coastal_desert;Coastal Desert;Désert côtier;Küstenwüste;;Desierto costero;;;;;;;;;x;;;;,
+coastal_sea;Coastal Sea;Mer littorale;Küstensee;Brak dostêpu do morza;Zona costera;Non costiero;Nem tengerparti;Vnitrozemí;;;;;;x;;;;,
+desert;Desert;Désert;Wüste;;Desierto;;;;;;;;;x;;;;,
+dryhills;Dry hills;Collines sèches;trockenen Hügel;;Colinas secas;Colline secca;;;;;;;;x,
+farmlands;Farmlands;Terres arables;Ackerland;;Tierras de cultivo;;;;;;;;;x;;;;,
+forest;Temperate Forest;;;;;;;;x,
+hills;Hills;Collines;Hügel;;Colinas;;;;;;;;;x;;;;,
+jungle;Jungle;Jungle;Dschungel;;Jungla;;;;;;;;;x;;;;,
+land_province;Land Province;Province terrestre;Landprovinz;Obszar morski;Provincia;Zona marittima;Tengeri;Pøímoøská zóna;;;;;;x;;;;,
+marsh;Marsh;Marais;Sumpf;;Pantano;;;;;;;;;x;;;;,
+mountain;Mountains;Montagnes;Berge;;Montañas;;;;;;;;;x;;;;,
+non_coastal;Non Coastal;Non côtière;Binnenland;Z dostêpem do morza;No costero;Costiero;Tengerparti;Pobøeží;;;;;;x;;;;,
+ocean;Ocean;Océan;Ozean;;Océano;;;;;;;;;x;;;;,
+overseas;No land connection to capital;Aucune liaison terrestre vers la capitale;Übersee;Pañstwo $COUNTRY$ uwa¿a, ¿e jest to jedna z jego prowincji narodowych.;Sin conexión terrestre con la capital;$COUNTRY$ considera la presente una sua provincia nazionale.;$COUNTRY$ ezt az egyik központi tartományának tartja.;$COUNTRY$ tuto provincii pokládá za jednu ze svých hlavních.;;;;;;x;;;;
+plains;Temperate Grassland;;;;;;;;;;;;;;;;;;;;;;;;x,
+sea_zone;Sea Zone;Zone maritime;Seezone;Tropikalna;Zona marítima;Tropicale;Trópusi;Tropy;;;;;;x;;;;,
+semidesert;Semidesert;semi-désert;Halbwüste;;Semidesierto;Semideserto;;;;;;;;x,
+steppe;Dry grassland;prairies sèches;Trockenen grünland;;Prados secos;Prateria secche;;;;;;;;x,
+tropical;Tropical;Tropical;Tropisch;Morze przybrze¿ne;Tropical;Mare costiero;Tengerparti;Moøe u pobøeží;;;;;;x;;;;,
+woods;Deciduous Forest;forêt de feuillus;Laubwald;;Bosque caducifolio;Foresta decidua;;;;;;;;x,

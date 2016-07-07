@@ -9,17 +9,15 @@ literacy = 0.1
 ruling_party = CRI_conservative
 upper_house = {
 	fascist = 0
-	liberal = 13
-	conservative = 68
-	reactionary = 19
+	liberal = 0
+	conservative = 78
+	reactionary = 22
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
-
-1861.1.1 = {
-	oob = "/1861/CRI_oob.txt"
-}
+1783.1.1 = { civilized = yes }
+1861.1.1 = { oob = "/1861/CRI_oob.txt" }
 
 
 slavery = no_slavery
@@ -62,6 +60,4 @@ unemployment_subsidies = good_subsidies
 pensions = good_pensions
 school_reforms = good_schools
 		}
-1930.1.1 = {
-primary_culture = russian
-		}
+1930.1.1 = { primary_culture = russian }

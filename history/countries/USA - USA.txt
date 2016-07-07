@@ -9,9 +9,8 @@ nationalvalue = nv_liberty
 literacy = 0.50
 civilized = yes
 
-
 #GreaterPowers = prestige
-prestige = 30
+prestige = 20
 
 # Political reforms
 slavery = yes_slavery
@@ -427,7 +426,6 @@ puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
                 }
 
-
 1830.1.1 = {
 # Technologies
 late_medieval_warfare = 1
@@ -628,7 +626,6 @@ mechanical_production = 1
 clean_coal = 1 #until this for 1830
 		}
 
-
 # Starting Consciousness
 consciousness = 2
 nonstate_consciousness = 1
@@ -638,40 +635,13 @@ schools = commerce_tech_school
 oob = "USA_oob.txt"
 
 
-1838.1.1 = {
-decision = trail_of_tears
-}
-
-
-1845.1.1 = {
-decision = manifest_destiny
-}
-
-
-1850.6.3 = {
-decision = nashville_convention
-}
-
-
-1850.9.1 = {
-decision = clay_and_douglas_draft
-}
-
-
-1850.9.18 = {
-decision = fugitive_slave_act
-}
-
-
-1854.5.30 = {
-decision = kansas_nebraska_act
-}
-
-
-1861.3.2 = {
-decision = corwin_amendment
-}
-
+1838.1.1 = { decision = trail_of_tears }
+1845.1.1 = { decision = manifest_destiny }
+1850.6.3 = { decision = nashville_convention }
+1850.9.1 = { decision = clay_and_douglas_draft }
+1850.9.18 = { decision = fugitive_slave_act }
+1854.5.30 = { decision = kansas_nebraska_act }
+1861.3.2 = { decision = corwin_amendment }
 
 1861.1.1 = {
 	oob = "/1861/USA_oob.txt"
@@ -701,7 +671,6 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = low_schools
-
 
 # Technologies
 standing_army = 1
@@ -930,22 +899,12 @@ late_high_pressure_engine = 1
 early_electricity = 1
 early_railroad = 1
 cheap_iron = 1 #until this for 1860
-
-#Inventions
-
 }
 
+1865.1.1 = { decision = emancipation_proclamation }
 
-1865.1.1 = {
-	decision = emancipation_proclamation
-		}
-
-
-		
 1914.1.1 = {
-
 # Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -1260,12 +1219,9 @@ combustion_engine = 1
 advanced_steel_railroad = 1
 shift_work = 1
 electric_furnace = 1 #until this for 1913
-	}
-
-
+}
 
 1936.1.1 = {
-
 slavery = no_slavery
 prestige = 1560
 oob = "/1936/USA_oob.txt"
@@ -1664,32 +1620,10 @@ electrochemical_cell = 1
 borosilicate_glass = 1
 advanced_limited_access_roads = 1
 natural_gas_power_station = 1 #until this for 1937
-	}
-
-
-
+}
 
 1945.1.1 = {
-	oob = "/1945/USA_oob.txt"
-		}
-
-2000.1.1 = {
-		ruling_party = USA_conrepublican
-		oob = "/2000/USA_oob.txt"
-		
-		}
-
-2023.1.1 = {
-	prestige = 200
-	oob = "/2023/USA_oob.txt"
-		}
-
-
-
-
-
-1945.1.1 = {
-
+oob = "/1945/USA_oob.txt"
 #Technologies
 
 standing_army = 1
@@ -2085,14 +2019,9 @@ electronic_circuit = 1
 advanced_sub-surface_mining = 1
 street_road = 1
 secret_of_atom = 1 #until this for 1945
-	}
-
-
-
-
+}
 
 1999.1.1 = {
-
 #Technologies
 
 standing_army = 1
@@ -2567,14 +2496,14 @@ modern_mining_&_glassblowing = 1
 superhighways = 1
 renewable_energy = 1
 quantum_physics = 1 #until this for 2000
-	}
+}
 
-
-
-
+2000.1.1 = {
+ruling_party = USA_conrepublican
+oob = "/2000/USA_oob.txt"
+}
 
 2022.1.1 = {
-
 #Technologies
 
 standing_army = 1
@@ -3058,8 +2987,9 @@ robotics = 1
 high_speed_rail = 1
 synthetic_graphite = 1
 green_power = 1 #until this for 2023
-	}
+}
 
-
-
-
+2023.1.1 = {
+prestige = 200
+oob = "/2023/USA_oob.txt"
+}

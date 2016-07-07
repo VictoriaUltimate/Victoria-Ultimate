@@ -297,35 +297,6 @@ province_event = {
 	option = {
 		name = "Rats"
 		remove_province_modifier = piratesmod
-		remove_core = PIR
-	}
-}
-
-
-province_event = {
-        id = 400008 #Pirates Settle in
-        title = "Pirates Settle In $PROVINCENAME$"
-        desc = "Our inability to deal with piracy in $PROVINCENAME$ has incited some pirates to permanently settle there. Many of them now call $PROVINCENAME$ home and directly oppose our rule."
-
-	trigger = {
-		NOT = {
-			crime_fighting = 0.5
-		}
-		has_province_modifier = piratesmod
-	}
-	
-	mean_time_to_happen = {
-		months = 400
-		modifier = {
-			factor = 1.4
-			NOT = {
-				crime_fighting = 0.4
-			}
-		}
-	}
-	option = {
-		name = "Blast!"
-		add_core = PIR
 	}
 }
 

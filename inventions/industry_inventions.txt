@@ -704,7 +704,7 @@ refrigerator_technology = {
 }
 #Metulurgy
 ammunition_production = {
-	limit = { late_manufactures = 1 }
+	limit = { dawn_of_industrial_revolution_tech = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -721,7 +721,7 @@ ammunition_production = {
 	}
 }
 small_arms_production = {
-	limit = { late_manufactures = 1 }
+	limit = { dawn_of_industrial_revolution_tech = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -738,7 +738,7 @@ small_arms_production = {
 	}
 }
 explosives_production = {
-	limit = { late_manufactures = 1 }
+	limit = { dawn_of_industrial_revolution_tech = 1 }
 	chance = {
 		base = 2
 		modifier = {

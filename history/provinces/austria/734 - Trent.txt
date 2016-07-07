@@ -1,25 +1,45 @@
+owner = HRE
+controller = HRE
+add_core = GER
+add_core = HRE
+add_core = TRT
+trade_goods = grain
+life_rating = 35
+
+1604.8.31 = { 
+owner = TRT
+controller = TRT
+}
+1803.3.14 = {
+owner = AUS
+controller = AUS
+remove_core = TRT
+}
+1805.12.26 = {
+owner = BAV
+controller = BAV
+}
+1806.8.6 = { remove_core = HRE }
+1809.10.14 = {
+owner = ITA
+controller = ITA
+}
+1815.6.9 = {
 owner = AUS
 controller = AUS
 add_core = AUS
-trade_goods = grain
-life_rating = 35
-1812.1.1 = {
-		controller = ITA
-		owner = ITA
-		}
-
-
-1815.1.1 = {
-		controller = AUS
-		owner = AUS
-		}
-
-
+remove_core = GER
+}
 1861.1.1 = { railroad = 2 }
-1914.1.1 = {
+1867.3.1 = {
 owner = KUK
 controller = KUK
 add_core = KUK
-}	
-1919.1.1 = { owner = ITA add_core = ITA controller = ITA
-		remove_core = AUS }
+}
+1919.1.1 = {
+owner = ITA 
+controller = ITA
+add_core = ITA
+remove_core = AUS
+remove_core = KUK
+}

@@ -1,4 +1,4 @@
-﻿1800.1.1 = {
+1800.1.1 = {
 army = {
         name = "Armee I"
         location = 572

@@ -361,13 +361,9 @@ political_decisions = {
 				tag = GER
 				tag = NGF
 			}
-			NOT = {
-				has_country_flag = von_moltke
-			}
+			NOT = { has_country_flag = von_moltke }
 		}
-		allow = {
-			army_decision_making = 1
-		}
+		allow = { tactical_decision_making = 1 }
 		effect = {
 			add_country_modifier = {
 				name = prussian_general_staff
@@ -414,4 +410,253 @@ political_decisions = {
 			set_global_flag = ruhr_boom_has_happened
 		}
 	}
+	enabling_act = {
+		potential = {
+			OR = {
+			    tag = GER
+				tag = PRU
+			}
+			NOT = {
+				has_global_flag = nazi_leadership
+				government = fascist_dictatorship
+				year = 1945
+			}
+			year = 1928
+			has_country_modifier = treaty_of_versailles
+		}
+
+		allow = {
+			upper_house = {
+                ideology = fascist
+            	value = 0.33
+            }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = man_of_the_people
+				duration = 3191
+			}
+			set_global_flag = nazi_leadership
+
+			government = fascist_dictatorship
+            political_reform = no_slavery
+            political_reform = party_appointed
+            political_reform = none_voting
+            political_reform = first_past_the_post
+            political_reform = no_meeting
+            political_reform = censored_press
+            political_reform = state_controlled
+            political_reform = underground_only
+		}
+		ai_will_do = {
+		factor = 1
+	    modifier = {
+	 	factor = 0
+	 	OR = {
+		NOT = { year = 1933 }
+		NOT = { month = 3 }
+	    }
+	}
+		}
+	}
+	
+	violate_versailles = {
+		potential = {
+			OR = {
+				tag = GER
+				tag = NGF
+				tag = SGF
+				tag = PRU
+			}
+			has_country_modifier = treaty_of_versailles
+		             }
+		
+		allow = {
+			OR = {
+				government = absolute_monarchy
+				government = fascist_dictatorship
+				government = presidential_dictatorship
+				government = proletarian_dictatorship
+			      }
+		         }
+		
+		effect = {
+			remove_country_modifier = treaty_of_versailles
+			badboy = 5
+		          }
+	    ai_will_do = { 
+		factor = 1
+	    modifier = {
+	 	factor = 0
+	 	OR = {
+		NOT = { year = 1935 }
+		NOT = { month = 2 }
+	    }
+	}
+		}
+}
+	
+	anschluss = {
+    	potential = {
+    		OR = {
+			    tag = GER
+    			tag = PRU
+    		}
+    		exists = AUS
+    		NOT = {
+    			year = 1946
+    			has_global_flag = nazi_austrian_anschluss
+    		}
+    		year = 1928
+    	}
+
+    	allow = {
+    		prestige = 50
+            government = fascist_dictatorship
+            AUS = { government = fascist_dictatorship }
+			war = no
+			AUS = { war = no }
+			OR = {
+			relation = { who = ITA value = 190 }
+			AND = {
+			ai = yes
+			ITA = { ai = yes }
+			}
+			}
+    	}
+
+    	effect = {
+    		set_global_flag = nazi_austrian_anschluss
+            any_country = {
+            	any_owned = {
+            		limit = { 
+					AND = {
+					is_core = AUS
+					owned_by = AUS
+					}
+					}
+            		add_core = THIS
+            	}
+            }
+			inherit = AUS
+			badboy = 5
+    	}
+		ai_will_do = { 
+		factor = 1
+	    modifier = {
+	 	factor = 0
+	 	OR = {
+		NOT = { year = 1938 }
+		NOT = { month = 3 }
+		is_our_vassal = AUS
+		alliance_with = AUS
+	    }
+	}
+		}
+    }
+	munich_conference = {
+    	potential = {
+			tag = GER
+    		exists = CZH
+    		NOT = {
+    			year = 1946
+    			has_global_flag = munich_conference_held
+    		}
+			OR = {
+			AND = {
+			NOT = { exists = AUS }
+			NOT = { exists = KUK }
+			}
+			is_our_vassal = AUS
+			alliance_with = AUS
+			}
+    		year = 1928
+    	}
+
+    	allow = {
+    		prestige = 50
+            government = fascist_dictatorship
+            war = no
+			CZH = { war = no }
+     	}
+
+    	effect = {
+    		set_global_flag = munich_conference_held
+                627 = { add_core = GER }
+				628 = { add_core = GER }
+				629 = { add_core = GER }
+				630 = { add_core = GER }
+				632 = { add_core = GER }
+				688 = { add_core = GER }
+				relation = { who = CZH value = -20 }
+				relation = { who = FRA value = -20 }
+				badboy = 5
+                ENG = { country_event = 1000017 }
+		}
+
+		ai_will_do = { 
+		factor = 1
+	    modifier = {
+	 	factor = 0
+	 	OR = {
+		NOT = { year = 1938 }
+		NOT = { month = 9 }
+		is_our_vassal = CZH
+		alliance_with = CZH
+	    }
+	}
+		}
+    }
+	occupation_of_czechoslovakia = {
+        potential = {
+        	OR = {
+			    tag = GER
+        		tag = PRU
+        	}
+        	exists = CZH
+        	NOT = {
+        		year = 1950
+        		has_global_flag = occupation_of_czechoslovakia_done
+        	}
+        	has_global_flag = munich_conference_held
+        	year = 1939
+        }
+
+        allow = {
+        	prestige = 50
+            government = fascist_dictatorship
+        }
+
+        effect = {
+        	set_global_flag = occupation_of_czechoslovakia_done
+    		inherit = CZH
+			950 = { secede_province = HUN }
+			release = SLV
+    		diplomatic_influence = {
+                who = SLV
+                value = 200
+            }
+            relation = {
+                who = SLV
+                value = 200
+            }
+            create_alliance = SLV
+            create_vassal = SLV
+    		badboy = 15
+			SLV = { prestige = -10000 }
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+	 	        factor = 0
+	 	        OR = {
+		        NOT = { month = 2 }
+		        is_our_vassal = CZH
+		        alliance_with = CZH
+	                 }
+	                       }
+			              }
+        }
+     }
 }

@@ -1,4 +1,4 @@
-﻿#Ulster Region - 1846000
+#Ulster Region - 1846000
 #under rule of Britain 1836
 #Belfast (540000/135000 POPs)
 254 = {

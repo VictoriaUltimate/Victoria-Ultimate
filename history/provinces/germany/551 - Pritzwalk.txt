@@ -23,11 +23,13 @@ controller = GER
 }
 #End of WW2
 1945.4.25 = { controller = RUS }
-1945.5.8 = { owner = RUS }
+1945.5.8 = {
+owner = RUS
+add_core = DDR
+}
 1949.10.7 = {
 owner = DDR
 controller = DDR
-add_core = DDR
 }
 #Fall of Berlin Wall - Reunification
 1990.10.3 = {

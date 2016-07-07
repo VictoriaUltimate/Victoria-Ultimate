@@ -1,11 +1,11 @@
 Victoria Ultimate
-The goal of the Victoria Ultimate Mod is to expand the game Victoria 2 from the years of 1603 to 2023 with no end date
+The goal of the Victoria Ultimate Mod is to expand the game Victoria 2 from the years of 1619 to 2023 with no end date
 We hope to create a comprehensive experience for all possible start dates and as many historical events as we can.
 
 Features:
 
 
-    New start dates: 1604, 1714, 1764, 1800, 1812, 1914, 1939, 1946, 2000, and 2023
+    New start dates: 1619, 1714, 1764, 1800, 1812, 1914, 1923, 1936, 1939, 1946, 2000, 2014, and 2023
     New slavery system
     New piracy system
     Many new countries

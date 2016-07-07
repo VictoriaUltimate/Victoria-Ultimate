@@ -1,10 +1,9 @@
-capital = 1236
+capital = 1251
 primary_culture = marathi
 culture = avadhi
 culture = bihari
 culture = tamil
 culture = kanauji
-
 religion = hindu
 government = democracy
 plurality = 0.0
@@ -26,9 +25,6 @@ upper_house = {
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
-1861.1.1 = {
-	oob = "/1861/HND_oob.txt"
-}
 
 slavery = no_slavery
 upper_house_composition = appointed
@@ -47,16 +43,9 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
-
-
-
-
 1936.1.1 = {
-
 civilized = yes
-
 # Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -430,16 +419,10 @@ electrochemical_cell = 1
 borosilicate_glass = 1
 advanced_limited_access_roads = 1
 natural_gas_power_station = 1 #until this for 1937
-	}
-
-
-
-
+}
 
 1945.1.1 = {
-
 #Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -833,16 +816,10 @@ electronic_circuit = 1
 advanced_sub-surface_mining = 1
 street_road = 1
 secret_of_atom = 1 #until this for 1945
-	}
-
-
-
-
+}
 
 1999.1.1 = {
-
 #Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -1315,16 +1292,10 @@ modern_mining_&_glassblowing = 1
 superhighways = 1
 renewable_energy = 1
 quantum_physics = 1 #until this for 2000
-	}
-
-
-
-
+}
 
 2022.1.1 = {
-
 #Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -1806,8 +1777,4 @@ robotics = 1
 high_speed_rail = 1
 synthetic_graphite = 1
 green_power = 1 #until this for 2023
-	}
-
-
-
-
+}

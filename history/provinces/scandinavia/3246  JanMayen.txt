@@ -1,7 +1,10 @@
 owner = DEN
 controller = DEN
-add_core = SCA
 add_core = NOR
+add_core = SCA
+terrain = arctic
+trade_goods = fish
+life_rating = 35
 
 1830.1.1 = {
 	owner = SWE
@@ -11,9 +14,4 @@ add_core = NOR
 1905.1.1 = { 
 		controller = NOR
 		owner = NOR
-		remove_core = SWE
 		}
-add_core = JAN
-trade_goods = fish
-life_rating = 35
-terrain = arctic

@@ -1,20 +1,8 @@
-owner = MNG
-controller = MNG
-add_core = MNG
-
-1644.1.1 = {
-	owner = CHI
-	controller = CHI
-	add_core = CHI
-	remove_core = MNG
-		}
-
-1910.1.1 = {
-	owner = MGL
-	controller = MGL
-	remove_core = CHI
-		}
-
+owner = MGL
+controller = MGL
+add_core = CHI
 add_core = MGL
 trade_goods = cattle
 life_rating = 32
+
+1911.8.10 = { remove_core = CHI }

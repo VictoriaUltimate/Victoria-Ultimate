@@ -7,7 +7,6 @@ nationalvalue = nv_order
 literacy = 0.09
 civilized = yes
 
-
 #GreaterPowers = prestige
 prestige = 70
 oob = "/1604/AUS_oob.txt"
@@ -20,7 +19,6 @@ press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = underground_parties
-
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -35,14 +33,12 @@ school_reforms = no_schools
 ruling_party = AUS_conservative
 upper_house = {
         fascist = 0
-        liberal = 25
-        conservative = 61
-        reactionary = 14
+        liberal = 0
+        conservative = 81
+        reactionary = 19
         anarcho_liberal = 0
         socialist = 0
         communist = 0
-}
-1604.8.31 = { 
 }
 1700.1.1 = {
 standing_army = 1
@@ -1225,21 +1221,28 @@ combustion_engine = 1
 advanced_steel_railroad = 1
 shift_work = 1
 electric_furnace = 1 #until this for 1913
-	}
+}
 
+1919.10.21 = { government = democracy }
 
-1919.1.1 = {
-        government = democracy
-                }
-
-
+1934.5.1 = {
+ruling_party = AUS_fascist
+upper_house = {
+        fascist = 100
+        liberal = 0
+        conservative = 0
+        reactionary = 0
+        anarcho_liberal = 0
+        socialist = 0
+        communist = 0
+}
+government = fascist_dictatorship
+}
 
 1936.1.1 = {
-
 civilized = yes
 
 # Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -2017,12 +2020,23 @@ electronic_circuit = 1
 advanced_sub-surface_mining = 1
 street_road = 1
 secret_of_atom = 1 #until this for 1945
-	}
+}
 
+1945.11.25 = {
+ruling_party = AUS_conservative_5
+upper_house = {
+        fascist = 0
+        liberal = 0
+        conservative = 52
+        reactionary = 0
+        anarcho_liberal = 0
+        socialist = 46
+        communist = 2
+}
+government = democracy
+}
 
-1992.1.1 = {
-        prestige = 10
-                }
+1992.1.1 = { prestige = 10 }
 
 
 

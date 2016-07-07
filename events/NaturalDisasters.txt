@@ -115,16 +115,12 @@ country_event = {
 	news_desc_medium = "EVTDESC21600_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC21600_NEWS_SHORT"
 	picture = "bigwavedisaster"
-    fires_only_once = yes
+    fire_only_once = yes
 
 
-	trigger = {
-		owns = 2136
-	}
+	trigger = { owns = 2136 }
 
-	mean_time_to_happen = {
-		years = 800
-	}
+	mean_time_to_happen = { years = 800 }
 
 	option = {
 		name = "EVTOPTA21600"
@@ -186,12 +182,9 @@ province_event = {
 	title = "Tornadoes Devastate $PROVINCENAME$"
 	desc = "EVTDESC21700"
 
-
 	trigger = {
 		month = 2
-		NOT = {
-			month = 7
-			}
+		NOT = { month = 7 }
 		NOT = {
 			has_province_modifier = tornado_devastation 
 			terrain = mountain
@@ -209,9 +202,7 @@ province_event = {
 		region = USA_170
 		region = USA_178
 		region = USA_176
-		region = USA_162
 		region = USA_168
-		region = MEX_103
 		region = USA_106
 		region = USA_111
 		region = USA_116

@@ -1,19 +1,18 @@
-INO.1.1 = {
-	owner = NET
-	controller = NET
-	colonial = 2
-		}
-
-
-1935.1.1 = {
-	add_core= INO
-		}
-1970.1.1 = {
-	owner = INO
-	controller = INO
-	add_core = INO
-	colonial = 0
-		}
-
+owner = JOH
+controller = JOH
+add_core = JOH
 trade_goods = fish
 life_rating = 30
+
+1824.1.1 = {
+owner = NET
+controller = NET
+colonial = 2
+remove_core = JOH
+}
+1935.1.1 = { add_core= INO }
+1970.1.1 = {
+owner = INO
+controller = INO
+colonial = 0
+}

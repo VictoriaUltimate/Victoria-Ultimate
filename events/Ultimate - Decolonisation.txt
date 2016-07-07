@@ -10,12 +10,11 @@ country_event = {
 		civilized = yes
 		colonial_nation = yes
 		NOT = {
-			tag = BRC
 			OR = {
-				has_country_flag = 					decolonisation_in_progress
+			has_country_flag = decolonisation_in_progress
 			has_country_flag = had_decolonisation
-			}
-		}
+			     }
+		      }
 	}
 
 	mean_time_to_happen = {
@@ -888,30 +887,14 @@ country_event = {
 	}
 	option = {
 		name = event_option_alright
-		1775 = {
-			add_core = MAU
-		}
-		1776 = {
-			add_core = MAU
-		}
-		1777 = {
-			add_core = MAU
-		}
-		1778 = {
-			add_core = MAU
-		}
-		1779 = {
-			add_core = MAU
-		}
-		1780 = {
-			add_core = MAU
-		}
-		1781 = {
-			add_core = MAU
-		}
-		1782 = {
-			add_core = MAU
-		}
+		1775 = { add_core = TRZ }
+		1776 = { add_core = TRZ }
+		1777 = { add_core = TRZ }
+		1778 = { add_core = TRZ }
+		1779 = { add_core = TRZ }
+		1780 = { add_core = TRZ }
+		1781 = { add_core = TRZ }
+		1782 = { add_core = TRZ }
 	}
 }
 #Mali

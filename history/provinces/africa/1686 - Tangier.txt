@@ -1,17 +1,26 @@
-owner = MOR
-controller = MOR
+owner = POR
+controller = POR
 add_core = MOR
+colonial = 2
 trade_goods = grain
 life_rating = 35
-1910.1.1 = {
-		owner = SPA
-		controller = SPA
-		}
 
-1956.1.1 = {
+1662.4.23 = {
+owner = ENL
+controller = ENL
+}
+1684.2.5 = {
 owner = MOR
 controller = MOR
 colonial = 0
-		}
-
-
+}
+1912.11.27  = {
+owner = SPA
+controller = SPA
+colonial = 2
+}
+1956.4.7 = {
+owner = MOR
+controller = MOR
+colonial = 0
+}

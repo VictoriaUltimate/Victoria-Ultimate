@@ -4,7 +4,7 @@ graphical_culture = BritishGC
 
 party = {
 	name = "BRI_conservative"
-	start_date = 1600.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = conservative
@@ -18,7 +18,7 @@ party = {
 
 party = {
 	name = "BRI_liberal"
-	start_date = 1859.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = liberal
@@ -32,7 +32,7 @@ party = {
 
 party = {
 	name = "BRI_socialist"
-	start_date = 1849.1.1
+	start_date = 1848.1.1
 	end_date = 99999.1.1
 
 	ideology = socialist
@@ -46,7 +46,7 @@ party = {
 
 party = {
 	name = "BRI_reactionary"
-	start_date = 1600.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = reactionary
@@ -60,7 +60,7 @@ party = {
 
 party = {
 	name = "BRI_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal

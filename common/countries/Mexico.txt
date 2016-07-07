@@ -31,8 +31,8 @@ war_policy = pro_military
 
 party = {
 name = "MEX_anarcho_liberal"
-start_date = 1830.1.1
-end_date = 1927.1.1
+start_date = 1628.1.1
+end_date = 2005.1.1
 
 ideology = anarcho_liberal
 
@@ -45,8 +45,8 @@ war_policy = anti_military
 
 party = {
 name = "MEX_conservative_2"
-start_date = 1800.1.1
-end_date = 1927.1.1
+start_date = 1600.1.1
+end_date = 1982.1.1
 
 ideology = conservative
 
@@ -59,8 +59,8 @@ war_policy = pro_military
 
 party = {
 name = "MEX_liberal_2"
-start_date = 1800.1.1
-end_date = 1927.1.1
+start_date = 1628.1.1
+end_date = 1939.1.1
 
 ideology = liberal
 
@@ -73,8 +73,8 @@ war_policy = anti_military
 
 party = {
 name = "MEX_liberal_3"
-start_date = 1800.1.1
-end_date = 1927.1.1
+start_date = 1628.1.1
+end_date = 1939.1.1
 
 ideology = liberal
 
@@ -87,8 +87,8 @@ war_policy = anti_military
 
 party = {
 name = "MEX_conservative_3"
-start_date = 1800.1.1
-end_date = 1927.1.1
+start_date = 1600.1.1
+end_date = 1982.1.1
 
 ideology = conservative
 
@@ -101,8 +101,8 @@ war_policy = pro_military
 
 party = {
 name = "MEX_liberal_4"
-start_date = 1800.1.1
-end_date = 1927.1.1
+start_date = 1628.1.1
+end_date = 1939.1.1
 
 ideology = liberal
 
@@ -115,8 +115,8 @@ war_policy = anti_military
 
 party = {
 name = "MEX_reactionary"
-start_date = 1800.1.1
-end_date = 1927.1.1
+start_date = 1600.1.1
+end_date = 99999.1.1
 
 ideology = reactionary
 
@@ -129,8 +129,8 @@ war_policy = jingoism
 
 party = {
 name = "MEX_socialist"
-start_date = 1900.1.1
-end_date = 1927.1.1
+start_date = 1848.1.1
+end_date = 1928.1.1
 
 ideology = socialist
 
@@ -171,7 +171,7 @@ war_policy = jingoism
 
 party = {
 name = "MEX_communist_2"
-start_date = 1906.1.1
+start_date = 1848.1.1
 end_date = 1927.1.1
 
 ideology = communist
@@ -185,8 +185,8 @@ war_policy = pro_military
 
 party = {
 name = "MEX_fascist"
-start_date = 1922.1.1
-end_date = 1924.1.1
+start_date = 1900.1.1
+end_date = 99999.1.1
 
 ideology = fascist
 
@@ -271,7 +271,7 @@ war_policy = anti_military
 party = {
 name = "MEX_conservative_7"
 start_date = 1994.1.1
-end_date = 3000.1.1
+end_date = 99999.1.1
 
 ideology = conservative
 
@@ -285,7 +285,7 @@ war_policy = anti_military
 party = {
 name = "MEX_liberal_5"
 start_date = 1939.1.1
-end_date = 3000.1.1
+end_date = 99999.1.1
 
 ideology = liberal
 
@@ -299,7 +299,7 @@ war_policy = pro_military
 party = {
 name = "MEX_socialist_9"
 start_date = 1989.1.1
-end_date = 3000.1.1
+end_date = 99999.1.1
 
 ideology = socialist
 
@@ -355,7 +355,7 @@ war_policy = anti_military
 party = {
 name = "MEX_communist_3"
 start_date = 1981.1.1
-end_date = 1987.1.1
+end_date = 1990.1.1
 
 ideology = communist
 
@@ -369,7 +369,7 @@ war_policy = pro_military
 party = {
 name = "MEX_conservative_6"
 start_date = 1986.1.1
-end_date = 3000.1.1
+end_date = 99999.1.1
 
 ideology = conservative
 
@@ -383,7 +383,7 @@ war_policy = pro_military
 party = {
 name = "MEX_communist_4"
 start_date = 1990.1.1
-end_date = 3000.1.1
+end_date = 99999.1.1
 
 ideology = communist
 
@@ -425,7 +425,7 @@ war_policy = anti_military
 party = {
 name = "MEX_socialist_10"
 start_date = 2011.1.1
-end_date = 3000.1.1
+end_date = 99999.1.1
 
 ideology = socialist
 
@@ -439,7 +439,7 @@ war_policy = anti_military
 party = {
 name = "MEX_anarcho_liberal_2"
 start_date = 2005.1.1
-end_date = 3000.1.1
+end_date = 99999.1.1
 
 ideology = anarcho_liberal
 
@@ -453,7 +453,7 @@ war_policy = anti_military
 party = {
 name = "MEX_socialist_11"
 start_date = 2014.1.1
-end_date = 3000.1.1
+end_date = 99999.1.1
 
 ideology = socialist
 
@@ -467,7 +467,7 @@ war_policy = anti_military
 party = {
 name = "MEX_conservative_10"
 start_date = 2014.1.1
-end_date = 3000.1.1
+end_date = 99999.1.1
 
 ideology = conservative
 
@@ -481,7 +481,7 @@ war_policy = pro_military
 party = {
 name = "MEX_liberal_6"
 start_date = 2014.1.1
-end_date = 3000.1.1
+end_date = 99999.1.1
 
 ideology = liberal
 

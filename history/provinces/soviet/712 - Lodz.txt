@@ -1,29 +1,31 @@
 owner = PLC
 controller = PLC
-add_core = POL
-1800.1.1 = {
-	add_core = PRU
-	owner = PRU
-	controller = PRU
-		}
-1812.1.1 = {
-	add_core = POL
-	owner = POL
-	controller = POL
-	remove_core = PRU
-		}
-1867.1.1 = {
-	add_core = RUS
-	owner = RUS
-	controller = RUS
-	remove_core = CGP
-		}
-1919.6.28 = { 
-		controller = POL
-		owner = POL
-		remove_core = RUS
-		}
 add_core = PLC
 trade_goods = cattle
 life_rating = 35
+
+1793.1.23 = {
+owner = PRU
+controller = PRU
+}
+1809.6.9 = {
+owner = POL
+controller = POL
+add_core = POL
+}
+1815.6.9 = {
+owner = CPL
+controller = CPL
+add_core = CPL
+}
+1832.3.25 = {
+owner = RUS
+controller = RUS
+}
 1861.1.1 = { railroad = 3 }
+1919.6.28 = { 
+owner = POL
+controller = POL
+remove_core = CPL
+remove_core = PLC
+}

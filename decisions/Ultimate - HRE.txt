@@ -58,18 +58,13 @@ political_decisions = {
 						}				
 				
 		} 
-	}
+}
 			
-
 form_hre = { 
 
 picture = hre_pic 
 
-potential = {
-has_country_modifier = holy_roman_emperor 
-} 
-
-
+potential = { has_country_modifier = holy_roman_emperor } 
 
 allow = {
 
@@ -259,173 +254,6 @@ has_country_modifier = hre_member
 }
 country_event = 401009
 }
-}
-}
-
-ressurect_the_hre = {
-potential = {
-is_greater_power = yes
-OR = { 
-tag = CZH
-tag = BRG
-}
-NOT = { exists = HRE }
-NOT = { exists = GER }
-NOT = { exists = SGF }
-NOT = { year = 1900 }
-government = absolute_monarchy
-ruling_party_ideology = reactionary
-}	
-allow = {
-prestige = 100
-CZH = {
-all_core = {
-OR = {
-owned_by = THIS
-owner = {
-in_sphere = THIS
-}
-}
-}
-}
-BRG = {
-all_core = {
-OR = {
-owned_by = THIS
-owner = {
-in_sphere = THIS
-}
-}
-}
-}
-GER = {
-all_core = {
-OR = {
-owned_by = THIS
-owner = {
-in_sphere = THIS
-}
-}
-}
-}
-SWI = {
-all_core = {
-OR = {
-owned_by = THIS
-owner = {
-in_sphere = THIS
-}
-}
-}
-}
-LOM = {
-all_core = {
-OR = {
-owned_by = THIS
-owner = {
-in_sphere = THIS
-}
-}
-}
-}
-MOD = {
-all_core = {
-OR = {
-owned_by = THIS
-owner = {
-in_sphere = THIS
-}
-}
-}
-}
-SAR = {
-all_core = {
-OR = {
-owned_by = THIS
-owner = {
-in_sphere = THIS
-}
-}
-}
-}
-PAR = {
-all_core = {
-OR = {
-owned_by = THIS
-owner = {
-in_sphere = THIS
-}
-}
-}
-}
-VEN = {
-all_core = {
-OR = {
-owned_by = THIS
-owner = {
-in_sphere = THIS
-}
-}
-}
-}
-}
-
-effect = {
-political_reform = none_voting
-political_reform = party_appointed
-political_reform = no_meeting
-political_reform = state_press
-political_reform = state_controlled
-political_reform = underground_parties
-add_accepted_culture = south_german
-add_accepted_culture = north_german
-add_accepted_culture = czech
-add_accepted_culture = dutch
-add_accepted_culture = burgundian
-add_accepted_culture = flemish
-add_accepted_culture = swiss
-add_accepted_culture = north_italian
-prestige = 25
-change_tag = HRE
-any_country = {
-limit = {
-OR = { 
-primary_culture = south_german
-primary_culture = north_german
-primary_culture = czech
-primary_culture = dutch
-primary_culture = burgundian
-primary_culture = flemish
-primary_culture = swiss
-primary_culture = north_italian
-}
-in_sphere = THIS
-NOT = {
-tag = THIS
-}
-}
-annex_to = THIS
-}
-any_owned = {
-limit = {
-OR = { 
-is_core = GER
-is_core = CZH
-is_core = BRG
-is_core = SWI
-is_core = LOM
-is_core = MOD
-is_core = SAR
-is_core = PAR
-is_core = VEN
-}
-}
-add_core = HRE
-}
-capital = 564
-}
-ai_will_do = {
-factor = 1
 }
 }
 }

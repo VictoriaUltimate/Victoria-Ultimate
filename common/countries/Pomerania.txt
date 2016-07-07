@@ -3,7 +3,7 @@ graphical_culture = PrussianGC
 
 party = {
 	name = "PMR_liberal"
-	start_date = 1604.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = liberal
@@ -18,7 +18,7 @@ party = {
 
 party = {
 	name = "PMR_socialist"
-	start_date = 1875.1.1
+	start_date = 1848.1.1
 	end_date = 99999.1.1
 
 	ideology = socialist
@@ -48,7 +48,7 @@ party = {
 
 party = {
 	name = "PMR_conservative"
-	start_date = 1604.1.1
+	start_date = 1600.1.1
 	end_date = 99999.1.1
 
 	ideology = conservative
@@ -62,7 +62,7 @@ party = {
 
 party = {
 	name = "PMR_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal

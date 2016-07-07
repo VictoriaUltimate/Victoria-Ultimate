@@ -1,14 +1,14 @@
 trade_goods = grain
 life_rating = 10
-1903.1.1 = {
-	owner = FRA
-	controller = FRA
-		}
-1835.1.1 = {
-	add_core = MAU
-		}
 
-1960.1.1 = {
-	owner = MAU
-	controller = MAU
-		}
+1903.1.1 = {
+owner = FRA
+controller = FRA
+colonial = 2
+}
+1960.11.28 = {
+owner = TRZ
+controller = TRZ
+add_core = TRZ
+colonial = 0
+}

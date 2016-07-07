@@ -2,7 +2,7 @@ capital = 570
 primary_culture = north_german
 religion = catholic
 government = theocracy
-plurality = 0
+plurality = 0.0
 nationalvalue = nv_order
 literacy = 0.09
 civilized = yes
@@ -36,6 +36,11 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+# Starting Consciousness
+consciousness = 0
+nonstate_consciousness = 0
+
 1700.1.1 = {
 standing_army = 1
 late_medieval_warfare = 1
@@ -121,7 +126,7 @@ early_steam_engines = 1
 early_water_pump = 1
 cementation_steel = 1
 wooden_mine_railways = 1 #until this for 1700
-		}
+}
 
 1750.1.1 = {
 standing_army = 1
@@ -251,7 +256,7 @@ advanced_wooden_mine_railways = 1
 conservation_of_mass = 1
 coke_pig_iron = 1
 textile_machinery = 1 #until this for 1750
-		}
+}
 
 1800.1.1 = {
 standing_army = 1
@@ -418,8 +423,10 @@ experimental_railroad = 1
 modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
-		}
+}
+
 1830.1.1 = {
+oob = "MNZ_oob.txt"
 # Technologies
 late_medieval_warfare = 1
 early_muskets = 1
@@ -617,32 +624,19 @@ mechanized_mining = 1
 practical_steam_engine = 1
 mechanical_production = 1
 clean_coal = 1 #until this for 1830
-		}
-
-#Inventions
-
-# Starting Consciousness
-consciousness = 3
-nonstate_consciousness = 1
-
-oob = "MNZ_oob.txt"
-1861.1.1 = {
-	oob = "/1861/MNZ_oob.txt"
-	plurality = 60
-	literacy = 0.90
-	non_state_culture_literacy = 0.45
 }
-1861.1.1 = {
 
+1861.1.1 = {
+oob = "/1861/MNZ_oob.txt"
 # Political reforms
-	slavery = no_slavery
-	upper_house_composition = appointed
-	vote_franschise = wealth_voting
-	public_meetings = yes_meeting
-	press_rights = censored_press
-	trade_unions = no_trade_unions
-	voting_system = first_past_the_post
-	political_parties = non_secret_ballots
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = wealth_voting
+public_meetings = yes_meeting
+press_rights = censored_press
+trade_unions = no_trade_unions
+voting_system = first_past_the_post
+political_parties = non_secret_ballots
 
 # Technologies
 standing_army = 1
@@ -871,9 +865,4 @@ late_high_pressure_engine = 1
 early_electricity = 1
 early_railroad = 1
 cheap_iron = 1 #until this for 1860
-
-#Inventions
-
 }
-
-

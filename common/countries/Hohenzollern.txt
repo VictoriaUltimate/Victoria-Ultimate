@@ -2,7 +2,7 @@ color = { 000  000  139 }
 graphical_culture = EuropeanGC
 
 party = {
-	name = "SGR_liberal"
+	name = "SGM_liberal"
 	start_date = 1628.1.1
 	end_date = 99999.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "SGR_conservative"
+	name = "SGM_conservative"
 	start_date = 1604.1.1
 	end_date = 99999.1.1
 
@@ -29,7 +29,7 @@ party = {
 	war_policy = anti_military
 }
 party = {
-	name = "SGR_socialist"
+	name = "SGM_socialist"
 	start_date = 1848.1.1
 	end_date = 3000.1.1
 
@@ -42,7 +42,7 @@ party = {
 	war_policy = anti_military
 }
 party = {
-	name = "SGR_reactionary"
+	name = "SGM_reactionary"
 	start_date = 1604.1.1
 	end_date = 99999.1.1
 
@@ -55,7 +55,7 @@ party = {
 	war_policy = jingoism
 }
 party = {
-	name = "SGR_anarcho_liberal"
+	name = "SGM_anarcho_liberal"
 	start_date = 1628.1.1
 	end_date = 99999.1.1
 
@@ -69,7 +69,7 @@ party = {
 }
 
 party = {
-	name = "SGR_communist"
+	name = "SGM_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -83,7 +83,7 @@ party = {
 }
 
 party = {
-	name = "SGR_fascist"
+	name = "SGM_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 

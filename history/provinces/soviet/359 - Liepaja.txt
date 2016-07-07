@@ -1,35 +1,30 @@
-owner = PLC
-controller = PLC
-
-1800.1.1 = {
-	add_core = RUS
-	owner = RUS
-	controller = RUS
-		}
-add_core = UBD
+owner = COU
+controller = COU
+add_core = COU
 add_core = LAT
-
-#End of WW2
-1945.5.1 = {
-	owner = RUS
-	controller = RUS
-		}
-
-
-1919.6.28 = { 
-		controller = LAT
-		owner = LAT
-		}
-add_core = PLC
 trade_goods = grain
 life_rating = 35
 
-
+1701.7.20  = { controller = SWE }
+1705.8.25  = { controller = COU }
+1795.10.24 = {
+owner = UBD
+controller = UBD
+add_core = RUS
+remove_core = COU
+}
+1918.11.18 = {
+owner = LAT
+controller = LAT
+remove_core = RUS
+}
+#End of WW2
+1945.5.1 = {
+owner = RUS
+controller = RUS
+}
 #Soviet Collapse
-1992.5.1 = {
-	owner = LAT
-	controller = LAT
-		}
-
-
-
+1991.8.21 = {
+owner = LAT
+controller = LAT
+}

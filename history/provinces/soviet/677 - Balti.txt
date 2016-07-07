@@ -1,37 +1,28 @@
-owner = PLC
-controller = PLC
-1700.1.1 = {
-	owner = TUR
-controller = TUR
-	}
-1820.1.1 = {
-owner = RUS
-controller = RUS
-add_core = RUS
-		}
+owner = MOL
+controller = MOL
 add_core = MOL
 add_core = ROM
 trade_goods = fruit
 life_rating = 35
-1919.1.1 = {
-	owner = ROM
-	controller = ROM
-		}
 
+1812.5.28 = {
+owner = RUS
+controller = RUS
+add_core = MDV
+add_core = RUS
+}
+1918.4.9 = {
+owner = ROM
+controller = ROM
+remove_core = RUS
+}
 #End of WW2
 1945.5.1 = {
-	owner = RUS
-	controller = RUS
-		}
-
-
-
-
+owner = RUS
+controller = RUS
+}
 #Soviet Collapse
-1992.5.1 = {
-	owner = MOL
-	controller = MOL
-	add_core = ROM
-		}
-
-
+1991.8.27 = {
+owner = MDV
+controller = MDV
+}

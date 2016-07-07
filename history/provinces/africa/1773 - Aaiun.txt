@@ -1,16 +1,15 @@
+colonial = 2
 trade_goods = fish
 life_rating = 10
-1903.1.1 = {
-	owner = SPA
-	controller = SPA
-		}
 
-
-1956.1.1 = {
-	owner = MOR
-	controller = MOR
-	add_core = MOR
-	colonial = 0
-		}
-
-
+1912.11.27 = {
+owner = SPA
+controller = SPA
+colonial = 2
+}
+1956.4.7 = { add_core = MOR }
+1975.11.14 = {
+owner = MOR
+controller = MOR
+colonial = 0
+}

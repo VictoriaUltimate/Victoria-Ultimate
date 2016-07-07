@@ -6,7 +6,6 @@ plurality = 5.0
 nationalvalue = nv_order
 literacy = 0.17
 
-
 # Political reforms
 slavery = no_slavery
 upper_house_composition = party_appointed
@@ -30,9 +29,9 @@ oob = "/1604/MYA_oob.txt"
 ruling_party = MYA_conservative
 upper_house = {
 	fascist = 0
-	liberal = 32
-	conservative = 60
-	reactionary = 8
+	liberal = 0
+	conservative = 88
+	reactionary = 12
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0

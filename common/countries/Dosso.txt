@@ -3,7 +3,7 @@ graphical_culture = AfricanGC
 
 party = {
 name = "DSO_conservative"
-start_date = 1600.1.1
+start_date = 1619.1.1
 end_date = 99999.1.1
 ideology = conservative
 economic_policy = interventionism
@@ -36,7 +36,7 @@ war_policy = anti_military
 }
 party = {
 name = "DSO_reactionary"
-start_date = 1600.1.1
+start_date = 1619.1.1
 end_date = 99999.1.1
 ideology = reactionary
 economic_policy = state_capitalism

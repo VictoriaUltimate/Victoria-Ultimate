@@ -11,7 +11,6 @@ nationalvalue = nv_equality
 literacy = 0.1
 civilized = yes
 
-
 # Political reforms
 slavery = yes_slavery
 upper_house_composition = appointed
@@ -36,8 +35,8 @@ school_reforms = no_schools
 ruling_party = BNX_conservative
 upper_house = {
         fascist = 0
-        liberal = 1
-        conservative = 90
+        liberal = 0
+        conservative = 99
         reactionary = 1
         anarcho_liberal = 0
         socialist = 0

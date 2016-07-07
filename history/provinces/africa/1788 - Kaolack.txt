@@ -4,21 +4,9 @@ add_core = WOL
 trade_goods = grain
 life_rating = 35
 
-1903.1.1 = {
-owner = FRA
-controller = FRA
-colonial = 2
-}
-1905.1.1 = {
-add_core = SNG
-remove_core = WOL
-}
-1959.4.4 = {
-owner = MLI
-controller = MLI
-colonial = 0
-}
-1960.8.40 = {
+1969.1.1 = {
 owner = SNG
 controller = SNG
+add_core = SNG
+remove_core = WOL
 }

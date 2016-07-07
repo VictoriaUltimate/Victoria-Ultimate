@@ -1,6 +1,3 @@
-﻿###JAPANESE EVENTS###
-
-
 #Nintendo
 country_event = {
         id = 200500
@@ -379,26 +376,19 @@ trigger = {
                 OR = {
                 tag = ENG
                 tag = ENL
-                tag = BRC
                 tag = BRI 
                 }
-                not = {
-                has_global_flag = NewScenarioFlag }
-                }
+                NOT = { has_global_flag = NewScenarioFlag }
+          }
 
 
-mean_time_to_happen = {
-                months = 4
-                                }
+mean_time_to_happen = { months = 4 }
         
-
-
 option = {
 name = EVTOPTA200701
                 prestige = 5
 }
 }
-
 
 #The Beatles
 country_event = {
@@ -415,14 +405,13 @@ trigger = {
         tag = ENG
         tag = ENL
         tag = BRI
-        tag = BRC }
+              }
         OR = {
         government = hms_government
-        government = democracy }
-        NOT = {
-        year = 1980
-                }
-                }
+        government = democracy
+		      }
+        NOT = { year = 1980 }
+           }
 
 
 option = {

@@ -1298,6 +1298,18 @@ central_asian = {
 		}
 	}
 	
+	kalmyk = {
+		color = {104 166 0}
+		first_names = { 
+               Peljidiin Balingiin Sodnomyn Kubilai Baterdene Dogsomyn Damdin Khorloogiin Dambyan 
+               Gonchigjalzangiin Badamdorj Chingis Otgonbayar Batbayar
+		}
+
+		last_names = { 
+               Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar Jamyan Choibalsan Chagdarjav 
+		}
+	}
+	
 	tibetan = {
 		color = {99 43 89}
 		first_names = { 

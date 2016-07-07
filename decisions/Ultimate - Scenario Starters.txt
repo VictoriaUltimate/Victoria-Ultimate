@@ -26,6 +26,7 @@ political_decisions = {
 		FDA = { add_country_modifier = { name = hre_member duration = -1 } }
 		FRM = { add_country_modifier = { name = hre_member duration = -1 } }
 		GHB = { add_country_modifier = { name = hre_member duration = -1 } }
+		GNA = { add_country_modifier = { name = hre_member duration = -1 } }
 		HAM = { add_country_modifier = { name = hre_member duration = -1 } }
 		HAN = { add_country_modifier = { name = hre_member duration = -1 } }
 		HBR = { add_country_modifier = { name = hre_member duration = -1 } }
@@ -47,7 +48,7 @@ political_decisions = {
 		MNZ = { add_country_modifier = { name = hre_member duration = -1 } }
 		MUN = { add_country_modifier = { name = hre_member duration = -1 } }
 		NAS = { add_country_modifier = { name = hre_member duration = -1 } }
-		NEU = { add_country_modifier = { name = hre_member duration = -1 } }
+		NCT = { add_country_modifier = { name = hre_member duration = -1 } }
 		NRM = { add_country_modifier = { name = hre_member duration = -1 } }
 		OLD = { add_country_modifier = { name = hre_member duration = -1 } }
 		OSN = { add_country_modifier = { name = hre_member duration = -1 } }
@@ -56,13 +57,13 @@ political_decisions = {
 		PMR = { add_country_modifier = { name = hre_member duration = -1 } }
 		RGN = { add_country_modifier = { name = hre_member duration = -1 } }
 		SAX = { add_country_modifier = { name = hre_member duration = -1 } }
-		SGR = { add_country_modifier = { name = hre_member duration = -1 } }
-		SLZ = { add_country_modifier = { name = hre_member duration = -1 } }
+		SGM = { add_country_modifier = { name = hre_member duration = -1 } }
 		STG = { add_country_modifier = { name = hre_member duration = -1 } }
 		SVY = { add_country_modifier = { name = hre_member duration = -1 } }
 		SWI = { add_country_modifier = { name = hre_member duration = -1 } }
 		SXL = { add_country_modifier = { name = hre_member duration = -1 } }
 		TRR = { add_country_modifier = { name = hre_member duration = -1 } }
+		TRT = { add_country_modifier = { name = hre_member duration = -1 } }
 		TUS = { add_country_modifier = { name = hre_member duration = -1 } }
 		ULM = { add_country_modifier = { name = hre_member duration = -1 } }
 		VER = { add_country_modifier = { name = hre_member duration = -1 } }
@@ -77,17 +78,12 @@ political_decisions = {
 		potential = { has_global_flag = ImpossibleFlag }
 		effect = {
 
-		HRE = {
-		all_core = { remove_core = HRE }
-		} 
+		HRE = { all_core = { remove_core = HRE } } 
 
 					220 = { change_province_name = "Washington" }
 			set_global_flag = hre_dismantled
-			USA = {
-			all_core = { remove_core = THC } 
-			}	
-		AUS = { remove_country_modifier = holy_roman_emperor }
-				}
+			USA = { all_core = { remove_core = THC } }	
+		AUS = { remove_country_modifier = holy_roman_emperor } }
 			}
 
 WW1scenariostarter = {
@@ -112,7 +108,9 @@ WW1scenariostarter = {
 			remove_core = SEN
 			remove_core = TKG
 			remove_core = TOS
-			remove_core = YZW } }
+			remove_core = YZW
+			                }
+			    }
 		CAN = { add_country_modifier = {
 				name = indian_reserves
 				duration = -1
@@ -126,6 +124,20 @@ WW1scenariostarter = {
 		}
 			}
 }
+
+interwarscenariostarter = {
+	picture = spaceprogrampic
+		potential = { has_global_flag = ImpossibleFlag }
+    effect = {
+	    GER = {
+		    add_country_modifier = {
+            name = treaty_of_versailles
+        	duration = -1
+            }
+		}
+              }
+}
+
 WW2scenariostarter = {
 	picture = spaceprogrampic
 		potential = { has_global_flag = ImpossibleFlag }
@@ -371,6 +383,10 @@ WW2scenariostarter = {
 			RUS = { clr_country_flag = WW2_Comintern }
 			ITA = { clr_country_flag = WW2_Axis }
 			JAP = { clr_country_flag = WW2_Axis }
+			GER = {
+			government = democracy
+			ruling_party = GER_liberal
+			}
 			clr_country_flag = WW2_Axis
 			any_country = {
 				add_country_modifier = {
@@ -402,9 +418,7 @@ WW2scenariostarter = {
 			CHI = { nuclear_weapons = 400 }
 			HND = {
 			nuclear_weapons = 100
-				any_pop = {
-					reduce_pop = 4
-						}
+				any_pop = { reduce_pop = 4 }
 				}
 			ISR = { nuclear_weapons = 50 }
 			EST = { all_core = { remove_core = RUS } }	
@@ -485,9 +499,7 @@ any_country = {
 
 	2023ScenarioStarter = {
 	picture = spaceprogrampic
-		potential = {
-			has_global_flag = ImpossibleFlag
-				}
+		potential = { has_global_flag = ImpossibleFlag }
 
 		effect = {
 			#Fukushima
@@ -500,9 +512,7 @@ any_country = {
 				}
 				#Terrorist Attack vs US
 			220 = {
-				any_pop = {
-					reduce_pop = 0.25
-						}
+				any_pop = { reduce_pop = 0.25 }
 				add_province_modifier = { name = irradiated duration = 13870 }
 					add_province_modifier = {
 					name = fearofradiation
@@ -513,4 +523,3 @@ any_country = {
 				}
 					}
 }
-

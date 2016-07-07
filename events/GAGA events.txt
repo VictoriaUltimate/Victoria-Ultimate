@@ -1592,9 +1592,6 @@ country_event = {
 				factor = 20
 			}
 		}
-		any_owned_province = {
-			communist_rebels = 20
-		}
 	}
 	
 	option = {
@@ -1720,9 +1717,6 @@ country_event = {
 				factor = 20
 			}
 		}
-		any_owned_province = {
-			fascist_rebels = 20
-		}
 	}
 	
 	option = {
@@ -1846,15 +1840,9 @@ country_event = {
 				factor = 20
 			}
 		}
-		
-		any_owned_province = {
-			reactionary_rebels = 20
-		}
 	}
-	
 	option = {
 		name = "EVTOPTB999126"
-		
 		country_event = 999132 #Return of The King
 	}
 }
@@ -1969,10 +1957,6 @@ country_event = {
 				ideology = reactionary
 				factor = 20
 			}
-		}
-		
-		any_owned_province = {
-			reactionary_rebels = 20
 		}
 	}
 	
@@ -2098,10 +2082,6 @@ country_event = {
 				ideology = anarcho_liberal
 				factor = 20
 			}
-		}
-		
-		any_owned_province = {
-			anarcho_liberal_rebels = 20
 		}
 	}
 	

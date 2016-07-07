@@ -1,20 +1,17 @@
-owner = FAN
-controller = FAN
-add_core = FAN
+owner = KNG
+controller = KNG
+add_core = KNG
 trade_goods = coffee
 life_rating = 35
 
-1903.1.1 = {
-		owner = FRA
-		controller = FRA
-		colonial = 2
-		}
-
-
-
+1899.1.1 = {
+owner = FRA
+controller = FRA
+colonial = 2
 add_core = IVC
-1960.1.1 = {
-	owner = IVC
-	controller = IVC
-	colonial = 0
-		}
+}
+1960.8.7 = {
+owner = IVC
+controller = IVC
+colonial = 0
+}

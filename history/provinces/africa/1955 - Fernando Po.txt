@@ -1,14 +1,16 @@
-owner = SPA
-controller = SPA
-add_core = SPA
+owner = POR
+controller = POR
 add_core = EQG
+colonial = 2
 trade_goods = wool
 life_rating = 35
-colonial = 2
 
-1960.1.1 = {
-	owner = EQG
-	controller = EQG
-	colonial = 0
-	remove_core = SPA
-		}
+1778.3.11 = {
+owner = SPA
+controller = SPA
+}
+1968.10.12 = {
+owner = EQG
+controller = EQG
+colonial = 0
+}

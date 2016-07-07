@@ -9,8 +9,7 @@ life_rating = 40
 1707.1.1 = {
 owner = ENG
 controller = ENG
-add_core = MER
-	}
+}
 1836.1.1 = {
 railroad = 1
 state_building = {
@@ -29,7 +28,7 @@ state_building = {
 	upgrade = yes
 }
 naval_base = 2
-		}
+}
 1861.1.1 = { 
 	railroad = 3 
 	naval_base = 2
@@ -37,4 +36,4 @@ naval_base = 2
 2015.1.1 = {
 owner = ENL
 controller = ENL
-		}
+}

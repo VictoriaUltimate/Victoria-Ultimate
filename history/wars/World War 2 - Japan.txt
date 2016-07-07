@@ -2,7 +2,6 @@ name = "Japanese Invasion of China"
 
 1937.9.3 = {
 	add_attacker = JAP
-	add_attacker = SXI
 	add_attacker = MCK
 	add_defender = KMT
 
@@ -29,7 +28,6 @@ name = "Japanese Invasion of China"
 
 1945.4.1 = {
 	rem_attacker = JAP
-	rem_attacker = SXI
 	rem_attacker = MCK
 	rem_defender = KMT
 

@@ -11,13 +11,9 @@ life_rating = 40
 owner = HOL
 controller = HOL
 }
-1773.5.21 = {
-owner = SCH 
-controller = SCH
-}
-1844.9.18 = { railroad = 1 }
 1806.8.6 = { remove_core = HRE }
 1861.1.1 = {
+railroad = 3
 state_building = {
 level = 1
 building = steamer_shipyard
@@ -28,7 +24,6 @@ upgrade = yes
 owner = GER
 controller = GER
 }
-1899.5.31 = { railroad = 3 }
 1936.1.1 = { naval_base = 6 }
 1939.1.1 = {
 state_building = {

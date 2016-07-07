@@ -16,7 +16,7 @@ party = {
 }
 party = {
 	name = "GHB_conservative"
-	start_date = 1600.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = conservative
@@ -42,7 +42,7 @@ party = {
 }
 party = {
 	name = "GHB_reactionary"
-	start_date = 1600.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = reactionary

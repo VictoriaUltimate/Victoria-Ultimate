@@ -3,7 +3,7 @@ graphical_culture = EuropeanGC
 
 party = {
 	name = "AAC_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = liberal
@@ -14,10 +14,9 @@ party = {
 	citizenship_policy = limited_citizenship
 	war_policy = anti_military
 }
-
 party = {
 	name = "AAC_conservative"
-	start_date = 1878.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = conservative
@@ -28,13 +27,10 @@ party = {
 	citizenship_policy = limited_citizenship
 	war_policy = anti_military
 }
-
-
-
 party = {
 	name = "AAC_socialist"
-	start_date = 1860.1.1
-	end_date = 1875.1.1
+	start_date = 1848.1.1
+	end_date = 99999.1.1
 
 	ideology = socialist
 
@@ -44,12 +40,9 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = anti_military
 }
-
-
-
 party = {
 	name = "AAC_reactionary"
-	start_date = 1600.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = reactionary
@@ -60,13 +53,9 @@ party = {
 	citizenship_policy = residency
 	war_policy = jingoism
 }
-
-
-
-
 party = {
 	name = "AAC_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -77,7 +66,6 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = pro_military
 }
-
 party = {
 	name = "AAC_communist"
 	start_date = 1848.1.1
@@ -91,10 +79,9 @@ party = {
 	citizenship_policy = full_citizenship
 	war_policy = pro_military
 }
-
 party = {
 	name = "AAC_fascist"
-	start_date = 1905.1.1
+	start_date = 1900.1.1
 	end_date = 99999.1.1
 
 	ideology = fascist
@@ -105,33 +92,14 @@ party = {
 	citizenship_policy = residency
 	war_policy = jingoism
 }
-
 unit_names = {
-	dreadnought = {
-		CologneZähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
-	}
-	ironclad = {
-		Münster Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
-	}
-	manowar = {
-		Münster Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
-	}
-	cruiser = {
-		Münster Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
-	}
-	frigate = {
-		Münster Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
-	}
-	monitor = {
-		Münster Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
-	}
-	clipper_transport = {
-		Adler Albatross Amazone Bremse Brummer Donau Drache Feldberg Frauenlob Greif Karlsruhe Natter Neckar Salamander Seeadler Rhein 
-	}
-	steam_transport = {
-		Adler Albatross Amazone Bremse Brummer Donau Drache Feldberg Frauenlob Greif Karlsruhe Natter Neckar Salamander Seeadler Rhein 
-	}
-	commerce_raider = {
-		Aachen Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
-	}
+	dreadnought = { CologneZähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg }
+	ironclad = { Münster Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg }
+	manowar = { Münster Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg }
+	cruiser = { Münster Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg }
+	frigate = { Münster Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg }
+	monitor = { Münster Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg }
+	clipper_transport = { Adler Albatross Amazone Bremse Brummer Donau Drache Feldberg Frauenlob Greif Karlsruhe Natter Neckar Salamander Seeadler Rhein }
+	steam_transport = { Adler Albatross Amazone Bremse Brummer Donau Drache Feldberg Frauenlob Greif Karlsruhe Natter Neckar Salamander Seeadler Rhein }
+	commerce_raider = { Aachen Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg }
 }

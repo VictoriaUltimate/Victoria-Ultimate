@@ -131,7 +131,7 @@ early_colonialism = {
 }
 #guild_based_production
 renaissance_clothing = {
-	limit = { guild_based_production = 1 }
+	limit = { corporations = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -161,7 +161,7 @@ first_telescope = {
 	}
 }
 food_manufactories = {
-	limit = { post_renaissance_tech = 1 }
+	limit = { trusts = 1 }
 	chance = {
 		base = 5
 		modifier = {
@@ -178,7 +178,7 @@ food_manufactories = {
 	}
 }
 cement_manufactories = {
-	limit = { post_renaissance_tech = 1 }
+	limit = { trusts = 1 }
 	chance = {
 		base = 5
 		modifier = {
@@ -195,7 +195,7 @@ cement_manufactories = {
 	}
 }
 knitting_machine = {
-	limit = { post_renaissance_tech = 1 }
+	limit = { trusts = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -253,7 +253,7 @@ barometer = {
 	}
 }
 early_lumber_mills = {
-	limit = { birth_of_science_tech = 1 }
+	limit = { dawn_of_industrial_revolution_tech = 1 }
 	chance = {
 		base = 5
 		modifier = {
@@ -986,4 +986,39 @@ epistemology_invention = {
 	effect = {
 		permanent_prestige = 2
 	}
+}
+steel_production = {
+	limit = { dawn_of_industrial_revolution_tech = 1 }
+	chance = { base = 2 }
+	effect = { activate_building = steel_factory }
+}
+
+dye_production = {
+	limit = { dawn_of_industrial_revolution_tech = 1 }
+	chance = { base = 2 }
+	effect = { activate_building = dye_factory }
+}
+
+artillery_production = {
+	limit = { dawn_of_industrial_revolution_tech = 1 }
+	chance = { base = 2 }
+	effect = { activate_building = artillery_factory }
+}
+
+liquor_production = {
+	limit = { dawn_of_industrial_revolution_tech = 1 }
+	chance = { base = 2 }
+	effect = { activate_building = liquor_distillery }
+}
+
+winery_production = {
+	limit = { dawn_of_industrial_revolution_tech = 1 }
+	chance = { base = 2 }
+	effect = { activate_building = winery }
+}
+
+glass_production = {
+	limit = { dawn_of_industrial_revolution_tech = 1 }
+	chance = { base = 2 }
+	effect = { activate_building = glass_factory }
 }

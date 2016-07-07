@@ -15,60 +15,76 @@ country_event = {
 		steel_steamers = 1
 		steamer_convoy = 1
 		any_greater_power = {
-			num_of_ports = 5
-			NOT = {
+		num_of_ports = 5
+		any_owned_province = { is_colonial = yes }
+			NOT = { 
 				alliance_with = THIS
+				truce_with = THIS
 			}
 		}
+		any_owned_province = { port = yes }
 		press_rights = free_press
-		NOT = {
-			OR = {
-				government = democracy
-				government = hms_government
-			}
-		}
 	}
-	
 	mean_time_to_happen = {
-		months = 150
+		months = 1200
 		modifier = {
 			factor = 0.9
-			prestige = 20
+			NOT = { prestige = 500 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { badboy = 0.2 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { badboy = 0.4 }
+		}
+		modifier = {
+			factor = 0.85
+			NOT = { badboy = 0.6 }
+		}
+		modifier = {
+			factor = 0.80
+			NOT = { badboy = 0.8 }
+		}
+		modifier = {
+			factor = 0.70
+			NOT = { badboy = 1 }
 		}
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			jingoism = 5
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.6
 			jingoism = 10
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			pacifism = 5
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.4
 			pacifism = 10
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			war_policy = jingoism
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			war_policy = pro_military
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			war_policy = anti_military
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.6
 			war_policy = pacifism
 		}
 		modifier = {
@@ -82,16 +98,17 @@ country_event = {
 		steamer_convoy = -1
 		random_country = {
 			limit = {
-				is_greater_power = yes
+				is_vassal = no
 				num_of_ports = 5
+				any_owned_province = { is_colonial = yes }
 				NOT = {
 					alliance_with = THIS
-					tag = THIS
+					truce_with = THIS
 				}
 			}
 			add_casus_belli = {
 				target = THIS
-				type = cut_down_to_size
+				type = place_in_the_sun
 				months = 12
 			}
 			relation = {
@@ -112,11 +129,12 @@ country_event = {
 		steamer_convoy = -1
 		random_country = {
 			limit = {
-				is_greater_power = yes
+				is_vassal = no
 				num_of_ports = 5
+				any_owned_province = { is_colonial = yes }
 				NOT = {
 					alliance_with = THIS
-					tag = THIS
+					truce_with = THIS
 				}
 			}
 			relation = {
@@ -131,7 +149,7 @@ country_event = {
 			}
 			militancy = 2
 		}
-		prestige = -10
+		prestige = -5
 	}
 }
 
@@ -143,63 +161,63 @@ country_event = {
 	picture = "Administration"
 	
 	trigger = {
-		post_napoleonic_thought = 1
+		NOT = { has_country_modifier = neutrality }
 		is_greater_power = yes
-		prestige = 30
+		prestige = 100
 		any_greater_power = {
+		    prestige = 100
 			NOT = {
+				has_country_modifier = neutrality
+				war_with = THIS
+				truce_with = THIS			
 				relation = {
 					who = THIS
-					value = 40
+					value = 50
 				}
 			}
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 95
+		months = 800
 		modifier = {
-			factor = 0.5
-			OR = {
-				government = proletarian_dictatorship
-				government = fascist_dictatorship
-			}
+			factor = 0.9
+			NOT = { prestige = 100 }
 		}
-
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			jingoism = 5
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.6
 			jingoism = 10
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			pacifism = 5
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.4
 			pacifism = 10
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			war_policy = jingoism
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			war_policy = pro_military
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			war_policy = anti_military
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.6
 			war_policy = pacifism
 		}
 		modifier = {
@@ -213,11 +231,14 @@ country_event = {
 		random_country = {
 			limit = {
 				is_greater_power = yes
+				prestige = 100
 				NOT = {
-					tag = THIS
+					has_country_modifier = neutrality
+					war_with = THIS
+					truce_with = THIS			
 					relation = {
 						who = THIS
-						value = 40
+						value = 50
 					}
 				}
 			}
@@ -232,29 +253,48 @@ country_event = {
 			}
 		}
 		prestige = -5
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.75
+				government = democracy
+			}
+			modifier = {
+				factor = 0.75
+				government = hms_government
+			}
+			modifier = {
+				factor = 1.25
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 1.1
+				war_policy = pro_military
+			}
+			modifier = {
+				factor = 0.8
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = pacifism
+			}
+		}
 	}
 	
 	option = {
 		name = "EVTOPTB2520"
-		ai_chance = {
-			factor = 55
-			modifier = {
-				factor = 20
-				government = democracy
-			}
-			modifier = {
-				factor = 10
-				government = hms_government
-			}
-		}
 		random_country = {
 			limit = {
 				is_greater_power = yes
+				prestige = 100
 				NOT = {
-					tag = THIS
+					has_country_modifier = neutrality
+					war_with = THIS
+					truce_with = THIS			
 					relation = {
 						who = THIS
-						value = 40
+						value = 50
 					}
 				}
 			}
@@ -264,6 +304,33 @@ country_event = {
 			}
 		}
 		prestige = 1
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 1.25
+				government = democracy
+			}
+			modifier = {
+				factor = 1.25
+				government = hms_government
+			}
+			modifier = {
+				factor = 0.75
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 0.8
+				war_policy = pro_military
+			}
+			modifier = {
+				factor = 1.2
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 1.5
+				war_policy = pacifism
+			}
+		}
 	}
 }
 
@@ -275,92 +342,155 @@ country_event = {
 	picture = "patrol"
 	
 	trigger = {
-		year = 1820
+		year = 1835
+		NOT = { has_country_modifier = neutrality }
 		war = no
 		colonial_nation = yes
-		any_greater_power = {
-			colonial_nation = yes
+		any_owned_province = {
+			is_colonial = yes
+			any_neighbor_province = {
+				NOT = { owned_by = THIS }
+				is_colonial = yes
+				owner = {
+					is_vassal = no
+					NOT = {
+						war_with = THIS
+						truce_with = THIS
+						has_country_modifier = neutrality
+						relation = {
+							who = THIS
+							value = 50
+						}
+					}
+				}
+			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
-		months = 150
+		months = 300
 		modifier = {
-			factor = 0.5
-			OR = {
-				government = proletarian_dictatorship
-				government = fascist_dictatorship
-			}
+			factor = 2
+			NOT = { has_global_flag = berlin_conference }
 		}
 		modifier = {
 			factor = 0.9
-			prestige = 20
+			NOT = { prestige = 500 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { badboy = 0.2 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { badboy = 0.4 }
+		}
+		modifier = {
+			factor = 0.85
+			NOT = { badboy = 0.6 }
+		}
+		modifier = {
+			factor = 0.80
+			NOT = { badboy = 0.8 }
+		}
+		modifier = {
+			factor = 0.70
+			NOT = { badboy = 1 }
 		}
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			jingoism = 5
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.6
 			jingoism = 10
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			pacifism = 5
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.4
 			pacifism = 10
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			war_policy = jingoism
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			war_policy = pro_military
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			war_policy = anti_military
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.6
 			war_policy = pacifism
 		}
 		modifier = {
 			factor = 0.9
 			nationalism_n_imperialism = 1
 		}
-		modifier = {
-			factor = 0.9
-			is_greater_power = yes
-		}
 	}
 	
 	option = {
 		name = "EVTOPTA2530"
-		random_country = {
+        random_owned = {									
 			limit = {
-				colonial_nation = yes
-				NOT = {
-					tag = THIS
+				is_colonial = yes
+				any_neighbor_province = {
+					NOT = { owned_by = THIS }
+					is_colonial = yes
+					owner = {
+						is_vassal = no
+						NOT = {
+							war_with = THIS
+							truce_with = THIS
+							has_country_modifier = neutrality
+							relation = {
+								who = THIS
+								value = 100
+							}
+						}
+					}
+				}
+			}		
+			random_neighbor_province = {
+				limit = {
+					NOT = { owned_by = THIS }
+					is_colonial = yes
+					owner = {
+						is_vassal = no
+						NOT = {
+							war_with = THIS
+							truce_with = THIS
+							has_country_modifier = neutrality
+							relation = {
+								who = THIS
+								value = 100
+							}
+						}
+					}
+				}
+				owner = {
+					add_casus_belli = {
+						target = THIS
+						type = place_in_the_sun
+						months = 12
+					}
 				}
 			}
-			add_casus_belli = {
-				target = THIS
-				type = place_in_the_sun
-				months = 6
-			}
-			relation = {
-				who = THIS
-				value = -20
-			}
-		}
+		}		
+		relation = {
+			who = THIS
+			value = -20
+		}	
 	}
 	option = {
 		name = "EVTOPTB2530"
@@ -382,74 +512,80 @@ country_event = {
 	picture = "Thermopylae"
 	
 	trigger = {
-		is_greater_power = yes
+		num_of_ports = 1
+		NOT = { has_country_modifier = neutrality }
 		economic_policy = laissez_faire
 		OR = {
 			war_policy = jingoism
 			war_policy = pro_military
 		}
 		any_neighbor_country = {
+			is_vassal = no
+			num_of_ports = 1
 			NOT = {
 				economic_policy = laissez_faire
+				has_country_modifier = neutrality
+				relation = {
+					who = THIS
+					value = 100
+				}							
 			}
 		}
 	}
 	mean_time_to_happen = {
-		months = 125
+		months = 800
 		modifier = {
 			factor = 0.5
-			OR = {
+			OR = 
+			{
 				government = democracy
-				government = hms_government
+				government = proletarian_dictatorship
+				government = fascist_dictatorship
 			}
 		}
 		modifier = {
 			factor = 0.9
-			prestige = 20
+			NOT = { prestige = 100 }
 		}
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			jingoism = 5
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.6
 			jingoism = 10
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			pacifism = 5
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.4
 			pacifism = 10
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			war_policy = jingoism
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			war_policy = pro_military
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			war_policy = anti_military
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.6
 			war_policy = pacifism
 		}
 		modifier = {
 			factor = 0.9
 			nationalism_n_imperialism = 1
-		}
-		modifier = {
-			factor = 0.9
-			is_greater_power = yes
 		}
 	}
 	
@@ -457,10 +593,21 @@ country_event = {
 		name = "EVTOPTA2540"
 		random_country = {
 			limit = {
+			is_vassal = no
+				num_of_ports = 1
+				neighbour = THIS
 				NOT = {
-					tag = THIS
 					economic_policy = laissez_faire
-				}
+					has_country_modifier = neutrality			
+					relation = {
+						who = THIS
+						value = 100
+					}
+					}
+			}
+			relation = {
+				who = THIS
+				value = -20
 			}
 			add_casus_belli = {
 				target = THIS
@@ -480,69 +627,86 @@ country_event = {
 	
 	trigger = {
 		civilized = no
-		military_score = 5
 		colonial_nation = no
 		any_neighbor_country = {
+			is_vassal = no
 			colonial_nation = yes
+			civilized = yes
+			NOT = {				
+				has_country_modifier = neutrality			
+				relation = {
+					who = THIS
+					value = 100
+				}				
+			}
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 125
+		months = 400
 		modifier = {
-			factor = 0.5
-			OR = {
-				government = proletarian_dictatorship
-				government = fascist_dictatorship
-			}
+			factor = 0.9
+			NOT = { prestige = 500 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { badboy = 0.2 }
 		}
 		modifier = {
 			factor = 0.9
-			prestige = 20
+			NOT = { badboy = 0.4 }
+		}
+		modifier = {
+			factor = 0.85
+			NOT = { badboy = 0.6 }
+		}
+		modifier = {
+			factor = 0.80
+			NOT = { badboy = 0.8 }
+		}
+		modifier = {
+			factor = 0.70
+			NOT = { badboy = 1 }
 		}
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			jingoism = 5
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.6
 			jingoism = 10
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			pacifism = 5
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.4
 			pacifism = 10
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.6
 			war_policy = jingoism
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			war_policy = pro_military
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			war_policy = anti_military
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.6
 			war_policy = pacifism
 		}
 		modifier = {
 			factor = 0.9
 			nationalism_n_imperialism = 1
-		}
-		modifier = {
-			factor = 0.9
-			is_greater_power = yes
 		}
 	}
 	
@@ -550,84 +714,96 @@ country_event = {
 		name = "EVTOPTA2550"
 		random_country = {
 			limit = {
+				is_vassal = no
 				neighbour = THIS
 				colonial_nation = yes
+				civilized = yes
+				NOT = {				
+					has_country_modifier = neutrality			
+					relation = {
+						who = THIS
+						value = 100
+					}				
+				}
 			}
 			add_casus_belli = {
 				target = THIS
 				type = humiliate
-				months = 4
+				months = 12
 			}
+			add_casus_belli = {
+				target = THIS
+				type = place_in_the_sun
+				months = 12
+			}
+			relation = { who = THIS value = -50 }
 		}
 	}
 }
 
-# Gain Core event
-province_event = {
+# Dealing with vassals
+country_event = {
 	id = 2560
 	title = "EVTNAME2560"
 	desc = "EVTDESC2560"
+	picture = "administration"
 	
 	trigger = {
-		NOT = { is_core = THIS }
-		controlled_by = THIS
-		is_colonial = no
-		OR = {
-			is_primary_culture = yes
-			is_accepted_culture = yes
-			any_neighbor_province = {
-				AND = {
-					is_core = THIS
-					controlled_by = THIS
+		ai = yes
+		any_neighbor_country = {
+			is_vassal = yes
+			NOT = { vassal_of = THIS }
+			overlord = { NOT = { truce_with = THIS } }
+			OR = {
+				any_owned_province = { is_core = THIS }
+				overlord = {
+					NOT = { relation = { who = THIS value = -50 } }
+					NOT = { neighbour = THIS }
 				}
 			}
-		}
-		owner = {
-			tag = THIS
-			is_greater_power = yes
-			nationalism_n_imperialism = 1
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 180
+		months = 24
 		modifier = {
 			factor = 0.5
-			is_primary_culture = yes
+			war = yes
 		}
 		modifier = {
-			factor = 0.8
-			is_coastal = yes
-		}
-		modifier = {
-			factor = 0.9
-			NOT = {
-				average_militancy = 1
-			}
-		}
-		modifier = {
-			factor = 0.9
-			NOT = {
-				average_militancy = 2
-			}
-		}
-		modifier = {
-			factor = 0.95
-			NOT = {
-				average_militancy = 3
-			}
-		}
-		modifier = {
-			factor = 0.9
-			NOT = {
-				average_consciousness = 4
+			factor = 0.1
+			any_neighbor_country = {
+				is_vassal = yes
+				overlord = { war_with = THIS }
 			}
 		}
 	}
 	
 	option = {
-		name = "EVTOPTA2560"
-		add_core = THIS
+		name = "EVT2560OPTA"
+		any_neighbor_country = {
+			limit = {
+				is_vassal = yes
+				NOT = { vassal_of = THIS }
+				overlord = { NOT = { truce_with = THIS } }
+				OR = {
+					any_owned_province = { is_core = THIS }
+					overlord = {
+						NOT = { relation = { who = THIS value = -50 } }
+						NOT = { neighbour = THIS }
+					}
+				}
+			}
+			overlord = {
+				relation = { who = THIS value = -50 }
+				leave_alliance = THIS
+				add_casus_belli = {
+					target = THIS
+					type = release_puppet
+					months = 24
+				}
+			}
+		}
 	}
 }
 

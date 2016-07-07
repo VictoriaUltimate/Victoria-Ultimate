@@ -2,7 +2,7 @@ color = { 121  229  215 }
 graphical_culture = MiddleEasternGC
 party = {
 	name = "HEJ_conservative"
-	start_date = 1800.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = conservative
@@ -16,7 +16,7 @@ party = {
 
 party = {
 	name = "HEJ_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = liberal
@@ -30,7 +30,7 @@ party = {
 
 party = {
 	name = "HEJ_reactionary"
-	start_date = 1600.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = reactionary
@@ -44,7 +44,7 @@ party = {
 
 party = {
 	name = "HEJ_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal

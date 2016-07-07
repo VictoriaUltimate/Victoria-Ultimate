@@ -9,7 +9,6 @@ literacy = 0.8
 civilized = yes
 prestige = 1
 
-
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
@@ -32,9 +31,9 @@ school_reforms = no_schools
 ruling_party = COB_conservative_2
 upper_house = {
 	fascist = 0
-	liberal = 35
-	conservative = 55
-	reactionary = 10
+	liberal = 0
+	conservative = 85
+	reactionary = 15
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0

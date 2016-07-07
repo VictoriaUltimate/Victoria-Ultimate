@@ -1,7 +1,3 @@
-
-
-#========================= H E A D E R =========================
-
 capital = 2540
 primary_culture = melanesian
 religion = protestant
@@ -13,9 +9,6 @@ civilized = yes
 prestige = 1
 schools = traditional_academic
 oob = "TGA.txt"
-
-
-#========================= H O U S E - O F - L O R D S =========================
 
 ruling_party = TGA_reactionary_84
 upper_house = {

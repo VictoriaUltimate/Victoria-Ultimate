@@ -3,7 +3,7 @@ graphical_culture = MiddleEasternGC
 
 party = {
 	name = "AFG_conservative"
-	start_date = 1604.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = conservative
@@ -17,7 +17,7 @@ party = {
 
 party = {
 	name = "AFG_liberal"
-	start_date = 1604.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = liberal
@@ -31,7 +31,7 @@ party = {
 
 party = {
 	name = "AFG_liberal_2"
-	start_date = 1604.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = liberal
@@ -45,7 +45,7 @@ party = {
 
 party = {
 	name = "AFG_reactionary"
-	start_date = 1604.1.1
+	start_date = 1619.1.1
 	end_date = 99999.1.1
 
 	ideology = reactionary
@@ -59,7 +59,7 @@ party = {
 
 party = {
 	name = "AFG_anarcho_liberal"
-	start_date = 1604.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -73,7 +73,7 @@ party = {
 
 party = {
 	name = "AFG_socialist"
-	start_date = 1604.1.1
+	start_date = 1848.1.1
 	end_date = 99999.1.1
 
 	ideology = socialist
@@ -87,7 +87,7 @@ party = {
 
 party = {
 	name = "AFG_communist"
-	start_date = 1604.1.1
+	start_date = 1848.1.1
 	end_date = 99999.1.1
 
 	ideology = communist
@@ -101,7 +101,7 @@ party = {
 
 party = {
 	name = "AFG_fascist"
-	start_date = 1604.1.1
+	start_date = 1900.1.1
 	end_date = 99999.1.1
 
 	ideology = fascist

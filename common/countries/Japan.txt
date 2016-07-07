@@ -3,7 +3,7 @@ graphical_culture = JapaneseGC
 
 party = {
 	name = "NIP_reactionary"
-	start_date = 1800.1.1
+	start_date = 1619.1.1
 	end_date = 1868.1.1
 
 	ideology = reactionary
@@ -17,7 +17,7 @@ party = {
 
 party = {
 	name = "NIP_conservative"
-	start_date = 1800.1.1
+	start_date = 1619.1.1
 	end_date = 1868.1.1
 
 	ideology = conservative
@@ -73,7 +73,7 @@ party = {
 
 party = {
 	name = "NIP_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = liberal
@@ -101,7 +101,7 @@ party = {
 
 party = {
 	name = "NIP_anarcho_liberal"
-	start_date = 1600.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal

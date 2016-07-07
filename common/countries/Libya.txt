@@ -1,15 +1,8 @@
-
-
-#========================= H E A D E R =========================
-
 color = { 29 166 75 }
 graphical_culture = MiddleEasternGC
 
-
-#========================= P A R T I E S =========================
-
 party = {
-name = "LYB_conservative"
+name = "LBY_conservative"
 start_date = 1600.1.1
 end_date = 99999.1.1
 ideology = conservative
@@ -20,7 +13,7 @@ citizenship_policy = limited_citizenship
 war_policy = pro_military
 }
 party = {
-name = "LYB_liberal"
+name = "LBY_liberal"
 start_date = 1628.1.1
 end_date = 99999.1.1
 ideology = liberal
@@ -31,7 +24,7 @@ citizenship_policy = limited_citizenship
 war_policy = anti_military
 }
 party = {
-name = "LYB_socialist"
+name = "LBY_socialist"
 start_date = 1848.1.1
 end_date = 99999.1.1
 ideology = socialist
@@ -42,7 +35,7 @@ citizenship_policy = limited_citizenship
 war_policy = pro_military
 }
 party = {
-name = "LYB_reactionary"
+name = "LBY_reactionary"
 start_date = 1600.1.1
 end_date = 99999.1.1
 ideology = reactionary
@@ -53,7 +46,7 @@ citizenship_policy = residency
 war_policy = jingoism
 }
 party = {
-name = "LYB_anarcho_liberal"
+name = "LBY_anarcho_liberal"
 start_date = 1628.1.1
 end_date = 99999.1.1
 ideology = anarcho_liberal
@@ -64,7 +57,7 @@ citizenship_policy = full_citizenship
 war_policy = pro_military
 }
 party = {
-name = "LYB_communist"
+name = "LBY_communist"
 start_date = 1848.1.1
 end_date = 99999.1.1
 ideology = communist
@@ -75,7 +68,7 @@ citizenship_policy = full_citizenship
 war_policy = pro_military
 }
 party = {
-name = "LYB_fascist"
+name = "LBY_fascist"
 start_date = 1905.1.1
 end_date = 99999.1.1
 ideology = fascist

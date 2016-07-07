@@ -1,7 +1,3 @@
-
-
-#========================= H E A D E R =========================
-
 capital = 2109
 primary_culture = nguni
 culture = african_minor
@@ -13,9 +9,6 @@ literacy = 0
 prestige = 1
 schools = traditional_academic
 oob = "MUT.txt"
-
-
-#========================= H O U S E - O F - L O R D S =========================
 
 ruling_party = MUT_reactionary_84
 upper_house = {

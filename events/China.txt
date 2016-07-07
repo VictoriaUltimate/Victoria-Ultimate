@@ -337,13 +337,13 @@ country_event = {
 		}
 		government = socialist_republic
 		political_reform = no_slavery
-		political_reform = no_voting
+		political_reform = none_voting
 		political_reform = appointed
 		political_reform = proportional_representation
 		political_reform = yes_meeting
 		political_reform = state_press
 		political_reform = state_controlled
-		political_reform = only_underground
+		political_reform = underground_parties
 		prestige_factor = 0.25
 
 		set_country_flag = china_reforms_done

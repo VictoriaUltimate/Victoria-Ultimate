@@ -602,7 +602,6 @@ liquor_distillery = {
 	visibility = yes
 	onmap = no
 	
-	default_enabled = yes	
 	production_type = liquor_distillery
 	pop_build_factory = yes
 }
@@ -622,7 +621,6 @@ winery = {
 	visibility = yes
 	onmap = no
 
-	default_enabled = yes	
 	production_type = winery
 	pop_build_factory = yes
 }
@@ -701,7 +699,6 @@ glass_factory = {
 	visibility = yes
 	onmap = no
 	
-	default_enabled = yes	
 	production_type = glass_factory
 	pop_build_factory = yes
 }
@@ -741,6 +738,7 @@ fort = {
 	max_level = 13
 	province = yes
 	fort_level = 1
+	default_enabled = yes
 }
 
 naval_base = {    
@@ -755,6 +753,7 @@ naval_base = {
 	}
 	time = 1080
 	naval_capacity = 1
+	default_enabled = yes
 	capital = yes
 	onmap = yes
 	port = yes

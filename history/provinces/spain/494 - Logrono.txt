@@ -4,9 +4,12 @@ add_core = BSQ
 add_core = SPA
 trade_goods = iron
 life_rating = 35
+
 1861.1.1 = { railroad = 3 }
+1931.4.14 = { add_core = SPR }
+1977.7.1 = { remove_core = SPR }
 #Basque ISA Break Off from Spain
 2018.1.1 = {
-	owner = BSQ
-	controller = BSQ
-		}
+owner = BSQ
+controller = BSQ
+}

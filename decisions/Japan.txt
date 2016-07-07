@@ -1,17 +1,15 @@
 political_decisions = {
 	commodore_perry_expedition = {
+	picture = commodore_perry_expedition
         potential = {
 			tag = USA
-			year = 1852
-			ideological_thought = 1
+			year = 1840
+			state_n_government = 1
 			is_greater_power = yes
 			TKG = {
 				exists = yes
 				civilized = no
-				OR = {
-					diplomatic_reform = isolationism
-					has_country_modifier = uncivilized_isolationism
-				}
+				has_country_modifier = uncivilized_isolationism
 				NOT = { has_country_flag = caved_to_commodore_perry }
 				NOT = { has_country_flag = rejected_commodore_perry }
 			}
@@ -35,12 +33,9 @@ political_decisions = {
 		allow = {
 			war = no
 			OR = {
-				state_n_government = 1
+				nationalism_n_imperialism = 1
 				weapon_platforms = 1
 				is_sphere_leader_of = TKG
-			}
-			NOT = {
-			year = 1900
 			}
 		}
 
@@ -49,17 +44,14 @@ political_decisions = {
 			badboy = 2
 			TKG = { country_event = 97605 }
 		}
-		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	kanagawa_treaty = {
 		picture = unequal_treaty
 		potential = {
 			is_greater_power = yes
-			year = 1853
+			year = 1840
 			NOT = { 
 				has_country_flag = negotiate_unequal_treaty_TKG
 				is_culture_group = far_east_asian
@@ -85,9 +77,6 @@ political_decisions = {
 				}
 				war_exhaustion = 10
 			}
-			NOT = {
-			year = 1900
-			}
 		}
 		
 		effect = {
@@ -97,16 +86,14 @@ political_decisions = {
 				country_event = 97608
 			}
 		}
-		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	putiatin_mission = {
 		picture = french_military_mission_to_japan
 		potential = {
 			tag = RUS
+			year = 1840
 			owns = 1072 #Okhotsk
 			owns = 1088 #Shumshu
 			1089 = { #Etorofu
@@ -114,18 +101,17 @@ political_decisions = {
 					primary_culture = japanese
 					OR = {
 						civilized = yes
-						diplomatic_reform = interactive
+						has_country_modifier = western_influences
 					}
 					NOT = { war_with = THIS }
 				}
 			}
 			NOT = { has_country_flag = shimoda_treaty }
 		}
-
 		allow = {
 			war = no
 			is_greater_power = yes
-			ideological_thought = 1
+			state_n_government = 1
 		}
 
 		effect = {
@@ -133,18 +119,12 @@ political_decisions = {
 			prestige = 10
 			1088 = { add_core = RUS }
 			random_country = {
-				limit = {
-					owns = 1089 #Etorofu
-				}
+				limit = { owns = 1089 } #Etorofu
 				country_event = 32521
 			}
 		}
-		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
-	
 	
 	ganghwa_treaty = {
 		picture = unequal_treaty
@@ -154,7 +134,7 @@ political_decisions = {
 				tag = TKG
 			}
 			has_country_flag = rejected_ganghwa_treaty
-			year = 1876
+			year = 1770
 			NOT = { has_country_flag = negotiate_ganghwa_treaty }
 			KOR = {
 				ai = yes
@@ -181,43 +161,14 @@ political_decisions = {
 			set_country_flag = negotiate_ganghwa_treaty
 			KOR = { country_event = 85015 }
 		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	kobu_gattai = {
-		potential = {
-			tag = TKG
-			year = 1859
-			always = no
-		}
-		allow = {
-		}
-		effect = {
-			add_country_modifier = {
-				name = kobu_gattai
-				duration = -1
-			}
-			add_country_modifier = {
-				name = western_influences
-				duration = -1
-			}
-			any_country = {
-				limit = { substate_of = TKG }
-				add_country_modifier = {
-					name = kobu_gattai
-					duration = -1
-				}
-			}
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	ansei_purge = {
+	    picture = ansei_purge
 		potential = {
 			tag = TKG
-			year = 1857
+			year = 1858
 			OR = {
 				government = absolute_monarchy
 				government = prussian_constitutionalism
@@ -268,16 +219,14 @@ political_decisions = {
 			}
 		}
 		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	overthrow_the_bakufu = {
 		picture = the_meiji_restoration
 		potential = {
 			primary_culture = japanese
-			year = 1867
+			year = 1860
 			OR = {
 				government = absolute_monarchy
 				government = prussian_constitutionalism
@@ -288,6 +237,8 @@ political_decisions = {
 				has_global_flag = boshin_war_has_happened
 				TKG = { has_country_flag = made_peace_with_emperor }
 				tag = TKG
+				has_country_flag = made_peace_with_emperor
+				has_country_flag = peaceful_transition_to_japan
 			}
 		}
 		
@@ -317,37 +268,11 @@ political_decisions = {
 			leave_alliance = TKG
 			random_owned = {
 				limit = {
-					owner = { diplomatic_reform = isolationism }
-				}
-				owner = {
-					economic_reform = interactive
-					activate_technology = early_classical_theory_and_critique
-				}
-			}
-			random_owned = {
-				limit = {
-					owner = {
-						foreign_training = no_foreign_training
-						civilized = no
-					}
+					owner = { civilized = no }
 				}
 				owner = {
 					add_country_modifier = {
-						name = taiping_draft
-						duration = 365
-					}
-				}
-			}
-			random_owned = {
-				limit = {
-					owner = {
-						foreign_training = yes_foreign_training
-						civilized = no
-					}
-				}
-				owner = {
-					add_country_modifier = {
-						name = usa_draft
+						name = daimyo_draft
 						duration = 365
 					}
 				}
@@ -432,12 +357,13 @@ political_decisions = {
 	}
 	
 	fukoku_kyohei = {
+	picture = fukoku_kyohei
 		potential = {
 			OR = {
 				tag = JAP
 				tag = TKG
 			}
-			year = 1867
+			year = 1860
 			OR = {
 				has_global_flag = boshin_war_has_happened
 				has_country_flag = made_peace_with_emperor
@@ -445,13 +371,11 @@ political_decisions = {
 			NOT = { has_country_flag = fukoku_kyohei_enacted }
 		}
 		
-		allow = {
-			NOT = { has_country_modifier = fukoku_kyohei }
-		}
+		allow = { NOT = { has_country_modifier = fukoku_kyohei } }
 		
 		effect = {
 			set_country_flag = fukoku_kyohei_enacted
-			tech_school = japanese_tech_school
+			remove_country_modifier = uncivilized_isolationism
 			years_of_research = 1
 			prestige = 10
 			add_country_modifier = {
@@ -459,10 +383,8 @@ political_decisions = {
 				duration = -1
 			}
 			random_owned = {
-				limit = {
-					1654 = { empty = yes }
-				}
-				1654 = { secede_province = THIS }
+				limit = { 1654 = { empty = yes } }
+				1654 = { secede_province = THIS any_pop = { limit = { NOT = { is_primary_culture = yes } } literacy = -0.99 } }
 			}
 			JAP_1088 = { add_core = THIS }
 			random_owned = {
@@ -484,47 +406,18 @@ political_decisions = {
 					factor = 4
 				}
 			}
-			random_owned = {
-				limit = {
-					owner = {
-						civilized = no
-						diplomatic_reform = isolationism
-					}
-				}
-				owner = {
-					economic_reform = interactive
-					activate_technology = early_classical_theory_and_critique
-					any_pop = {
-						scaled_militancy = {
-							ideology = liberal
-							factor = -10
-						}
-						scaled_militancy = {
-							ideology = conservative
-							factor = 3
-						}
-						scaled_militancy = {
-							ideology = reactionary
-							factor = 6
-						}
-					}
-				}
-			}
 		}
-		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	iwakura_mission = {
+	picture = iwakura_mission
 		potential = {
 			OR = {
 				tag = JAP
 				tag = TKG
 			}
-			year = 1870
-			has_country_modifier = fukoku_kyohei
+			year = 1840
 			NOT = { has_country_flag = sent_iwakura_mission }
 		}
 		
@@ -532,17 +425,28 @@ political_decisions = {
 			war = no
 			civilized = yes
 			idealism = 1
+			OR = {
+			AND = { 
+				tag = JAP
+				TKG = { exists = no }
+				}
+			AND = { 
+				tag = TKG
+				JAP = { exists = no }
+				}
+			}
 		}
 		
 		effect = {
 			set_country_flag = sent_iwakura_mission
-			prestige = 10
 			years_of_research = 1
+			random_owned = {
+				limit = { owner = { school_reforms = no_schools } }
+				owner = { social_reform = low_schools }
+			}
 		}
 		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	meiji_constitution = {
@@ -550,7 +454,7 @@ political_decisions = {
 		potential = {
 			tag = JAP
 			civilized = yes
-			year = 1889
+			year = 1860
 			government = absolute_monarchy
 			has_country_modifier = fukoku_kyohei
 			NOT = { has_country_flag = enacted_meiji_constitution }
@@ -564,29 +468,30 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = enacted_meiji_constitution
+			remove_country_modifier = uncivilized_isolationism
 			prestige = 10
 			political_reform = wealth_weighted_voting
 			random_owned = {
-				limit = {
-					owner = { political_parties = underground_parties }
-				}
-				owner = {
-					political_reform = harassment
-				}
+				limit = { owner = { political_parties = underground_parties } }
+				owner = { political_reform = harassment }
 			}
+			
+#			random_owned = {
+#				limit = { owner = { debt_law = peonage } }
+#				owner = { political_reform = debtors_prisons }
+#			}		
+#			random_owned = {
+#				limit = { owner = { debt_law = serfdom } }
+#				owner = { political_reform = debtors_prisons }
+#			}			
 			government = prussian_constitutionalism
-			any_pop = {
-				militancy = -2
-			}
+			any_pop = { militancy = -2 }
 		}
-		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	begin_line_of_advantage = {
-		picture = meiji_court
+		picture = begin_line_of_advantage
 		potential = {
 			OR = {
 				tag = JAP
@@ -602,19 +507,16 @@ political_decisions = {
 		
 		allow = {
 			OR = {
-				nationalvalue = nv_might
 				breech_loaded_rifles = 1
 				naval_decision_making = 1
 				army_decision_making = 1
 			}
-			NOT = {
-				nationalvalue = nv_equality
-				war_policy = pacifism
-			}
+			NOT = { war_policy = pacifism }
 		}
 		
 		effect = {
 			set_country_flag = has_line_of_advantage
+			remove_country_modifier = uncivilized_isolationism
 			add_country_modifier = {
 				name = line_of_advantage
 				duration = -1
@@ -628,12 +530,11 @@ political_decisions = {
 			}
 		}
 		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	refuse_line_of_advantage = {
+	picture = refuse_line_of_advantage
 		potential = {
 			OR = {
 				tag = JAP
@@ -649,19 +550,16 @@ political_decisions = {
 		
 		allow = {
 			OR = {
-				nationalvalue = nv_equality
 				empiricism = 1
 				private_bank_money_bill_printing = 1
 				iron_railroad = 1
 			}
-			NOT = {
-				nationalvalue = nv_might
-				war_policy = jingoism
-			}
+			NOT = { war_policy = jingoism }
 		}
 		
 		effect = {
 			set_country_flag = refused_line_of_advantage
+			remove_country_modifier = uncivilized_isolationism
 			years_of_research = 0.5
 			add_country_modifier = {
 				name = no_line_of_advantage
@@ -686,9 +584,7 @@ political_decisions = {
 			}
 		}
 		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	annex_korea = {
@@ -697,10 +593,11 @@ political_decisions = {
 				tag = JAP
 				tag = TKG
 			}
-			year = 1909
+			year = 1860
 			has_country_modifier = fukoku_kyohei
 			is_greater_power = yes
 			NOT = { has_country_flag = annexed_korea }
+			exists = KOR
 		}
 		
 		allow = {
@@ -710,11 +607,7 @@ political_decisions = {
 			KOR = {
 				civilized = yes
 				in_sphere = THIS
-				NOT = {
-					any_owned_province = {
-						has_province_modifier = peasant_revolt
-					}
-				}
+				NOT = { any_owned_province = { has_province_modifier = peasant_revolt } }
 			}
 		}
 		
@@ -733,9 +626,24 @@ political_decisions = {
 				limit = {
 					tag = KOR
 					ai = yes
+					civilized = no
+				}
+				annex_to = THIS
+			}
+			random_country = {
+				limit = {
+					tag = KOR
+					ai = yes
+					civilized = yes
 				}
 				civilized = no
 				annex_to = THIS
+			}
+			random_country = {
+				limit = {
+					tag = KOR
+					exists = no
+				}
 				civilized = yes
 			}
 			random_country = {
@@ -750,9 +658,7 @@ political_decisions = {
 				}
 				war = {
 					target = THIS
-					attacker_goal = {
-						casus_belli = become_independent
-					}
+					attacker_goal = { casus_belli = become_independent }
 				}
 			}
 		}
@@ -770,8 +676,14 @@ political_decisions = {
 		picture = annex_korea
 		potential = {
 			OR = {
-				tag = JAP
-				tag = TKG
+				AND = {
+					tag = JAP
+					NOT = { exists = TKG }
+				}
+				AND = {
+					tag = TKG
+					NOT = { exists = JAP }
+				}
 			}
 			has_country_modifier = fukoku_kyohei
 			KOR = { exists = no }
@@ -788,9 +700,8 @@ political_decisions = {
 		effect = {
 			set_country_flag = claimed_korea
 			badboy = 5
-			KOR = {
-				all_core = { add_core = THIS }
-			}
+			add_country_modifier = { name = foreign_claims duration = 3650 }
+			KOR = { all_core = { add_core = THIS } }
 			1624 = {
 				owner = {
 					relation = { who = THIS value = -100 }
@@ -815,7 +726,7 @@ political_decisions = {
 				substate_of = TKG
 				vassal_of = TKG
 			}
-			year = 1862
+			year = 1840
 			NOT = { has_global_flag = order_to_expel_barbarians }
 			NOT = { has_global_flag = boshin_war }
 			NOT = { has_global_flag = boshin_war_has_happened }
@@ -886,13 +797,12 @@ political_decisions = {
 			war = no
 			civilized = yes
 			NOT = { has_country_modifier = kobu_gattai }
-			ideological_thought = 1
+			state_n_government = 1
 			idealism = 1
 		}
 		
 		effect = {
 			set_country_flag = made_peace_with_emperor
-			prestige = 10
 			remove_country_modifier = ansei_purge
 			remove_country_modifier = kobu_gattai
 			JAP = { all_core = { remove_core = JAP } }
@@ -934,7 +844,7 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			ideological_thought = 1
+			state_n_government = 1
 			owns = 1649
 			owns = 1640
 			owns = 1646
@@ -946,6 +856,7 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = han_system_abolished
+			remove_country_modifier = uncivilized_isolationism
 			years_of_research = 1
 			prestige = 10
 			remove_country_modifier = ansei_purge
@@ -965,29 +876,12 @@ political_decisions = {
 					factor = 6
 				}
 			}
-			CHO = {
-				all_core = { remove_core = CHO }
-			}
-			SAT = {
-				all_core = { remove_core = SAT }
-			}			
-			TOS = {
-				all_core = { remove_core = TOS }
-			}
-			KAG = {
-				all_core = { remove_core = KAG }
-			}
-			SEN = {
-				all_core = { remove_core = SEN }
-			}
-			YZW = {
-				all_core = { remove_core = YZW }
-			}
-			1642 = {
-				state_scope = {
-					change_region_name = "Hokkaido"
-				}
-			}
+			CHO = { all_core = { remove_core = CHO } }
+			SAT = { all_core = { remove_core = SAT } }			
+			TOS = { all_core = { remove_core = TOS } }
+			KAG = { all_core = { remove_core = KAG } }
+			SEN = { all_core = { remove_core = SEN } }
+			YZW = { all_core = { remove_core = YZW } }
 		}
 	}
 	
@@ -1052,6 +946,7 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = daimyos_united
+			remove_country_modifier = uncivilized_isolationism
 			years_of_research = 0.5
 			prestige = 10
 			remove_country_modifier = ansei_purge
@@ -1085,13 +980,11 @@ political_decisions = {
 				country_event = 98650
 			}
 		}
-		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	become_japan = {
+	picture = become_japan
 		potential = {
 			tag = TKG
 			has_country_flag = made_peace_with_emperor
@@ -1113,6 +1006,7 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = peaceful_transition_to_japan
+			remove_country_modifier = uncivilized_isolationism
 			prestige = 10
 			TKG = {
 				all_core = {
@@ -1165,16 +1059,12 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 1
-			1654 = {
-				change_province_name = "Iwo Jima"
-			}
+			1654 = { change_province_name = "Iwo Jima" }
 			2525 = {
-				add_core = THIS
 				life_rating = 15
+				add_core = THIS
 				change_province_name = "Minami Torishima"
-				state_scope = {
-					change_region_name = "Ogasawara"
-				}
+				state_scope = { change_region_name = "Ogasawara" }
 			}
 			set_country_flag = bonin_administration
 		}	
@@ -1207,9 +1097,7 @@ political_decisions = {
 				add_core = TAI
 				remove_core = FJN
 				change_province_name = "Takao"
-				state_scope = {
-					change_region_name = "Takasogo"
-				}
+				state_scope = { change_region_name = "Takasogo" }
 			}
 			set_country_flag = taiwan_administration
 		}	
@@ -1218,7 +1106,7 @@ political_decisions = {
 	inherit_ryukyu = {
 		potential = {
 			OR = {
-				tag = CHI
+				tag = QNG
 				AND = {
 					tag = JAP
 					has_country_modifier = fukoku_kyohei
@@ -1230,6 +1118,7 @@ political_decisions = {
 			}
 			exists = RYU
 			NOT = { has_global_flag = ryukyu_inherited }
+			RYU = { ai = yes }
 		}
 
 		allow = {
@@ -1246,12 +1135,11 @@ political_decisions = {
 			set_global_flag = ryukyu_inherited
 			1678 = { add_core = THIS }
 			1679 = { add_core = THIS }
+			random_owned = { limit = { owner = { tag = QNG } } 1678 = { add_core = CHI } 1679 = { add_core = CHI } }
 			inherit = RYU
 		}
 
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 
 	ryukyu_is_japanese = {
@@ -1286,10 +1174,7 @@ political_decisions = {
 				}
 			}
 		}
-
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	unite_with_japan = {
@@ -1343,9 +1228,7 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				government = fascist_dictatorship
-				JAP = {
-					NOT = { government = fascist_dictatorship }
-				}
+				JAP = { NOT = { government = fascist_dictatorship } }
 			}
 			modifier = {
 				factor = 0
@@ -1441,9 +1324,7 @@ political_decisions = {
 			}
 		}
 		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	anglo_japanese_alliance = {
@@ -1471,6 +1352,10 @@ political_decisions = {
 		}
 		
 		allow = {
+		    OR = {
+				great_wars_enabled = yes
+				NOT = { any_greater_power = { alliance_with = ENG } }
+			}
 			war = no
 			ENG = { war = no }
 			is_greater_power = yes
@@ -1504,7 +1389,6 @@ political_decisions = {
 			NOT = { has_global_flag = japanese_sakhalin }
 		}
 		allow = {
-
 			owns = 1086 #Pogobi
 			owns = 1087 #Ootomari
 			owns = 1088 #Shumshu
@@ -1512,12 +1396,10 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 5
-			1088 = {
-				change_province_name = "Shumushu"
-			}
-			1086 = {
-				change_province_name = "Sagaren"
-			}
+			2832 = { change_province_name = "Mamiya Strait" }
+			2838 = { change_province_name = "Coast of Karafuto" }
+			1088 = { change_province_name = "Shumushu" }
+			1086 = { change_province_name = "Sagaren" }
 			1087 = {
 				change_province_name = "Toyohara"
 				state_scope = {
@@ -1527,9 +1409,7 @@ political_decisions = {
 			}
 			set_global_flag = japanese_sakhalin
 		}
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	russian_sakhalin = {
@@ -1543,7 +1423,6 @@ political_decisions = {
 			has_global_flag = japanese_sakhalin
 		}
 		allow = {
-
 			owns = 1086 #Pogobi/Sagaren
 			owns = 1087 #Ootomari/Toyohara
 			owns = 1088 #Shumshu/Shumushu
@@ -1561,15 +1440,11 @@ political_decisions = {
 				}
 				prestige = -10
 			}
-			1088 = {
-				change_province_name = "Shumshu"
-			}
-			1089 = {
-				change_province_name = "Iturrup"
-			}
-			1086 = {
-				change_province_name = "Pogobi"
-			}
+			2832 = { change_province_name = "Tatar Strait" }
+			2838 = { change_province_name = "Coast of Sakhalin" }
+			1088 = { change_province_name = "Shumshu" }
+			1089 = { change_province_name = "Iturrup" }
+			1086 = { change_province_name = "Pogobi" }
 			1087 = {
 				change_province_name = "Yuzhno"
 				state_scope = {
@@ -1579,8 +1454,192 @@ political_decisions = {
 			}
 			clr_global_flag = japanese_sakhalin
 		}
-		ai_will_do = {
-			factor = 1
+		ai_will_do = { factor = 1 }
+	}
+	total_war_in_satsuma = {
+		picture = begin_line_of_advantage
+		potential = {
+			NOT = { has_country_modifier = small_country_draft }
+			NOT = { has_country_flag = satsuma_draft_happened }
+			has_country_flag = satsuma_rebellion
+			tag = SAT
 		}
+		
+		allow = {
+			OR = {
+				war_with = JAP
+				war_with = TKG
+			}
+		}
+		
+		effect = {
+			iron = 10
+			wool = 10
+			timber = 25
+			small_arms = 10
+			leadership = 20
+			define_general = {
+				name = "Saigo Takamori"
+				personality = skilled
+				background = old_school
+			}
+			add_country_modifier = {
+				name = taiping_draft
+				duration = 365
+			}
+			set_country_flag = satsuma_draft_happened 
+		}
+		ai_will_do = { factor = 1 }
+	}
+	establish_the_kaitakushi = {
+		picture = kaitakushi
+		potential = {
+			primary_culture = japanese
+			1643 = { NOT = { life_rating = 25 } }
+		}
+		
+		allow = {
+			civilized = yes
+			war = no
+			owns = 1642
+			1642 = { OR = { NOT = { is_core = EZO } owner = { tag = EZO } } }
+			owns = 1643
+			1643 = { OR = { NOT = { is_core = EZO } owner = { tag = EZO } } }
+			owns = 1644
+			1644 = { OR = { NOT = { is_core = EZO } owner = { tag = EZO } } }
+			OR = {
+				AND = { 
+					tag = JAP
+					TKG = { exists = no }
+					nationalism_n_imperialism = 1
+				}
+				AND = { 
+					tag = TKG
+					JAP = { exists = no }
+					nationalism_n_imperialism = 1
+				}
+				AND = { 
+					tag = EZO
+					revolution_n_counterrevolution = 1
+					is_vassal = no
+				}
+			}
+		}
+		
+		effect = {
+			remove_country_modifier = uncivilized_isolationism
+			1643 = { change_province_name = "Sapporo" life_rating = 25 }
+			1644 = { change_province_name = "Nemuro" life_rating = 25 }
+			1642 = { state_scope = { 
+				change_region_name = "Hokkaido"
+				any_owned = { 
+					add_province_modifier = { name = population_resettlement duration = 10950 } 
+					add_province_modifier = { name = baby_boom duration = 9125 } 
+					}
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	occupy_kita_ezo = {
+		picture = map_yellow_sea
+		potential = {
+			primary_culture = japanese
+			1643 = { empty = yes }
+			1644 = { empty = yes }
+			owns = 1642
+			exists = yes
+		}
+		
+		allow = {
+			war = no
+			OR = {
+				1086 = { empty = no }
+				1088 = { empty = no }
+				AND = {
+					tag = JAP
+					TKG = { exists = no }
+				}
+				AND = {
+					tag = TKG
+					JAP = { exists = no }
+				}
+			}
+		}
+		
+		effect = {
+			1643 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } } 
+			1644 = { secede_province = THIS add_core = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } } 
+		}
+	ai_will_do = { factor = 1 }
+	}
+	imperial_rescript = {
+	picture = imperial_rescript
+		potential = {
+			tag = JAP
+			NOT = { has_country_flag = imperial_rescript_decreed }
+			has_country_flag = sent_iwakura_mission
+		}
+		
+		allow = {
+			war = no
+			civilized = yes
+			phenomenology_n_hermeneutic = 1
+			TKG = { exists = no }
+		}
+		
+		effect = {
+			remove_country_modifier = uncivilized_isolationism
+			set_country_flag = imperial_rescript_decreed
+			any_pop = { limit = { culture = japanese } militancy = -1 consciousness = -2 }
+			random_owned = {
+				limit = { owner = { school_reforms = acceptable_schools } }
+				owner = { social_reform = good_schools }
+			}
+			
+			random_owned = {
+				limit = { owner = { school_reforms = low_schools } }
+				owner = { social_reform = acceptable_schools }
+			}
+			
+			random_owned = {
+				limit = { owner = { school_reforms = no_schools } }
+				owner = { social_reform = low_schools }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	shinbutsu_bunri = {
+	picture = shinbutsu_bunri
+		potential = {
+			OR = {
+				tag = JAP
+				tag = TKG
+			}
+			NOT = { has_country_flag = shinbutsu_bunri_declared }
+		}
+		
+		allow = {
+			war = no
+			civilized = yes
+			OR = {
+				AND = { 
+					tag = JAP
+					TKG = { exists = no }
+				}
+				AND = { 
+					tag = TKG
+					JAP = { exists = no }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = shinbutsu_bunri_declared
+			any_pop = { limit = { has_pop_religion = mahayana } consciousness = 1 }
+			any_pop = { limit = { has_pop_religion = shinto } militancy = -1 }
+			religion = shinto
+		}
+		ai_will_do = { factor = 1 }
 	}
 }

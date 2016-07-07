@@ -4,7 +4,7 @@ graphical_culture = FrenchGC
 
 party = {
         name = "FRA_reactionary"
-        start_date = 1600.1.1
+        start_date = 1619.1.1
         end_date = 1883.1.1
 
 
@@ -21,7 +21,7 @@ party = {
 
 party = {
         name = "FRA_liberal"
-        start_date = 1600.1.1
+        start_date = 1628.1.1
         end_date = 1870.1.1
 
 
@@ -38,7 +38,7 @@ party = {
 
 party = {
         name = "FRA_conservative"
-        start_date = 1600.1.1
+        start_date = 1619.1.1
         end_date = 1870.1.1
 
 
@@ -157,7 +157,7 @@ party = {
 
 party = {
         name = "FRA_anarcho_liberal"
-        start_date = 1600.1.1
+        start_date = 1628.1.1
         end_date = 99999.1.1
 
 

@@ -1,13 +1,13 @@
 capital = 2087
-primary_culture = british
-culture = boer
+primary_culture = boer
+culture = british
 religion = protestant
 government = hms_government
 plurality = 0.6
-nationalvalue = nv_liberty
+nationalvalue = nv_productivity
 literacy = 0.2
 civilized = yes
-
+is_releasable_vassal = no
 
 # Political reforms
 slavery = no_slavery

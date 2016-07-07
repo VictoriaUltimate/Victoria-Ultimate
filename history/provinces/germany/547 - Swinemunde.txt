@@ -15,20 +15,28 @@ controller = PMR
 add_core = PRU
 remove_core = BDB
 }
-1720.1.21 = {
+1806.8.6 = { remove_core = HRE }
+1815.6.9 = { 
 owner = PRU
 controller = PRU
 }
-1806.8.6 = { remove_core = HRE }
 1871.1.1 = { 
 owner = GER
 controller = GER
 }
 #End of WW2
-1945.5.5 = { controller = RUS }
-1945.10.6 = {
-owner = POL
-controller = POL
-add_core = POL
-remove_core = GER
+1945.4.5 = { controller = RUS }
+1945.5.8 = {
+owner = RUS
+add_core = DDR
+}
+1949.10.7 = {
+owner = DDR
+controller = DDR
+}
+#Fall of Berlin Wall - Reunification
+1990.10.3 = {
+owner = GER
+controller = GER
+remove_core = DDR
 }

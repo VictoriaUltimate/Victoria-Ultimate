@@ -3,8 +3,8 @@ graphical_culture = Generic
 
 party = {
 	name = "BOE_conservative"
-	start_date = 1604.1.1
-	end_date = 9999.1.1
+	start_date = 1619.1.1
+	end_date = 99999.1.1
 
 	ideology = conservative
 
@@ -17,8 +17,8 @@ party = {
 
 party = {
 	name = "BOE_conservative_2"
-	start_date = 1604.1.1
-	end_date = 9999.1.1
+	start_date = 1619.1.1
+	end_date = 99999.1.1
 
 	ideology = conservative
 
@@ -31,8 +31,8 @@ party = {
 
 party = {
 	name = "BOE_liberal"
-	start_date = 1604.1.1
-	end_date = 9999.1.1
+	start_date = 1628.1.1
+	end_date = 99999.1.1
 
 	ideology = liberal
 
@@ -45,8 +45,8 @@ party = {
 
 party = {
 	name = "BOE_reactionary"
-	start_date = 1604.1.1
-	end_date = 9999.1.1
+	start_date = 1619.1.1
+	end_date = 99999.1.1
 
 	ideology = reactionary
 
@@ -59,7 +59,7 @@ party = {
 
 party = {
 	name = "BOE_anarcho_liberal"
-	start_date = 1604.1.1
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -73,7 +73,7 @@ party = {
 
 party = {
 	name = "BOE_socialist"
-	start_date = 1604.1.1
+	start_date = 1848.1.1
 	end_date = 99999.1.1
 
 	ideology = socialist
@@ -87,7 +87,7 @@ party = {
 
 party = {
 	name = "BOE_communist"
-	start_date = 1604.1.1
+	start_date = 1848.1.1
 	end_date = 99999.1.1
 
 	ideology = communist
@@ -101,7 +101,7 @@ party = {
 
 party = {
 	name = "BOE_fascist"
-	start_date = 1604.1.1
+	start_date = 1900.1.1
 	end_date = 99999.1.1
 
 	ideology = fascist

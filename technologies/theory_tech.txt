@@ -4,7 +4,6 @@ standing_army = {
 	year = 1430
 	cost = 3600
 	unciv_military = yes
-	activate_building = fort
 	army_base = {
 		default_organisation = 5
 		supply_consumption = 0.10
@@ -702,7 +701,6 @@ prussian_doctrine = {
 	army_base = {
 		supply_consumption = 0.10
 	} 
-	max_fort = 5
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -751,7 +749,7 @@ galleon_design = {
 	year = 1430
 	cost = 3600
 	unciv_military = yes
-	activate_building = clipper_shipyard 
+	colonial_points = 50
 	ai_chance = {
 		factor = 1
 #		# Land-locked countries don't research this
@@ -921,7 +919,6 @@ colombus_voyage = {
 	year = 1492
 	cost = 4400
 	unciv_military = yes
-	activate_building = naval_base
 	ai_chance = {
 		factor = 1
 		# Land-locked countries don't research this
@@ -1326,7 +1323,7 @@ sir_francis_drake_doctrine = {
 	year = 1570
 	cost = 6400
 	unciv_military = yes
-	max_naval_base = 1
+	colonial_points = 50
 	ai_chance = {
 		factor = 1
 		# Land-locked countries don't research this
@@ -1906,7 +1903,7 @@ early_naval_plans = {
 	cost = 19600
 	unciv_military = yes
 	supply_range = 0.10
-	max_naval_base = 4
+	max_naval_base = 1
 	
 	ai_chance = {
 		factor = 1.01
@@ -2054,7 +2051,6 @@ guild_based_production = {
 	area = georgian_era
 	year = 1600
 	cost = 5200
-	activate_building = dye_factory
 	RGO_output = 0.05
 	ai_chance = {
 		factor = 1.05
@@ -2175,7 +2171,6 @@ pure_artisan_production = {
 	year = 1640
 	cost = 6800
 	RGO_output = 0.05
-	activate_building = steel_factory
 		ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -2929,7 +2924,6 @@ artisan_guilds = {
 	cost = 5200
 
 	RGO_output = 0.05 
-	activate_building = regular_clothes_factory
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -3007,7 +3001,6 @@ early_manufactures = {
 	cost = 6000
 	RGO_throughput = 0.05
 	
-	activate_building = machine_parts_factory
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -3105,7 +3098,6 @@ late_manufactures = {
 	year = 1640
 	cost = 7200
 	RGO_throughput = 0.05
-	activate_building = artillery_factory
 	
 	
 	ai_chance = {

@@ -14,15 +14,15 @@ AFG_liberal;Pashah Faction;Faction Pashah;Pascha-Fraktion;;Facción Bajá;;;;;;;;;
 AFG_liberal_2;The Liberal Faction;Faction libérale;Die liberale Fraktion;;La facción liberal;;;;;;;;;x;;;;
 AFG_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;La facción nacionalista;;;;;;;;;x;;;;
 AFG_socialist;The Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;La facción socialista;;;;;;;;;x;;;;
-AJU_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;;;;;;;;;;;x;
-AJU_communist_86;Communists;Communists;Communists;;;;;;;;;;;x;
-AJU_conservative_92;Conservatives;Conservatives;Conservatives;;;;;;;;;;;x;
-AJU_fascist_72;Fascists;Fascists;Fascists;;;;;;;;;;;x;
-AJU_liberal_79;Liberals;Liberals;Liberals;;;;;;;;;;;x;
-AJU_liberal_87;National Liberals;National Liberals;National Liberals;;;;;;;;;;;x;
-AJU_reactionary_84;Monarchy Leadership;Monarchy Leadership;Monarchy Leadership;;;;;;;;;;;x;
-AJU_socialist_85;Socialists;Socialists;Socialists;;;;;;;;;;;x;
-AJU_socialist_99;National Socialists;National Socialists;National Socialists;;;;;;;;;;;x;
+AJU_anarcho_liberal;Radical Liberals;Radical Liberals;Radical Liberals;;;;;;;;;;;x;
+AJU_communist;Communists;Communists;Communists;;;;;;;;;;;x;
+AJU_conservative;Conservatives;Conservatives;Conservatives;;;;;;;;;;;x;
+AJU_fascist;Fascists;Fascists;Fascists;;;;;;;;;;;x;
+AJU_liberal;Liberals;Liberals;Liberals;;;;;;;;;;;x;
+AJU_liberal_2;National Liberals;National Liberals;National Liberals;;;;;;;;;;;x;
+AJU_reactionary;Monarchy Leadership;Monarchy Leadership;Monarchy Leadership;;;;;;;;;;;x;
+AJU_socialist;Socialists;Socialists;Socialists;;;;;;;;;;;x;
+AJU_socialist_2;National Socialists;National Socialists;National Socialists;;;;;;;;;;;x;
 ALB_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;La facción radical;;;;;;;;;x;;;;
 ALB_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;La facción comunista;;;;;;;;;x;;;;
 ALB_conservative;Pasha Faction;Faction Pasha;Pascha-Fraktion;;Facción bajá;;;;;;;;;x;;;;
@@ -122,15 +122,6 @@ ATJ_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;La 
 ATJ_liberal;The Liberal Faction;Faction libérale;Die liberale Fraktion;;La Facción Liberal;;;;;;;;;x
 ATJ_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;La Facción Nacionalista;;;;;;;;;x
 ATJ_socialist;The Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;La Facción Socialista;;;;;;;;;x
-AUC_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;;;;;;;;;;;x;
-AUC_communist_86;Communists;Communists;Communists;;;;;;;;;;;x;
-AUC_conservative_92;Conservatives;Conservatives;Conservatives;;;;;;;;;;;x;
-AUC_fascist_72;Fascists;Fascists;Fascists;;;;;;;;;;;x;
-AUC_liberal_79;Liberals;Liberals;Liberals;;;;;;;;;;;x;
-AUC_liberal_87;National Liberals;National Liberals;National Liberals;;;;;;;;;;;x;
-AUC_reactionary_84;Monarchy Leadership;Monarchy Leadership;Monarchy Leadership;;;;;;;;;;;x;
-AUC_socialist_85;Socialists;Socialists;Socialists;;;;;;;;;;;x;
-AUC_socialist_99;National Socialists;National Socialists;National Socialists;;;;;;;;;;;x;
 AUS_anarcho_liberal;Radical Party;Parti radical;Radical Party;;Partido Radical;;;;;;;;;x;;;;
 AUS_communist;Communists;Communistes;Communists;;Comunistas;;;;;;;;;x;;;;
 AUS_conservative;Metternich's Faction;Faction de Metternich;Metternich-Fraktion;;Facción de Metternich;;;;;;;;;x;;;;
@@ -160,13 +151,6 @@ AZB_fascist;National Front;Front national;Nationale Front;;Frente Nacional;;;;;;
 AZB_liberal;Musavat;Musavat;Musavat;;Musavat;;;;;;;;;x
 AZB_reactionary;Nationalist Party;Parti nationaliste;Nationalistische Partei;;Partido Nacionalista;;;;;;;;;x
 AZB_socialist;Muslim Social Democratic Party;Parti social-démocrate musulman;Muslimische sozialdemokratische Partei;;Partido Democrático Social Musulmán;;;;;;;;;x
-BAB_anarcho_liberal;Ama-gi Popular Front;Front populaire Ama-gi;Ama-gi-Volksfront;;Frente Popular Ama-gi;;;;;;;;;x
-BAB_communist;The Ziggurat Faction (Marxist-Leninist);La faction ziggourat (marxiste-léniniste);Die Ziggurat-Fraktion (marxistisch-leninistisch);;La Facción Ziggurat (marxista-leninista);;;;;;;;;x
-BAB_conservative;The Code of Laws Party;Le parti du code des lois;Die Gesetzbuchpartei;;El Partido del Código Legal;;;;;;;;;x
-BAB_fascist;Babylon Zoo;Le Zoo de Babylone;Babylon Zoo;;El Zoo Babilónico;;;;;;;;;x
-BAB_liberal;The (Hanging) Garden Party;Le parti des jardins (suspendus);Die (Hängende) Gartenpartei;;El Partido de los Jardines (Colgantes);;;;;;;;;x
-BAB_reactionary;Hammurabi's Helpful;Parti hammourabien;Hammurabis Helfer;;Los Seguidores de Hammurabi;;;;;;;;;x
-BAB_socialist;The Tower Builders;Les bâtisseurs de tours;Die Turmbauer;;Los Constructores de Torres;;;;;;;;;x
 BAD_anarcho_liberal;Radikale Arbeiterpartei;Arbeiterpartei radical;Radikale Arbeiterpartei;;Radical Arbeiterpartei;;;;;;;;;x;;;;
 BAD_communist;Kommunistische Arbeiterpartei;Arbeiterpartei communiste;Kommunistische Arbeiterpartei;;Communist Arbeiterpartei;;;;;;;;;x;;;;
 BAD_conservative;Zentrumspartei;Zentrumspartei;Zentrumspartei;;Zentrumspartei;;;;;;;;;x;;;;
@@ -567,8 +551,6 @@ CSA_anarcho_liberal;Democrats;Democrates;Democrats;;Demócratas;;;;;;;;;x;;;;
 CSA_communist;Communists;Communistes;Communists;;Comunistas;;;;;;;;;x;;;;
 CSA_conservative;Whigs;Whigs;Whigs;;Whigs;;;;;;;;;x;;;;
 CSA_fascist;Fascists;Fascistes;Fascists;;Fascistas;;;;;;;;;x;;;;
-CSA_liberal;Democratic Party;Parti démocratique;Democratic Party;;Partido Democrático;;;;;;;;;x;;;;
-CSA_liberal_2;Whig Party;Parti Whig;Whig Party;;Partido Whig;;;;;;;;;x;;;;
 CSA_liberal_3;Populist Party;Parti populiste;Populist Party;;Partido Populista;;;;;;;;;x;;;;
 CSA_reactionary;New America Party;Nouveau parti américain;New America Party;;Partido de la Nueva América;;;;;;;;;x;;;;
 CSA_socialist;Brothers of the Revolution;Frères de la Révolution;Brothers of the Revolution;;Hermanos de la Revolución;;;;;;;;;x;;;;
@@ -654,6 +636,13 @@ DOM_liberal_4;Partido Verde;Partido Verde;Partido Verde;;Partido Verde;;;;;;;;;x
 DOM_liberal_5;Jimenistas;Jimenistas;Jimenistas;;Jimenistas;;;;;;;;;x;;;;
 DOM_reactionary;Partido Nacionalista;Partido nationaliste;Partido Nationalist;;Partido Nacionalista;;;;;;;;;x;;;;
 DOM_socialist;Partido Socialista;Partido socialiste;Partido Socialist;;Partido Socialista;;;;;;;;;x;;;;
+dominion_anarcho_liberal;Libertarian Party;;;;;;;;;;x;;;
+dominion_communist;Communist Party;;;;;;;;;;x;;;
+dominion_conservative;Conservative Party;;;;;;;;;;x;;;
+dominion_fascist;Fascist Party;;;;;;;;;;x;;;
+dominion_liberal;Liberal Party;;;;;;;;;;x;;;
+dominion_reactionary;The Old Guard;;Die Alte Garde;;;;;;;;x;;;
+dominion_socialist;Socialist Party;;Sozialistische Partei;;;;;;;;x;;;
 DUR_anarcho_liberal;Hezb-e-Paiwand Mili;x;;;;;;;;;;;;
 DUR_communist;Hizb-e Mardum-e Afghanistan;x;;;;;;;;;;;;
 DUR_conservative;Hezbi Jumhori Durrani;x;;;;;;;;;;;;
@@ -1088,13 +1077,6 @@ JAI_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;La 
 JAI_liberal;The Liberal Faction;Faction libérale;Die liberale Fraktion;;La Facción Liberal;;;;;;;;;x;;;;
 JAI_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;La Facción Nacionalista;;;;;;;;;x;;;;
 JAI_socialist;The Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;La Facción Socialista;;;;;;;;;x;;;;
-JAN_anarcho_liberal;Radicals;Radicaux;Radikale;;Radicales;;;;;;;;;x
-JAN_communist;Communists;Communistes;Kommunisten;;Comunistas;;;;;;;;;x
-JAN_conservative;Høyre;Høyre;Høyre;;Høyre;;;;;;;;;x
-JAN_fascist;Nasjonal Samling;Nasjonal Samling;Nasjonal Samling;;Nasjonal Samling;;;;;;;;;x
-JAN_liberal;Venstre;Venstre;Venstre;;Venstre;;;;;;;;;x
-JAN_reactionary;Strid Partiet;;Strid Partiet;;;;;;;;x
-JAN_socialist;Arbeiderparti;Arbeiderparti;Arbeiderparti;;Arbeiderparti;;;;;;;;;x
 JAS_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;La Facción Radical;;;;;;;;;x;;;;
 JAS_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;La Facción Comunista;;;;;;;;;x;;;;
 JAS_conservative;Royal Faction;Faction royale;Königsfraktion;;Facción Real;;;;;;;;;x;;;;
@@ -1247,6 +1229,13 @@ LBN_fascist;Phalanges Libanaises;;;;;;;;;;;;;x
 LBN_liberal;Harakat al-Tajaddod al-Dimoqrati;;;;;;;;;;;;;x
 LBN_reactionary;Harakat al-Qawmiyyin al-Arab;;;;;;;;;;;;;x
 LBN_socialist;Hizb al-Taqadummi al-Ishtiraki;;;;;;;;;;;;;x
+LBY_anarcho_liberal;Libertarian Party;Partido Radical;Partido Radical;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LBY_communist;Communist Party;Partido communiste;Partido Communist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LBY_conservative;Conservative Party;Partido Conservador;Partido Conservador;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LBY_fascist;Fascist Party;Partido fasciste;Partido Fascist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LBY_liberal;Liberal Party;Partido Liberal;Partido Liberal;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LBY_reactionary;Radical Party;Partido nationaliste;Partido Nationalist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LBY_socialist;Socialist Party;Partido socialiste;Partido Socialist;;;;;;;;;;;;x;;;;;;;;;;;;;;
 LIB_anarcho_liberal;Radical Party;Parti radical;Radical Party;;Partido Radical;;;;;;;;;x;;;;
 LIB_communist;Communist Party;Parti communiste ;Communist Party;;Partido Comunista;;;;;;;;;x;;;;
 LIB_conservative;Democratic Party;Parti démocrate;Democratic Party;;Partido Demócrata;;;;;;;;;x;;;;
@@ -1323,7 +1312,6 @@ LUB_socialist_3;Sozial. Arbeiterpartei ;Sozial. Arbeiterpartei ;Sozial. Arbeiter
 LUC_anarcho_liberal;Radicali;Radical;Radikali;;Radical;;;;;;;;;x;;;;
 LUC_communist;Comunisti;Communiste;Communisti;;Comunista;;;;;;;;;x;;;;
 LUC_conservative;Moderati ;Moderati ;Moderati;;Moderati ;;;;;;;;;x;;;;
-LUC_conservative_2;Popolari;Popolari;Popolari;;Popolari;;;;;;;;;x;;;;
 LUC_fascist;Fascisti;Fasciste;Fascisti;;Fascista;;;;;;;;;x;;;;
 LUC_liberal;Riformisti ;Reformisti ;Reformisti;;Reformisti ;;;;;;;;;x;;;;
 LUC_liberal_2;Liberale;Liberale;Liberali;;Liberale;;;;;;;;;x;;;;
@@ -1345,13 +1333,6 @@ LUX_fascist;Fascist Fraktion;Fascist Fraktion;Faschistische Fraktion;;Fascist Fr
 LUX_liberal;Liberale Fraktion;Liberale Fraktion;Liberale Fraktion;;Liberale Fraktion;;;;;;;;;x;;;;
 LUX_reactionary;Nationalist Fraktion;Nationalist Fraktion;Nationalistische Fraktion;;Nationalist Fraktion;;;;;;;;;x;;;;
 LUX_socialist;Sozialist Fraktion;Sozialist Fraktion;Sozialistische Fraktion;;Sozialist Fraktion;;;;;;;;;x;;;;
-LYB_anarcho_liberal;Libertarian Party;Partido Radical;Partido Radical;;;;;;;;;;;;x;;;;;;;;;;;;;;
-LYB_communist;Communist Party;Partido communiste;Partido Communist;;;;;;;;;;;;x;;;;;;;;;;;;;;
-LYB_conservative;Conservative Party;Partido Conservador;Partido Conservador;;;;;;;;;;;;x;;;;;;;;;;;;;;
-LYB_fascist;Fascist Party;Partido fasciste;Partido Fascist;;;;;;;;;;;;x;;;;;;;;;;;;;;
-LYB_liberal;Liberal Party;Partido Liberal;Partido Liberal;;;;;;;;;;;;x;;;;;;;;;;;;;;
-LYB_reactionary;Radical Party;Partido nationaliste;Partido Nationalist;;;;;;;;;;;;x;;;;;;;;;;;;;;
-LYB_socialist;Socialist Party;Partido socialiste;Partido Socialist;;;;;;;;;;;;x;;;;;;;;;;;;;;
 MAD_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;La Facción Radical;;;;;;;;;x
 MAD_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;La Facción Comunista;;;;;;;;;x
 MAD_conservative;Royal Faction;Faction royale;Königsfraktion;;Facción Real;;;;;;;;;x
@@ -1485,19 +1466,9 @@ MIC_liberal_87;National Liberals;National Liberals;National Liberals;;;;;;;;;;;x
 MIC_reactionary_84;Monarchy Leadership;Monarchy Leadership;Monarchy Leadership;;;;;;;;;;;x;
 MIC_socialist_85;Socialists;Socialists;Socialists;;;;;;;;;;;x;
 MIC_socialist_99;National Socialists;National Socialists;National Socialists;;;;;;;;;;;x;
-MNG_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;;;;;;;;;;;x;
-MNG_communist_86;Communists;Communists;Communists;;;;;;;;;;;x;
-MNG_conservative_92;Conservatives;Conservatives;Conservatives;;;;;;;;;;;x;
-MNG_fascist_72;Fascists;Fascists;Fascists;;;;;;;;;;;x;
-MNG_liberal_79;Liberals;Liberals;Liberals;;;;;;;;;;;x;
-MNG_liberal_87;National Liberals;National Liberals;National Liberals;;;;;;;;;;;x;
-MNG_reactionary_84;Monarchy Leadership;Monarchy Leadership;Monarchy Leadership;;;;;;;;;;;x;
-MNG_socialist_85;Socialists;Socialists;Socialists;;;;;;;;;;;x;
-MNG_socialist_99;National Socialists;National Socialists;National Socialists;;;;;;;;;;;x;
 MOD_anarcho_liberal;Radicali;Radical;Radikali;;Radical;;;;;;;;;x;;;;
 MOD_communist;Comunisti;Communiste;Communisti;;Comunista;;;;;;;;;x;;;;
 MOD_conservative;Moderati;Moderati;Moderati;;Moderati;;;;;;;;;x;;;;
-MOD_conservative_2;Popolari;Popolari;Popolari;;Popolari;;;;;;;;;x;;;;
 MOD_fascist;Fascisti;Fasciste;Fascisti;;Fascista;;;;;;;;;x;;;;
 MOD_liberal;Reformisti;Reformisti;Reformisti;;Reformisti;;;;;;;;;x;;;;
 MOD_liberal_2;Liberale;Liberale;Liberali;;Liberale;;;;;;;;;x;;;;
@@ -1967,7 +1938,6 @@ SAF_socialist;Labour Party;Parti travailliste;Labour Party;;Partido Laborista;;;
 SAR_anarcho_liberal;Radicali;Radical;Radikali;;Radical;;;;;;;;;x;;;;
 SAR_communist;Comunisti;Communistes;Communisti;;Comunista;;;;;;;;;x;;;;
 SAR_conservative;Moderati ;Moderati ;Moderati;;Moderati ;;;;;;;;;x;;;;
-SAR_conservative_2;Popolari;Popolari;Popolari;;Popolari;;;;;;;;;x;;;;
 SAR_fascist;Fascisti;Fasciste;Fascisti;;Fascista;;;;;;;;;x;;;;
 SAR_liberal;Riformisti ;Reformisti ;Reformisti;;Reformisti ;;;;;;;;;x;;;;
 SAR_liberal_2;Liberale;Liberale;Liberali;;Liberale;;;;;;;;;x;;;;
@@ -2037,8 +2007,7 @@ SER_liberal;Constitutional;Constitutionel;Konstitutionell;;Constitutionalistas;;
 SER_liberal_2;Liberal;Liberal;Liberal;;Liberales;;;;;;;;;x;;;;
 SER_reactionary;Nationalist;Nationaliste;Nationalistisch;;Nacionalista;;;;;;;;;x;;;;
 SER_socialist;Radical;Radical;Radikal;;Radical;;;;;;;;;x;;;;
-SEY_conservative;Planters Association;;;;;;x
-SEY_conservative_2;Seychelles Democratic Party;;;;;;x
+SEY_conservative;Seychelles Democratic Party;;;;;;x
 SEY_liberal;Seychelles National Party;;;;;;x
 SEY_reactionary;Taxpayers Association;;;;;;x
 SEY_socialist;League of Coloured Peoples;;;;;;x
@@ -2058,13 +2027,13 @@ SGF_reactionary;Nationale Partei;Nationale Partei;Nationale Partei;;Nationale Pa
 SGF_socialist;Deutscher Arbeiterverein;Deutscher Arbeiterverein;Deutscher Arbeiterverein;;Deutscher Arbeiterverein;;;;;;;;;x;;;;
 SGF_socialist_2;Sozialdem. Arbeiterpartei ;Sozialdem. Arbeiterpartei ;Sozialdem. Arbeiterpartei ;;Sozialdem. Arbeiterpartei ;;;;;;;;;x;;;;
 SGF_socialist_3;Sozial. Arbeiterpartei ;Sozial. Arbeiterpartei ;Sozial. Arbeiterpartei ;;Sozial. Arbeiterpartei ;;;;;;;;;x;;;;
-SGR_anarcho_liberal;Libertarian Führer;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
-SGR_communist;Kommunistische Führer;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
-SGR_conservative;Konservative Führer;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
-SGR_fascist;Faschisten Führer;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
-SGR_liberal;Liberale Führer;Partido Progresista;Partido Progresista;;;Partido Progresista;;;;;;;;x;;;;
-SGR_reactionary;Radikal Führer;Partido Imperialista;Partido Imperialista;;;Partido Imperialista;;;;;;;;x;;;;
-SGR_socialist;Sozialistische Führer;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
+SGM_anarcho_liberal;Libertarian Führer;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
+SGM_communist;Kommunistische Führer;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
+SGM_conservative;Konservative Führer;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+SGM_fascist;Faschisten Führer;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+SGM_liberal;Liberale Führer;Partido Progresista;Partido Progresista;;;Partido Progresista;;;;;;;;x;;;;
+SGM_reactionary;Radikal Führer;Partido Imperialista;Partido Imperialista;;;Partido Imperialista;;;;;;;;x;;;;
+SGM_socialist;Sozialistische Führer;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
 SHI_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;La Facción Radical;;;;;;;;;x;;;;
 SHI_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;La Facción Comunista;;;;;;;;;x;;;;
 SHI_conservative;Royal Faction;Faction royale;Königsfraktion;;Facción Real;;;;;;;;;x;;;;
@@ -2082,7 +2051,6 @@ SIA_socialist;The Socialist Faction;Faction socialiste;Die sozialistische Frakti
 SIC_anarcho_liberal;Radicali;Radical;Radikali;;Radical;;;;;;;;;x;;;;
 SIC_communist;Comunisti;Communistes;Communisti;;Comunista;;;;;;;;;x;;;;
 SIC_conservative;Moderati ;Moderati ;Moderati;;Moderati ;;;;;;;;;x;;;;
-SIC_conservative_2;Popolari;Popolari;Popolari;;Popolari;;;;;;;;;x;;;;
 SIC_fascist;Fascisti;Fasciste;Fascisti;;Fascista;;;;;;;;;x;;;;
 SIC_liberal;Riformisti ;Reformisti ;Reformisti;;Reformisti ;;;;;;;;;x;;;;
 SIC_liberal_2;Liberale;Liberale;Liberali;;Liberale;;;;;;;;;x;;;;
@@ -2401,7 +2369,6 @@ TUR_socialist_2;Democratic Front;Front démocratique;Demokratische Front;;Frente 
 TUS_anarcho_liberal;Radicali;Radical;Radikali;;Radical;;;;;;;;;x;;;;
 TUS_communist;Comunisti;Communistes;Communisti;;Comunista;;;;;;;;;x;;;;
 TUS_conservative;Moderati ;Moderati ;Moderati;;Moderati ;;;;;;;;;x;;;;
-TUS_conservative_2;Popolari;Popolari;Popolari;;Popolari;;;;;;;;;x;;;;
 TUS_fascist;Fascisti;Fasciste;Fascisti;;Fascista;;;;;;;;;x;;;;
 TUS_liberal;Riformisti ;Reformisti ;Reformisti;;Reformisti ;;;;;;;;;x;;;;
 TUS_liberal_2;Liberale;Liberale;Liberali;;Liberale;;;;;;;;;x;;;;
@@ -2477,7 +2444,7 @@ USA_conservative;Democratic Party;Parti démocrate;Democratic Party;;Partido Demó
 USA_conservative_2;American Party;Parti américain;American Party;;Partido Americano;;;;;;;;;x;;;;
 USA_conservative_3;Constitutional Union Party;Parti de l'union constitutionnelle;Constitutional Union Party;;Partido de la Unión Constitucionalista;;;;;;;;;x;;;;
 USA_conservative_5;Democratic Party;Parti démocrate;Democratic Party;;Partido Demócrata;;;;;;;;;x;;;;
-USA_fascist;Fascist Party;Parti fasciste;Fascist Party;;Partido Fascista;;;;;;;;;x;;;;
+USA_fascist;Silver Legion of America;Parti fasciste;Fascist Party;;Partido Fascista;;;;;;;;;x;;;;
 USA_libdemocrat;Democratic Party;;;;;;x;;
 USA_liberal;Republican Party;Parti républicain;Republican Party;;Partido Republicano;;;;;;;;;x;;;;
 USA_liberal_2;Whigs;Whigs;Whigs;;Whigs;;;;;;;;;x;;;;
@@ -2486,7 +2453,7 @@ USA_liberal_4;Populist Party;Parti populiste;Populist Party;;Partido Populista;;
 USA_liberal_5;Union Party;Parti syndical;Union Party;;Partido Unionista;;;;;;;;;x;;;;
 USA_liberal_6;Republican Party;Parti républicain;Republican Party;;Partido Republicano;;;;;;;;;x;;;;
 USA_reactionary;Nationalist Party;Parti nationaliste;Nationalist Party;;Partido Nacionalista;;;;;;;;;x;;;;
-USA_socialist;Socialist Party;Parti socialiste;Socialist Party;;Partido Socialista;;;;;;;;;x;;;;
+USA_socialist;Workingmen's Party;Parti socialiste;Socialist Party;;Partido Socialista;;;;;;;;;x;;;;
 VEN_anarcho_liberal;Radicali;Radical;Radikali;;Radical;;;;;;;;;x;;;;
 VEN_communist;Rivoluzionari;Revoluzionari;Revoluzionari;;Revoluzionari;;;;;;;;;x;;;;
 VEN_conservative;Transigenti;Transigenti;Transigenti;;Transigenti;;;;;;;;;x;;;;
@@ -2651,3 +2618,5 @@ ZUL_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;La 
 ZUL_liberal;The Liberal Faction;Faction libérale;Die liberale Fraktion;;La Facción Liberal;;;;;;;;;x;;;;
 ZUL_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;La Facción Nacionalista;;;;;;;;;x;;;;
 ZUL_socialist;The Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;La Facción Socialista;;;;;;;;;x;;;;
+limited_citizenship_desc;Only people of your nation's primary and accepted cultures are allowed the vote.;Seule la population de la culture principale et de la culture acceptée de votre nation est autorisée à voter.;Nur Angehörige der Primärkultur und der akzeptierten Kulturen unserer Nation dürfen wählen.;;Solo puede votar la población de la cultura principal y de las culturas aceptadas de tu nación.;;;;;;;;;x;
+residency_desc;Only people of your nation's primary culture are allowed the vote.;Seule la population de la culture principale de votre nation est autorisée à voter.;Nur Angehörige der Primärkultur unserer Nation dürfen wählen.;;Solo puede votar la población de la cultura principal de tu nación.;;;;;;;;;x;

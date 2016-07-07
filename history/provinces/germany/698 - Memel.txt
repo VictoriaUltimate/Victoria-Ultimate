@@ -1,35 +1,45 @@
 owner = PLC
 controller = PLC
-add_core = PLC
-add_core = PRU
-1710.1.1 = {
-owner = PRU
-controller = PRU
-add_core = PRU
-		}
-add_core = PRU
 add_core = GER
-1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
 add_core = LIT
 add_core = PLC
+add_core = PRU
 trade_goods = fish
 life_rating = 40
-1861.1.1 = { railroad = 3 }
 
+1701.1.18 = {
+owner = PRU
+controller = PRU
+}
+1757.9.1 = { controller = RUS }
+1762.1.5 = { controller = PRU }
+1861.1.1 = { railroad = 3 }
+1871.1.18 = {
+owner = GER
+controller = GER
+}
+1923.1.19 = {
+owner = LIT
+controller = LIT
+remove_core = GER
+remove_core = PLC
+remove_core = PRU
+}
+1939.3.22  = {
+owner = GER
+controller = GER
+add_core = GER
+add_core = PRU
+}
 #End of WW2
 1945.5.1 = {
-	owner = RUS
-	controller = RUS
-	remove_core = GER
-		}
-
-
+owner = RUS
+controller = RUS
+remove_core = GER
+remove_core = PRU
+}
 #Soviet Collapse
-1992.5.1 = {
-	owner = LIT
-	controller = LIT
-		}
-
+1990.3.11 = {
+owner = LIT
+controller = LIT
+}

@@ -32,13 +32,20 @@ school_reforms = no_schools
 ruling_party = TUR_reactionary
 upper_house = {
 	fascist = 0
-	liberal = 25
-	conservative = 60
-	reactionary = 15
+	liberal = 0
+	conservative = 80
+	reactionary = 20
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
+
+#Starting Consciousness
+consciousness = 2
+nonstate_consciousness = 0
+
+schools = army_tech_school
+oob = "/1604/TUR_oob.txt"
 
 1700.1.1 = {
 standing_army = 1
@@ -422,10 +429,11 @@ experimental_railroad = 1
 modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
-                }
-
+}
 
 1830.1.1 = {
+oob = "TUR_oob.txt"
+
 # Technologies
 late_medieval_warfare = 1
 early_muskets = 1
@@ -624,18 +632,7 @@ practical_steam_engine = 1
 mechanical_production = 1
 clean_coal = 1 #until this for 1830
 		}
-
-
-#Starting Consciousness
-consciousness = 2
-nonstate_consciousness = 0
-
-schools = army_tech_school
-
-oob = "TUR_oob.txt"
-
-
-
+		
 1861.1.1 = {
 	oob = "/1861/TUR_oob.txt"
 	prestige = 85

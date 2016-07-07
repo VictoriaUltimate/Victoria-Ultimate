@@ -4,7 +4,7 @@ political_decisions = {
 		potential = {
 			tag = BDB
 			NOT = {
-			year = 1714
+			year = 1700
 				}
 					}
 		allow = {
@@ -24,51 +24,4 @@ political_decisions = {
 					}
 				}
 	}
-		
-
-        brandenburg_prussia2 = {
-        picture = branpic
-                potential = {
-                tag = BDB
-                prestige = 20
-                exists = PRU
-                PRU = {
-                        is_vassal = no
-                      }
-                                }
-                
-                allow = {
-                war = no
-                }
-
-                effect = {
-                change_tag = BPR
-                BPR = {
-                create_vassal = PRU
-                }
-                         }
-}
-
-        brandenburg_prussia3 = {
-        picture = branpic
-                potential = {
-                tag = BPR
-                prestige = 20
-                exists = PRU
-                PRU = {
-                        is_vassal = yes
-                      }
-                                }
-                
-                allow = {
-                war = no
-                }
-
-                effect = {
-                PRU = {
-                inherit = BPR
-                }
-                change_tag = PRU
-                         }
-}
 }
